@@ -1,13 +1,40 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{graphicx}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[inner=1.5cm,outer=2cm,top=1.5cm,bottom=1.5cm]{geometry}
 \author{Álvaro Carreras Regorigo}
 \title{Route 66}
 \begin{document}
-\maketitle
+
+\begin{titlepage}
+\begin{center}
+\includegraphics[scale=0.5]{images/logoUVa}\\\vspace{1cm}
+\begin{LARGE}\textbf{Universidad de Valladolid}\end{LARGE}\\
+\vspace{2cm}
+\begin{Huge}Escuela de Ingeniería Informática\end{Huge} \\\vspace{0.5cm}
+\begin{large}\textbf{TRABAJO FIN DE GRADO}\end{large}\\ \vspace{2.5cm}
+\begin{Large}Grado en Ingeniería Informática \\ (Mención en Ingeniería de Software)\end{Large}\\ \vspace{4cm}
+\begin{Huge}\textbf{Route66App}\end{Huge}
+\end{center}\vspace{6cm}
+\begin{flushright}
+\begin{large}Autor: \\\textbf{D. Álvaro Carreras Regorigo}\end{large}
+\end{flushright}
+\end{titlepage}
+
+
+
+
+\clearpage
+
+\lipsum[1-160]
+
+
 \end{document}
