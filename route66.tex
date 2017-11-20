@@ -1,28 +1,39 @@
-\documentclass[11pt,a4paper,twoside]{report}
+\documentclass[twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{lipsum}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{layout}
 \renewcommand{\baselinestretch}{1.2}
 \setlength{\parindent}{0.5cm}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage[inner=1.5cm,outer=2cm,top=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage[margin=1.5cm]{geometry}
 
 \usepackage{fancyhdr}
 \fancyhf{}
 \renewcommand\headrulewidth{0pt}
 \fancyfoot[RO, LE]{\thepage}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[RO, LE]{\thepage}
+}
+
+
 \pagestyle{fancy}
 
 \author{Álvaro Carreras Regorigo}
 \title{Route 66}
 \begin{document}
-
+\rule{\oddsidemargin}{2cm}
 \begin{titlepage}
 \begin{center}
 \includegraphics[scale=0.5]{images/logoUVa}\\\vspace{1cm}
@@ -111,6 +122,50 @@ El juego se centra en un mapa de la Ruta66 americana, aprovechando así la temá
 \item Williams.
 \item Los Ángeles.
 \end{enumerate}
+
+Todos los niveles excepto el de Chicago tendrán un planteamiento similar:
+\begin{itemize}
+\item Nivel 1. Chicago: Compuesto por diez casillas. Se activarán dos por cada actividad completada:
+	\begin{itemize}
+		\item Configuración del perfil del jugador.
+		\item Crear un equipo.
+		\item Seguir en redes sociales la página del restaurante.
+		\item Puntuar la aplicación en la tienda de aplicaciones.
+		\item Comentar la aplicación en la tienda de aplicaciones.
+	\end{itemize}
+\item Resto de niveles: Consistirán en diez misiones:
+	\begin{itemize}
+		\item Misiones de nivel social: consistirán en tareas como compartir el progreso, subir una foto hecha en el restaurante a las redes sociales, enviar invitaciones…
+		\item Misiones de minijuegos: serán dos casillas y consistirá en jugar a un minijuego, dependiente del perfil de jugador.
+		\item Misiones de consumo: el jugador deberá realizar consumiciones en los restaurantes de la cadena. Avanzará más o menos casillas en función del gasto que realice.
+		\item Misiones de retos especiales: en días señalados, los jugadores podrán participar en retos creados específicamente para ese día.
+	\end{itemize}
+\end{itemize}
+
+\textbf{Recompensas}\\
+
+Hay tres tipos de recompensa:
+\begin{itemize}
+\item Puntos: el usuario obtendrá diez puntos por cada casilla que avance. Similarmente, se agrupará la suma total en tres categorías: consumo, social y competitivo.
+\item Insignias: cuando el jugador haya completado un nivel completo obtendrá una insignia (matrícula de la ciudad asociada). Habrá, adicionalmente, otras insignias, entre las que se encuentran la familiar o las de grupo.
+\item Premios: los premios serán regalos. Se desbloquearán cuando el usuario haya completado un nivel o haya realizado algún reto especial.
+\end{itemize}
+
+\textbf{Perfiles de jugador}\\ \cite{iebsctj}
+
+Todos los jugadores tendrán asociado un perfil, que se determinará en el registro de usuario:
+\begin{itemize}
+
+\item Triunfador: tendrá como objetivo llevar a cabo las misiones y obtener los premios o recompensas.
+\item Explorador: son jugadores que les gusta descubrir o aprender cosas nuevas.
+\item Socializadores: más que interés en conseguir los logros, buscan aprovecharlos para entablar relaciones sociales.
+\item Killers: buscan ser los primeros en el juego. Quieren destacar sobre otros jugadores.
+
+\end{itemize}
+
+\textbf{Grupos}\\
+
+Los jugadores, similarmente, podrán crear el número que quieran de equipos. Participarán con los mismos a la hora de alcanzar las recompensas.
 \chapter{Parte II: Herramientas utilizadas y entorno de trabajo}
 \section{Herramientas utilizadas}
 \section{Entorno de trabajo}
@@ -135,7 +190,12 @@ El juego se centra en un mapa de la Ruta66 americana, aprovechando así la temá
 \subsection{Gestión de configuraciones.}
 \subsection{Costes.}
 
-\chapter{Referencias}
+\begin{thebibliography}{a}
+\bibitem[IEBSCTiposJugadores]{iebsctj} \textsc{Ferran Altarriba Bertran}, \textit{\url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}}.  
+
+\bibitem[Old]{old} \textsc{Old, L.},\textit{Confesiones de una oveja bizca.} 1ª ed. Madrid: Naturalistic, 2010. 
+\end{thebibliography}
+
 \chapter{Anexos}
 
 
