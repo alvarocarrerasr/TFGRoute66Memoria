@@ -41,7 +41,7 @@
 \begin{LARGE}\textbf{Universidad de Valladolid}\end{LARGE}\\
 \vspace{2cm}
 \begin{Huge}Escuela de Ingeniería Informática\end{Huge} \\\vspace{0.5cm}
-\begin{large}\textbf{TRABAJO FIN DE GRADO}\end{large}\\ \vspace{2.5cm}
+\begin{large}\textsc{\textbf{TRABAJO FIN DE GRADO}}\end{large}\\ \vspace{2.5cm}
 \begin{Large}Grado en Ingeniería Informática \\ (Mención en Ingeniería de Software)\end{Large}\\ \vspace{4cm}
 \begin{Huge}\textbf{Route66App}\end{Huge}
 \end{center}\vspace{2cm}
@@ -172,104 +172,59 @@ Todos los jugadores tendrán asociado un perfil, que se determinará en el regis
 Los jugadores, similarmente, podrán crear el número que quieran de equipos. Participarán con los mismos a la hora de alcanzar las recompensas.
 
 \section{Análisis de aplicaciones similares}
-\textbf{McDonald's}\\
-\begin{itemize}
-\item App analizada: \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
-\item Funcionalidades
-	\begin{itemize}
-	\item Ofertas por descargar la app.
-	\item Canjeo de cupones.
-	\item Listado de la carta de productos. Por cada uno se puede ver la información de alérgenos y la información nutricional.
-	\item Listado de restaurantes.
-	\item Envío de pedidos a domicilio.
-	\item Acceso a nuevos niveles.
-	\item Escanear el ticket de la compra.
-	\end{itemize}
-\item Fidelización de clientes: utiliza un sistema por niveles, en el que cuanto más alto sea el nivel, mejores ofertas se podrán encontrar. Para poder subir de nivel se necesitará escanear los tickets de la compra y llegar a un mínimo de gasto.
-\item Comentarios: 
-	\begin{itemize}
-	\item Nada más registrarse uno es nivel plata, lo que hace que automáticamente se consigan descuentos. Propone un gasto de diez euros para pasar al nivel Oro.
-	\item Tres niveles: 
-		\begin{itemize}
-		\item bronce: cuatro ofertas y cuatro ofertas más del restaurante más cercano.
-		\item plata: otras cuatro ofertas más.
-		\item oro: exige un gasto mínimo de diez euros al mes. Acceso a un mayor número de ofertas.
-		\end{itemize}
-	\end{itemize}
-	\item Un usuario propone que se puedan customizar los menús desde el móvil y así con un código QR crear automáticamente el menú en la máquina de pedidos.
-	\item Ha enviado una promoción en la que se regalaba un McFlurry a cambio de dar la opinión de la app por correo electrónico.
-\end{itemize}
 
-\textbf{Burger King}\\
-\begin{itemize}
-\item App analizada: \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
-\item Funcionalidades
-	\begin{itemize}
-	\item Conseguir ofertas exclusivas.
-	\item Listado de restaurantes.
-	\item Pedidos a domicilio.
-	\item Listado de carta de productos. Comprobación del valor nutricional y alérgenos de cada uno de los productos. 
-	\item Listado de cupones.
-	\item Listado de promociones.
-	\end{itemize}
-\item Fidelización de clientes: El programa se llama “Mis Coronas”. Cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
-\item Comentarios: 
-	\begin{itemize}
-	\item La fidelización de clientes es bastante mala y se limita a los pedidos realizados vía web o vía app móvil. Se limita a regalar una hamburguesa cada 3 pedidos y a ofrecer promociones personalizadas. 
-	\item En restaurante no hay ninguna promoción.
-	\end{itemize}
-\end{itemize}
+He seleccionado y analizado diversas aplicaciones de restaurantes de comida rápida asentados en España, con el fin de conocer cómo son y si han implementado técnicas de gamificación a las mismas.
 
-\textbf{KFC}\\
-\begin{itemize}
-\item App analizada: \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
-\item Funcionalidades
-	\begin{itemize}
-	\item Ofertas exclusivas y personalizadas.
-	\item Listado de restaurantes.
-	\item Carta de productos. Comprobación del valor nutricional y alérgenos de cada uno de los productos.
-	\item Menú nutricional.
-	\end{itemize}
-\item Fidelización de clientes: no existe una fidelización de clientes como tal. Se limita a poner ofertas y en el caso de que el usuario esté registrado, se muestran ciertas que, según aseguran, son personalizadas.
-\item Comentarios: 
-	\begin{itemize}
-	\item No tiene fidelización de clientes.
-	\end{itemize}
-\end{itemize}
+\subsubsection{McDonald's \cite{mcdo}}
 
-\textbf{VIPS}\\
-\begin{itemize}
-\item App analizada: \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
-\item Funcionalidades
-	\begin{itemize}
-	\item Pedidos ‘take-away’.
-	\item Club EuroVIPS: promociones de los restaurantes de la cadena VIPS (Fridays, VIPS, Ginos, Starbucks…).
-	\item Listado de restaurantes (con filtros). Reserva.
-	\item Botón WiFi para navegar con un solo click en los restaurantes de la cadena.
-	\item Paga desde la App.
-	\item ShakeIt: realiza un pedido con solo agitar el móvil.
-	\item Monedero Club VIPS para llevar un control permanente de los gastos.
-	\item Guardar promociones en la App.
-	\end{itemize}
-\item Fidelización de clientes: 
+La aplicación móvil McDonalds ofrece un gran número de funcionalidades, entre las que se encuentran un servicio de ofertas , canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
 
-	\begin{itemize}
-	\item Para fidelizar clientes está el Club EuroVIPS, en el que hay un ‘cashback’ del 3\% en todos los pedidos. Este importe se puede duplicar bajo ciertas condiciones.
-	\item Tarjeta Club VIPS en donde se pueden sumar puntos.
-	\item Guardar promociones en la app mediante un escáner QR.
-	\item Invitaciones dirigidas a los clientes en forma de promociones. Por ejemplo “te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style” o “te invitamos a probar nuestras pizzas”.
-	\item Tres niveles de Club VIPS: 
-		\begin{itemize}
-		\item Club VIPS Clásica: solo impone la condición de ser socio. A cambio ofrece WiFi Premium.
-		\item Club VIPS Oro: se debe obtener un mínimo de 18 EuroVIPS o 25 tickets de Starbucks. Sus beneficios son tener el doble de puntos en determinadas franjas horarias y en determinados establecimientos de la cadena, añadir gratis un extra a la bebida en cada ticket. y WiFi Premium.
-		\item Club VIPS Platino: solo para clientes que obtengan un mímo de 45 EuroVIPS o 50 tickets de Starbucks. Se les ofrecerá el doble de puntos en mayores franjas horarias, añadir gratis un extra a la bebida en cada ticket, probar gratuitamente la bebida especial de Starbucks en cada campaña y WiFi Premium
-		\end{itemize}
-	\end{itemize}
-\item Comentarios: 
-	\begin{itemize}
-	\item De las analizadas es la más completa y compleja.
-	\end{itemize}
-\end{itemize}
+No tiene un sistema de ludificación implementado, ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto más alto sea, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los tickets de compra y llegar a un mínimo de gasto.
+
+Destacar que durante el tiempo que ha estado instalada ha pedido dar la opinión de la app por correo electrónico, a cambio de obtener un obsequio.
+
+\subsubsection{Burger King \cite{burgerk}}
+
+Burger King tampoco ofrece un sistema de ludificación, pero, al igual que este sí tiene uno de fidelización, llamado "Mis Coronas". Este programa consiste en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
+
+Las opciones de esta app están bastante limitadas y en ellas se encuentran conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
+
+\subsubsection{KFC \cite{kfcapp}}
+
+KFC no ha implementado ningún sistema de ludificación, ya que se limitan a poner ofertas de acuerdo con los gustos del cliente (ya que utiliza el historial de pedidos).
+
+En cuanto a funcionalidad, se limita a poner una carta de productos, un listado de restuarantes y una opción para obtener ofertas.
+
+\subsubsection{VIPS \cite{vipsapp}}
+
+La aplicación de la cadena VIPS es, sin lugar a dudas, la más completa de las analizadas, aunque tampoco tiene implementada la ludificación. 
+
+Para fidelizar clientes, utiliza el servicio ClubEuroVIPS, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones. Además ofrece un sistema de clasificación de usuarios según su consumo (niveles clásico, oro y platino), en el que, dependiendo del cuál nos escontremos podremos obtener WiFi Premium, bebidas extras u obtener puntos extras.
+
+Paralelamente, la aplicación invita al usuario, con cierta frecuencia a sus lanzamientos o estrenos de nuevos productos. Por ejemplo “\textit{te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style}” o “\textit{te invitamos a probar nuestras pizzas}”.
+
+Similarmente, se pueden encontrar funcionalidades propias de un restaurante que apuesta por el crecimiento de su app móvil, como son la posibilidad de pagar un pedido con la app móvil, la funcionalidad \textit{Shake-It}, que consiste en realizar tu pedido favorito con solo agitar tu teléfono móvil o la posibilidad de guardar promociones en la aplicación. Además, también permite realizar pedidos online del tipo \textit{take-away}.
+
+\subsubsection{Pans and Company \cite{pansapp}}
+
+
+- Funcionalidades:
+  - Listado de restaurantes.
+  - Ofertas y descuentos.
+  - Listado de la carta. Consulta de los valores nutricionales, así como información para alérgicos.
+  - Tarjeta de fidelidad.
+- Fidelización clientes: ofrece una tarjeta de fidelidad, integrada en la misma app. Esta tarjeta básicamente consiste en un código QR que el usuario puede mostrar en caja para acumular puntos que, posteriormente se podrán convertir en dinero. Ofertas personalizadas.
+- Puntos positivos.
+- Puntos negativos.
+- Comentarios:
+
+\subsubsection{Telepizza}
+
+\subsubsection{PizzaHut}
+
+\subsubsection{Domino's Pizza}
+
+\subsection{Otras aplicaciones analizadas}
 
 \chapter{Parte II: Herramientas utilizadas y entorno de trabajo}
 \section{Herramientas utilizadas}
@@ -295,10 +250,23 @@ Los jugadores, similarmente, podrán crear el número que quieran de equipos. Pa
 \subsection{Gestión de configuraciones.}
 \subsection{Costes.}
 \lipsum[1-900]
-\begin{thebibliography}{a}
-\bibitem[IEBSCTiposJugadores]{iebsctj} \textsc{Ferran Altarriba Bertran}, \textit{\url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}}.  
 
-\bibitem[Old]{old} \textsc{Old, L.},\textit{Confesiones de una oveja bizca.} 1ª ed. Madrid: Naturalistic, 2010. 
+
+\begin{thebibliography}{a}
+\bibitem[IEBSCTiposJugadores]{iebsctj} \textit{Ferran Altarriba Bertran}, \textit{\url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}}.  
+
+\bibitem[McDonaldsApp]{mcdo} \textsc{McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
+
+
+\bibitem[BurgerKApp]{burgerk} \textsc{Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
+
+\bibitem[KFCApp]{kfcapp} \textsc{KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
+
+\bibitem[KFCApp]{vipsapp} \textsc{VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
+
+\bibitem[Pans\&Company]{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
+
+
 \end{thebibliography}
 
 \chapter{Anexos}
