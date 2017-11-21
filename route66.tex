@@ -14,7 +14,7 @@
 \usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{geometry}
-\geometry{showframe=true,a4paper,left=1.5cm,inner=1.5cm, right=1.5cm,top=1.5cm,bottom=1.5cm, includehead,includefoot}
+\geometry{showframe=true,a4paper,left=2cm, right=1.5cm,top=1.5cm,bottom=1.5cm, includehead,includefoot}
 \usepackage{fancyhdr}
 
 \fancyhf{}
@@ -62,20 +62,23 @@ Dña. Margarita Gonzalo Tasis\end{large}
 \subsection{Introducción.}
 \subsection{Motivación.}
 \subsection{Objetivos.}
+El objetivo de este proyecto es el de realizar una aplicación Android para un restaurante de comida rápida, que cuente con un sistema de ludificación. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}.
 \section{Ludificación}
 \subsection{La ludificación}
-La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en “el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio”.
+La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en “el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio” \cite{iebschoolGami}. 
 
-En definitiva, con la gamificación podremos conseguir que nuestros clientes o usuarios realicen aquellos objetivos que hayamos marcado, simplemente por el objetivo de divertirse.
+Aunque típicamente se ha visto la ludificación aplicada al área comercial o de ventas, existen otros ejemplos en la educación o incluso en las relaciones con los proveedores o para incrementar el número de ventas en un centro comercial (ludificación orientada a los empleados).
 
 Hoy en día, miles de compañías utilizan la ludificación en sus procesos empresariales, desde sus relaciones con los empleados, hasta con los clientes, pasando por sus comerciales. La ludificación realmente funciona y, por increíble que parezca, es muy efectiva.
+
 No son pocos los ejemplos de una aplicación más que satisfactoria de la misma. En 2011, Volskwagen decidió inventar en China, su mercado más importante, una nueva versión de su ‘people’s car’. Para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado del mismo: más de 50.000 propuestas diferentes.
+
 Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon dos propuestas: contratar a una empresa por miles de euros, o bien, plantear un sistema de gamificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. El resultado fue un ahorro de un 70\%. Se presentaron más de 50.000 propuestas en un tiempo récord de tiempo.
 
 Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias... Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los 9 primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
 
 \subsection{Propuesta.}
-Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
+Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
 
 El trabajo de esta alumna, centrado en el diseño de un sistema de gamificación aplicado a un posible caso real (restaurante de comida americana), tenía el problema de la imposibilidad de llevarlo a cabo con herramientas profesionales, debido a su coste y a la falta de disponibilidad de las mismas. Por este motivo, el TFG se tuvo que defender contando solo con una serie de prototipos basados en un sistema web. 
 
@@ -113,7 +116,6 @@ Las funcionalidades que podrá acceder cada tipo de rol vendrán determinadas en
 \textbf{Descripción del juego}\\
 
 El juego se centra en un mapa de la Ruta66 americana, aprovechando así la temática del restaurante. Se dividirá el camino en once etapas o niveles, correspondientes a las principales ciudades por las que pasa esta vía, y para avanzar, el cliente deberá completar una serie de actividades, que además otorgarán insignias. Cabe destacar que la dificultad de los niveles irá aumentando gradualmente, con el objetivo de no perder la motivación.
-
 
 \begin{enumerate}
 \item Chicago.
@@ -157,7 +159,7 @@ Hay tres tipos de recompensa:
 \item Premios: los premios serán regalos. Se desbloquearán cuando el usuario haya completado un nivel o haya realizado algún reto especial.
 \end{itemize}
 
-\textbf{Perfiles de jugador}\\ \cite{iebsctj}
+\textbf{Perfiles de jugador\cite{iebsctj}}\\ 
 
 Todos los jugadores tendrán asociado un perfil, que se determinará en el registro de usuario:
 \begin{itemize}
@@ -225,12 +227,40 @@ Por otra parte, también es posible visualizar la carta del restaurante o ver el
 
 \chapter{Parte II: Herramientas utilizadas y entorno de trabajo}
 \section{Herramientas utilizadas}
+
+Para la elaboración de esta memoria he utilizado las siguientes herramientas:
+\begin{itemize}
+\item Como editor \LaTeX , Texmaker v. 4.4.1. \footnote{\url{http://www.xm1math.net/texmaker/}}
+\item Como sistema de control de versiones, GitHub \footnote{\url{https://www.github.com}}
+\item Para tomar notas e ideas, Dropbox Paper \footnote{\url{https://paper.dropbox.com}}
+\end{itemize}
+
+Para la elaboración de los prototipos, he utilizado Ionic 3 \footnote{\url{https://ionicframework.com/}}.
+
+Para la elaboración de la aplicación Android, he utilizando Android Studio.
+
+Finalmente, he empleado Firebase \footnote{\url{https://firebase.google.com/}}
 \section{Entorno de trabajo}
+
+La memoria ha sido escrita usando un ordenador portátil que cuenta con las siguientes características:
+\begin{itemize}
+\item Marca: Lenovo.
+\item Modelo: G-50-70.
+\item Memoria principal: 4GB.
+\item HDD 500 GB.
+\item Sistema Operativo: Xubuntu 17.04 LTS 64 bits.
+\end{itemize}
+
+En cuanto al servidor utilizado, será el proporcionado por los técnicos de la Escuela de Ingeniería Informática de Valladolid, en concreto:
+\begin{itemize}
+\item ...
+\end{itemize}
 \section{Comunicación con el servidor}
 
 \chapter{Parte III: Route66App}
 \section{Plan de Desarrollo del Software}
 \subsection{Metodología de Desarrollo del proyecto}
+Este Plan de Desarrollo del Proyecto empleará la metodología UPedu (Unified Process for Education)
 \subsection{Restricciones}
 \subsection{Estructura organizativa}
 \subsubsection{Estructura organizativa interna}
@@ -249,8 +279,11 @@ Por otra parte, también es posible visualizar la carta del restaurante o ver el
 \lipsum[1-2500]
 
 
-\begin{thebibliography}{a}
+\begin{thebibliography}{a} 
 
+\bibitem{cristinatfg} \textsc{Cristina Martínez Martínez} \textit{TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Organización Industrial. Universidad de Valladolid. 
+
+\bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La gamificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
 
 \bibitem{bbvag} \textsc{Alejandro. Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la gamificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}.  
 
@@ -268,8 +301,6 @@ Por otra parte, también es posible visualizar la carta del restaurante o ver el
 \bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
 
 \bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
-
-\bibitem{danonapp} \textsc{Danone App},\textit{Aplicación móvil Danone para Android} \url{https://play.google.com/store/apps/details?id=com.innofis.danone.pincode.mobile.android}
 
 
 
