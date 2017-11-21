@@ -6,12 +6,12 @@
 \contentsline {subsection}{\numberline {1.1.3}Motivaci\IeC {\'o}n.}{2}
 \contentsline {section}{\numberline {1.2}Propuesta.}{2}
 \contentsline {subsection}{\numberline {1.2.1}Resumen de \IeC {\textquotedblleft }Estudio de gamificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{2}
-\contentsline {section}{\numberline {1.3}An\IeC {\'a}lisis de aplicaciones similares}{4}
+\contentsline {section}{\numberline {1.3}An\IeC {\'a}lisis de aplicaciones similares}{5}
 \contentsline {subsubsection}{McDonald's \cite {mcdo}}{5}
 \contentsline {subsubsection}{Burger King \cite {burgerk}}{5}
 \contentsline {subsubsection}{KFC \cite {kfcapp}}{5}
 \contentsline {subsubsection}{VIPS \cite {vipsapp}}{5}
-\contentsline {subsubsection}{Pans and Company \cite {pansapp}}{5}
+\contentsline {subsubsection}{Pans and Company \cite {pansapp}}{6}
 \contentsline {subsubsection}{Foster's Hollywood \cite {fostersh}}{6}
 \contentsline {section}{\numberline {1.4}Estructura de la memoria}{6}
 \contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas y entorno de trabajo}{7}
