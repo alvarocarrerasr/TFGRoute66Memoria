@@ -13,8 +13,12 @@
 \usepackage{helvet}
 \usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
+
+\addto\captionsspanish{\renewcommand{\bibname}{}}
+
+
 \usepackage{geometry}
-\geometry{showframe=true,a4paper,left=2cm, right=1.5cm,top=1.5cm,bottom=1.5cm, includehead,includefoot}
+\geometry{showframe=false,a4paper,left=2cm, right=1.5cm,top=1.5cm,bottom=1.5cm, includehead,includefoot}
 \usepackage{fancyhdr}
 
 \fancyhf{}
@@ -60,11 +64,6 @@ Dña. Margarita Gonzalo Tasis\end{large}
 \chapter{Parte I: Introducción y contexto.}
 \section{Introducción y objetivos.}
 \subsection{Introducción.}
-\subsection{Motivación.}
-\subsection{Objetivos.}
-El objetivo de este proyecto es el de realizar una aplicación Android para un restaurante de comida rápida, que cuente con un sistema de ludificación. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}.
-\section{Ludificación}
-\subsection{La ludificación}
 La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en “el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio” \cite{iebschoolGami}. 
 
 Aunque típicamente se ha visto la ludificación aplicada al área comercial o de ventas, existen otros ejemplos en la educación o incluso en las relaciones con los proveedores o para incrementar el número de ventas en un centro comercial (ludificación orientada a los empleados).
@@ -76,14 +75,24 @@ No son pocos los ejemplos de una aplicación más que satisfactoria de la misma.
 Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon dos propuestas: contratar a una empresa por miles de euros, o bien, plantear un sistema de gamificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. El resultado fue un ahorro de un 70\%. Se presentaron más de 50.000 propuestas en un tiempo récord de tiempo.
 
 Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias... Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los 9 primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
+\subsection{Objetivos.}
+El objetivo de este Trabajo Fin de Grado es el de realizar una aplicación Android para un restaurante de comida rápida, que cuente con un sistema de ludificación. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
 
-\subsection{Propuesta.}
+Este TFG detallará el desarrollo, análisis, diseño e implementación de la parte cliente del sistema informático en cuestión. Se ha diseñado para que este cambie las diferentes misiones y desafíos, de acuerdo con los parámetros que el administrador del sistema establezca en el backend (parte de gestión).
+
+\subsection{Motivación.}
+Este trabajo tiene una doble motivación, por un lado, analizar, diseñar e implementar un sistema de ludificación diseñado por una alumna de esta Universidad, para completar así, una de las líneas futuras propuestas por la misma en su Trabajo de Fin de Grado. 
+
+Por otro, se busca desarrollar un sistema de ludificación que permita a los alumnos del Grado en Organización Industrial de nuestra Universidad, poner en marcha y probar un sistema de este tipo, ya que las alternativas existentes en el mercado no ofrecen posibilidad de prueba como estudiante.
+\section{Propuesta.}
 Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
 
 El trabajo de esta alumna, centrado en el diseño de un sistema de gamificación aplicado a un posible caso real (restaurante de comida americana), tenía el problema de la imposibilidad de llevarlo a cabo con herramientas profesionales, debido a su coste y a la falta de disponibilidad de las mismas. Por este motivo, el TFG se tuvo que defender contando solo con una serie de prototipos basados en un sistema web. 
 
 Como la gamificación es un área en investigacion y que ofrece muy buenos resultados, la tutora del TFG propuso a la Comisión de Título la realización de este trabajo. Por otro lado, el resultado del mismo puede servir a alumnos de otras facultades para poder utilizar una herramienta de gamificación real.
-\subsubsection{Resumen de “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}
+
+\subsection{Resumen de “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}
+
 Se propone la realización de un sistema de gamificación para una cadena de restaurantes de comida americana, que cuenta con un conjunto de franquicias repartidas por todo el territorio español. Es una empresa con muy buenos resultados económicos y cuenta con una amplia y sólida base de clientes, que decide elaborar una aplicación que mejore la opinión de los mismos sobre la marca, ya que han llegado críticas sobre el sistema vigente de cupones y descuentos.
 
 Finalmente, el equipo directivo decide encargar una aplicación basada en la ludificación cuyos objetivos son los siguientes:
@@ -225,6 +234,25 @@ Se nos identificará como clientes mediante la tarjeta Foster's Hollywood, que c
 
 Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido online.
 
+\section{Estructura de la memoria}
+
+Este documento está divido en partes y a su vez estas en secciones y subsecciones, abarcando así los distintos documentos recogidos en esta memoria:
+
+\begin{itemize}
+\item Parte I. Introducción y Objetivos: incluye una breve explicación de lo que es la gamificación, así como una explicación a alto nivel de la propuesta realizada por la diseñadora del sistema de gamificación sobre el que está basado el proyecto. Finalmente, también contiene un análisis de aplicaciones de restaurantes de comida rápida que operan en España, con el fin de estudiar si estos incluyen o no un sistema de ludificación.
+
+\item Parte II. Herramientas utilizadas y entorno de trabajo: detallaré aquellas herramientas utilizadas en el proyecto, tanto de tipo \textit{hardware} como de tipo \textit{software}. 
+
+\item Parte III. Route66App: es la parte más importante del proyecto, pues incluye la gran mayoría de documentos, como el Plan de Desarrollo de Software, el documento de análisis, el documento de diseño, los prototipos realizados y todos aquellos detalles de la implementación que merece la pena reseñar.
+
+\item Parte IV. Conclusiones y líneas futuras.
+
+\item Referencias.
+
+\item Anexos
+
+\end{itemize}
+
 \chapter{Parte II: Herramientas utilizadas y entorno de trabajo}
 \section{Herramientas utilizadas}
 
@@ -259,18 +287,49 @@ En cuanto al servidor utilizado, será el proporcionado por los técnicos de la 
 
 \chapter{Parte III: Route66App}
 \section{Plan de Desarrollo del Software}
+\subsection{Descripción del proyecto}
+La ludificación comenzó a popularizarse en 2010\cite{anatfg}. Desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en numerosas situaciones (educación, ventas, proveedores...). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
+
+Route66App consiste en una app para dispositivos móviles que aplique las ideas expuestas en el Trabajo Fin de Grado de una alumna del Grado en Organización Industrial \cite{cristinatfg}. Esta aplicación aplicará la teoría Battle para identificar los diferentes tipos de jugador y buscará fidelizar y comprometer al usuario con los objetivos del negocio, por medio del juego.
+
+Es importante destacar que este trabajo es solo una parte de dos, el cliente. Para un completo funcionamiento se requerirá el gestor web, en el que se podrán añadir y modificar las diferentes misiones que conforman el juego. 
+\subsubsection{Propósito, objetivos y alcance}
+
+El objetivo fundamental de  este trabajo es el de la implementación de un sistema de ludificación, aplicado a un restaurante de comida americana. En concreto se realizará la parte cliente, ejecutada desde terminales móviles con el Sistema Operativo Android.
+
+La aplicación deberá contar con las siguientes funciones:
+\begin{itemize}
+\item Acciones propias del usuario
+
+	\begin{itemize}
+	\item Realizar misiones y juegos, con el fin de conseguir puntos y aumentar el nivel o posición en un ranking.
+	\item Modificación del perfil del usuario, permitiendo actualizar el avatar del usuario.
+	\item Consulta del historial de logros del usuario.
+	\item Consulta de las insignias del usuario.
+	\item Consulta del código QR que identifica al usuario de forma única.
+	\item Consulta de la posición global del usuario.
+	\end{itemize}
+
+\item Acciones a realizar en grupo.
+	\begin{itemize}
+	\item Cosulta de los equipos a los que pertenece el usuario.
+	\item Creación de nuevos equipos.
+	\end{itemize}
+\end{itemize}
+
 \subsection{Metodología de Desarrollo del proyecto}
-Este Plan de Desarrollo del Proyecto empleará la metodología UPedu (Unified Process for Education)
+Este Plan de Desarrollo del Proyecto empleará la metodología del Proceso Unificado (\textit{Unified Process})
 \subsection{Restricciones}
+Se imponen las 
 \subsection{Estructura organizativa}
 \subsubsection{Estructura organizativa interna}
 \subsubsection{Estructura organizativa externa}
-\section{Gestión del proyecto}
-\subsection{Planificación del proyecto}
-\subsection{Calendario del proyecto}
-\subsubsection{Fase de inicio}
-\subsubsection{Fase de elaboración}
-\subsubsection{Fase de implementación}
+\subsection{Gestión del proyecto}
+\subsubsection{Planificación del proyecto}
+\subsubsection{Calendario del proyecto}
+\textbf{Fase de inicio}\\
+\textbf{Fase de elaboración}\\
+\textbf{Fase de implementación}\\
 \subsection{Relación de artefactos}
 \subsection{Control y seguimiento del proyecto.}
 \subsection{Gestión de riesgos.}
@@ -278,10 +337,13 @@ Este Plan de Desarrollo del Proyecto empleará la metodología UPedu (Unified Pr
 \subsection{Costes.}
 \lipsum[1-2500]
 
-
+\clearpage
+\chapter{Referencias}
 \begin{thebibliography}{a} 
 
 \bibitem{cristinatfg} \textsc{Cristina Martínez Martínez} \textit{TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Organización Industrial. Universidad de Valladolid. 
+
+\bibitem{anatfg} \textsc{Ana Ruiz Caballero} \textit{TFG "Estudio de la gamificación de una empresa para incentivar la motivación."}. Curso 2015-2016. Grado en Organización Industrial. Universidad de Valladolid. 
 
 \bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La gamificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
 
