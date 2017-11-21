@@ -14,6 +14,11 @@
 \contentsline {subsubsection}{KFC \cite {kfcapp}}{4}
 \contentsline {subsubsection}{VIPS \cite {vipsapp}}{5}
 \contentsline {subsubsection}{Pans and Company \cite {pansapp}}{5}
+\contentsline {subsubsection}{Telepizza \cite {telepizza}}{5}
+\contentsline {subsubsection}{Domino's Pizza \cite {dominospizza}}{5}
+\contentsline {subsection}{\numberline {1.3.1}Otras aplicaciones analizadas}{5}
+\contentsline {subsubsection}{Danone}{5}
+\contentsline {subsubsection}{Aliexpress}{5}
 \contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas y entorno de trabajo}{6}
 \contentsline {section}{\numberline {2.1}Herramientas utilizadas}{6}
 \contentsline {section}{\numberline {2.2}Entorno de trabajo}{6}
@@ -36,4 +41,4 @@
 \contentsline {subsection}{\numberline {3.2.5}Gesti\IeC {\'o}n de riesgos.}{7}
 \contentsline {subsection}{\numberline {3.2.6}Gesti\IeC {\'o}n de configuraciones.}{7}
 \contentsline {subsection}{\numberline {3.2.7}Costes.}{7}
-\contentsline {chapter}{\numberline {4}Anexos}{27}
+\contentsline {chapter}{\numberline {4}Anexos}{4482}
