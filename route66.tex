@@ -300,7 +300,6 @@ El objetivo fundamental de  este trabajo es el de la implementación de un siste
 La aplicación deberá contar con las siguientes funciones:
 \begin{itemize}
 \item Acciones propias del usuario
-
 	\begin{itemize}
 	\item Realizar misiones y juegos, con el fin de conseguir puntos y aumentar el nivel o posición en un ranking.
 	\item Modificación del perfil del usuario, permitiendo actualizar el avatar del usuario.
@@ -309,7 +308,6 @@ La aplicación deberá contar con las siguientes funciones:
 	\item Consulta del código QR que identifica al usuario de forma única.
 	\item Consulta de la posición global del usuario.
 	\end{itemize}
-
 \item Acciones a realizar en grupo.
 	\begin{itemize}
 	\item Cosulta de los equipos a los que pertenece el usuario.
@@ -318,9 +316,20 @@ La aplicación deberá contar con las siguientes funciones:
 \end{itemize}
 
 \subsection{Metodología de Desarrollo del proyecto}
-Este Plan de Desarrollo del Proyecto empleará la metodología del Proceso Unificado (\textit{Unified Process})
+El proyecto aplicará la metodología propia del Proceso Unificado (\textit{Unified Process}).
 \subsection{Restricciones}
-Se imponen las 
+Se imponen las siguientes restricciones:
+\begin{itemize}
+\item \textbf{Tiempo:} Este proyecto se realiza para cumplir con los objetivos de la asignatura Trabajo de Fin de Grado. Mención Ingeniería del Software, correspondiente a 12 créditos ECTS, unas 300 horas.
+
+\item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Según mi planificación, la práctica comenzará a finales del mes de Enero de 2018 y terminará por Abril.
+
+\item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 4.4. Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
+
+\item \textbf{Herramientas:} Se utilizará Firebase \footnote{\url{https://firebase.google.com/?hl=es-419}}. En concreto, las utilidades Analytics, Authentication, Crash Reporting Service, Storage, Notifications y Predictions.
+
+\item \textbf{Persistencia de datos: } Contaré con el servicio de gestión de bases de datos SQLite que ofrece Android de serie, con el fin de reducir la carga de peticiones que haga el usuario contra la plataforma.
+\end{itemize}
 \subsection{Estructura organizativa}
 \subsubsection{Estructura organizativa interna}
 \subsubsection{Estructura organizativa externa}
@@ -363,6 +372,9 @@ Se imponen las
 \bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
 
 \bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
+
+\bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 25 de Noviembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
+
 
 
 
