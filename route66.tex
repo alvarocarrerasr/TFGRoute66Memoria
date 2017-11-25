@@ -5,13 +5,15 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{lipsum}
+\usepackage{float}
 \usepackage{url}
+\usepackage[table,xcdraw]{xcolor}
 \setcounter{secnumdepth}{3}
 \usepackage{multicol}
 \usepackage{cite}
 \usepackage{layout}
 \renewcommand{\baselinestretch}{1.2}
-\setlength{\parindent}{0.5cm}
+\setlength{\parindent}{1cm}
 \usepackage{helvet}
 \usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
@@ -352,61 +354,119 @@ Se imponen las siguientes restricciones:
 \subsubsection{Estructura organizativa interna}
 La estructura organizativa del proyecto estará formada por una única persona, que deberá ejercer cada uno de los roles en el momento en el que sea necesario. \cite{upedu} \vspace{0.5cm}
 
-\textbf{Desarrollador} \\
-Este rol se encarga de implementar el código y de realizar las pruebas para los artefactos software generados, con el fin de que sean integrados. \\
+\begin{table}[H]
+\begin{tabular}{llll}
+\cline{1-2}
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFCC67}{\color[HTML]{333333} Rol}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCC67}{\color[HTML]{333333} Encargado}} &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Desarrollador}                                      & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Analista}                                           & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Gestor de proyecto}                                 & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Diseñador}                                          & \multicolumn{1}{l|}{Álvaro Carreras}                                                         &  &  \\ \cline{1-2}
+                                                                         &                                                                               &  & 
+\end{tabular}
+\centering
+\caption{Roles}
+\end{table}\vspace{0.5cm}
 
-\textbf{Analista} \\
-Organiza y coordina tanto la elicitación de requisitos como el modelado de casos de uso indicando y limitando la funcionalidad del sistema y el alcance del mismo. \\
+\paragraph{Desarrollador}\mbox{}\\
 
-\textbf{Gestor de Proyecto} \\
-Realiza el control y mando del proyecto, asigna recursos, gestiona los reisgos, distribuye responsabilidades, gestiona la interacción con los clientes, etcétera.\\
+Este rol se encarga de implementar el código y de realizar las pruebas para los artefactos software generados, con el fin de que sean integrados.
 
-\textbf{Diseñador} \\
-Como indica su nombre, está encargado de diseñar el sistema, definiendo las responsabilidades, operaciones y relaciones de cada uno de los componentes del sistema.\\
+\paragraph{Analista}\mbox{}\\
+
+Organiza y coordina tanto la elicitación de requisitos como el modelado de casos de uso indicando y limitando la funcionalidad del sistema y el alcance del mismo.
+
+\paragraph{Gestor de Proyecto}\mbox{}\\
+
+Realiza el control y mando del proyecto, asigna recursos, gestiona los reisgos, distribuye responsabilidades, gestiona la interacción con los clientes, etcétera.
+
+\paragraph{Diseñador}\mbox{}\\
+
+Como indica su nombre, está encargado de diseñar el sistema, definiendo las responsabilidades, operaciones y relaciones de cada uno de los componentes del sistema.
 
 \subsubsection{Estructura organizativa externa}
 Solo se identifica un rol en la estructura organizativa externa: el del usuario de la aplicación. 
 
 \subsection{Gestión del proyecto}
 \subsubsection{Planificación del proyecto}
-Al utilizar la metodología UPedu \cite{upedu}, encontramos las siguientes fases:
+En este proyecto se utilizará la metodología UPedu \cite{upedu}, compuesta por fases y estas por iteraciones.
 
-\paragraph{Fase de inicio\\}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.75]{images/upeduFases}
+\caption{Fases de la metodología UPedu \cite{upedu}}
+\end{center}
+\end{figure}
+
+En la figura anterior, se puede observar el esfuerzo necesario de cada disciplina en cada fase del proyecto
+
+\paragraph{Fase de inicio}\mbox{}\\
 
 En esta fase no se realiza ningún artefacto de tipo software, pues estos se deben tratar antes de comenzar con la implementación. Los objetivos fundamentales de esta fase son la definición del alcance del proyecto,  la determinación de los casos de uso críticos, la estimación del coste y la duración del proyecto, y la elaboración de una primera gestión de riesgos.
 
-Entre los artefactos a producir \cite{pgpup} están un modelo inicial de casos de uso, un plan de proyecto inicial, con una gestión de riesgos y prototipos exploratorios.
+\paragraph{Fase de elaboración}\mbox{}\\
 
-\paragraph{Fase de elaboración\\}
-
-El objetivo fundamental de esta fase \cite{pgpup} es el de la elaboración del diseño y arquitectura del sistema informático. Siilarmente, se realizará un análisis del dominio del sistema y se eliminarán los elementos de mayor riesgo para el desarrollo del proyecto.
+El objetivo fundamental de esta fase \cite{pgpup} es el de la elaboración del diseño y arquitectura del sistema informático. Similarmente, se realizará un análisis del dominio del sistema y se eliminarán los elementos de mayor riesgo para el desarrollo del proyecto.
 
 Después de esta fase, se obtendrá una arquitectura, requisitos y planes de desarrollo estables. Similarmente, se habrán reducido los riesgos más destacables.
 
-\paragraph{Fase de construcción\\}
+\paragraph{Fase de construcción}\mbox{}\\
 
 Es sin ninguna duda la parte más larga del proyecto y es la primera que tendrá como output artefactos software utilizables.Se irá iterando y mejorando la calidad del producto software en cada ciclo.
 
 La salida de esta fase \cite{pgpup} es software en estado beta.
 
-\paragraph{Fase de transición\\}
+\paragraph{Fase de transición}\mbox{}\\
 
 Se deberá conseguir la aceptación por parte del usuario, indicando que cumple con la visión inicial del proyecto. Asímismo, se distribuirá el software.
 
 \subsubsection{Calendario del proyecto}
-\paragraph{Fase de inicio\\}
+\paragraph{Fase de inicio}\mbox{}\\
+
 Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017.
-\paragraph{Fase de elaboración\\}
+
+\paragraph{Fase de elaboración}\mbox{}\\
+
 Comienza el día 11 de Diciembre de 2017 y finaliza el 29 de Enero de 2018. 
 
-\paragraph{Fase de construcción\\}
+\paragraph{Fase de construcción}\mbox{}\\
+
 Comienza el día 30 de Enero de 2018 y finaliza el 30 de Abril de 2018.
 
-\paragraph{Fase de transición\\}
+\paragraph{Fase de transición}\mbox{}\\
 
 Comienza el día 30 de Abril de 2018 y finaliza el 14 de Mayo de 2018.
 
-\subsection{Relación de artefactos}
+\subsection{Relación de artefactos no software}
+
+Los distintos entregables a realizar son los siguientes. En todo caso, siempre se considerará como definitiva la versión final de los documentos entregados.
+\paragraph{Fase de inicio\\}
+\begin{itemize}
+\item Plan de Desarrollo de Software.
+\item Versión inicial del Plan de Gestión de Riesgos.
+\end{itemize}
+\paragraph{Fase de elaboración\\}
+\begin{itemize}
+\item Documento de requisitos \textit{software}.
+\item Versión inicial de los Casos de Uso.
+\item Diagramas de secuencia.
+\item Arquitectura del sistema.
+\item Esquema relacional de la Base de Datos.
+\item Elaboración de prototipos.
+\end{itemize}
+
+\paragraph{Fase de construcción\\}
+\begin{itemize}
+\item Versión inicial del manual de usuario.
+\item Documento de casos de prueba.
+\item Documento de resultados de las pruebas.
+\end{itemize}
+
+\paragraph{Fase de transición\\}
+\begin{itemize}
+\item Versión final del manual de usuario.
+\end{itemize}
+
 \subsection{Control y seguimiento del proyecto.}
 \subsection{Gestión de riesgos.}
 \subsection{Gestión de configuraciones.}
