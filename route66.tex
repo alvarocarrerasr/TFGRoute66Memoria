@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{lipsum}
 \usepackage{url}
+\usepackage{multicol}
 \usepackage{cite}
 \usepackage{layout}
 \renewcommand{\baselinestretch}{1.2}
@@ -126,6 +127,7 @@ Las funcionalidades que podrá acceder cada tipo de rol vendrán determinadas en
 
 El juego se centra en un mapa de la Ruta66 americana, aprovechando así la temática del restaurante. Se dividirá el camino en once etapas o niveles, correspondientes a las principales ciudades por las que pasa esta vía, y para avanzar, el cliente deberá completar una serie de actividades, que además otorgarán insignias. Cabe destacar que la dificultad de los niveles irá aumentando gradualmente, con el objetivo de no perder la motivación.
 
+\begin{multicols}{4}
 \begin{enumerate}
 \item Chicago.
 \item Springfield.
@@ -139,6 +141,7 @@ El juego se centra en un mapa de la Ruta66 americana, aprovechando así la temá
 \item Williams.
 \item Los Ángeles.
 \end{enumerate}
+\end{multicols}
 
 Todos los niveles excepto el de Chicago tendrán un planteamiento similar:
 \begin{itemize}
@@ -290,9 +293,10 @@ En cuanto al servidor utilizado, será el proporcionado por los técnicos de la 
 \subsection{Descripción del proyecto}
 La ludificación comenzó a popularizarse en 2010\cite{anatfg}. Desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en numerosas situaciones (educación, ventas, proveedores...). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
 
-Route66App consiste en una app para dispositivos móviles que aplique las ideas expuestas en el Trabajo Fin de Grado de una alumna del Grado en Organización Industrial \cite{cristinatfg}. Esta aplicación aplicará la teoría Bartle para identificar los diferentes tipos de jugador y buscará fidelizar y comprometer al usuario con los objetivos del negocio, por medio del juego.
+Route66App consiste en una app para dispositivos móviles que aplica las ideas expuestas en el Trabajo Fin de Grado de una alumna del Grado en Organización Industrial \cite{cristinatfg}. Esta aplicación aplicará la teoría Bartle para identificar los diferentes tipos de jugador y buscará fidelizar y comprometer al usuario con los objetivos del negocio, por medio del juego.
 
-Es importante destacar que este trabajo es solo una parte de dos, el cliente. Para un completo funcionamiento se requerirá el gestor web, en el que se podrán añadir y modificar las diferentes misiones que conforman el juego. 
+Es importante destacar que este trabajo es solo una parte de dos, el cliente. Para un completo funcionamiento se requerirá el gestor web, en el que se podrán añadir y modificar las diferentes misiones que conforman el juego.
+ 
 \subsubsection{Propósito, objetivos y alcance}
 
 El objetivo fundamental de  este trabajo es el de la implementación de un sistema de ludificación, aplicado a un restaurante de comida americana. En concreto se realizará la parte cliente, ejecutada desde terminales móviles con el Sistema Operativo Android.
@@ -316,10 +320,16 @@ La aplicación deberá contar con las siguientes funciones:
 \end{itemize}
 
 \subsection{Metodología de Desarrollo del proyecto}
-El proyecto aplicará la metodología propia del Proceso Unificado (\textit{Unified Process}).
+El proyecto aplicará el Proceso Unificado (\textit{Unified Process}), en concreto el proceso UPedu \cite{upedu}, cuyas caracterísiticas básicas \cite{pgpup} son: 
+\begin{itemize}
+\item Dirigido por los casos de uso.
+\item Centrado en la arquitectura.
+\item Iterativo e incremental
+\end{itemize}
+La iteratividad supone ciertas ventajas, como que se pueden mitigar los riesgos más críticos en las fases más tempranas o que permite obtener \textit{feedback} mucho antes, además, el aprendizaje obtenido se puede reaprovechar en etapas posteriores.
 \subsection{Restricciones}
 Se imponen las siguientes restricciones:
-\begin{itemize}
+\begin{enumerate}
 \item \textbf{Tiempo:} Este proyecto se realiza para cumplir con los objetivos de la asignatura Trabajo de Fin de Grado. Mención Ingeniería del Software, correspondiente a 12 créditos ECTS, unas 300 horas.
 
 \item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Según mi planificación, la práctica comenzará a finales del mes de Enero de 2018 y terminará por Abril.
@@ -329,12 +339,45 @@ Se imponen las siguientes restricciones:
 \item \textbf{Herramientas:} Se utilizará Firebase \footnote{\url{https://firebase.google.com/?hl=es-419}}. En concreto, las utilidades Analytics, Authentication, Crash Reporting Service, Storage, Notifications y Predictions.
 
 \item \textbf{Persistencia de datos: } Contaré con el servicio de gestión de bases de datos SQLite que ofrece Android de serie, con el fin de reducir la carga de peticiones que haga el usuario contra la plataforma.
-\end{itemize}
+\end{enumerate}
+
 \subsection{Estructura organizativa}
 \subsubsection{Estructura organizativa interna}
+La estructura organizativa del proyecto estará formada por una única persona, que deberá ejercer cada uno de los roles en el momento en el que sea necesario. \cite{upedu} \vspace{0.5cm}
+
+\textbf{Desarrollador} \\
+Este rol se encarga de implementar el código y de realizar las pruebas para los artefactos software generados, con el fin de que sean integrados. \\
+
+\textbf{Analista} \\
+Organiza y coordina tanto la elicitación de requisitos como el modelado de casos de uso indicando y limitando la funcionalidad del sistema y el alcance del mismo. \\
+
+\textbf{Gestor de Proyecto} \\
+Realiza el control y mando del proyecto, asigna recursos, gestiona los reisgos, distribuye responsabilidades, gestiona la interacción con los clientes, etcétera.\\
+
+\textbf{Diseñador} \\
+Como indica su nombre, está encargado de diseñar el sistema, definiendo las responsabilidades, operaciones y relaciones de cada uno de los componentes del sistema.\\
+
 \subsubsection{Estructura organizativa externa}
+Solo se identifica un rol en la estructura organizativa externa: el del usuario de la aplicación. 
+
 \subsection{Gestión del proyecto}
 \subsubsection{Planificación del proyecto}
+Al utilizar la metodología UPedu \cite{upedu}, encontramos las siguientes fases:
+
+\paragraph{Fase de inicio\\}
+
+En esta fase no se realiza ningún artefacto de tipo software, pues estos se deben tratar antes de comenzar con la implementación. Los objetivos fundamentales de esta fase son la definición del alcance del proyecto,  la determinación de los casos de uso críticos, la estimación del coste y la duración del proyecto, y la elaboración de una primera gestión de riesgos.
+
+Entre los artefactos a producir \cite{pgpup} están un modelo inicial de casos de uso, un plan de proyecto inicial, con una gestión de riesgos y prototipos exploratorios.
+
+\paragraph{Fase de elaboración\\}
+
+\paragraph{Fase de construcción\\}
+
+\paragraph{Fase de transición\\}
+
+
+
 \subsubsection{Calendario del proyecto}
 \textbf{Fase de inicio}\\
 \textbf{Fase de elaboración}\\
@@ -375,7 +418,9 @@ Se imponen las siguientes restricciones:
 
 \bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 25 de Noviembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
 
+\bibitem{pgpup} \textsc{Pablo de la Fuente Redondo. Departamento de Informática de la UVa}, \textit{Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Proceso Unificado}
 
+\bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017\url{http://www.upedu.org/process/workers/wk_implm.htm}
 
 
 \end{thebibliography}
