@@ -7,12 +7,12 @@
 \contentsline {section}{\numberline {1.2}Propuesta.}{2}
 \contentsline {subsection}{\numberline {1.2.1}Resumen de \IeC {\textquotedblleft }Estudio de gamificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{2}
 \contentsline {section}{\numberline {1.3}An\IeC {\'a}lisis de aplicaciones similares}{4}
-\contentsline {subsubsection}{McDonald's \cite {mcdo}}{4}
-\contentsline {subsubsection}{Burger King \cite {burgerk}}{5}
-\contentsline {subsubsection}{KFC \cite {kfcapp}}{5}
-\contentsline {subsubsection}{VIPS \cite {vipsapp}}{5}
-\contentsline {subsubsection}{Pans and Company \cite {pansapp}}{5}
-\contentsline {subsubsection}{Foster's Hollywood \cite {fostersh}}{5}
+\contentsline {subsubsection}{\numberline {1.3.0.1}McDonald's \cite {mcdo}}{4}
+\contentsline {subsubsection}{\numberline {1.3.0.2}Burger King \cite {burgerk}}{5}
+\contentsline {subsubsection}{\numberline {1.3.0.3}KFC \cite {kfcapp}}{5}
+\contentsline {subsubsection}{\numberline {1.3.0.4}VIPS \cite {vipsapp}}{5}
+\contentsline {subsubsection}{\numberline {1.3.0.5}Pans and Company \cite {pansapp}}{5}
+\contentsline {subsubsection}{\numberline {1.3.0.6}Foster's Hollywood \cite {fostersh}}{5}
 \contentsline {section}{\numberline {1.4}Estructura de la memoria}{6}
 \contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas y entorno de trabajo}{7}
 \contentsline {section}{\numberline {2.1}Herramientas utilizadas}{7}
@@ -21,19 +21,23 @@
 \contentsline {chapter}{\numberline {3}Parte III: Route66App}{9}
 \contentsline {section}{\numberline {3.1}Plan de Desarrollo del Software}{9}
 \contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n del proyecto}{9}
-\contentsline {subsubsection}{Prop\IeC {\'o}sito, objetivos y alcance}{9}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{9}
 \contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{10}
 \contentsline {subsection}{\numberline {3.1.3}Restricciones}{10}
 \contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{10}
-\contentsline {subsubsection}{Estructura organizativa interna}{10}
-\contentsline {subsubsection}{Estructura organizativa externa}{11}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{10}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{11}
 \contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{11}
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n del proyecto}{11}
+\contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{11}
 \contentsline {paragraph}{Fase de inicio\\}{11}
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{11}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{11}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{11}
-\contentsline {subsubsection}{Calendario del proyecto}{11}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{11}
+\contentsline {paragraph}{Fase de inicio\\}{11}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{12}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{12}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{12}
 \contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de artefactos}{12}
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{12}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{12}

@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{lipsum}
 \usepackage{url}
+\setcounter{secnumdepth}{3}
 \usepackage{multicol}
 \usepackage{cite}
 \usepackage{layout}
@@ -64,27 +65,33 @@ Dña. Margarita Gonzalo Tasis\end{large}
 \pagenumbering{arabic}
 \chapter{Parte I: Introducción y contexto.}
 \section{Introducción y objetivos.}
+
 \subsection{Introducción.}
+
 La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en “el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio” \cite{iebschoolGami}. 
 
 Aunque típicamente se ha visto la ludificación aplicada al área comercial o de ventas, existen otros ejemplos en la educación o incluso en las relaciones con los proveedores o para incrementar el número de ventas en un centro comercial (ludificación orientada a los empleados).
 
 Hoy en día, miles de compañías utilizan la ludificación en sus procesos empresariales, desde sus relaciones con los empleados, hasta con los clientes, pasando por sus comerciales. La ludificación realmente funciona y, por increíble que parezca, es muy efectiva.
 
-No son pocos los ejemplos de una aplicación más que satisfactoria de la misma. En 2011, Volskwagen decidió inventar en China, su mercado más importante, una nueva versión de su ‘people’s car’. Para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado del mismo: más de 50.000 propuestas diferentes.
+No son pocos los ejemplos de una aplicación más que satisfactoria de la misma. En 2011, Volskwagen decidió inventar en China, su mercado más importante, una nueva versión de su \textit{people’s car}. Para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado del mismo fue la obtención de más de 50.000 propuestas diferentes.
 
-Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon dos propuestas: contratar a una empresa por miles de euros, o bien, plantear un sistema de gamificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. El resultado fue un ahorro de un 70\%. Se presentaron más de 50.000 propuestas en un tiempo récord de tiempo.
+Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon o bien contratar a una empresa por miles de euros, o bien, plantear un sistema de gamificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. Aplicaron la ludificación y esto supuso un ahorro de un 70\%. Se presentaron más de 50.000 ideas en un tiempo récord de tiempo.
 
-Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias... Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los 9 primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
+Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias... Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
+
 \subsection{Objetivos.}
+
 El objetivo de este Trabajo Fin de Grado es el de realizar una aplicación Android para un restaurante de comida rápida, que cuente con un sistema de ludificación. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
 
 Este TFG detallará el desarrollo, análisis, diseño e implementación de la parte cliente del sistema informático en cuestión. Se ha diseñado para que este cambie las diferentes misiones y desafíos, de acuerdo con los parámetros que el administrador del sistema establezca en el backend (parte de gestión).
 
 \subsection{Motivación.}
+
 Este trabajo tiene una doble motivación, por un lado, analizar, diseñar e implementar un sistema de ludificación diseñado por una alumna de esta Universidad, para completar así, una de las líneas futuras propuestas por la misma en su Trabajo de Fin de Grado. 
 
 Por otro, se busca desarrollar un sistema de ludificación que permita a los alumnos del Grado en Organización Industrial de nuestra Universidad, poner en marcha y probar un sistema de este tipo, ya que las alternativas existentes en el mercado no ofrecen posibilidad de prueba como estudiante.
+
 \section{Propuesta.}
 Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
 
@@ -372,16 +379,33 @@ Entre los artefactos a producir \cite{pgpup} están un modelo inicial de casos d
 
 \paragraph{Fase de elaboración\\}
 
+El objetivo fundamental de esta fase \cite{pgpup} es el de la elaboración del diseño y arquitectura del sistema informático. Siilarmente, se realizará un análisis del dominio del sistema y se eliminarán los elementos de mayor riesgo para el desarrollo del proyecto.
+
+Después de esta fase, se obtendrá una arquitectura, requisitos y planes de desarrollo estables. Similarmente, se habrán reducido los riesgos más destacables.
+
 \paragraph{Fase de construcción\\}
+
+Es sin ninguna duda la parte más larga del proyecto y es la primera que tendrá como output artefactos software utilizables.Se irá iterando y mejorando la calidad del producto software en cada ciclo.
+
+La salida de esta fase \cite{pgpup} es software en estado beta.
 
 \paragraph{Fase de transición\\}
 
-
+Se deberá conseguir la aceptación por parte del usuario, indicando que cumple con la visión inicial del proyecto. Asímismo, se distribuirá el software.
 
 \subsubsection{Calendario del proyecto}
-\textbf{Fase de inicio}\\
-\textbf{Fase de elaboración}\\
-\textbf{Fase de implementación}\\
+\paragraph{Fase de inicio\\}
+Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017.
+\paragraph{Fase de elaboración\\}
+Comienza el día 11 de Diciembre de 2017 y finaliza el 29 de Enero de 2018. 
+
+\paragraph{Fase de construcción\\}
+Comienza el día 30 de Enero de 2018 y finaliza el 30 de Abril de 2018.
+
+\paragraph{Fase de transición\\}
+
+Comienza el día 30 de Abril de 2018 y finaliza el 14 de Mayo de 2018.
+
 \subsection{Relación de artefactos}
 \subsection{Control y seguimiento del proyecto.}
 \subsection{Gestión de riesgos.}
