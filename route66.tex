@@ -3,6 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{booktabs}
 \usepackage{amssymb}
 \usepackage{lipsum}
 \usepackage{float}
@@ -19,7 +20,9 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \addto\captionsspanish{\renewcommand{\bibname}{}}
-
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice de contenidos}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{Índice de figuras}}
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}
 
 \usepackage{geometry}
 \geometry{showframe=false,a4paper,left=2cm, right=1.5cm,top=1.6cm,bottom=1.5cm, includehead,includefoot}
@@ -62,6 +65,10 @@ Dña. Margarita Gonzalo Tasis\end{large}
 \clearpage
 
 \tableofcontents
+
+\listoffigures
+ 
+\listoftables
 
 \clearpage
 \pagenumbering{arabic}
@@ -357,7 +364,7 @@ La estructura organizativa del proyecto estará formada por una única persona, 
 \begin{table}[H]
 \begin{tabular}{llll}
 \cline{1-2}
-\multicolumn{1}{|c|}{\cellcolor[HTML]{FFCC67}{\color[HTML]{333333} Rol}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCC67}{\color[HTML]{333333} Encargado}} &  &  \\ \cline{1-2}
+\multicolumn{1}{|c|}{Rol} & \multicolumn{1}{c|}{Encargado} &  &  \\ \cline{1-2}
 \multicolumn{1}{|l|}{Desarrollador}                                      & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
 \multicolumn{1}{|l|}{Analista}                                           & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
 \multicolumn{1}{|l|}{Gestor de proyecto}                                 & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
@@ -366,7 +373,8 @@ La estructura organizativa del proyecto estará formada por una única persona, 
 \end{tabular}
 \centering
 \caption{Roles}
-\end{table}\vspace{0.5cm}
+\end{table}
+\vspace{0.5cm}
 
 \paragraph{Desarrollador}\mbox{}\\
 
@@ -423,11 +431,62 @@ Se deberá conseguir la aceptación por parte del usuario, indicando que cumple 
 \subsubsection{Calendario del proyecto}
 \paragraph{Fase de inicio}\mbox{}\\
 
-Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017.
+Comienza el día 6 de Noviembre de 2017 y finaliza el 20 de Diciembre de 2017.
+
+\begin{table}[h!]
+\centering
+	\begin{tabular}{|l|l|l|l|}
+    \hline
+    Nombre de la tarea                           & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+    Estudio del sistema.                         & 06/11/2017        & 12/11/2017   & 7 días   \\ \hline
+    Búsqueda de información.                     & 13/11/2017        & 15/11/2017   & 3 días   \\ \hline
+    Resumen de la propuesta                      & 15/11/2017        & 18/11/2017   & 4 días   \\ \hline
+    Estudio de aplicaciones móviles.             & 18/11/2017        & 22/11/2017   & 5 días   \\ \hline
+    Elaboración de un prototipo inicial          & 23/11/2017        & 26/11/2017   & 4 días   \\ \hline
+    Estudio de la posible tecnología a utilizar. & 27/11/2017        & 29/11/2017   & 3 días   \\ \hline
+    Plan de Desarrollo de Software.              & 30/11/2017        & 04/12/2017   & 5 días   \\ \hline
+    Elicitación de requisitos.                   & 05/12/2017        & 12/12/2017   & 8 días   \\ \hline
+    Identificación de riesgos.                   & 13/12/2017        & 16/12/2017   & 4 días   \\ \hline
+    Gestión de configuraciones.                  & 17/12/2017        & 20/12/2017   & 4 días   \\ \hline
+    \end{tabular}
+    \caption{Iteración 0. Fase de Inicio.}
+\end{table}
 
 \paragraph{Fase de elaboración}\mbox{}\\
 
-Comienza el día 11 de Diciembre de 2017 y finaliza el 29 de Enero de 2018. 
+Comienza el día 20 de Diciembre de 2017 y finaliza el 1 de Marzo de 2018. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la tarea          & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+Revisión de requisitos      & 21/12/2017        & 23/12/2017   & 3 días   \\ \hline
+Diagrama de casos de uso    & 24/12/2017        & 27/12/2017   & 4 días   \\ \hline
+Realización de casos de uso & 28/12/2017        & 18/01/2018   & 22 días  \\ \hline
+Diagramas de secuencia      & 19/01/2018        & 28/01/2018   & 10 días  \\ \hline
+Diseño de la Base de Datos  & 29/01/2018        & 04/02/2018   & 7 días   \\ \hline
+Plan inicial de pruebas     & 05/02/2018        & 10/02/2018   & 6 días   \\ \hline
+Arquitectura del sistema    & 11/02/2018        & 18/02/2018   & 8 días   \\ \hline
+\end{tabular}
+\caption{Iteración 1. Fase de elaboración.}
+\end{table}
+
+En la figura anterior, he puesto una duración de 22 días a la realización de casos de uso porque en ese período lo dedicaré a la preparación de los exámenes del primer cuatrimestre y únicamente dedicaré los tiempos libres a la realización del Trabajo Fin de Grado. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la tarea                           & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+Actualización de casos de uso                & 18/02/2018        & 20/02/2018   & 3 días   \\ \hline
+Actualización de diagramas de secuencia      & 21/02/2018        & 23/02/2018   & 3 días   \\ \hline
+Actualización del diseño de la Base de Datos & 24/02/2018        & 25/02/2018   & 2 días   \\ \hline
+Actualización de Plan inicial de pruebas     & 27/11/2017        & 28/11/2017   & 2 días   \\ \hline
+Actualización de la arquitectura del sistema & 28/02/2018        & 01/03/2018   & 2 días   \\ \hline
+\end{tabular}
+\caption{Iteración 2.Fase de elaboración.}
+\end{table}
 
 \paragraph{Fase de construcción}\mbox{}\\
 
@@ -451,7 +510,7 @@ Los distintos entregables a realizar son los siguientes. En todo caso, siempre s
 \item Versión inicial de los Casos de Uso.
 \item Diagramas de secuencia.
 \item Arquitectura del sistema.
-\item Esquema relacional de la Base de Datos.
+\item Diseño de la Base de Datos.
 \item Elaboración de prototipos.
 \end{itemize}
 
