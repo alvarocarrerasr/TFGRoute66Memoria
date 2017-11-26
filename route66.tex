@@ -10,6 +10,7 @@
 \usepackage{url}
 \usepackage[table,xcdraw]{xcolor}
 \setcounter{secnumdepth}{3}
+\usepackage{multirow}
 \usepackage{multicol}
 \usepackage{cite}
 \usepackage{layout}
@@ -286,6 +287,8 @@ Para la elaboración de los prototipos, he utilizado Ionic 3 \footnote{\url{http
 
 Para la elaboración de la aplicación Android, he utilizando Android Studio.
 
+Para el control y seguimiento del proyecto utilizaré la herramienta Zoho Projects \footnote{\url{https://projects.zoho.com/}}.
+
 Finalmente, he empleado Firebase \footnote{\url{https://firebase.google.com/}}
 \section{Entorno de trabajo}
 
@@ -429,11 +432,27 @@ La salida de esta fase \cite{pgpup} es software en estado beta.
 Se deberá conseguir la aceptación por parte del usuario, indicando que cumple con la visión inicial del proyecto. Asímismo, se distribuirá el software.
 
 \subsubsection{Calendario del proyecto}
+
+Como se ha indicado en los apartados anteriores, este proyecto se ha dividido en las fases que el Proceso Unificado, en su variación UPedu\cite{upedu} establece. A continuación, se lista cada fase, el número de iteraciones y las horas de trabajo y duración estimadas. Estos cálculos son orientativos, las variaciones sobre los mismos están expuestas en el apartado correspondiente.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la fase & Núm.. Iteraciones & Horas de trabajo & Duración estimada \\ \hline
+Inicio            & 1                 & 10 horas/semana  & 6-7 semanas       \\ \hline
+Elaboración       & 2                 & 10 horas/semana  & 10-11 semanas     \\ \hline
+Construcción      & 2                 & 20 horas/semana  & 6-7 semanas       \\ \hline
+Transición        & 1                 & 5 horas/semana   & 2-3 semanas       \\ \hline
+\end{tabular}
+\caption{Fases del proceso UPedu}
+\end{table}
+
 \paragraph{Fase de inicio}\mbox{}\\
 
-Comienza el día 6 de Noviembre de 2017 y finaliza el 20 de Diciembre de 2017.
+Comienza el día 6 de Noviembre de 2017 y finaliza el 20 de Diciembre de 2017. Consta de una única iteración.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 	\begin{tabular}{|l|l|l|l|}
     \hline
@@ -454,9 +473,9 @@ Comienza el día 6 de Noviembre de 2017 y finaliza el 20 de Diciembre de 2017.
 
 \paragraph{Fase de elaboración}\mbox{}\\
 
-Comienza el día 20 de Diciembre de 2017 y finaliza el 1 de Marzo de 2018. 
+Comienza el día 20 de Diciembre de 2017 y finaliza el 1 de Marzo de 2018. Consta de dos iteraciones.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -474,7 +493,7 @@ Arquitectura del sistema    & 11/02/2018        & 18/02/2018   & 8 días   \\ \h
 
 En la figura anterior, he puesto una duración de 22 días a la realización de casos de uso porque en ese período lo dedicaré a la preparación de los exámenes del primer cuatrimestre y únicamente dedicaré los tiempos libres a la realización del Trabajo Fin de Grado. 
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -490,11 +509,45 @@ Actualización de la arquitectura del sistema & 28/02/2018        & 01/03/2018  
 
 \paragraph{Fase de construcción}\mbox{}\\
 
-Comienza el día 30 de Enero de 2018 y finaliza el 30 de Abril de 2018.
+Comienza el día 1 de Marzo de 2018 y finaliza el 16 de Abril de 2018.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la tarea             & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+Implementación del sistema     & 01/03/2018        & 01/04/2018   & 32 días  \\ \hline
+Realización de casos de prueba & 01/03/2018        & 01/04/2018   & 32 días  \\ \hline
+\end{tabular}
+\caption{Iteración 3. Fase de construcción.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la tarea                & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+Implementación del sistema        & 01/04/2018        & 16/04/2018   & 16 días  \\ \hline
+Elaboración del manual de usuario & 17/04/2018        & 24/04/2018   & 8 días   \\ \hline
+Realización de casos de prueba    & 01/04/2018        & 16/04/2018   & 16 días  \\ \hline
+\end{tabular}
+\caption{Iteración 4. Fase de construcción.}
+\end{table}
 
 \paragraph{Fase de transición}\mbox{}\\
 
-Comienza el día 30 de Abril de 2018 y finaliza el 14 de Mayo de 2018.
+Comienza el día 16 de Abril de 2018 y finaliza el 30 de Abril de 2018.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Nombre de la tarea              & Fecha de comienzo & Fecha de fin & Duración \\ \hline
+Revisión de documentación       & 16/04/2018        & 23/04/2018   & 8 días   \\ \hline
+Revisión de artefactos software & 23/04/2018        & 30/04/2018   & 8 días   \\ \hline
+\end{tabular}
+\caption{Iteración 5. Fase de transición.}
+\end{table}
 
 \subsection{Relación de artefactos no software}
 
@@ -527,11 +580,32 @@ Los distintos entregables a realizar son los siguientes. En todo caso, siempre s
 \end{itemize}
 
 \subsection{Control y seguimiento del proyecto.}
+
+Se hará un control y seguimiento del proyecto en todo momento, utilizando la herramienta Zoho Projects \footnote{\url{https://projects.zoho.com/}}, tal y como se ha expuesto en el apartado "Herramientas utilizadas".
+
+El control y seguimiento del proyecto resulta ser una tarea fundamental para asegurar el buen progreso del proyecto y asegurar el cumplimiento de los objetivos marcados, en especial en cuanto al cumplimiento de los hitos establecidos, ya que el gestor del proyecto podrá observar las distintas variaciones de tiempo programadas versus reales para así poder reaccionar y poder tomar las medidas que sean precisas para ajustarse al cronograma del proyecto.
+
 \subsection{Gestión de riesgos.}
+
+Se identifican los siguientes riesgos:
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{ID}           &  & \textbf{Nombre}                        &                   \\ \hline
+\textbf{Descripción}  & \multicolumn{3}{l|}{}                                         \\ \hline
+\textbf{Probabilidad} &  & \multirow{2}{*}{\textbf{Consecuencia}} & \multirow{2}{*}{} \\ \cline{1-2}
+\textbf{Impacto}      &  &                                        &                   \\ \hline
+\textbf{Estrategia}   &  & \textbf{Plan de contingencia}          &                   \\ \hline
+\end{tabular}
+\caption{Plantilla vacía de un riesgo}
+\end{table}
+
+
 \subsection{Gestión de configuraciones.}
 \subsection{Costes.}
+\subsection{Desviaciones sobre el calendario planificado}
 \lipsum[1-2500]
-
 \clearpage
 \chapter{Referencias}
 \begin{thebibliography}{a} 

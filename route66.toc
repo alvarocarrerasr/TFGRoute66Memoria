@@ -41,15 +41,16 @@
 \contentsline {paragraph}{Fase de inicio}{12}
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{13}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{13}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{13}
-\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de artefactos no software}{13}
-\contentsline {paragraph}{Fase de inicio\\}{13}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{14}
+\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de artefactos no software}{14}
+\contentsline {paragraph}{Fase de inicio\\}{14}
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{14}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{14}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{14}
-\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{14}
-\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{14}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{14}
-\contentsline {subsection}{\numberline {3.1.10}Costes.}{14}
-\contentsline {chapter}{\numberline {4}Referencias}{34}
-\contentsline {chapter}{\numberline {5}Anexos}{36}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{15}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
+\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
+\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{15}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{15}
+\contentsline {subsection}{\numberline {3.1.10}Costes.}{15}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{15}
+\contentsline {chapter}{\numberline {4}Referencias}{35}
+\contentsline {chapter}{\numberline {5}Anexos}{37}
