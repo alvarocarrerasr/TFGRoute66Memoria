@@ -72,6 +72,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%REQUERIMENT
+
+\newenvironment{req}{\tabularhead}
+{\hline\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -362,13 +368,21 @@ La aplicación deberá contar con las siguientes funciones:
 	\item Consulta del historial de logros del usuario.
 	\item Consulta de las insignias del usuario.
 	\item Consulta del código QR que identifica al usuario de forma única.
-	\item Consulta de la posición global del usuario.
+	\item Consulta de la posición global del usuario (ranking).
 	\end{itemize}
 \item Acciones a realizar en grupo.
 	\begin{itemize}
 	\item Cosulta de los equipos a los que pertenece el usuario.
 	\item Creación de nuevos equipos.
 	\end{itemize}
+\end{itemize}
+
+Los objetivos serán:
+\begin{itemize}
+	\item Elaborar un sistema de usuarios, mediante el uso de sesiones.
+	\item Gestionar un sistema de insignias, otorgadas tanto a usuarios individuales, como a grupos o equipos completos.
+	\item Aumentar el \textit{engagement} del usuario con la aplicación, mediante el uso de juegos o misiones.
+	\item Hacer las funciones de una tarjeta de fidelización virtual, que permita al usuario identificarse a la hora de pagar.
 \end{itemize}
 
 \subsection{Metodología de Desarrollo del proyecto}
@@ -742,6 +756,32 @@ Se identifican los siguientes riesgos:
 A realizar cuando sea preciso.
 \section{Requisitos}
 \subsection{Requisitos funcionales}
+\begin{req}
+	\addheading{RF0}{Sesiones}
+	\addrow{Descripción}{El sistema permitirá iniciar sesión}
+\end{req} \\
+ 
+\begin{req}
+	\addheading{RF1}{Registro de usuarios}
+	\addrow{Descripción}{El sistema permitirá registrar usuarios}
+\end{req}\\
+
+\begin{req}
+	\addheading{RF2}{Configuración del usuario}
+	\addrow{Descripción}{El sistema permitirá editar la configuración del usuario}
+\end{req}\\
+
+\begin{req}
+	\addheading{RF3}{Identificación del tipo de jugador}
+	\addrow{Descripción}{El sistema identificará el tipo de jugador.}
+\end{req}\\
+
+\begin{req}
+	\addheading{RF3}{Ranking de usuarios}
+	\addrow{Descripción}{El sistema permitirá ver el ranking de usuarios}
+\end{req}\\
+
+	
 
 \subsection{Requisitos no funcionales}
 

@@ -24,8 +24,8 @@
 \contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{9}
 \contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{10}
 \contentsline {subsection}{\numberline {3.1.3}Restricciones}{10}
-\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{10}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{10}
+\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{11}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{11}
 \contentsline {paragraph}{Desarrollador}{11}
 \contentsline {paragraph}{Analista}{11}
 \contentsline {paragraph}{Gestor de Proyecto}{11}
@@ -37,21 +37,21 @@
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{12}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{12}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n}{12}
-\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{12}
-\contentsline {paragraph}{Fase de inicio}{12}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{13}
+\contentsline {paragraph}{Fase de inicio}{13}
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{13}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{13}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{14}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n}{14}
 \contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de artefactos no software}{14}
 \contentsline {paragraph}{Fase de inicio\\}{14}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{14}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{15}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{15}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{15}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{17}
-\contentsline {subsection}{\numberline {3.1.10}Costes.}{17}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{17}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{18}
+\contentsline {subsection}{\numberline {3.1.10}Costes.}{18}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{18}
 \contentsline {section}{\numberline {3.2}Requisitos}{18}
 \contentsline {subsection}{\numberline {3.2.1}Requisitos funcionales}{18}
 \contentsline {subsection}{\numberline {3.2.2}Requisitos no funcionales}{18}
