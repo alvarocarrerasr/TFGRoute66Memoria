@@ -49,8 +49,8 @@
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{15}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{15}
-\contentsline {subsection}{\numberline {3.1.10}Costes.}{15}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{15}
-\contentsline {chapter}{\numberline {4}Referencias}{35}
-\contentsline {chapter}{\numberline {5}Anexos}{37}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{17}
+\contentsline {subsection}{\numberline {3.1.10}Costes.}{17}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{17}
+\contentsline {chapter}{\numberline {4}Referencias}{37}
+\contentsline {chapter}{\numberline {5}Anexos}{39}
