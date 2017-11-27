@@ -44,6 +44,38 @@
 
 \pagestyle{fancy}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%USER CASE COMMANDS
+
+\usepackage{booktabs}
+
+\newcommand\addrow[2]{#1 &#2\\ }
+
+\newcommand\addheading[2]{#1 &#2\\ \hline}
+\newcommand\tabularhead{\begin{tabular}{lp{0.7\textwidth}}
+\hline
+}
+
+\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+   &\begin{minipage}[t][][t]{8cm}
+    \begin{enumerate} #2   \end{enumerate}
+    \end{minipage}\\ }
+
+\newenvironment{usecase}{\tabularhead}
+{\hline\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%RISK MANAGEMENT
+
+\newenvironment{risk}{\tabularhead}
+{\hline\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 \author{Álvaro Carreras Regorigo}
 \title{Route 66}
 \begin{document}
@@ -696,40 +728,46 @@ Se identifican los siguientes riesgos:
 \end{tabular}}
 \end{table}
 
-\begin{table}[H]
-\resizebox{0.9\textwidth}{!}{%
-\begin{tabular}{|l|l|}
-\hline
-\textbf{ID}                   & R7                                                                                                           \\ \hline
-\textbf{Nombre}               & Falta de medios hardware de desarrollo                                                                       \\ \hline
-\textbf{Descripción}          & \makecell[l]{Las herramientas designadas para desarrollar el proyecto fallan o \\dejan de estar disponibles.}                \\ \hline
-\textbf{Consecuencia}         & Adquisición de nuevos materiales.                                                                            \\ \hline
-\textbf{Probabilidad}         & Bajo.                                                                                                        \\ \hline
-\textbf{Impacto}              & Alto.                                                                                                        \\ \hline
-\textbf{Estrategia}           & Evitación del riesgo.                                                                                        \\ \hline
-\textbf{Plan de acción}       & No se aplica.                                                                                                \\ \hline
-\textbf{Plan de contingencia} & \makecell[l]{Realización de copias de seguridad de los artefactos, para evitar\\ su pérdida en caso de ocurrir este riesgo.} \\ \hline
-\end{tabular}}
-\end{table}
 
-\begin{table}[H]
-\resizebox{0.9\textwidth}{!}{%
-\begin{tabular}{|l|l|}
-\hline
-\textbf{ID}                   & R8                                                                              \\ \hline
-\textbf{Nombre}               & Diseño pobre o incorrecto.                                                      \\ \hline
-\textbf{Descripción}          & El diseño realizado del sistema es pobre o incorrecto.                          \\ \hline
-\textbf{Consecuencia}         & Ralentización del trabajo.                                                      \\ \hline
-\textbf{Probabilidad}         & Medio.                                                                          \\ \hline
-\textbf{Impacto}              & Crítico.                                                                        \\ \hline
-\textbf{Estrategia}           & Reducción del riesgo.                                                           \\ \hline
-\textbf{Plan de acción}       & Rediseñar la arquitectura del sistema.                                          \\ \hline
-\textbf{Plan de contingencia} & \makecell[l]{Realizar revisiones con el cliente y realizar pruebas sobre el modelo\\ diseñado.} \\ \hline
-\end{tabular}}
-\end{table}
+\begin{risk}
+  \addheading{R7}{Falta de medios hardware de desarrollo}
+  \addrow{Descripción}{Las herramientas designadas para desarrollar el proyecto fallan o dejan de estar disponibles.}
+  \addrow{Consecuencia}{Adquisición de nuevos materiales.}
+  \addrow{Probabilidad}{Bajo.}
+  \addrow{Impacto}{Alto. }
+  \addrow{Estrategia}{Evitación del riesgo.}
+  \addrow{Plan de acción}{No se aplica}
+  \addrow{Plan de contingencia}{Realización de copias de seguridad de los artefactos, para evitar su pérdida en caso de ocurrir este riesgo.}
+\end{risk}
+
+\begin{risk}
+  \addheading{R8}{Diseño pobre o incorrecto.} 
+  \addrow{Descripción}{El diseño realizado del sistema es pobre o incorrecto.}
+  \addrow{Consecuencia}{Ralentización del trabajo.}
+  \addrow{Probabilidad}{Medio.}
+  \addrow{Impacto}{Crítico. }
+  \addrow{Estrategia}{Reducción del riesgo.}
+  \addrow{Plan de acción}{Rediseñar la arquitectura del sistema.}
+  \addrow{Plan de contingencia}{Realizar revisiones con el cliente y realizar pruebas sobre el modelo diseñado.}
+\end{risk}
 
 \subsection{Gestión de configuraciones.}
 \subsection{Costes.}
+
+
+
+\begin{usecase}
+  \addheading{CU001}{System user} 
+  \addrow{Actor}{T}
+  \addrow{Precondition}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondition}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Main path (M)}{
+  							\item User selects \ldots
+                            \item System demands \ldots
+  }
+\end{usecase}
+
+
 \subsection{Desviaciones sobre el calendario planificado}
 A realizar cuando sea preciso.
 \section{Requisitos}
