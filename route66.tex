@@ -750,17 +750,43 @@ Para el cálculo de los costes de los recursos, debemos diferenciar entre los co
 
 Para el caso de los primeros, los costes de los recursos humanos, debemos ver el listado de roles que se van a practicar a lo largo del proyecto:
 
-
-Finalmente, los costes informáticos
-\begin{table}[H]
-\begin{tabular}{|l|l|}
+\begin{table}[]
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|}
 \hline
-Marca           & Lenovo        \\ \hline
-Modelo          & G50-70        \\ \hline
-Fecha de compra & Junio de 2014 \\ \hline
-Coste de compra & 399 \euro \\ \hline
+Rol                & Salario medio & \euro/Hora   & Horas estimadas & Coste total \\ \hline
+Analista           & 26.307 \euro      & 109,61 \euro & 12              & 1           \\ \hline
+Desarrollador      & 17.411 \euro      & 72,55 \euro  & 1               & 1           \\ \hline
+Gestor de proyecto & 26.307 \euro      & 109,61 \euro & 1               & 1           \\ \hline
+Diseñador          & 26.307 \euro      & 109,61 \euro & 1               & 0           \\ \hline
 \end{tabular}
+\caption{Costes de los Recursos Humanos}
 \end{table}
+
+Los datos de la tabla anterior han sido calculados basándose en los datos de \cite{indeedanalista} para el salario bruto anual de un Analista de Software (26.307 \euro) y los de \cite{indeedjunior} (17.411 \euro) para el de Programador Junior. Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
+
+Por otra parte, los costes informáticos de \textit{hardware} no resultan de especial interés, pues son dispositivos con una cierta antigüedad y el coste amortizado será, por tanto, mínimo. 
+
+Finalmente, en el software sí encontramos ciertos costes. Se ha de tener presente que estos son cálculos que sí se aplicarían en un proyecto en el que no se pudieran utilizar licencias gratuitas para estudiantes.
+
+\begin{table}[]
+\centering
+
+\begin{tabular}{|l|l|l|}
+\hline
+Servicio         & Coste mensual & Coste total \\ \hline
+GitHub Developer & 5.90 \euro        & 47.2\euro          \\ \hline
+Firebase         & 21 \euro      & 168\euro           \\ \hline
+\end{tabular}
+\caption{Costes de software}
+\end{table}
+
+Coste total de software: 215,20\euro
+
+Los datos anteriores se han calculado basándose en los datos públicos de las herramientas, convertido a euros según la tasa de cambio del 28 de Noviembre de 2017, para un período de 8 meses (Noviembre-Junio).
+
+El resto de \textit{software} utilizado es de licencia gratuita.
+
 
 \begin{usecase}
   \addheading{CU001}{System user} 
@@ -839,6 +865,11 @@ A realizar cuando sea preciso.
 \bibitem{pgpup} \textsc{Pablo de la Fuente Redondo. Departamento de Informática de la UVa}, \textit{Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Proceso Unificado}
 
 \bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017\url{http://www.upedu.org/process/workers/wk_implm.htm}
+
+\bibitem{indeedanalista} \textsc{Indeed}. Salario medio de un Analista Programador en España. Fecha de última visita: 28/11/2017 \url{https://www.indeed.es/salaries/Analista-programador/a-Salaries}
+
+\bibitem{indeedjunior} \textsc{Indeed}. Salario medio de un Programador Junior en España. Fecha de última visita: 28/11/2017 \url{https://www.indeed.es/salaries/Programador/a-junior-Salaries}
+
 
 
 \end{thebibliography}

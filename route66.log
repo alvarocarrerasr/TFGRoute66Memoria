@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  28 NOV 2017 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  28 NOV 2017 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -986,70 +986,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 781--785
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 753.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 772.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 805--809
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 810--814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 786--790
+Underfull \hbox (badness 10000) in paragraph at lines 815--819
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--795
+Underfull \hbox (badness 10000) in paragraph at lines 820--824
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 796--800
+Underfull \hbox (badness 10000) in paragraph at lines 825--829
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--805
-
- []
-
-[18] [19]
+[19]
 Cap\'{\i }tulo 4.
 [20
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 816.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 840.
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--821
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
 []\OT1/phv/m/sc/10 Alejandro. Om-ni-um Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El
  ma-yor ca-so de []exi-to de la ga-mi-fi-ca-ci[]on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--821
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
 \OT1/phv/m/sl/10 en Es-pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 2
 1 de No-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--823
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]^^Pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--823
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 829--830
+Underfull \hbox (badness 1648) in paragraph at lines 853--854
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 831--832
+Underfull \hbox (badness 5119) in paragraph at lines 855--856
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
@@ -1057,22 +1066,22 @@ apps / details ? id = com .
 
 [21
 
-]
+] [22]
 Cap\'{\i }tulo 5.
-[22
+[23
 
 ] (./route66.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5702 strings out of 493029
- 72170 string characters out of 6136233
- 267081 words of memory out of 5000000
- 9078 multiletter control sequences out of 15000+600000
+ 5705 strings out of 493029
+ 72210 string characters out of 6136233
+ 267103 words of memory out of 5000000
+ 9081 multiletter control sequences out of 15000+600000
  40815 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,807b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,43p,807b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
@@ -1080,10 +1089,10 @@ t/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (26 pages, 168290 bytes).
+Output written on route66.pdf (27 pages, 171257 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
