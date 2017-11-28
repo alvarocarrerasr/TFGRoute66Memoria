@@ -9,6 +9,7 @@
 \usepackage{lipsum}
 \usepackage{float}
 \usepackage{url}
+\usepackage{eurosym}
 \usepackage[table,xcdraw]{xcolor}
 \setcounter{secnumdepth}{3}
 \usepackage{multirow}
@@ -736,9 +737,30 @@ Se identifican los siguientes riesgos:
 \end{risk}
 
 \subsection{Gestión de configuraciones.}
+
+Hoy en día, la mayoría de los servicios públicos que ofrecen alojamiento de repositorios Git permiten realizar una buena gestión de configuraciones. Esto es debido a que cada cambio que se hace sobre el código fuente (\textit{commit}) viene asociado a informaciones sobre qué se ha cambiado, quién lo ha cambiado, cuándo lo ha cambiado, etcétera. Además, las ramas o \textit{branches}, aquellos lugares donde van dirigidos los cambios, permiten imponer bloqueos sobre escritura a ciertos usuarios, con el fin de proteger los artefactos que estuvieran en la misma.
+
+Por otro lado, estos servicios también pueden ser utilizados para la gestión de \textit{releases}. Esto se puede llevar a cabo mediante la creación de una rama específica para ese propósito o, directamente, y si se permite, mediante el apartado correspondiente desde el sitio web.
+
+En el caso de este proyecto se han utilizado dos repositorios privados en GitHub\footnote{\url{https://github.com/}}, en uno de ellos se tratará el desarrollo de esta memoria y en otro, el del código del sistema informático que se desea construir.
+
 \subsection{Costes.}
 
+Para el cálculo de los costes de los recursos, debemos diferenciar entre los costes propios de los humanos, frente a los informáticos, que incluyen aquellos de tipo \textit{hardware} y de tipo \textit{software}
 
+Para el caso de los primeros, los costes de los recursos humanos, debemos ver el listado de roles que se van a practicar a lo largo del proyecto:
+
+
+Finalmente, los costes informáticos
+\begin{table}[H]
+\begin{tabular}{|l|l|}
+\hline
+Marca           & Lenovo        \\ \hline
+Modelo          & G50-70        \\ \hline
+Fecha de compra & Junio de 2014 \\ \hline
+Coste de compra & 399 \euro \\ \hline
+\end{tabular}
+\end{table}
 
 \begin{usecase}
   \addheading{CU001}{System user} 
