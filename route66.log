@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  28 NOV 2017 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  28 NOV 2017 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,27 +995,27 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 772.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 805--809
+Underfull \hbox (badness 10000) in paragraph at lines 807--811
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 810--814
+Underfull \hbox (badness 10000) in paragraph at lines 812--816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--819
+Underfull \hbox (badness 10000) in paragraph at lines 817--821
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--824
+Underfull \hbox (badness 10000) in paragraph at lines 822--826
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 825--829
+Underfull \hbox (badness 10000) in paragraph at lines 827--831
 
  []
 
@@ -1025,40 +1025,40 @@ Cap\'{\i }tulo 4.
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 840.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 842.
 
-Underfull \hbox (badness 10000) in paragraph at lines 844--845
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 []\OT1/phv/m/sc/10 Alejandro. Om-ni-um Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El
  ma-yor ca-so de []exi-to de la ga-mi-fi-ca-ci[]on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 844--845
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 \OT1/phv/m/sl/10 en Es-pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 2
 1 de No-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--847
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]^^Pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--847
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 853--854
+Underfull \hbox (badness 1648) in paragraph at lines 855--856
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 855--856
+Underfull \hbox (badness 5119) in paragraph at lines 857--858
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
@@ -1089,7 +1089,7 @@ t/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (27 pages, 171257 bytes).
+Output written on route66.pdf (27 pages, 171302 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
