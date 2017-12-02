@@ -11,7 +11,7 @@
 \usepackage{url}
 \usepackage{eurosym}
 \usepackage[table,xcdraw]{xcolor}
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{3} %Profundidad en el índice de contenidos.
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{cite}
@@ -401,7 +401,7 @@ Se imponen las siguientes restricciones:
 
 \item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Según mi planificación, la práctica comenzará a finales del mes de Enero de 2018 y terminará por Abril.
 
-\item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 4.4. Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
+\item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 19 (Android 4.4, KitKat). Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
 
 \item \textbf{Herramientas:} Se utilizará Firebase \footnote{\url{https://firebase.google.com/?hl=es-419}}. En concreto, las utilidades Analytics, Authentication, Crash Reporting Service, Storage, Notifications y Predictions.
 
@@ -803,55 +803,297 @@ El resto de \textit{software} utilizado es de licencia gratuita.
 \subsection{Desviaciones sobre el calendario planificado}
 A realizar cuando sea preciso.
 \section{Requisitos}
+
+\newcounter{functionalRequirements}
 \subsection{Requisitos funcionales}
+
+\subsubsection{Relacionados con los usuarios}
+
 \begin{req}
-	\addheading{RF0}{Sesiones}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Sesiones}
 	\addrow{Descripción}{El sistema permitirá iniciar sesión}
-\end{req} \\
+\end{req} \\\stepcounter{functionalRequirements}
  
 \begin{req}
-	\addheading{RF1}{Registro de usuarios}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro e inicio de sesión rápido.}
+	\addrow{Descripción}{El sistema permitirá iniciar sesión y registrarse mediante el uso de servicios de terceros.}
+\end{req} \\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro de usuarios}
 	\addrow{Descripción}{El sistema permitirá registrar usuarios}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF2}{Configuración del usuario}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Configuración del usuario}
 	\addrow{Descripción}{El sistema permitirá editar la configuración del usuario}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF3}{Identificación del tipo de jugador}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Identificación del tipo de jugador}
 	\addrow{Descripción}{El sistema identificará el tipo de jugador.}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF3}{Ranking de usuarios}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ranking de usuarios}
 	\addrow{Descripción}{El sistema permitirá ver el ranking de usuarios}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF3}{Creación de un grupo}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a la aplicación.}
+	\addrow{Descripción}{El sistema permitirá invitar a usuarios a la aplicación.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares.}
+	\addrow{Descripción}{El sistema permitirá añadir una fotografía de perfil (avatar) al usuario}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Logros.}
+	\addrow{Descripción}{El sistema permitirá consultar los logros de un usuario}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Insignias.}
+	\addrow{Descripción}{El sistema permitirá consultar las insignias que tiene un usuario}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Código QR.}
+	\addrow{Descripción}{El sistema permitirá mostrar el código QR asociado al usuario.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Progreso del usuario}
+	\addrow{Descripción}{El sistema permitirá mostrar el círculo de progresos relativo a cada usuario.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\subsubsection{Relacionados con los grupos}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Creación de un grupo}
 	\addrow{Descripción}{El sistema permitirá crear un grupo}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF4}{Eliminación de un grupo}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Eliminación de un grupo}
 	\addrow{Descripción}{El sistema permitirá eliminar un grupo}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF4}{Unirse a un grupo}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Unirse a un grupo}
 	\addrow{Descripción}{El sistema permitirá unirse a un grupo}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{RF4}{Salirse de un grupo}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Salirse de un grupo}
 	\addrow{Descripción}{El sistema permitirá salirse de un grupo}
-\end{req}\\
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Expulsión de un grupo}
+	\addrow{Descripción}{El sistema permitirá expulsar a un usuario de un grupo}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a un grupo.}
+	\addrow{Descripción}{El sistema permitirá invitar a un usuario a un grupo.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Detalles de los grupos.}
+	\addrow{Descripción}{El sistema permitirá ver los detalles de los grupos a los que pertenece el usuario.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares en los grupos.}
+	\addrow{Descripción}{El sistema permitirá añadir una fotografía de perfil (avatar) al grupo}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición de los miembros del equipo.}
+	\addrow{Descripción}{El sistema mostrará la posición del resto de miembros del equipo. }
+\end{req}\\\stepcounter{functionalRequirements}
+
+\subsubsection{Relacionados con el ranking}
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del usuario a nivel global}
+	\addrow{Descripción}{El sistema mostrará la posición de un usuario en el juego}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del grupo/equipo a nivel global}
+	\addrow{Descripción}{El sistema mostrará la posición de un grupo en el juego}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\subsubsection{Otros aspectos}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{\textit{Engagement} del usuario/grupo}
+	\addrow{Descripción}{El sistema medirá el \textit{engagement} del usuario/grupo con la aplicación.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Notificaciones}
+	\addrow{Descripción}{El sistema emitirá notificaciones.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Redes sociales}
+	\addrow{Descripción}{El sistema permitirá compartir texto e imágenes por redes sociales}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones}
+	\addrow{Descripción}{El sistema permitirá cumplir o realizar misiones}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Tratamiento de los errores de la aplicación.}
+	\addrow{Descripción}{El sistema monitorizará los errores de aplicación de los usuarios.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\subsubsection{Requisitos funcionales de información}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Usuario}
+	\addrow{Descripción}{
+	El sistema almacenará, para cada jugador, la siguiente información.
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item Nombre de usuario.
+		\item Nombre.
+		\item Apellidos.
+		\item Correo electrónico.
+		\item Contraseña.
+		\item Avatar.
+		\item Tipo de jugador.
+		\item Tokens de acceso.
+		\item Misiones cumplidas.
+		\item Logros del jugador.
+		\item Insignias recibidas.
+	\end{itemize}
+	\end{multicols}
+	}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Grupo/Equipo}
+	\addrow{Descripción}{
+	El sistema almacenará, para cada grupo, la siguiente información.
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item Nombre del grupo.
+		\item Administrador del grupo
+		\item Descripción del grupo.
+		\item Avatar del grupo.
+		\item Misiones del grupo cumplidas.
+		\item Insignias del grupo recibidas.
+	\end{itemize}
+	\end{multicols}
+	}
+\end{req}\\\stepcounter{functionalRequirements}
 
 \subsection{Requisitos no funcionales}
 
 
+
+\subsubsection{Relacionados con los usuarios}
+\newcounter{nonFunctionalRequirements}
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del correo electrónico de registro}
+	\addrow{Descripción}{El correo electrónico registrado y asociado a una cuenta de usuario deberá ser único.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Medios sociales}
+	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Facebook, Google y Twitter.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\subsubsection{Relacionados con los grupos/equipos}
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del administrador del grupo.}
+	\addrow{Descripción}{Solo puede haber un único administrador por grupo.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Edición de parámetros del grupo.}
+	\addrow{Descripción}{El avatar y descripciones del grupo solo podrán ser modificados por el administrador del grupo}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Expulsión de usuarios del grupo.}
+	\addrow{Descripción}{El administrador del grupo será el único miembro que podrá expulsar a un usuario del mismo.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Nombramiento del administrador del grupo.}
+	\addrow{Descripción}{El administrador del grupo será aquel que creó el grupo, o bien, aquel que fue designado por un anterior administrador del grupo}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Posición del resto de miembros del grupo.}
+	\addrow{Descripción}{Se mostrará la posición del resto de usuarios mediante un mapa, o bien, mediante una lista.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\subsubsection{Software a utilizar para el despliegue de la aplicación.}
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación.}
+	\addrow{Descripción}{El sistema utilizará Firebase Analytics para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones...)}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de archivos.}
+	\addrow{Descripción}{El sistema utilizará Firebase Storage para la gestión de los archivos internos de la aplicación (avatares o datos para descargar)}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de gestión de solicitudes HTTP.}
+	\addrow{Descripción}{El sistema utilizará OkHTTP como biblioteca de gestión de solicitudes HTTP}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de sesiones.}
+	\addrow{Descripción}{El sistema utilizará Firebase Auth para la gestión de sesiones.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+	
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a un grupo.}
+	\addrow{Descripción}{El sistema utilizará Firebase Dynamic Links para invitar a un usuario a un grupo.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a la aplicación.}
+	\addrow{Descripción}{El sistema utilizará Firebase Invitations para invitar a un usuario a la aplicación.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Notificaciones a los usuarios.}
+	\addrow{Descripción}{El sistema utilizará Firebase Notifications para el envío y recepción de notificaciones}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Mapas}
+	\addrow{Descripción}{El sistema utilizará Google Maps API for Android \footnote{https://developers.google.com/maps/documentation/android-api/} para mostrar mapas al usuario.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\subsubsection{Otros aspectos}
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{SDK mínimo}
+	\addrow{Descripción}{La aplicación se compilará con un SDK que soporte, como mínimo, la API 19 de Android (Android 4.4, KitKat)\cite{androidversiondist}}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\section{Casos de uso}
+\section{Arquitectura}
+\section{Diagramas de secuencia}
+\section{Esquema de la base de datos}
+\section{Implementación}
+\section{Pruebas}
+
+\chapter{Parte IV: Conclusiones y trabajo futuro.}
+\section{Conclusiones}
+\section{Trabajo futuro}
 \chapter{Referencias}
 \begin{thebibliography}{a} 
 
@@ -878,7 +1120,7 @@ A realizar cuando sea preciso.
 
 \bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
 
-\bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 25 de Noviembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
+\bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 02 de Diciembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
 
 \bibitem{pgpup} \textsc{Pablo de la Fuente Redondo. Departamento de Informática de la UVa}, \textit{Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Proceso Unificado}
 
