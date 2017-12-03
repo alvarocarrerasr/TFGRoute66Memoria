@@ -26,27 +26,27 @@
 \contentsline {subsection}{\numberline {3.1.3}Restricciones}{10}
 \contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{11}
 \contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{11}
-\contentsline {paragraph}{\numberline {3.1.4.1.1}Desarrollador}{11}
-\contentsline {paragraph}{\numberline {3.1.4.1.2}Analista}{11}
-\contentsline {paragraph}{\numberline {3.1.4.1.3}Gestor de Proyecto}{11}
-\contentsline {paragraph}{\numberline {3.1.4.1.4}Dise\IeC {\~n}ador}{11}
+\contentsline {paragraph}{Desarrollador}{11}
+\contentsline {paragraph}{Analista}{11}
+\contentsline {paragraph}{Gestor de Proyecto}{11}
+\contentsline {paragraph}{Dise\IeC {\~n}ador}{11}
 \contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{11}
 \contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{11}
 \contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{11}
-\contentsline {paragraph}{\numberline {3.1.5.1.1}Fase de inicio}{12}
-\contentsline {paragraph}{\numberline {3.1.5.1.2}Fase de elaboraci\IeC {\'o}n}{12}
-\contentsline {paragraph}{\numberline {3.1.5.1.3}Fase de construcci\IeC {\'o}n}{12}
-\contentsline {paragraph}{\numberline {3.1.5.1.4}Fase de transici\IeC {\'o}n}{12}
+\contentsline {paragraph}{Fase de inicio}{12}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{12}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{12}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{12}
 \contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{13}
-\contentsline {paragraph}{\numberline {3.1.5.2.1}Fase de inicio}{13}
-\contentsline {paragraph}{\numberline {3.1.5.2.2}Fase de elaboraci\IeC {\'o}n}{13}
-\contentsline {paragraph}{\numberline {3.1.5.2.3}Fase de construcci\IeC {\'o}n}{14}
-\contentsline {paragraph}{\numberline {3.1.5.2.4}Fase de transici\IeC {\'o}n}{14}
+\contentsline {paragraph}{Fase de inicio}{13}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{13}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{14}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{14}
 \contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de artefactos no software}{14}
-\contentsline {paragraph}{\numberline {3.1.6.0.1}Fase de inicio\\}{14}
-\contentsline {paragraph}{\numberline {3.1.6.0.2}Fase de elaboraci\IeC {\'o}n\\}{15}
-\contentsline {paragraph}{\numberline {3.1.6.0.3}Fase de construcci\IeC {\'o}n\\}{15}
-\contentsline {paragraph}{\numberline {3.1.6.0.4}Fase de transici\IeC {\'o}n\\}{15}
+\contentsline {paragraph}{Fase de inicio\\}{14}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{15}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{15}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{15}
 \contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{17}
