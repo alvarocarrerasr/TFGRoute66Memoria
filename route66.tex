@@ -118,7 +118,7 @@ Dña. Margarita Gonzalo Tasis\end{large}
 
 \subsection{Introducción.}
 
-La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en “el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio” \cite{iebschoolGami}. 
+La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en \textit{“el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio”} \cite{iebschoolGami}. 
 
 Aunque típicamente se ha visto la ludificación aplicada al área comercial o de ventas, existen otros ejemplos en la educación o incluso en las relaciones con los proveedores o para incrementar el número de ventas en un centro comercial (ludificación orientada a los empleados).
 
@@ -141,6 +141,75 @@ Este TFG detallará el desarrollo, análisis, diseño e implementación de la pa
 Este trabajo tiene una doble motivación, por un lado, analizar, diseñar e implementar un sistema de ludificación diseñado por una alumna de esta Universidad, para completar así, una de las líneas futuras propuestas por la misma en su Trabajo de Fin de Grado. 
 
 Por otro, se busca desarrollar un sistema de ludificación que permita a los alumnos del Grado en Organización Industrial de nuestra Universidad, poner en marcha y probar un sistema de este tipo, ya que las alternativas existentes en el mercado no ofrecen posibilidad de prueba como estudiante.
+
+\section{Análisis de aplicaciones similares}
+
+He seleccionado y analizado diversas aplicaciones de restaurantes de comida rápida asentados en España, con el fin de conocer cómo son y si han implementado técnicas de gamificación a las mismas.
+
+He de destacar que \textbf{ninguna} aplicación ha implementado ningún sistema de ludificación.
+
+\subsubsection{McDonald's \cite{mcdo}}
+
+La aplicación móvil McDonalds ofrece un gran número de funcionalidades, entre las que se encuentran un servicio de ofertas , canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
+
+No tiene un sistema de ludificación implementado, ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto más alto sea, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los tickets de compra y llegar a un mínimo de gasto.
+
+Destacar que durante el tiempo que ha estado instalada ha pedido dar la opinión de la app por correo electrónico, a cambio de obtener un obsequio.
+
+\subsubsection{Burger King \cite{burgerk}}
+
+Al igual que McDonalds,sí se ofrece un sistema de fidelización, llamado "Mis Coronas". Este programa consiste en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
+
+Las opciones de esta app están bastante limitadas y en ellas se encuentran conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
+
+\subsubsection{KFC \cite{kfcapp}}
+
+La fidelización de clientes se limita a poner ofertas de acuerdo con los gustos del cliente (ya que utiliza el historial de pedidos).
+
+En cuanto a funcionalidad, se limita a poner una carta de productos, un listado de restuarantes y una opción para obtener ofertas.
+
+\subsubsection{VIPS \cite{vipsapp}}
+
+La aplicación de la cadena VIPS es, sin lugar a dudas, la más completa de las analizadas.
+
+Para fidelizar clientes, utiliza el servicio ClubEuroVIPS, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones. Además ofrece un sistema de clasificación de usuarios según su consumo (niveles clásico, oro y platino), en el que, dependiendo del cuál nos escontremos podremos obtener WiFi Premium, bebidas extras u obtener puntos extras.
+
+Paralelamente, la aplicación invita al usuario, con cierta frecuencia a sus lanzamientos o estrenos de nuevos productos. Por ejemplo “\textit{te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style}” o “\textit{te invitamos a probar nuestras pizzas}”.
+
+Similarmente, se pueden encontrar funcionalidades propias de un restaurante que apuesta por el crecimiento de su app móvil, como son la posibilidad de pagar un pedido con la app móvil, la funcionalidad \textit{Shake-It}, que consiste en realizar tu pedido favorito con solo agitar tu teléfono móvil o la posibilidad de guardar promociones en la aplicación. Además, también permite realizar pedidos online del tipo \textit{take-away}.
+
+\subsubsection{Pans and Company \cite{pansapp}}
+
+Pans \& Company ofrece únicamente una tarjeta de fidelidad, integrada en la misma app. Esta tarjeta básicamente consiste en un código QR que el usuario puede mostrar en caja para acumular puntos que, posteriormente se podrán convertir en dinero. Además, se realizarán ofertas personalizadas.
+
+Sus funcionalidades son las típicas de una aplicación de esta categoría: listado de restaurantes, ofertas y listado de la carta.
+
+\subsubsection{Foster's Hollywood \cite{fostersh}}
+
+El sistema de fidelización de clientes de Foster's Hollywood se basa en un sistema de niveles (blue, silver y gold), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario, entre las que se encuentran un postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
+
+Se nos identificará como clientes mediante la tarjeta Foster's Hollywood, que consiste en un código QR localizado en la aplicación y que el cliente simplemente debe enseñar al realizar el pago, con el fin de que la compra quede asociada a su usuario.
+
+Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido online.
+
+\section{Estructura de la memoria}
+
+Este documento está divido en partes y a su vez estas en secciones y subsecciones, abarcando así los distintos documentos recogidos en esta memoria:
+
+\begin{itemize}
+\item Parte I. Introducción y Objetivos: incluye una breve explicación de lo que es la gamificación, así como una explicación a alto nivel de la propuesta realizada por la diseñadora del sistema de gamificación sobre el que está basado el proyecto. Finalmente, también contiene un análisis de aplicaciones de restaurantes de comida rápida que operan en España, con el fin de estudiar si estos incluyen o no un sistema de ludificación.
+
+\item Parte II. Herramientas utilizadas: detallaré aquellas herramientas utilizadas en el proyecto, tanto de tipo \textit{hardware} como de tipo \textit{software}. 
+
+\item Parte III. Route66App: es la parte más importante del proyecto, pues incluye la gran mayoría de documentos, como el Plan de Desarrollo de Software, el documento de análisis, el documento de diseño, los prototipos realizados y todos aquellos detalles de la implementación que merece la pena reseñar.
+
+\item Parte IV. Conclusiones y líneas futuras.
+
+\item Referencias.
+
+\item Anexos
+
+\end{itemize}
 
 \section{Propuesta.}
 Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
@@ -244,76 +313,7 @@ Todos los jugadores tendrán asociado un perfil, que se determinará en el regis
 
 Los jugadores, similarmente, podrán crear el número que quieran de equipos. Participarán con los mismos a la hora de alcanzar las recompensas.
 
-\section{Análisis de aplicaciones similares}
-
-He seleccionado y analizado diversas aplicaciones de restaurantes de comida rápida asentados en España, con el fin de conocer cómo son y si han implementado técnicas de gamificación a las mismas.
-
-He de destacar que \textbf{ninguna} aplicación ha implementado ningún sistema de ludificación.
-
-\subsubsection{McDonald's \cite{mcdo}}
-
-La aplicación móvil McDonalds ofrece un gran número de funcionalidades, entre las que se encuentran un servicio de ofertas , canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
-
-No tiene un sistema de ludificación implementado, ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto más alto sea, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los tickets de compra y llegar a un mínimo de gasto.
-
-Destacar que durante el tiempo que ha estado instalada ha pedido dar la opinión de la app por correo electrónico, a cambio de obtener un obsequio.
-
-\subsubsection{Burger King \cite{burgerk}}
-
-Al igual que McDonalds,sí se ofrece un sistema de fidelización, llamado "Mis Coronas". Este programa consiste en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
-
-Las opciones de esta app están bastante limitadas y en ellas se encuentran conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
-
-\subsubsection{KFC \cite{kfcapp}}
-
-La fidelización de clientes se limita a poner ofertas de acuerdo con los gustos del cliente (ya que utiliza el historial de pedidos).
-
-En cuanto a funcionalidad, se limita a poner una carta de productos, un listado de restuarantes y una opción para obtener ofertas.
-
-\subsubsection{VIPS \cite{vipsapp}}
-
-La aplicación de la cadena VIPS es, sin lugar a dudas, la más completa de las analizadas.
-
-Para fidelizar clientes, utiliza el servicio ClubEuroVIPS, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones. Además ofrece un sistema de clasificación de usuarios según su consumo (niveles clásico, oro y platino), en el que, dependiendo del cuál nos escontremos podremos obtener WiFi Premium, bebidas extras u obtener puntos extras.
-
-Paralelamente, la aplicación invita al usuario, con cierta frecuencia a sus lanzamientos o estrenos de nuevos productos. Por ejemplo “\textit{te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style}” o “\textit{te invitamos a probar nuestras pizzas}”.
-
-Similarmente, se pueden encontrar funcionalidades propias de un restaurante que apuesta por el crecimiento de su app móvil, como son la posibilidad de pagar un pedido con la app móvil, la funcionalidad \textit{Shake-It}, que consiste en realizar tu pedido favorito con solo agitar tu teléfono móvil o la posibilidad de guardar promociones en la aplicación. Además, también permite realizar pedidos online del tipo \textit{take-away}.
-
-\subsubsection{Pans and Company \cite{pansapp}}
-
-Pans \& Company ofrece únicamente una tarjeta de fidelidad, integrada en la misma app. Esta tarjeta básicamente consiste en un código QR que el usuario puede mostrar en caja para acumular puntos que, posteriormente se podrán convertir en dinero. Además, se realizarán ofertas personalizadas.
-
-Sus funcionalidades son las típicas de una aplicación de esta categoría: listado de restaurantes, ofertas y listado de la carta.
-
-\subsubsection{Foster's Hollywood \cite{fostersh}}
-
-El sistema de fidelización de clientes de Foster's Hollywood se basa en un sistema de niveles (blue, silver y gold), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario, entre las que se encuentran un postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
-
-Se nos identificará como clientes mediante la tarjeta Foster's Hollywood, que consiste en un código QR localizado en la aplicación y que el cliente simplemente debe enseñar al realizar el pago, con el fin de que la compra quede asociada a su usuario.
-
-Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido online.
-
-\section{Estructura de la memoria}
-
-Este documento está divido en partes y a su vez estas en secciones y subsecciones, abarcando así los distintos documentos recogidos en esta memoria:
-
-\begin{itemize}
-\item Parte I. Introducción y Objetivos: incluye una breve explicación de lo que es la gamificación, así como una explicación a alto nivel de la propuesta realizada por la diseñadora del sistema de gamificación sobre el que está basado el proyecto. Finalmente, también contiene un análisis de aplicaciones de restaurantes de comida rápida que operan en España, con el fin de estudiar si estos incluyen o no un sistema de ludificación.
-
-\item Parte II. Herramientas utilizadas y entorno de trabajo: detallaré aquellas herramientas utilizadas en el proyecto, tanto de tipo \textit{hardware} como de tipo \textit{software}. 
-
-\item Parte III. Route66App: es la parte más importante del proyecto, pues incluye la gran mayoría de documentos, como el Plan de Desarrollo de Software, el documento de análisis, el documento de diseño, los prototipos realizados y todos aquellos detalles de la implementación que merece la pena reseñar.
-
-\item Parte IV. Conclusiones y líneas futuras.
-
-\item Referencias.
-
-\item Anexos
-
-\end{itemize}
-
-\chapter{Parte II: Herramientas utilizadas y entorno de trabajo}
+\chapter{Parte II: Herramientas utilizadas}
 \section{Herramientas utilizadas}
 
 Para la elaboración de esta memoria he utilizado las siguientes herramientas:
@@ -330,21 +330,7 @@ Para la elaboración de la aplicación Android, he utilizando Android Studio.
 Para el control y seguimiento del proyecto utilizaré la herramienta Zoho Projects \footnote{\url{https://projects.zoho.com/}}.
 
 Finalmente, he empleado Firebase \footnote{\url{https://firebase.google.com/}}
-\section{Entorno de trabajo}
 
-La memoria ha sido escrita usando un ordenador portátil que cuenta con las siguientes características:
-\begin{itemize}
-\item Marca: Lenovo.
-\item Modelo: G-50-70.
-\item Memoria principal: 4GB.
-\item HDD 500 GB.
-\item Sistema Operativo: Xubuntu 17.04 LTS 64 bits.
-\end{itemize}
-
-En cuanto al servidor utilizado, será el proporcionado por los técnicos de la Escuela de Ingeniería Informática de Valladolid, en concreto:
-\begin{itemize}
-\item ...
-\end{itemize}
 \section{Comunicación con el servidor}
 
 \chapter{Parte III: Route66App}
@@ -429,7 +415,7 @@ La estructura organizativa del proyecto estará formada por una única persona, 
 
 \paragraph{Desarrollador}\mbox{}\\
 
-Este rol se encarga de implementar el código y de realizar las pruebas para los artefactos software generados, con el fin de que sean integrados.
+Este rol se encarga de implementar el código y de realizar las pruebas para los entregables software generados, con el fin de que sean integrados.
 
 \paragraph{Analista}\mbox{}\\
 
@@ -471,7 +457,7 @@ Después de esta fase, se obtendrá una arquitectura, requisitos y planes de des
 
 \paragraph{Fase de construcción}\mbox{}\\
 
-Es sin ninguna duda la parte más larga del proyecto y es la primera que tendrá como output artefactos software utilizables.Se irá iterando y mejorando la calidad del producto software en cada ciclo.
+Es sin ninguna duda la parte más larga del proyecto y es la primera que tendrá como output entregables software utilizables.Se irá iterando y mejorando la calidad del producto software en cada ciclo.
 
 La salida de esta fase \cite{pgpup} es software en estado beta.
 
@@ -592,12 +578,12 @@ Comienza el día 16 de Abril de 2018 y finaliza el 30 de Abril de 2018.
 \hline
 Nombre de la tarea              & Fecha de comienzo & Fecha de fin & Duración \\ \hline
 Revisión de documentación       & 16/04/2018        & 23/04/2018   & 8 días   \\ \hline
-Revisión de artefactos software & 23/04/2018        & 30/04/2018   & 8 días   \\ \hline
+Revisión de entregables software & 23/04/2018        & 30/04/2018   & 8 días   \\ \hline
 \end{tabular}
 \caption{Iteración 5. Fase de transición.}
 \end{table}
 
-\subsection{Relación de artefactos no software}
+\subsection{Relación de entregables no software}
 
 Los distintos entregables a realizar son los siguientes. En todo caso, siempre se considerará como definitiva la versión final de los documentos entregados.
 \paragraph{Fase de inicio\\}
@@ -651,7 +637,7 @@ Se identifican los siguientes riesgos:
 \begin{risk}
   \addheading{R1}{Retraso en la planificación}
   \addrow{Descripción}{Debido a errores en la estimación, la planificación no se ajusta a la realidad y se producen demoras en las fechas de entrega.}
-  \addrow{Consecuencia}{Retraso en la entrega de los artefactos.}
+  \addrow{Consecuencia}{Retraso en la entrega de los entregables.}
   \addrow{Probabilidad}{Alta }
   \addrow{Impacto}{Crítico}
   \addrow{Estrategia}{Reservar el riesgo}
@@ -694,8 +680,8 @@ Se identifican los siguientes riesgos:
 
 \begin{risk}
   \addheading{R5}{Pérdida de datos}
-  \addrow{Descripción}{Por cualquier motivo, se pierde total o parcialmente cualquiera de los artefactos ya realizados o en proceso de realización.}
-  \addrow{Consecuencia}{Ralentización muy alta del trabajo. Repetición de los artefactos perdidos. }
+  \addrow{Descripción}{Por cualquier motivo, se pierde total o parcialmente cualquiera de los entregables ya realizados o en proceso de realización.}
+  \addrow{Consecuencia}{Ralentización muy alta del trabajo. Repetición de los entregables perdidos. }
   \addrow{Probabilidad}{Bajo.}
   \addrow{Impacto}{Crítico. }
   \addrow{Estrategia}{Evitación del riesgo.}
@@ -706,7 +692,7 @@ Se identifican los siguientes riesgos:
 \begin{risk}
   \addheading{R6}{Falta de medios software de desarrollo}
   \addrow{Descripción}{Las herramientas designadas para desarrollar el proyecto fallan, desaparecen o dejan de estar disponibles.}
-  \addrow{Consecuencia}{Ralentización muy alta del trabajo. Repetición de los artefactos perdidos. }
+  \addrow{Consecuencia}{Ralentización muy alta del trabajo. Repetición de los entregables perdidos. }
   \addrow{Probabilidad}{Bajo.}
   \addrow{Impacto}{Crítico. }
   \addrow{Estrategia}{Evitación del riesgo.}
@@ -722,7 +708,7 @@ Se identifican los siguientes riesgos:
   \addrow{Impacto}{Alto. }
   \addrow{Estrategia}{Evitación del riesgo.}
   \addrow{Plan de acción}{No se aplica}
-  \addrow{Plan de contingencia}{Realización de copias de seguridad de los artefactos, para evitar su pérdida en caso de ocurrir este riesgo.}
+  \addrow{Plan de contingencia}{Realización de copias de seguridad de los entregables, para evitar su pérdida en caso de ocurrir este riesgo.}
 \end{risk}
 
 \begin{risk}
@@ -738,7 +724,7 @@ Se identifican los siguientes riesgos:
 
 \subsection{Gestión de configuraciones.}
 
-Hoy en día, la mayoría de los servicios públicos que ofrecen alojamiento de repositorios Git permiten realizar una buena gestión de configuraciones. Esto es debido a que cada cambio que se hace sobre el código fuente (\textit{commit}) viene asociado a informaciones sobre qué se ha cambiado, quién lo ha cambiado, cuándo lo ha cambiado, etcétera. Además, las ramas o \textit{branches}, aquellos lugares donde van dirigidos los cambios, permiten imponer bloqueos sobre escritura a ciertos usuarios, con el fin de proteger los artefactos que estuvieran en la misma.
+Hoy en día, la mayoría de los servicios públicos que ofrecen alojamiento de repositorios Git permiten realizar una buena gestión de configuraciones. Esto es debido a que cada cambio que se hace sobre el código fuente (\textit{commit}) viene asociado a informaciones sobre qué se ha cambiado, quién lo ha cambiado, cuándo lo ha cambiado, etcétera. Además, las ramas o \textit{branches}, aquellos lugares donde van dirigidos los cambios, permiten imponer bloqueos sobre escritura a ciertos usuarios, con el fin de proteger los entregables que estuvieran en la misma.
 
 Por otro lado, estos servicios también pueden ser utilizados para la gestión de \textit{releases}. Esto se puede llevar a cabo mediante la creación de una rama específica para ese propósito o, directamente, y si se permite, mediante el apartado correspondiente desde el sitio web.
 
@@ -802,12 +788,13 @@ El resto de \textit{software} utilizado es de licencia gratuita.
 
 \subsection{Desviaciones sobre el calendario planificado}
 A realizar cuando sea preciso.
-\section{Requisitos}
+\section{Análisis}
+\subsection{Requisitos}
 
 \newcounter{functionalRequirements}
-\subsection{Requisitos funcionales}
+\subsubsection{Requisitos funcionales}
 
-\subsubsection{Relacionados con los usuarios}
+\textbf{Relacionados con los usuarios}\\
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Sesiones}
@@ -869,7 +856,7 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema permitirá mostrar el círculo de progresos relativo a cada usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
-\subsubsection{Relacionados con los grupos}
+\textbf{Relacionados con los grupos}\\
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Creación de un grupo}
@@ -916,7 +903,8 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema mostrará la posición del resto de miembros del equipo. }
 \end{req}\\\stepcounter{functionalRequirements}
 
-\subsubsection{Relacionados con el ranking}
+\textbf{Relacionados con el ranking}\\
+
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del usuario a nivel global}
 	\addrow{Descripción}{El sistema mostrará la posición de un usuario en el juego}
@@ -927,7 +915,7 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema mostrará la posición de un grupo en el juego}
 \end{req}\\\stepcounter{functionalRequirements}
 
-\subsubsection{Otros aspectos}
+\textbf{Otros aspectos}\\
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{\textit{Engagement} del usuario/grupo}
@@ -954,7 +942,7 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema monitorizará los errores de aplicación de los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
-\subsubsection{Requisitos funcionales de información}
+\textbf{Requisitos funcionales de información}\\
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Usuario}
@@ -995,11 +983,12 @@ A realizar cuando sea preciso.
 	}
 \end{req}\\\stepcounter{functionalRequirements}
 
-\subsection{Requisitos no funcionales}
+\subsubsection{Requisitos no funcionales}
 
 
 
-\subsubsection{Relacionados con los usuarios}
+\textbf{Relacionados con los usuarios}\\
+
 \newcounter{nonFunctionalRequirements}
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del correo electrónico de registro}
@@ -1011,7 +1000,8 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Facebook, Google y Twitter.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\subsubsection{Relacionados con los grupos/equipos}
+\textbf{Relacionados con los grupos/equipos}\\
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del administrador del grupo.}
 	\addrow{Descripción}{Solo puede haber un único administrador por grupo.}
@@ -1037,7 +1027,8 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{Se mostrará la posición del resto de usuarios mediante un mapa, o bien, mediante una lista.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\subsubsection{Software a utilizar para el despliegue de la aplicación.}
+\textbf{Software a utilizar para el despliegue de la aplicación.}\\
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación.}
 	\addrow{Descripción}{El sistema utilizará Firebase Analytics para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones...)}
@@ -1078,16 +1069,18 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema utilizará Google Maps API for Android \footnote{https://developers.google.com/maps/documentation/android-api/} para mostrar mapas al usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\subsubsection{Otros aspectos}
+\textbf{Otros aspectos}\\
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{SDK mínimo}
 	\addrow{Descripción}{La aplicación se compilará con un SDK que soporte, como mínimo, la API 19 de Android (Android 4.4, KitKat)\cite{androidversiondist}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\section{Casos de uso}
-\section{Arquitectura}
-\section{Diagramas de secuencia}
-\section{Esquema de la base de datos}
+\subsection{Casos de uso}
+\section{Diseño}
+\subsection{Arquitectura}
+\subsection{Diagramas de secuencia}
+\subsection{Esquema de la base de datos}
 \section{Implementación}
 \section{Pruebas}
 
