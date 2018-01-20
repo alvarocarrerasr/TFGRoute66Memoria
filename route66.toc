@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Parte I: Introducci\IeC {\'o}n y contexto.}{1}
 \contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n y objetivos.}{1}
 \contentsline {subsection}{\numberline {1.1.1}Introducci\IeC {\'o}n.}{1}
-\contentsline {subsection}{\numberline {1.1.2}Objetivos.}{1}
+\contentsline {subsection}{\numberline {1.1.2}Objetivos.}{2}
 \contentsline {subsection}{\numberline {1.1.3}Motivaci\IeC {\'o}n.}{2}
 \contentsline {section}{\numberline {1.2}An\IeC {\'a}lisis de aplicaciones similares}{2}
 \contentsline {subsubsection}{\numberline {1.2.0.1}McDonald's}{2}
@@ -41,25 +41,25 @@
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{13}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{14}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n}{14}
-\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{14}
-\contentsline {paragraph}{Fase de inicio\\}{14}
+\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{15}
+\contentsline {paragraph}{Fase de inicio\\}{15}
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{15}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{15}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
-\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{15}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{17}
+\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{16}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{18}
 \contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{18}
 \contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{18}
-\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{18}
+\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{19}
 \contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{19}
-\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{19}
+\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{20}
 \contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{20}
 \contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{20}
 \contentsline {subsection}{\numberline {3.2.1}Requisitos}{20}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{20}
 \contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{22}
-\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{23}
+\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{24}
 \contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{24}
 \contentsline {subsection}{\numberline {3.2.4}Diagrama de paquetes}{24}
 \contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{24}
