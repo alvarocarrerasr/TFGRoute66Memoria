@@ -33,7 +33,7 @@
 
 \fancyhf{}
 \renewcommand\headrulewidth{0pt}
-\fancyhead[CO,CE]{\begin{small}Route66App: Aplicación móvil de gamificación empresarial para conseguir fidelización de cliente	\end{small}\\\hrulefill}
+\fancyhead[CO,CE]{\begin{small}Route66App: Aplicación móvil de ludificación empresarial para conseguir fidelización de cliente	\end{small}\\\hrulefill}
 \fancyfoot[RO, LE]{\hrulefill\\\thepage}
 
 \fancypagestyle{plain}{%
@@ -118,7 +118,7 @@ Dña. Margarita Gonzalo Tasis\end{large}
 
 \subsection{Introducción.}
 
-La ludificación o gamificación (del inglés, gamification) consiste, según IEBSchool en \textit{“el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio”} \cite{iebschoolGami}. 
+La ludificación o ludificación (del inglés, gamification) consiste, según IEBSchool \cite{iebschoolGami} en \textit{“el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio”}. 
 
 Aunque típicamente se ha visto la ludificación aplicada al área comercial o de ventas, existen otros ejemplos en la educación o incluso en las relaciones con los proveedores o para incrementar el número de ventas en un centro comercial (ludificación orientada a los empleados).
 
@@ -126,15 +126,15 @@ Hoy en día, miles de compañías utilizan la ludificación en sus procesos empr
 
 No son pocos los ejemplos de una aplicación más que satisfactoria de la misma. En 2011, Volskwagen decidió inventar en China, su mercado más importante, una nueva versión de su \textit{people’s car}. Para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado del mismo fue la obtención de más de 50.000 propuestas diferentes.
 
-Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon o bien contratar a una empresa por miles de euros, o bien, plantear un sistema de gamificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. Aplicaron la ludificación y esto supuso un ahorro de un 70\%. Se presentaron más de 50.000 ideas en un tiempo récord de tiempo.
+Hay otros ejemplos, por ejemplo, Correos decidió en 2012 rediseñar su web y se le plantearon o bien contratar a una empresa por miles de euros, o bien, plantear un sistema de ludificación en el que los empleados propusieran nuevos diseños, a cambio de pequeños regalos. Aplicaron la ludificación y esto supuso un ahorro de un 70\%. Se presentaron más de 50.000 ideas en un tiempo récord de tiempo.
 
-Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias... Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
+Quizá el caso más destacable en nuestro país es el de BBVA Game\cite{bbvag}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos, entre los que se encuentran consultar movimientos, domiciliar la nómina, realizar transferencias, etcétera. Igualmente, también se pueden conseguir puntos por compartir un mensaje en redes sociales, así como invitar a amigos o contratar productos. Con todos estos puntos, es posible canjearlos por premios directos, o bien, por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses, así como aumentar el uso de la plataforma que hacian sus clientes ya existentes.
 
 \subsection{Objetivos.}
 
-El objetivo de este Trabajo Fin de Grado es el de realizar una aplicación Android para un restaurante de comida rápida, que cuente con un sistema de ludificación. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
+El objetivo de este Trabajo Fin de Grado es el de realizar una aplicación Android basada en un sistema de ludificación para un restaurante de comida rápida. En concreto, se realizará basándose en la idea desarrollada en el Trabajo de Fin de Grado de Dª Cristina Martínez Martínez\cite{cristinatfg}. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
 
-Este TFG detallará el desarrollo, análisis, diseño e implementación de la parte cliente del sistema informático en cuestión. Se ha diseñado para que este cambie las diferentes misiones y desafíos, de acuerdo con los parámetros que el administrador del sistema establezca en el backend (parte de gestión).
+Este Trabajo Fin de Grado detallará el desarrollo, análisis, diseño e implementación de la parte cliente del sistema informático en cuestión. Se ha diseñado para que este cambie las diferentes misiones y desafíos, de acuerdo con los parámetros que el administrador del sistema establezca en el \textit{backend} (parte de gestión).
 
 \subsection{Motivación.}
 
@@ -144,32 +144,53 @@ Por otro, se busca desarrollar un sistema de ludificación que permita a los alu
 
 \section{Análisis de aplicaciones similares}
 
-He seleccionado y analizado diversas aplicaciones de restaurantes de comida rápida asentados en España, con el fin de conocer cómo son y si han implementado técnicas de gamificación a las mismas.
+He seleccionado y analizado diversas aplicaciones de restaurantes de comida rápida asentados en España, con el fin de conocer cómo son y si han implementado técnicas de ludificación a las mismas.
 
-He de destacar que \textbf{ninguna} aplicación ha implementado ningún sistema de ludificación.
+He de destacar que \textbf{ninguna} aplicación de las estudiadas ha implementado ningún sistema de ludificación.
 
-\subsubsection{McDonald's \cite{mcdo}}
-
+\subsubsection{McDonald's}
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{mcdo} \textit{McDonald's España - Ofertas.}
+\item \textbf{Análisis:} 
 La aplicación móvil McDonalds ofrece un gran número de funcionalidades, entre las que se encuentran un servicio de ofertas , canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
 
 No tiene un sistema de ludificación implementado, ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto más alto sea, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los tickets de compra y llegar a un mínimo de gasto.
 
 Destacar que durante el tiempo que ha estado instalada ha pedido dar la opinión de la app por correo electrónico, a cambio de obtener un obsequio.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
-\subsubsection{Burger King \cite{burgerk}}
 
-Al igual que McDonalds,sí se ofrece un sistema de fidelización, llamado "Mis Coronas". Este programa consiste en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
+\subsubsection{Burger King}
+
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{burgerk} \textit{BURGER KING® España.}
+\item \textbf{Análisis:} 
+Al igual que McDonalds, sí se ofrece un sistema de fidelización, llamado "Mis Coronas". Este programa consiste en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King se acumulan coronas. Cada corona se puede cambiar por una hamburguesa gratis. Además, invitan a registrarse en la app, ya que, con el historial de pedidos realizarán ofertas personalizadas al cliente.
 
 Las opciones de esta app están bastante limitadas y en ellas se encuentran conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
-\subsubsection{KFC \cite{kfcapp}}
+\subsubsection{KFC}
 
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{kfcapp} \textit{KFC España–ofertas cerca de ti.}
+\item \textbf{Análisis:} 
 La fidelización de clientes se limita a poner ofertas de acuerdo con los gustos del cliente (ya que utiliza el historial de pedidos).
 
 En cuanto a funcionalidad, se limita a poner una carta de productos, un listado de restuarantes y una opción para obtener ofertas.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
-\subsubsection{VIPS \cite{vipsapp}}
+\subsubsection{VIPS}
 
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{vipsapp} \textit{Club VIPS: Promociones y pedidos Take Away.}
+\item \textbf{Análisis:} 
 La aplicación de la cadena VIPS es, sin lugar a dudas, la más completa de las analizadas.
 
 Para fidelizar clientes, utiliza el servicio ClubEuroVIPS, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones. Además ofrece un sistema de clasificación de usuarios según su consumo (niveles clásico, oro y platino), en el que, dependiendo del cuál nos escontremos podremos obtener WiFi Premium, bebidas extras u obtener puntos extras.
@@ -177,27 +198,42 @@ Para fidelizar clientes, utiliza el servicio ClubEuroVIPS, en el que ofrece un \
 Paralelamente, la aplicación invita al usuario, con cierta frecuencia a sus lanzamientos o estrenos de nuevos productos. Por ejemplo “\textit{te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style}” o “\textit{te invitamos a probar nuestras pizzas}”.
 
 Similarmente, se pueden encontrar funcionalidades propias de un restaurante que apuesta por el crecimiento de su app móvil, como son la posibilidad de pagar un pedido con la app móvil, la funcionalidad \textit{Shake-It}, que consiste en realizar tu pedido favorito con solo agitar tu teléfono móvil o la posibilidad de guardar promociones en la aplicación. Además, también permite realizar pedidos online del tipo \textit{take-away}.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
-\subsubsection{Pans and Company \cite{pansapp}}
+\subsubsection{Pans \& Company}
 
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{pansapp} \textit{Pans \& Company.}
+\item \textbf{Análisis:} 
 Pans \& Company ofrece únicamente una tarjeta de fidelidad, integrada en la misma app. Esta tarjeta básicamente consiste en un código QR que el usuario puede mostrar en caja para acumular puntos que, posteriormente se podrán convertir en dinero. Además, se realizarán ofertas personalizadas.
 
 Sus funcionalidades son las típicas de una aplicación de esta categoría: listado de restaurantes, ofertas y listado de la carta.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
-\subsubsection{Foster's Hollywood \cite{fostersh}}
+\subsubsection{Foster's Hollywood}
 
-El sistema de fidelización de clientes de Foster's Hollywood se basa en un sistema de niveles (blue, silver y gold), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario, entre las que se encuentran un postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
+\begin{itemize}
+\item \textbf{Aplicación estudiada:} \cite{fostersh} \textit{Foster's Hollywood.}
+\item \textbf{Análisis:} 
+El sistema de fidelización de clientes de Foster's Hollywood se basa en un sistema de niveles (\textit{blue}, \textit{silver} y \textit{gold}), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario, entre las que se encuentran un postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
 
 Se nos identificará como clientes mediante la tarjeta Foster's Hollywood, que consiste en un código QR localizado en la aplicación y que el cliente simplemente debe enseñar al realizar el pago, con el fin de que la compra quede asociada a su usuario.
 
 Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido online.
+\item \textbf{Puntos fuertes:}
+\item \textbf{Puntos débiles:}
+\end{itemize}
 
 \section{Estructura de la memoria}
 
 Este documento está divido en partes y a su vez estas en secciones y subsecciones, abarcando así los distintos documentos recogidos en esta memoria:
 
 \begin{itemize}
-\item Parte I. Introducción y Objetivos: incluye una breve explicación de lo que es la gamificación, así como una explicación a alto nivel de la propuesta realizada por la diseñadora del sistema de gamificación sobre el que está basado el proyecto. Finalmente, también contiene un análisis de aplicaciones de restaurantes de comida rápida que operan en España, con el fin de estudiar si estos incluyen o no un sistema de ludificación.
+\item Parte I. Introducción y Objetivos: incluye una breve explicación de lo que es la ludificación, así como una explicación a alto nivel de la propuesta realizada por la diseñadora del sistema de ludificación sobre el que está basado el proyecto. Finalmente, también contiene un análisis de aplicaciones de restaurantes de comida rápida que operan en España, con el fin de estudiar si estos incluyen o no un sistema de ludificación.
 
 \item Parte II. Herramientas utilizadas: detallaré aquellas herramientas utilizadas en el proyecto, tanto de tipo \textit{hardware} como de tipo \textit{software}. 
 
@@ -212,15 +248,15 @@ Este documento está divido en partes y a su vez estas en secciones y subseccion
 \end{itemize}
 
 \section{Propuesta.}
-Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
+Este Trabajo de Fin de Grado estará centrado en el TFG “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”\cite{cristinatfg}, elaborado por Dª Cristina Martínez Martínez, graduada durante el curso 2016-2017 en Ingeniería de Organización Industrial por la Universidad de Valladolid.  
 
-El trabajo de esta alumna, centrado en el diseño de un sistema de gamificación aplicado a un posible caso real (restaurante de comida americana), tenía el problema de la imposibilidad de llevarlo a cabo con herramientas profesionales, debido a su coste y a la falta de disponibilidad de las mismas. Por este motivo, el TFG se tuvo que defender contando solo con una serie de prototipos basados en un sistema web. 
+El trabajo de esta alumna, centrado en el diseño de un sistema de ludificación aplicado a un posible caso real (restaurante de comida americana), tenía el problema de la imposibilidad de llevarlo a cabo con herramientas profesionales, debido a su coste y a la falta de disponibilidad de las mismas. Por este motivo, el TFG se tuvo que defender contando solo con una serie de prototipos basados en un sistema web. 
 
-Como la gamificación es un área en investigacion y que ofrece muy buenos resultados, la tutora del TFG propuso a la Comisión de Título la realización de este trabajo. Por otro lado, el resultado del mismo puede servir a alumnos de otras facultades para poder utilizar una herramienta de gamificación real.
+Como la ludificación es un área en investigacion y que ofrece muy buenos resultados, la tutora del TFG propuso a la Comisión de Título la realización de este trabajo. Por otro lado, el resultado del mismo puede servir a alumnos de otras facultades para poder utilizar una herramienta de ludificación real.
 
-\subsection{Resumen de “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}
+\subsection{Resumen de “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”}
 
-Se propone la realización de un sistema de gamificación para una cadena de restaurantes de comida americana, que cuenta con un conjunto de franquicias repartidas por todo el territorio español. Es una empresa con muy buenos resultados económicos y cuenta con una amplia y sólida base de clientes, que decide elaborar una aplicación que mejore la opinión de los mismos sobre la marca, ya que han llegado críticas sobre el sistema vigente de cupones y descuentos.
+Se propone la realización de un sistema de ludificación para una cadena de restaurantes de comida americana, que cuenta con un conjunto de franquicias repartidas por todo el territorio español. Es una empresa con muy buenos resultados económicos y cuenta con una amplia y sólida base de clientes, que decide elaborar una aplicación que mejore la opinión de los mismos sobre la marca, ya que han llegado críticas sobre el sistema vigente de cupones y descuentos.
 
 Finalmente, el equipo directivo decide encargar una aplicación basada en la ludificación cuyos objetivos son los siguientes:
 
@@ -336,7 +372,7 @@ Finalmente, he empleado Firebase \footnote{\url{https://firebase.google.com/}}
 \chapter{Parte III: Route66App}
 \section{Plan de Desarrollo del Software}
 \subsection{Descripción del proyecto}
-La ludificación comenzó a popularizarse en 2010\cite{anatfg}. Desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en numerosas situaciones (educación, ventas, proveedores...). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
+La ludificación comenzó a popularizarse en 2010\cite{anatfg}. Desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en numerosas situaciones (educación, ventas, proveedores, etcétera). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
 
 Route66App consiste en una app para dispositivos móviles que aplica las ideas expuestas en el Trabajo Fin de Grado de una alumna del Grado en Organización Industrial \cite{cristinatfg}. Esta aplicación aplicará la teoría Bartle para identificar los diferentes tipos de jugador y buscará fidelizar y comprometer al usuario con los objetivos del negocio, por medio del juego.
 
@@ -368,7 +404,7 @@ Los objetivos serán:
 \begin{itemize}
 	\item Elaborar un sistema de usuarios, mediante el uso de sesiones.
 	\item Gestionar un sistema de insignias, otorgadas tanto a usuarios individuales, como a grupos o equipos completos.
-	\item Aumentar el \textit{engagement} del usuario con la aplicación, mediante el uso de juegos o misiones.
+	\item Aumentar el compromiso del usuario con la aplicación, mediante el uso de juegos o misiones. Se busca que el usuario realice acciones correspondientes a los cuatro roles mencionados anteriormente.
 	\item Hacer las funciones de una tarjeta de fidelización virtual, que permita al usuario identificarse a la hora de pagar.
 \end{itemize}
 
@@ -439,7 +475,7 @@ En este proyecto se utilizará la metodología UPedu \cite{upedu}, compuesta por
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.75]{images/upeduFases}
-\caption{Fases de la metodología UPedu \cite{upedu}}
+\caption{Fases de la metodología UPedu} \cite{upedu}
 \end{center}
 \end{figure}
 
@@ -728,43 +764,58 @@ Hoy en día, la mayoría de los servicios públicos que ofrecen alojamiento de r
 
 Por otro lado, estos servicios también pueden ser utilizados para la gestión de \textit{releases}. Esto se puede llevar a cabo mediante la creación de una rama específica para ese propósito o, directamente, y si se permite, mediante el apartado correspondiente desde el sitio web.
 
-En el caso de este proyecto se han utilizado dos repositorios privados en GitHub\footnote{\url{https://github.com/}}, en uno de ellos se tratará el desarrollo de esta memoria y en otro, el del código del sistema informático que se desea construir.
+En el caso de este proyecto se han utilizado dos repositorios privados en \textit{GitHub}\footnote{\url{https://github.com/}}, en uno de ellos se tratará el desarrollo de esta memoria y en otro, el del código del sistema informático que se desea construir.
 
 \subsection{Costes.}
 
-Para el cálculo de los costes de los recursos, debemos diferenciar entre los costes propios de los humanos, frente a los informáticos, que incluyen aquellos de tipo \textit{hardware} y de tipo \textit{software}
+Para el cálculo de los costes de los recursos, debemos diferenciar entre los costes propios de los humanos, frente a los informáticos, que incluyen aquellos de tipo \textit{hardware} y de tipo \textit{software}.
 
 Para el caso de los primeros, los costes de los recursos humanos, debemos ver el listado de roles que se van a practicar a lo largo del proyecto:
 
-\begin{table}[]
+\begin{table}[H]
+\center
 \label{my-label}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 Rol                & Salario medio & \euro/Hora   & Horas estimadas & Coste total \\ \hline
-Analista           & 26.307 \euro      & 109,61 \euro & 12              & 1           \\ \hline
-Desarrollador      & 17.411 \euro      & 72,55 \euro  & 1               & 1           \\ \hline
-Gestor de proyecto & 26.307 \euro      & 109,61 \euro & 1               & 1           \\ \hline
-Diseñador          & 26.307 \euro      & 109,61 \euro & 1               & 0           \\ \hline
+Analista           & 59.615 \euro      & 372,60 \euro & (por determinar)              & (por determinar) \\ \hline
+Desarrollador      & 59.615 \euro      & 372,60 \euro  & (por determinar)             & (por determinar)\\ \hline
+Gestor de proyecto & 59.615 \euro      & 372,60 \euro & (por determinar)              & (por determinar)\\ \hline
+Diseñador          & 59.615 \euro      & 372,60 \euro & (por determinar)              & (por determinar)\\ \hline
+Director de proyecto          & 59.615 \euro      & 372,60 \euro & (por determinar)   & (por determinar) \\ \hline
 \end{tabular}
 \caption{Costes de los Recursos Humanos}
 \end{table}
 
-Los datos de la tabla anterior han sido calculados basándose en los datos de \cite{indeedanalista} para el salario bruto anual de un Analista de Software (26.307 \euro) y los de \cite{indeedjunior} (17.411 \euro) para el de Programador Junior. Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
+Los datos de la tabla anterior han sido calculados basándose en los datos de \cite{infojobs2016} Informe Anual Infojobs 2016 España (salario promedio bruto anual de un director de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
 
-Por otra parte, los costes informáticos de \textit{hardware} no resultan de especial interés, pues son dispositivos con una cierta antigüedad y el coste amortizado será, por tanto, mínimo. 
+Por otra parte, los costes informáticos de \textit{hardware} no resultan de especial interés, pues son dispositivos con una cierta antigüedad y el coste amortizado será, por tanto, mínimo.
+
+\begin{table}[H]
+\center
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Dispositivo        & Coste de compra   & Horas utilizadas & Coste total \\ \hline
+Teléfono Android   & 120 \euro      & (por determinar) \euro & (por determinar) \\ \hline
+Desarrollador      & 59.615 \euro      & (por determinar) \euro  & (por determinar) \\ \hline
+\end{tabular}
+\caption{Costes de los recursos \textit{hardware}}
+\end{table}
+ 
 
 Finalmente, en el software sí encontramos ciertos costes. Se ha de tener presente que estos son cálculos que sí se aplicarían en un proyecto en el que no se pudieran utilizar licencias gratuitas para estudiantes.
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 
 \begin{tabular}{|l|l|l|}
 \hline
 Servicio         & Coste mensual & Coste total \\ \hline
-GitHub Developer & 5.90 \euro        & 47.2\euro          \\ \hline
+GitHub Developer & 5,90 \euro        & 47,20\euro          \\ \hline
 Firebase         & 21 \euro      & 168\euro           \\ \hline
 \end{tabular}
-\caption{Costes de software}
+\caption{Costes de los recursos \textit{software}}
 \end{table}
 
 Coste total de software: 215,20\euro
@@ -772,19 +823,6 @@ Coste total de software: 215,20\euro
 Los datos anteriores se han calculado basándose en los datos públicos de las herramientas, convertido a euros según la tasa de cambio del 28 de Noviembre de 2017, para un período de 8 meses (Noviembre-Junio).
 
 El resto de \textit{software} utilizado es de licencia gratuita.
-
-
-\begin{usecase}
-  \addheading{CU001}{System user} 
-  \addrow{Actor}{T}
-  \addrow{Precondition}{The system, shows, in the form part of an object type, the number indication.}
-  \addrow{Postcondition}{A disconnected number indicating the type of `other constructed object'.}
-  \addmulrow{Main path (M)}{
-  							\item User selects \ldots
-                            \item System demands \ldots
-  }
-\end{usecase}
-
 
 \subsection{Desviaciones sobre el calendario planificado}
 A realizar cuando sea preciso.
@@ -918,8 +956,8 @@ A realizar cuando sea preciso.
 \textbf{Otros aspectos}\\
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{\textit{Engagement} del usuario/grupo}
-	\addrow{Descripción}{El sistema medirá el \textit{engagement} del usuario/grupo con la aplicación.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Compromiso del usuario/grupo con la aplicación}
+	\addrow{Descripción}{El sistema medirá el compromiso del usuario/grupo con la aplicación.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
@@ -1031,7 +1069,7 @@ A realizar cuando sea preciso.
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación.}
-	\addrow{Descripción}{El sistema utilizará Firebase Analytics para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones...)}
+	\addrow{Descripción}{El sistema utilizará Firebase Analytics para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones, etcétera.)}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1077,26 +1115,41 @@ A realizar cuando sea preciso.
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \subsection{Casos de uso}
+\begin{usecase}
+  \addheading{CU001}{System user} 
+  \addrow{Actor}{T}
+  \addrow{Precondition}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondition}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Main path (M)}{
+  							\item User selects \ldots
+                            \item System demands \ldots
+  }
+\end{usecase}
+\subsection{Modelo de dominio}
+\subsection{Diagrama de paquetes}
 \section{Diseño}
 \subsection{Arquitectura}
-\subsection{Diagramas de secuencia}
+\subsection{Patrones utilizados}
 \subsection{Esquema de la base de datos}
+\subsection{Diagramas de secuencia}
 \section{Implementación}
 \section{Pruebas}
 
 \chapter{Parte IV: Conclusiones y trabajo futuro.}
 \section{Conclusiones}
 \section{Trabajo futuro}
-\chapter{Referencias}
+\chapter{Webgrafía y Bibliografía}
 \begin{thebibliography}{a} 
+\section{Webgrafía}
+\section{Bibliografía}
 
-\bibitem{cristinatfg} \textsc{Cristina Martínez Martínez} \textit{TFG “Estudio de gamificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Organización Industrial. Universidad de Valladolid. 
+\bibitem{cristinatfg} \textsc{Cristina Martínez Martínez} \textit{TFG “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Organización Industrial. Universidad de Valladolid. 
 
-\bibitem{anatfg} \textsc{Ana Ruiz Caballero} \textit{TFG "Estudio de la gamificación de una empresa para incentivar la motivación."}. Curso 2015-2016. Grado en Organización Industrial. Universidad de Valladolid. 
+\bibitem{anatfg} \textsc{Ana Ruiz Caballero} \textit{TFG "Estudio de la ludificación de una empresa para incentivar la motivación."}. Curso 2015-2016. Grado en Organización Industrial. Universidad de Valladolid. 
 
-\bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La gamificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
+\bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La ludificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
 
-\bibitem{bbvag} \textsc{Alejandro. Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la gamificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}.  
+\bibitem{bbvag} \textsc{Alejandro. Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la ludificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}.  
 
 \bibitem{iebsctj} \textsc{Ferran Altarriba Bertran. IEBS School} \textit{Tipos de jugadores en Gamification: teoría Bartle}. Fecha de última visita: 6 de Noviembre de 2017, \url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}.  
 
@@ -1119,9 +1172,7 @@ A realizar cuando sea preciso.
 
 \bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017\url{http://www.upedu.org/process/workers/wk_implm.htm}
 
-\bibitem{indeedanalista} \textsc{Indeed}. Salario medio de un Analista Programador en España. Fecha de última visita: 28/11/2017 \url{https://www.indeed.es/salaries/Analista-programador/a-Salaries}
-
-\bibitem{indeedjunior} \textsc{Indeed}. Salario medio de un Programador Junior en España. Fecha de última visita: 28/11/2017 \url{https://www.indeed.es/salaries/Programador/a-junior-Salaries}
+\bibitem{infojobs2016} \textsc{Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf} 
 
 
 
