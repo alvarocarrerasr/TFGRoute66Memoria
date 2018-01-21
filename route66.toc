@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {1.2.0.5}Pans \& Company}{6}
 \contentsline {subsubsection}{\numberline {1.2.0.6}Foster's Hollywood}{7}
 \contentsline {section}{\numberline {1.3}Estructura de la memoria}{7}
-\contentsline {section}{\numberline {1.4}Propuesta.}{7}
+\contentsline {section}{\numberline {1.4}Propuesta.}{8}
 \contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{8}
 \contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas}{11}
 \contentsline {section}{\numberline {2.1}Herramientas utilizadas}{11}
