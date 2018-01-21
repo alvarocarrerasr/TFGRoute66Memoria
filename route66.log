@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  21 JAN 2018 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  21 JAN 2018 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,6 +851,8 @@ LaTeX Info: Redefining \% on input line 1.
 
 [5
 
+] [1
+
 ]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
@@ -860,607 +862,612 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
-
+ [2
 
 ]
-<images/restaurantes/mcdo0.png, id=26, 542.025pt x 963.6pt>
+<images/restaurantes/mcdo0.png, id=30, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo0.png Graphic file (type png)
 
 <use images/restaurantes/mcdo0.png>
-Package pdftex.def Info: images/restaurantes/mcdo0.png used on input line 153.
+Package pdftex.def Info: images/restaurantes/mcdo0.png used on input line 154.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/mcdo1.png, id=27, 542.025pt x 963.6pt>
+<images/restaurantes/mcdo1.png, id=31, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo1.png Graphic file (type png)
 
 <use images/restaurantes/mcdo1.png>
-Package pdftex.def Info: images/restaurantes/mcdo1.png used on input line 154.
+Package pdftex.def Info: images/restaurantes/mcdo1.png used on input line 155.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/mcdo3.png, id=28, 542.025pt x 963.6pt>
+<images/restaurantes/mcdo3.png, id=32, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo3.png Graphic file (type png)
 
 <use images/restaurantes/mcdo3.png>
-Package pdftex.def Info: images/restaurantes/mcdo3.png used on input line 155.
+Package pdftex.def Info: images/restaurantes/mcdo3.png used on input line 156.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [2 <./images/restaurantes/mcdo0.png> <./images/restaurantes/mcdo1.png> <./imag
-es/restaurantes/mcdo3.png>]
-<images/restaurantes/burry0.png, id=33, 542.025pt x 963.6pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+<images/restaurantes/burry0.png, id=36, 542.025pt x 963.6pt>
 File: images/restaurantes/burry0.png Graphic file (type png)
 
 <use images/restaurantes/burry0.png>
-Package pdftex.def Info: images/restaurantes/burry0.png used on input line 186.
+Package pdftex.def Info: images/restaurantes/burry0.png used on input line 187.
 
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/burry1.png, id=34, 542.025pt x 963.6pt>
+<images/restaurantes/burry1.png, id=37, 542.025pt x 963.6pt>
 File: images/restaurantes/burry1.png Graphic file (type png)
 
 <use images/restaurantes/burry1.png>
-Package pdftex.def Info: images/restaurantes/burry1.png used on input line 187.
+Package pdftex.def Info: images/restaurantes/burry1.png used on input line 188.
 
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [3 <./images/restaurantes/burry0.png> <./images/restaurantes/burry1.png>]
-<images/restaurantes/kfc0.png, id=38, 542.025pt x 963.6pt>
+ [4 <./images/restaurantes/mcdo0.png> <./images/restaurantes/mcdo1.png> <./imag
+es/restaurantes/mcdo3.png>]
+<images/restaurantes/kfc0.png, id=41, 542.025pt x 963.6pt>
 File: images/restaurantes/kfc0.png Graphic file (type png)
 
 <use images/restaurantes/kfc0.png>
-Package pdftex.def Info: images/restaurantes/kfc0.png used on input line 218.
+Package pdftex.def Info: images/restaurantes/kfc0.png used on input line 219.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/kfc1.png, id=39, 542.025pt x 963.6pt>
+<images/restaurantes/kfc1.png, id=42, 542.025pt x 963.6pt>
 File: images/restaurantes/kfc1.png Graphic file (type png)
 
 <use images/restaurantes/kfc1.png>
-Package pdftex.def Info: images/restaurantes/kfc1.png used on input line 219.
+Package pdftex.def Info: images/restaurantes/kfc1.png used on input line 220.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [4 <./images/restaurantes/kfc0.png> <./images/restaurantes/kfc1.png>]
-<images/restaurantes/vips0.png, id=43, 542.025pt x 963.6pt>
+ [5 <./images/restaurantes/burry0.png> <./images/restaurantes/burry1.png>]
+<images/restaurantes/vips0.png, id=46, 542.025pt x 963.6pt>
 File: images/restaurantes/vips0.png Graphic file (type png)
 
 <use images/restaurantes/vips0.png>
-Package pdftex.def Info: images/restaurantes/vips0.png used on input line 245.
+Package pdftex.def Info: images/restaurantes/vips0.png used on input line 246.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/vips1.png, id=44, 542.025pt x 963.6pt>
+<images/restaurantes/vips1.png, id=47, 542.025pt x 963.6pt>
 File: images/restaurantes/vips1.png Graphic file (type png)
 
 <use images/restaurantes/vips1.png>
-Package pdftex.def Info: images/restaurantes/vips1.png used on input line 246.
+Package pdftex.def Info: images/restaurantes/vips1.png used on input line 247.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/vips2.png, id=45, 542.025pt x 963.6pt>
+<images/restaurantes/vips2.png, id=48, 542.025pt x 963.6pt>
 File: images/restaurantes/vips2.png Graphic file (type png)
 
 <use images/restaurantes/vips2.png>
-Package pdftex.def Info: images/restaurantes/vips2.png used on input line 247.
+Package pdftex.def Info: images/restaurantes/vips2.png used on input line 248.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [5 <./images/restaurantes/vips0.png> <./images/restaurantes/vips1.png> <./imag
-es/restaurantes/vips2.png>]
-<images/restaurantes/pans0.png, id=49, 542.025pt x 963.6pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./images/restaurantes/kfc0.png> <./images/restaurantes/kfc1.png>] [7 <./im
+ages/restaurantes/vips0.png> <./images/restaurantes/vips1.png> <./images/restau
+rantes/vips2.png>] <images/restaurantes/pans0.png, id=55, 542.025pt x 963.6pt>
 File: images/restaurantes/pans0.png Graphic file (type png)
 
 <use images/restaurantes/pans0.png>
-Package pdftex.def Info: images/restaurantes/pans0.png used on input line 285.
+Package pdftex.def Info: images/restaurantes/pans0.png used on input line 286.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/pans1.png, id=50, 542.025pt x 963.6pt>
+<images/restaurantes/pans1.png, id=56, 542.025pt x 963.6pt>
 File: images/restaurantes/pans1.png Graphic file (type png)
 
 <use images/restaurantes/pans1.png>
-Package pdftex.def Info: images/restaurantes/pans1.png used on input line 286.
+Package pdftex.def Info: images/restaurantes/pans1.png used on input line 287.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/pans2.png, id=51, 542.025pt x 963.6pt>
+<images/restaurantes/pans2.png, id=57, 542.025pt x 963.6pt>
 File: images/restaurantes/pans2.png Graphic file (type png)
 
 <use images/restaurantes/pans2.png>
-Package pdftex.def Info: images/restaurantes/pans2.png used on input line 287.
+Package pdftex.def Info: images/restaurantes/pans2.png used on input line 288.
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [6 <./images/restaurantes/pans0.png> <./images/restaurantes/pans1.png> <./imag
+ [8 <./images/restaurantes/pans0.png> <./images/restaurantes/pans1.png> <./imag
 es/restaurantes/pans2.png>]
-<images/restaurantes/foster0.png, id=55, 542.025pt x 963.6pt>
+<images/restaurantes/foster0.png, id=62, 542.025pt x 963.6pt>
 File: images/restaurantes/foster0.png Graphic file (type png)
 
 <use images/restaurantes/foster0.png>
-Package pdftex.def Info: images/restaurantes/foster0.png used on input line 313
+Package pdftex.def Info: images/restaurantes/foster0.png used on input line 314
 .
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/foster1.png, id=56, 542.025pt x 963.6pt>
+<images/restaurantes/foster1.png, id=63, 542.025pt x 963.6pt>
 File: images/restaurantes/foster1.png Graphic file (type png)
 
 <use images/restaurantes/foster1.png>
-Package pdftex.def Info: images/restaurantes/foster1.png used on input line 314
+Package pdftex.def Info: images/restaurantes/foster1.png used on input line 315
 .
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
 
-<images/restaurantes/foster2.png, id=57, 542.025pt x 963.6pt>
+<images/restaurantes/foster2.png, id=64, 542.025pt x 963.6pt>
 File: images/restaurantes/foster2.png Graphic file (type png)
 
 <use images/restaurantes/foster2.png>
-Package pdftex.def Info: images/restaurantes/foster2.png used on input line 315
+Package pdftex.def Info: images/restaurantes/foster2.png used on input line 316
 .
 (pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
- [7 <./images/restaurantes/foster0.png> <./images/restaurantes/foster1.png> <./
-images/restaurantes/foster2.png>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+ [9 <./images/restaurantes/foster0.png> <./images/restaurantes/foster1.png> <./
+images/restaurantes/foster2.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-[10] [11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+[12]
 Cap\'{\i }tulo 2.
-[12
+[13
 
 ]
 Cap\'{\i }tulo 3.
-[13
+[14
 
-] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
+] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
 
  []
 
-<images/upeduFases.png, id=85, 566.115pt x 293.095pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
+
+ []
+
+<images/upeduFases.png, id=88, 566.115pt x 293.095pt>
 File: images/upeduFases.png Graphic file (type png)
 
 <use images/upeduFases.png>
-Package pdftex.def Info: images/upeduFases.png used on input line 587.
+Package pdftex.def Info: images/upeduFases.png used on input line 590.
 (pdftex.def)             Requested size: 424.5852pt x 219.8207pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 598--599
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--605
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
-
- []
-
-[16 <./images/upeduFases.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+[17 <./images/upeduFases.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 732--733
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
 
-[18] [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
 
- [20]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+
+ []
+
+[19] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 898.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 898.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[22] [23]
+ [22]
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 901.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 901.
+
+[23] [24]
 \c@functionalRequirements=\count160
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1020--1024
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1027
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1032
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1034
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1039
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1040--1044
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1049
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1054
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1059
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1064
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1069
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1074
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1079
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1082--1086
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1091
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1092--1096
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1128
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1037
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1133
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1042
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1047
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1057
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1062
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1160
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1077
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1082
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1206
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1089
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1094
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1099
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1131
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1149--1153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1171--1192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
 
  []
 
 \c@nonFunctionalRequirements=\count161
 
-Underfull \hbox (badness 10000) in paragraph at lines 1214--1218
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1223
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1226--1230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1236--1240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1245
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1246--1250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1253--1257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1258--1262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1263--1267
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1273--1277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1278--1282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1283--1287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1294
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1221
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1299
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1261--1265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1297
 
  []
 
 [28]
-Cap\'{\i }tulo 4.
-[29
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1302
 
-]
-Cap\'{\i }tulo 5.
+ []
+
+[29]
+Cap\'{\i }tulo 4.
 [30
 
 ]
-Underfull \hbox (badness 1062) in paragraph at lines 1330--1331
+Cap\'{\i }tulo 5.
+[31
+
+]
+Underfull \hbox (badness 1062) in paragraph at lines 1333--1334
 \OT1/phv/m/n/10 de []ulti-ma vi-si-ta: 6 de No-viem-bre de 2017 $\OT1/cmtt/m/n/
 10 https : / / www . elconfidencial . com / empresas / 2014-[]04-[]27 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+Underfull \hbox (badness 10000) in paragraph at lines 1337--1338
 []\OT1/phv/m/sc/10 Alejandro. Om-ni-um Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El
  ma-yor ca-so de []exi-to de la lu-di-fi-ca-ci[]on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+Underfull \hbox (badness 10000) in paragraph at lines 1337--1338
 \OT1/phv/m/sl/10 en Es-pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 2
 1 de No-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1336--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1340
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]^^Pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1336--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1340
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 1343--1344
+Underfull \hbox (badness 1648) in paragraph at lines 1346--1347
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 1345--1346
+Underfull \hbox (badness 5119) in paragraph at lines 1348--1349
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 1357--1358
+Underfull \hbox (badness 1365) in paragraph at lines 1360--1361
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[31
+[32
 
-] [32]
+] [33]
 Cap\'{\i }tulo 6.
-[33
+[34
 
 ] (./route66.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -1482,10 +1489,10 @@ t/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts
 w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (38 pages, 9500228 bytes).
+Output written on route66.pdf (39 pages, 9500877 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
