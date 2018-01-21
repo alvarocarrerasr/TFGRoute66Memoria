@@ -6,73 +6,73 @@
 \contentsline {subsection}{\numberline {1.1.3}Motivaci\IeC {\'o}n.}{2}
 \contentsline {section}{\numberline {1.2}An\IeC {\'a}lisis de aplicaciones similares}{2}
 \contentsline {subsubsection}{\numberline {1.2.0.1}McDonald's}{2}
-\contentsline {subsubsection}{\numberline {1.2.0.2}Burger King}{2}
-\contentsline {subsubsection}{\numberline {1.2.0.3}KFC}{3}
-\contentsline {subsubsection}{\numberline {1.2.0.4}VIPS}{3}
-\contentsline {subsubsection}{\numberline {1.2.0.5}Pans \& Company}{3}
-\contentsline {subsubsection}{\numberline {1.2.0.6}Foster's Hollywood}{4}
-\contentsline {section}{\numberline {1.3}Estructura de la memoria}{4}
-\contentsline {section}{\numberline {1.4}Propuesta.}{4}
-\contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{5}
-\contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas}{8}
-\contentsline {section}{\numberline {2.1}Herramientas utilizadas}{8}
-\contentsline {section}{\numberline {2.2}Comunicaci\IeC {\'o}n con el servidor}{8}
-\contentsline {chapter}{\numberline {3}Parte III: Route66App}{9}
-\contentsline {section}{\numberline {3.1}Plan de Desarrollo del Software}{9}
-\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n del proyecto}{9}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{9}
-\contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{10}
-\contentsline {subsection}{\numberline {3.1.3}Restricciones}{10}
-\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{11}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{11}
-\contentsline {paragraph}{Desarrollador}{11}
-\contentsline {paragraph}{Analista}{11}
-\contentsline {paragraph}{Gestor de Proyecto}{11}
-\contentsline {paragraph}{Dise\IeC {\~n}ador}{11}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{11}
-\contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{11}
-\contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{11}
-\contentsline {paragraph}{Fase de inicio}{12}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{12}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{12}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{12}
-\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{13}
-\contentsline {paragraph}{Fase de inicio}{13}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{13}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{14}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{14}
-\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{15}
-\contentsline {paragraph}{Fase de inicio\\}{15}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{15}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{15}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{15}
-\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{15}
-\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{16}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{18}
-\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{18}
-\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{18}
-\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{19}
-\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{19}
-\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{20}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{20}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{20}
-\contentsline {subsection}{\numberline {3.2.1}Requisitos}{20}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{20}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{22}
-\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{24}
-\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{24}
-\contentsline {subsection}{\numberline {3.2.4}Diagrama de paquetes}{24}
-\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{24}
-\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{24}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{24}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{24}
-\contentsline {subsection}{\numberline {3.3.4}Diagramas de secuencia}{24}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{24}
-\contentsline {section}{\numberline {3.5}Pruebas}{24}
-\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{25}
-\contentsline {section}{\numberline {4.1}Conclusiones}{25}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{25}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{26}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{27}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{28}
-\contentsline {chapter}{\numberline {6}Anexos}{29}
+\contentsline {subsubsection}{\numberline {1.2.0.2}Burger King}{3}
+\contentsline {subsubsection}{\numberline {1.2.0.3}KFC}{4}
+\contentsline {subsubsection}{\numberline {1.2.0.4}VIPS}{5}
+\contentsline {subsubsection}{\numberline {1.2.0.5}Pans \& Company}{6}
+\contentsline {subsubsection}{\numberline {1.2.0.6}Foster's Hollywood}{7}
+\contentsline {section}{\numberline {1.3}Estructura de la memoria}{7}
+\contentsline {section}{\numberline {1.4}Propuesta.}{7}
+\contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{8}
+\contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas}{11}
+\contentsline {section}{\numberline {2.1}Herramientas utilizadas}{11}
+\contentsline {section}{\numberline {2.2}Comunicaci\IeC {\'o}n con el servidor}{11}
+\contentsline {chapter}{\numberline {3}Parte III: Route66App}{12}
+\contentsline {section}{\numberline {3.1}Plan de Desarrollo del Software}{12}
+\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n del proyecto}{12}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{12}
+\contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{13}
+\contentsline {subsection}{\numberline {3.1.3}Restricciones}{13}
+\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{14}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{14}
+\contentsline {paragraph}{Desarrollador}{14}
+\contentsline {paragraph}{Analista}{14}
+\contentsline {paragraph}{Gestor de Proyecto}{14}
+\contentsline {paragraph}{Dise\IeC {\~n}ador}{14}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{14}
+\contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{14}
+\contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{14}
+\contentsline {paragraph}{Fase de inicio}{15}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{15}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{15}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{15}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{16}
+\contentsline {paragraph}{Fase de inicio}{16}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{16}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{17}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{17}
+\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{18}
+\contentsline {paragraph}{Fase de inicio\\}{18}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{18}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{18}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{18}
+\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{18}
+\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{19}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{21}
+\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{21}
+\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{21}
+\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{22}
+\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{22}
+\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{23}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{23}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{23}
+\contentsline {subsection}{\numberline {3.2.1}Requisitos}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{23}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{25}
+\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{27}
+\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{27}
+\contentsline {subsection}{\numberline {3.2.4}Diagrama de paquetes}{27}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{27}
+\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{27}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{27}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{27}
+\contentsline {subsection}{\numberline {3.3.4}Diagramas de secuencia}{27}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{27}
+\contentsline {section}{\numberline {3.5}Pruebas}{27}
+\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{28}
+\contentsline {section}{\numberline {4.1}Conclusiones}{28}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{28}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{29}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{30}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{31}
+\contentsline {chapter}{\numberline {6}Anexos}{32}
