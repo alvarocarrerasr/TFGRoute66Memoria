@@ -1313,9 +1313,18 @@ A realizar cuando sea preciso.
 
 \subsection{Casos de uso}
 
+\subsubsection{Actores}
+
+Se identifican los siguientes actores:
+
+\begin{itemize}
+\item \textbf{Admin de grupo:} Es el actor encargado de administrar los grupos en los que tuviera este rol.
+\item \textbf{App user:} Es el actor base de Route66App, en su parte de aplicación móvil.
+\end{itemize}
+
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.5]{images/usecase.png}
+\includegraphics[scale=0.6]{images/usecase.png}
 \caption{Diagrama de casos de uso}
 \end{center}
 \end{figure}
@@ -1323,39 +1332,78 @@ A realizar cuando sea preciso.
 \newcounter{usecase}\stepcounter{usecase}
 
 \begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Gestionar equipo} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
-  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addheading{\textbf{CU\arabic{usecase}}}{Añadir un miembro al equipo} 
+  \addrow{Actor}{Admin Grupo}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna}
   \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  		\item El usuario selecciona "Añadir un miembro al equipo". %1
+        \item El sistema muestra al usuario el listado de equipos. %2
+        \item El usuario selecciona un equipo de la lista. %3
+        \item El sistema pide al usuario el identificador del usuario que desea agregar al equipo. %4%
+        \item El usuario introduce el identificador del usuario. %5
+        \item El sistema agrega al usuario al equipo. %6
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
+  		\item 5b El identificador de usuario no pertenece a ningún usuario de la aplicación. En este caso, se muestra un mensaje alertándolo y se vuelve al paso 4.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Modificar equipo} 
+  \addrow{Actor}{Admin Grupo}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna}
+  \addmulrow{Flujo principal}{
+  		\item El usuario selecciona "Gestionar un equipo". %1
+        \item El sistema muestra al usuario el listado de equipos. %2
+        \item El usuario selecciona un equipo de la lista. %3
+        \item El sistema muestra el conjunto de parámetros de configuración del grupo, así como el valor de los mismos. %4
+        \item El usuario elige un parámetro y lo modifica. %5
+        \item El sistema actualiza la configuración del grupo. %6
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
+  		\item 6a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 5.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  		\item El usuario elige "Realizar misión". %1
+  		\item El sistema muestra al usuario el conjunto de niveles con los que cuenta la aplicación. %2
+  		\item El usuario escoge un nivel. %3
+  		\item El sistema muestra al usuario las misiones de ese nivel. %4.
+  		\item El usuario escoge la misión que desea realizar %5.
+  		\item El sistema muestra al usuario la acción (juego, compartir por redes sociales, etcétera) que debe realizar para poder completar la misión. %6
+  		\item El usuario completa la misión %7
+  		\item El sistema actualiza la información, guardando que el usuario ha completado la misión. %8
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a 7a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+        \item 3b El usuario no selecciona el nivel que le corresponde completar (el nivel más bajo al que le falte por completar misiones). En ese caso, el sistema muestra un mensaje y vuelve al paso 2.
+        \item 7b El usuario no completa la misión. En ese caso, se pregunta al usuario si desea volver a intentar
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1369,8 +1417,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar perfil} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1384,8 +1432,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar perfil} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1399,8 +1447,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar logros} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1414,8 +1462,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar insignias} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1429,8 +1477,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar código QR} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1444,8 +1492,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar ranking} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1459,8 +1507,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar equipo} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1474,8 +1522,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Crear equipo} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1489,8 +1537,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Registrarse} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1504,8 +1552,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Enviar invitación} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
@@ -1519,8 +1567,8 @@ A realizar cuando sea preciso.
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Iniciar sesión} 
-  \addrow{Actor}{T}
-  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
   \addmulrow{Flujo principal}{
   		\item User selects \ldots
