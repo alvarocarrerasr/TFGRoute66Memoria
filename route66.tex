@@ -534,11 +534,9 @@ Se imponen las siguientes restricciones:
 \begin{enumerate}
 \item \textbf{Tiempo:} Este proyecto se realiza para cumplir con los objetivos de la asignatura Trabajo de Fin de Grado. Mención Ingeniería del Software, correspondiente a 12 créditos ECTS, unas 300 horas.
 
-\item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Según mi planificación, la práctica comenzará a finales del mes de Enero de 2018 y terminará por Abril.
+\item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Las prácticas curriculares en la empresa \textit{Telefónica Investigación y Desarrollo} concluyen el día 10 de Abril de 2018.
 
 \item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 19 (Android 4.4, KitKat). Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
-
-\item \textbf{Herramientas:} Se utilizará Firebase \footnote{\url{https://firebase.google.com/?hl=es-419}}. En concreto, las utilidades Analytics, Authentication, Crash Reporting Service, Storage, Notifications y Predictions.
 
 \item \textbf{Persistencia de datos: } Contaré con el servicio de gestión de bases de datos SQLite que ofrece Android de serie, con el fin de reducir la carga de peticiones que haga el usuario contra la plataforma.
 \end{enumerate}
@@ -1306,17 +1304,224 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{La aplicación se compilará con un SDK que soporte, como mínimo, la API 19 de Android (Android 4.4, KitKat)\cite{androidversiondist}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{"Room"}}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{"Room"} para la transferencia de datos hacia y desde la base de datos local.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
 \subsection{Casos de uso}
+\newcounter{usecase}\stepcounter{usecase}
+
 \begin{usecase}
-  \addheading{CU001}{System user} 
+  \addheading{\textbf{CU\arabic{usecase}}}{Gestionar equipo} 
   \addrow{Actor}{T}
-  \addrow{Precondition}{The system, shows, in the form part of an object type, the number indication.}
-  \addrow{Postcondition}{A disconnected number indicating the type of `other constructed object'.}
-  \addmulrow{Main path (M)}{
-  							\item User selects \ldots
-                            \item System demands \ldots
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
   }
-\end{usecase}
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Modificar perfil} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar perfil} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar logros} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar insignias} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar código QR} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar ranking} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar equipo} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Crear equipo} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Registrarse} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Enviar invitación} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Iniciar sesión} 
+  \addrow{Actor}{T}
+  \addrow{Precondiciones}{The system, shows, in the form part of an object type, the number indication.}
+  \addrow{Postcondiciones}{A disconnected number indicating the type of `other constructed object'.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
 \subsection{Modelo de dominio}
 \subsection{Diagrama de paquetes}
 \section{Diseño}
