@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  22 JAN 2018 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.24)  22 JAN 2018 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,12 +1409,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1309--1313
 
  []
 
-<images/usecase.png, id=136, 709.14937pt x 871.75688pt>
+<images/usecase.png, id=136, 1338.50063pt x 873.2625pt>
 File: images/usecase.png Graphic file (type png)
 
 <use images/usecase.png>
 Package pdftex.def Info: images/usecase.png used on input line 1327.
-(pdftex.def)             Requested size: 354.57382pt x 435.87738pt.
+(pdftex.def)             Requested size: 803.10658pt x 523.96153pt.
+
+Overfull \hbox (305.18333pt too wide) in paragraph at lines 1327--1328
+ [] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1437,17 +1442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1357--1378
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1410
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1402
 
  []
 
@@ -1455,27 +1450,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1411--1425
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1426--1440
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1441--1455
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1456--1470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1471--1485
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1418--1432
 
  []
 
@@ -1483,27 +1463,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 1486--1500
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1515
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1516--1530
+Underfull \hbox (badness 10000) in paragraph at lines 1448--1462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1531--1545
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1560
+Underfull \hbox (badness 10000) in paragraph at lines 1478--1492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1575
+Underfull \hbox (badness 10000) in paragraph at lines 1493--1507
 
  []
 
@@ -1511,70 +1491,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 1561--1575
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
-[35]
-Cap\'{\i }tulo 4.
-[36
+Underfull \hbox (badness 10000) in paragraph at lines 1508--1522
 
-]
-Cap\'{\i }tulo 5.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1553--1567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1582
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+[36]
+Cap\'{\i }tulo 4.
 [37
 
 ]
-Underfull \hbox (badness 1062) in paragraph at lines 1595--1596
+Cap\'{\i }tulo 5.
+[38
+
+]
+Underfull \hbox (badness 1062) in paragraph at lines 1602--1603
 \OT1/phv/m/n/10 de []ulti-ma vi-si-ta: 6 de No-viem-bre de 2017 $\OT1/cmtt/m/n/
 10 https : / / www . elconfidencial . com / empresas / 2014-[]04-[]27 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
+Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
 []\OT1/phv/m/sc/10 Alejandro. Om-ni-um Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El
  ma-yor ca-so de []exi-to de la lu-di-fi-ca-ci[]on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
+Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
 \OT1/phv/m/sl/10 en Es-pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 2
 1 de No-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
+Underfull \hbox (badness 10000) in paragraph at lines 1608--1609
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]^^Pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
+Underfull \hbox (badness 10000) in paragraph at lines 1608--1609
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 1608--1609
+Underfull \hbox (badness 1648) in paragraph at lines 1615--1616
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 1610--1611
+Underfull \hbox (badness 5119) in paragraph at lines 1617--1618
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 1622--1623
+Underfull \hbox (badness 1365) in paragraph at lines 1629--1630
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[38
+[39
 
-] [39]
+] [40]
 Cap\'{\i }tulo 6.
-[40
+[41
 
 ] (./route66.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -1598,10 +1606,10 @@ eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (45 pages, 9653530 bytes).
+Output written on route66.pdf (46 pages, 9656138 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
