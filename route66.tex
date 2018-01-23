@@ -1554,13 +1554,11 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
-  }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar mis logros".
+  		\item El sistema muestra al usuario los logros realizados, ordenados por fecha.
+  		\end{enumerate}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1569,13 +1567,11 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
-  }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar mis insignias".
+  		\item El sistema muestra al usuario las insignias obtenidas, ordenadas por fecha.
+  		\end{enumerate}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1584,13 +1580,11 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
-  }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar código QR".
+  		\item El sistema muestra al usuario su código QR.
+  		\end{enumerate}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1599,13 +1593,11 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
-  }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar ranking".
+  		\item El sistema muestra al usuario el ranking global de usuarios, ordenados por los puntos obtenidos.
+  		\end{enumerate}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1614,13 +1606,19 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar equipo". %1
+  		\item El sistema muestra al usuario el listado de equipos en los que es miembro. %2
+  		\item El usuario selecciona un equipo. %3
+  		\item El sistema muestra al usuario los detalles de ese equipo (miembros, nombre, visibilidad y avatar). %4
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 2a El sistema no encuentra ningún equipo en el que se encuentre el miembro. En ese caso, se muestra un mensaje al usuario y el caso de uso queda sin efecto.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1686,6 +1684,21 @@ Se identifican los siguientes actores:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Iniciar sesión} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addmulrow{Flujo principal}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+  \addmulrow{Flujos alternativos}{
+  		\item User selects \ldots
+        \item System demands \ldots
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Ver posiciones de otros jugadores} 
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
