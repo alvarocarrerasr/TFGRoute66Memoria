@@ -40,7 +40,7 @@
 
 \fancypagestyle{plain}{%
   \fancyhf{}
-  \fancyhead[CO,CE]{\begin{small}Route66App: Aplicación móvil de gamificación empresarial para conseguir fidelización de cliente	\end{small}\\\hrulefill}
+  \fancyhead[CO,CE]{\begin{small}Route66App: Aplicación móvil de ludificación empresarial para conseguir fidelización de cliente	\end{small}\\\hrulefill}
   \fancyfoot[RO, LE]{\hrulefill\\\thepage}
 }
 
@@ -115,7 +115,7 @@ Dña. Margarita Gonzalo Tasis\end{large}
 
 \clearpage
 \pagenumbering{arabic}
-t\chapter{Parte I: Introducción y contexto.}
+\chapter{Parte I: Introducción y contexto.}
 \section{Introducción y objetivos.}
 
 \subsection{Introducción.}
@@ -1059,11 +1059,6 @@ A realizar cuando sea preciso.
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Identificación del tipo de jugador}
-	\addrow{Descripción}{El sistema identificará el tipo de jugador.}
-\end{req}\\\stepcounter{functionalRequirements}
-
-\begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ranking de usuarios}
 	\addrow{Descripción}{El sistema permitirá ver el ranking de usuarios}
 \end{req}\\\stepcounter{functionalRequirements}
@@ -1197,13 +1192,13 @@ A realizar cuando sea preciso.
 		\item Nombre.
 		\item Apellidos.
 		\item Correo electrónico.
+		\item Teléfono.
 		\item Contraseña.
 		\item Avatar.
-		\item Tipo de jugador.
-		\item Tokens de acceso.
 		\item Misiones cumplidas.
 		\item Logros del jugador.
 		\item Insignias recibidas.
+		\item Consumos realizados.
 	\end{itemize}
 	\end{multicols}
 	}
@@ -1358,25 +1353,26 @@ A realizar cuando sea preciso.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[angle=90,scale=0.5]{images/usecase.png}
+\includegraphics[angle=90,scale=0.47]{images/usecase.png}
 \caption{Diagrama de casos de uso}
 \end{center}
 \end{figure}
 
 \subsubsection{Actores}
 
-Se identifican los siguientes actores:
+Se identifican un único actor:
 
 \begin{itemize}
-\item \textbf{Admin de grupo:} Es el actor encargado de administrar los grupos en los que tuviera este rol.
-\item \textbf{App user:} Es el actor base de Route66App, en su parte de aplicación móvil.
+\item \textbf{App user:} Es el actor base de Route66App, en su parte de aplicación móvil. Realiza todas las funciones: crear grupos, gestionar aquellos en los que actúa como administrador, cumplir misiones, realizar consumos, etcétera.
 \end{itemize}
+
+\subsubsection{Casos de uso}
 
 \newcounter{usecase}\stepcounter{usecase}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Añadir un miembro al equipo} 
-  \addrow{Actor}{Admin Grupo}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -1391,7 +1387,7 @@ Se identifican los siguientes actores:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a 5a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
   		\item 5b El identificador de usuario no pertenece a ningún usuario de la aplicación. En este caso, se muestra un mensaje alertándolo y se vuelve al paso 4.
   		\end{itemize}
@@ -1401,7 +1397,7 @@ Se identifican los siguientes actores:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar equipo} 
-  \addrow{Actor}{Admin Grupo}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -1416,12 +1412,102 @@ Se identifican los siguientes actores:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a 5a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
   		\item 6a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 5.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Invitar usuario al equipo} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Invitar usuario al equipo". %1
+  		\item El sistema muestra al usuario el listado de equipos que administra. %2
+  		\item El usuario elige un equipo. %3
+  		\item El sistema comprueba que el equipo tenga menos de 10 miembros. %4
+  		\item El sistema pregunta al usuario el correo electrónico o número de teléfono del usuario que desea agregar. %5
+  		\item El usuario introduce la información. %6
+  		\item El sistema comprueba el dato y añade al usuario al equipo. %7
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 6a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 4a El usuario ha elegido un grupo que tiene 10 usuarios o más. En este caso, el sistema muestra un mensaje y vuelve al paso 2.
+  		\item 5a El correo electrónico o teléfono del usuario no se corresponde con un usuario de la aplicación. En ese caso se notifica al usuario y se vuelve al paso 5, indicando en el formulario el correo electrónico o teléfono que hubiera introducido el usuario con anterioridad.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Nombrar administrador} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Nombrar administrador". %1
+  		\item El sistema muestra al usuario el listado de equipos que administra. %2
+  		\item El usuario elige un equipo. %3
+  		\item El sistema muestra al usuario el conjunto de miembros del equipo %4
+  		\item El usuario elige un miembro. %5
+  		\item El sistema actualiza la configuración de ese equipo. %6
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Eliminar miembro del equipo} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Eliminar miembro del equipo". %1
+  		\item El sistema muestra al usuario el listado de equipos que administra. %2
+  		\item El usuario elige un equipo. %3
+  		\item El sistema muestra al usuario el conjunto de miembros del equipo %4
+  		\item El usuario elige un miembro. %5
+  		\item El sistema actualiza la configuración de ese equipo. %6
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Eliminar equipo} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Eliminar equipo". %1
+  		\item El sistema muestra al usuario el listado de equipos que administra. %2
+  		\item El usuario elige un equipo. %3
+  		\item El sistema elimina el equipo %4
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
@@ -1435,15 +1521,22 @@ Se identifican los siguientes actores:
   		\item El usuario escoge un nivel. %3
   		\item El sistema muestra al usuario las misiones de ese nivel. %4.
   		\item El usuario escoge la misión que desea realizar %5.
-  		\item El sistema muestra al usuario la acción (juego, compartir por redes sociales, etcétera) que debe realizar para poder completar la misión. %6
-  		\item El usuario completa la misión %7
+  		\item El sistema busca en la base de datos si hay registros de anteriores intentos de resolver la misión y muestra al usuario la misión (\textit{punto de extensión TipoDeMisión}). %6
+  		\item El usuario completa la misión y genera el logro asociado a la misma.%7
   		\item El sistema actualiza la información, guardando que el usuario ha completado la misión. %8
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a 5a 7a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 1a 3a 5a 7a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
         \item 3b El usuario no selecciona el nivel que le corresponde completar (el nivel más bajo al que le falte por completar misiones). En ese caso, el sistema muestra un mensaje y vuelve al paso 2.
+        
+        \item 6a El usuario ha escogido una misión (\textit{punto de extensión TipoDeMisión}) de tipo \textit{“juego social“}. En este caso, se acude al caso de uso “Realizar juego social“, pasando a este caso de uso el identificador de la misión que se va a realizar.
+        
+        \item 6b El usuario ha escogido una misión (\textit{punto de extensión TipoDeMisión}) de tipo \textit{“minijuego“}. En este caso, se acude al caso de uso “Realizar minijuego“, pasando a este caso de uso el identificador de la misión que se va a realizar.
+        
+        \item 6c El usuario ha escogido una misión (\textit{punto de extensión TipoDeMisión}) de tipo \textit{“consumo“}. En este caso, se acude al caso de uso “Realizar misión de consumo“, pasando a este caso de uso el identificador de la misión que se va a realizar.
+        
         \item 7b El usuario no completa la misión. En ese caso, se pregunta al usuario si desea volver a intentar
   		\end{itemize}
   }
@@ -1454,13 +1547,17 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado.
+  		\item El sistema muestra al usuario el consumo que debe realizar para marcar la misión como completada.
+  		\item El sistema comprueba si existe algún registro de consumo asociado al usuario que tenga un importe, como mínimo, el que exige la misión para ser completada. Este registro deberá haberse registrado con fecha posterior a la hora de entrada, por primera vez a la actividad.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 3a No existe ningún registro de consumo que cumpla tales caracterísiticas, en ese caso, se informa al usuario.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1469,13 +1566,20 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado. %1
+  		\item El sistema muestra al usuario el minijuego asociado a la misión. %2
+  		\item El sistema introduce un escuchador detrás del navegador donde se muestra el juego para obtener los resultados del mismo. %3
+  		\item El sistema da el control del mismo al juego. %4
+  		\item El sistema recibe los resultados del juego por medio del escuchador. %5
+  		\item El sistema comprueba que los resultados del juego estén dentro del intervalo de lo pedido para la misión. %6
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 6a Los parámetros recibidos no se corresponden con los valores que se exigen para completar la misión. En ese caso, se muestra un mensaje al usuario, se envía un mensaje de reporte al servidor y se pregunta al usuario si desea volver a intentar la misión. En caso afirmativo se volvería al paso 2. En caso negativo, se saldría de los casos de uso Realizar misión y Realizar minijuego.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1509,7 +1613,7 @@ Se identifican los siguientes actores:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 3a. El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 3a. El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 3b. El usuario ha seleccionado un nivel superior a aquel en el que se encuentra el usuario. En este caso, se muestra un mensaje al usuario y se vuelve al paso 2.
   		\end{itemize}
   }
@@ -1530,7 +1634,7 @@ Se identifican los siguientes actores:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 4a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 5.
   		\end{itemize}
   		}
@@ -1616,7 +1720,7 @@ Se identifican los siguientes actores:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a El usuario cancela la operación. En este caso el caso de uso termina y queda sin efecto.
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 2a El sistema no encuentra ningún equipo en el que se encuentre el miembro. En ese caso, se muestra un mensaje al usuario y el caso de uso queda sin efecto.
   		\end{itemize}
   }
@@ -1627,13 +1731,20 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Crear equipo". %1
+  		\item El sistema pregunta al usuario el nombre del equipo, así como el tipo de visibilidad del equipo. %2
+  		\item El usuario introduce los datos. %3
+  		\item El sistema comprueba los datos y crea el equipo. %4
+  		\item Se pasa al caso de uso "Invitar usuario al equipo", indicando cuál es el equipo que acaba de ser recién creado.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 4a El usuario ha introducido un nombre de equipo ya existente. En este caso, el sistema muestra un mensaje y le vuelve a solicitar el dato.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1642,13 +1753,19 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{Ninguna.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Registrarse". %1
+  		\item El sistema pregunta al usuario cuál es su correo electrónico, una contraseña, así como su nombre y apellidos. %2
+  		\item El usuario introduce la información. %3
+  		\item El sistema comprueba la información y crea el usuario. %4
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 4a El sistema identifica un usuario ya registrado con el correo electrónico proporcionado. En ese caso, se muestra al usuario un mensaje alertándole y se vuelve al paso 2, pero completando el formulario con la información que ya hubiera introducido el usuario.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1657,13 +1774,18 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{Ninguna.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Nota}{Este caso de uso depende del componente Firebase Invitations, que a su vez depende de Firebase Dynamic Links.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El sistema recibe una llamada de Firebase Invitations que le proporciona el identificador de la invitación.
+  		\item El sistema busca en la base de datos qué usuario ha enviado esa invitación.
+  		\item Se pasa al caso de uso “Registrarse", junto con el dato del usuario que ha enviado la invitación.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 2a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1672,13 +1794,18 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Enviar invitación".
+  		\item El sistema genera un identificador único de invitación.
+  		\item El sistema muestra al usuario el cuadro de diálogo del sistema para enviar la invitación.
+  		\item El usuario comparte la invitación.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 2a 3a 4a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1687,13 +1814,20 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Iniciar sesión". %1
+  		\item El sistema pregunta al usuario el correo electrónico, así como su contraseña. %2
+  		\item El usuario introduce la información solicitada. %3
+  		\item El sistema identifica al usuario. %4
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 4a El usuario ha introducido un correo electrónico de un usuario no perteneciente al sistema. En este caso, se notifica al usuario y se vuelve al paso 2.
+  		\item 4b El usuario ha introducido una contraseña distinta a la que tiene el usuario. En este caso, se notifica al usuario y se vuelve al paso 2.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1702,13 +1836,16 @@ Se identifican los siguientes actores:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Ver posiciones de otros jugadores"
+  		\item El sistema muestra al usuario las distintas posiciones de los miembros de los equipos a los que pertenece en un mapa. También mostrará la posición del usuario en el mapa.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 2a El usuario no pertenece a ningún equipo o estos solo están integrados por un solo miembro. En este caso, solo se muestra la posición del usuario.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1733,6 +1870,16 @@ Se identifican los siguientes actores:
 \chapter{Parte IV: Conclusiones y trabajo futuro.}
 \section{Conclusiones}
 \section{Trabajo futuro}
+
+Propongo las siguientes ideas para extender las funcionalidades de la aplicación:
+\begin{enumerate}
+\item Integrar el sistema de ludificación desarrollado en una aplicación que será utilizada en un ambiente real. Un ejemplo podría ser utilizar la cafetería de la Escuela de Ingeniería Informática para ello.
+
+\item Al igual que se ha visto en el estudio de alternativas en el caso de VIPS, permitir pagar la cuenta directamente con saldo recargable. Con cada recarga, el usuario se llevaría una serie de puntos por completar logros de recargas.
+
+\item Poder realizar pedidos directamente desde la aplicación.
+\end{enumerate}
+
 \chapter{Webgrafía y Bibliografía}
 \begin{thebibliography}{a} 
 \section{Webgrafía}
