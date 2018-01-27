@@ -492,6 +492,27 @@ Para el control y seguimiento del proyecto utilizaré la herramienta Zoho Projec
 Finalmente, he empleado Firebase \footnote{\url{https://firebase.google.com/}}
 
 \section{Comunicación con el servidor}
+La comunicación con el servidor es fundamental para el buen funcionamiento de la aplicación. En concreto, se deberá comunicar por los siguientes motivos:
+
+\begin{itemize}
+\item Realización de estadísticas: inicios y finalizaciones de una misión (para comprobar el éxito de las mismas), uso del usuario de la aplicación, etcétera.
+
+\item Realización de misiones: las misiones de consumo y de reto social requieren una conexión a Internet para asegurarse de que el usuario haya completado el reto.
+
+\item Descarga de nuevas misiones y niveles: uno de los requisitos del sistema informático en su conjunto es el de que el administrador pueda gestionar desde la parte Web los niveles y misiones, añadiendo y modificando bajo demanda.
+
+\item Manteninimiento de un ranking global.
+\end{itemize}
+
+Encontraremos dos tipos de conexiones:
+
+\begin{itemize}
+\item Conexiones realizadas a Firebase: datos estadísticos, de sesiones, invitaciones, etcétera.
+
+\item Conexiones realizadas contra la API de Gestión: la API de Gestión, que dependerá de Firebase para la autenticación de los usuarios, deberá gestionar todo lo relativo a los niveles, misiones, consumos, logros, equipos e insignias.
+
+\end{itemize}
+
 
 \chapter{Parte III: Route66App}
 \section{Plan de Desarrollo del Software}
@@ -1370,30 +1391,6 @@ Se identifican un único actor:
 
 \newcounter{usecase}\stepcounter{usecase}
 
-\begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Añadir un miembro al equipo} 
-  \addrow{Actor}{App user.}
-  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
-  \addrow{Flujo principal}{
-  		\begin{enumerate}
-  		\item El usuario selecciona “Añadir un miembro al equipo". %1
-        \item El sistema muestra al usuario el listado de equipos. %2
-        \item El usuario selecciona un equipo de la lista. %3
-        \item El sistema pide al usuario el identificador del usuario que desea agregar al equipo. %4%
-        \item El usuario introduce el identificador del usuario. %5
-        \item El sistema agrega al usuario al equipo. %6
-  		\end{enumerate}
-  }
-  \addrow{Flujos alternativos}{
-  		\begin{itemize}
-  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
-  		\item 5b El identificador de usuario no pertenece a ningún usuario de la aplicación. En este caso, se muestra un mensaje alertándolo y se vuelve al paso 4.
-  		\end{itemize}
-  }
-\end{usecase}\\\stepcounter{usecase}
-
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar equipo} 
@@ -1588,13 +1585,17 @@ Se identifican un único actor:
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
-  \addmulrow{Flujo principal}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado.
+  		\item El sistema muestra al usuario el reto social que debe realizar para marcar la misión como completada.
+  		\item El sistema comprueba si existe algún registro de reto socal asociado al usuario. Este registro deberá haberse registrado con fecha posterior a la hora de entrada, por primera vez a la actividad.
+  		\end{enumerate}
   }
-  \addmulrow{Flujos alternativos}{
-  		\item User selects \ldots
-        \item System demands \ldots
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 3a No existe ningún registro de consumo que cumpla tales caracterísiticas, en ese caso, se informa al usuario.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -1858,12 +1859,12 @@ Se identifican un único actor:
 \end{center}
 \end{figure}
 
-\subsection{Diagrama de paquetes}
+\subsection{Diagramas de secuencia}
+
 \section{Diseño}
 \subsection{Arquitectura}
 \subsection{Patrones utilizados}
 \subsection{Esquema de la base de datos}
-\subsection{Diagramas de secuencia}
 \section{Implementación}
 \section{Pruebas}
 
