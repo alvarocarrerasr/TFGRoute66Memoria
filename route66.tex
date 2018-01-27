@@ -1114,6 +1114,16 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema permitirá mostrar el círculo de progresos relativo a cada usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Identificación de usuarios}
+	\addrow{Descripción}{El sistema permitirá identificar usuarios por correo electrónico o número de teléfono.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Agenda.}
+	\addrow{Descripción}{El sistema podrá utilizar la agenda de contactos del dispositivo para elegir a un usuario.}
+\end{req}\\\stepcounter{functionalRequirements}
+
 \textbf{Relacionados con los grupos}\\
 
 \begin{req}
@@ -1259,6 +1269,11 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Facebook, Google y Twitter.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Identificación de usuarios}
+	\addrow{Descripción}{Se identificarán a los usuarios por correo electrónico, teléfono o identificador único de usuario.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
 \textbf{Relacionados con los grupos/equipos}\\
 
 \begin{req}
@@ -1353,6 +1368,18 @@ A realizar cuando sea preciso.
 	\item Facebook.
 	\item Instagram.
 	\end{itemize}}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\textbf{Dinámica del juego}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Niveles}
+	\addrow{Descripción}{Un nivel solo podrá ser completado cuando todas las misiones del mismo hayan sido completadas.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Acceso a misiones}
+	\addrow{Descripción}{No se podrá acceder a realizar una misión perteneciente a un nivel más alto del que se encuentra el usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \subsubsection{Reglas de negocio}

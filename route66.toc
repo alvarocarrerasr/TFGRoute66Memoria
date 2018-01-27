@@ -61,22 +61,22 @@
 \contentsline {subsection}{\numberline {3.2.1}Requisitos}{27}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{27}
 \contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{29}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Reglas de negocio}{30}
-\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{31}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{32}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{32}
-\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{45}
-\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{46}
-\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{46}
-\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{46}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{46}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{46}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{46}
-\contentsline {section}{\numberline {3.5}Pruebas}{46}
-\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{47}
-\contentsline {section}{\numberline {4.1}Conclusiones}{47}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{47}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{48}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{49}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{50}
-\contentsline {chapter}{\numberline {6}Anexos}{51}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Reglas de negocio}{31}
+\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{32}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{33}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{33}
+\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{46}
+\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{47}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{47}
+\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{47}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{47}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{47}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{47}
+\contentsline {section}{\numberline {3.5}Pruebas}{47}
+\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{48}
+\contentsline {section}{\numberline {4.1}Conclusiones}{48}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{48}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{49}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{50}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{51}
+\contentsline {chapter}{\numberline {6}Anexos}{52}
