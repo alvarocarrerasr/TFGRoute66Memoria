@@ -1,6 +1,6 @@
 \documentclass[twoside]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish, activeacute]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{booktabs}
@@ -1968,17 +1968,91 @@ Se identifican un único actor:
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[angle=90,scale=0.5]{images/clases.png}
+\includegraphics[scale=0.4]{images/clases.png}
 \caption{Modelo de dominio}
 \end{center}
 \end{figure}
 
 \subsection{Diagramas de secuencia}
 
+Debido a su extensión, se han seleccionado los diagramas de secuencia de tres casos de uso relevantes para ser incorporados a esta memoria.
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequenceAddUserToGroup}
+\caption{Diagrama de secuencia del caso de uso A\~{n}adir usuario al grupo}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequenceNameAdmin}
+\caption{Diagrama de secuencia del caso de uso Nombrar un administrador}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequenceDeleteMember}
+\caption{Diagrama de secuencia del caso de uso Eliminar a un usuario de un equipo}
+\end{figure}
+
 \section{Diseño}
 \subsection{Arquitectura}
+La aplicación se estructura, a alto nivel en los siguientes paquetes:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/structureHighLevel}
+\caption{Diagrama de paquetes de alto nivel de la aplicación}
+\end{figure}
+
+La estructura interna de los paquetes es:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/structureLoginGameModel}
+\caption{Diagrama de clases de los paquetes \textit{LoginActivity}, \textit{GameActivity} y \textit{Model}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/structureMainActivity}
+\caption{Diagrama de clases del paquete \textit{MainActivity}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/structureMissions}
+\caption{Diagrama de clases del paquete \textit{MissionsActivity}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/structureNormal}
+\caption{Diagrama de clases del paquete \textit{NormalActivity}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/structureTeam}
+\caption{Diagrama de clases del paquete \textit{TeamActivity}}
+\end{figure}
+
 \subsection{Patrones utilizados}
+Se ha decidido emplear los siguientes patrones en el diseño de la arquitectura:
+\begin{itemize}
+\item MVC (Modelo Vista Controlador), como patrón empleado en la interfaz de usuario.
+\end{itemize}
 \subsection{Esquema de la base de datos}
+Como se ha indicado en secciones anteriores, se ha decidido utilizar Firebase como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: Firebase Realtime Database y Firebase Firestore, se ha elegido la segunda ya que es mucho más compleja y permite una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/databaseNRteams}
+\caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/databaseNRusers}
+\caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
+\end{figure}
+
 \section{Implementación}
 \section{Pruebas}
 
@@ -1986,7 +2060,8 @@ Se identifican un único actor:
 \section{Conclusiones}
 \section{Trabajo futuro}
 
-Propongo las siguientes ideas para extender las funcionalidades de la aplicación:
+Se proponen las siguientes ideas para extender las funcionalidades de la aplicación:
+
 \begin{enumerate}
 \item Integrar el sistema de ludificación desarrollado en una aplicación que será utilizada en un ambiente real. Un ejemplo podría ser utilizar la cafetería de la Escuela de Ingeniería Informática para ello.
 
