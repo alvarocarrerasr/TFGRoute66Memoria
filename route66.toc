@@ -51,7 +51,7 @@
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{22}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{22}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{22}
-\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{22}
+\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{23}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{23}
 \contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{25}
 \contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{25}
@@ -59,7 +59,7 @@
 \contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{26}
 \contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{26}
 \contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{27}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{27}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{28}
 \contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{28}
 \contentsline {subsection}{\numberline {3.2.1}Requisitos}{28}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{28}
