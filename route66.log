@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  11 FEB 2018 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  11 FEB 2018 19:30
 entering extended mode
 **./route66.tex
 (route66.tex
@@ -1707,121 +1707,137 @@ Package pdftex.def Info: Requested size: 374.45183pt x 99.82368pt on input line
  2032.
 [51 <./images/structureMainActivity.png> <./images/structureMissions.png> <./im
 ages/structureNormal.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2042--2043
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2051
 
  []
 
 <images/databaseNRteams.png, id=234, 705.38531pt x 584.1825pt>
 File: images/databaseNRteams.png Graphic file (type png)
 <use images/databaseNRteams.png>
-Package pdftex.def Info: images/databaseNRteams.png  used on input line 2046. o
-n input line 2046.
+Package pdftex.def Info: images/databaseNRteams.png  used on input line 2054. o
+n input line 2054.
 Package pdftex.def Info: Requested size: 352.69179pt x 292.09053pt on input lin
-e 2046.
-<images/databaseNRusers.png, id=235, 790.45313pt x 516.42938pt>
+e 2054.
+[52 <./images/structureTeam.png>]
+<images/databaseNRusers.png, id=239, 790.45313pt x 516.42938pt>
 File: images/databaseNRusers.png Graphic file (type png)
 <use images/databaseNRusers.png>
-Package pdftex.def Info: images/databaseNRusers.png  used on input line 2052. o
-n input line 2052.
+Package pdftex.def Info: images/databaseNRusers.png  used on input line 2060. o
+n input line 2060.
 Package pdftex.def Info: Requested size: 395.22559pt x 258.21405pt on input lin
-e 2052.
-[52 <./images/structureTeam.png> <./images/databaseNRteams.png>] [53 <./images/
-databaseNRusers.png>]
+e 2060.
+ [53 <./images/databaseNRteams.png> <./images/databaseNRusers.png>] [54]
 Cap\'{\i }tulo 4.
-[54
-
-]
-Cap\'{\i }tulo 5.
 [55
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2084
+Cap\'{\i }tulo 5.
+[56
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
 []\OT1/phv/m/sc/10 Omnium Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El ma-yor ca-so
  de []exi-to de la lu-di-fi-ca-ci[]on en Es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2084
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
 \OT1/phv/m/sl/10 pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 21 de N
 o-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2085--2086
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2085--2086
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2091--2092
+Underfull \hbox (badness 1648) in paragraph at lines 2102--2103
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 2093--2094
+Underfull \hbox (badness 5119) in paragraph at lines 2104--2105
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 2105--2106
+Underfull \hbox (badness 1365) in paragraph at lines 2116--2117
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[56
+[57
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2123
 []\OT1/phv/m/sc/10 Zhitnitsky, Alex\OT1/phv/m/n/10 . The Top 10 Ex-cep-tion Ty-
 pes in Pro-duc-tion Ja-va Ap-pli-ca-tions -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2123
 \OT1/phv/m/n/10 Ba-sed on 1B Events. Fe-cha de []ulti-ma vi-si-ta: 08/02/2018 $
 \OT1/cmtt/m/n/10 https : / / blog . takipi . com /
  []
 
-[57]
+
+Underfull \hbox (badness 2617) in paragraph at lines 2132--2133
+[]\OT1/phv/m/sc/10 Servicio de in-form[]ati-ca de la Uni-ver-si-dad de Ali-can-
+te \OT1/phv/m/n/10 Mo-de-lo vis-ta con-tro-la-dor (MVC).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2132--2133
+\OT1/phv/m/n/10 Fe-cha de []ulti-ma vi-si-ta 11/02/2018 $\OT1/cmtt/m/n/10 https
+ : / / si . ua . es / es / documentacion / asp-[]net-[]mvc-[]3 / 1-[]dia /
+ []
+
+[58]
 Cap\'{\i }tulo 6.
-[58
+[59
 
 ] (route66.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-) ) 
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6148 strings out of 493312
- 81131 string characters out of 3138891
+ 6149 strings out of 493312
+ 81138 string characters out of 3138891
  271518 words of memory out of 3000000
- 9488 multiletter control sequences out of 15000+200000
+ 9489 multiletter control sequences out of 15000+200000
  40688 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,17n,47p,811b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (63 pages, 10204426 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvro8a.pfb>
+Output written on route66.pdf (64 pages, 10206486 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
+ 300 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
