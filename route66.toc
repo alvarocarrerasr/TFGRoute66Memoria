@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{\numberline {1.2.1.6}Foster's Hollywood}{7}
 \contentsline {subsection}{\numberline {1.2.2}Conclusiones extra\IeC {\'\i }das}{8}
 \contentsline {section}{\numberline {1.3}Estructura de la memoria}{8}
-\contentsline {section}{\numberline {1.4}Propuesta.}{9}
+\contentsline {section}{\numberline {1.4}Propuesta.}{8}
 \contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{9}
 \contentsline {chapter}{\numberline {2}Parte II: Herramientas utilizadas}{12}
 \contentsline {section}{\numberline {2.1}Herramientas utilizadas}{12}
