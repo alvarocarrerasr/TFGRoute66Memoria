@@ -18,13 +18,14 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de secuencia del caso de uso Nombrar un administrador}}{50}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de secuencia del caso de uso Eliminar a un usuario de un equipo}}{50}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de paquetes de alto nivel de la aplicaci\IeC {\'o}n}}{51}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity}, \textit {GameActivity} y \textit {Model}}}{51}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}}}{52}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de clases del paquete \textit {MissionsActivity}}}{52}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de clases del paquete \textit {NormalActivity}}}{52}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de clases \textit {Model}}}{51}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity} y \textit {GameActivity}}}{52}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}}}{52}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de clases del paquete \textit {MissionsActivity}}}{53}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}}}{53}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{54}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{54}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{55}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{55}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Esquema de la base de datos relacional gestionada por el ORM \textit {Room}}}{56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
