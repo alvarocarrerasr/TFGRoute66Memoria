@@ -646,15 +646,16 @@ El proyecto aplicará el Proceso Unificado (\textit{Unified Process}), en concre
 La iteratividad supone ciertas ventajas, como que se pueden mitigar los riesgos más críticos en las fases más tempranas o que permite obtener \textit{feedback} mucho antes, además, el aprendizaje obtenido se puede reaprovechar en etapas posteriores.
 
 \subsection{Restricciones}
-Se imponen las siguientes restricciones:
+Se imponen las siguientes restricciones, extraídas tras una serie de entrevistas con la tutora del trabajo:
+
 \begin{enumerate}
 \item \textbf{Tiempo:} Este proyecto se realiza para cumplir con los objetivos de la asignatura Trabajo de Fin de Grado. Mención Ingeniería del Software, correspondiente a 12 créditos ECTS, unas 300 horas.
 
-\item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas de Empresa), no podrá ser entregado. Las prácticas curriculares en la empresa \textit{Telefónica Investigación y Desarrollo} concluyen el día 10 de Abril de 2018.
+\item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas en Empresa), no podrá ser entregado. Las prácticas curriculares en la empresa \textit{Telefónica Investigación y Desarrollo} concluyen el día 10 de Abril de 2018.
 
 \item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 19 (Android 4.4, KitKat). Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
 
-\item \textbf{Persistencia de datos: } Contaré con el servicio de gestión de bases de datos SQLite que ofrece Android de serie, con el fin de reducir la carga de peticiones que haga el usuario contra la plataforma.
+\item \textbf{Datos en el dispositivo } la aplicación deberá contar con una caché de los datos en el dispositivo del cliente con el fin de reducir el número de peticiones que se hagan contra Firebase, así como para acelerar el funcionamiento de la aplicación en lugares con una baja conectividad.
 \end{enumerate}
 
 \subsection{Estructura organizativa}
@@ -665,10 +666,10 @@ La estructura organizativa del proyecto estará formada por una única persona, 
 \begin{tabular}{llll}
 \cline{1-2}
 \multicolumn{1}{|c|}{Rol} & \multicolumn{1}{c|}{Encargado} &  &  \\ \cline{1-2}
-\multicolumn{1}{|l|}{Desarrollador}                                      & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
-\multicolumn{1}{|l|}{Analista}                                           & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
-\multicolumn{1}{|l|}{Gestor de proyecto}                                 & \multicolumn{1}{l|}{Álvaro Carreras}                                          &  &  \\ \cline{1-2}
-\multicolumn{1}{|l|}{Diseñador}                                          & \multicolumn{1}{l|}{Álvaro Carreras}                                                         &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Desarrollador}                                      & \multicolumn{1}{l|}{Álvaro Carreras Regorigo}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Analista}                                           & \multicolumn{1}{l|}{Álvaro Carreras Regorigo}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Gestor de proyecto}                                 & \multicolumn{1}{l|}{Álvaro Carreras Regorigo}                                          &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{Diseñador}                                          & \multicolumn{1}{l|}{Álvaro Carreras Regorigo}                                                         &  &  \\ \cline{1-2}
                                                                          &                                                                               &  & 
 \end{tabular}
 \centering
@@ -737,13 +738,15 @@ Como se ha indicado en los apartados anteriores, este proyecto se ha dividido en
 \begin{tabular}{|l|l|l|l|}
 \hline
 Nombre de la fase & Núm.. Iteraciones & Horas de trabajo & Duración estimada \\ \hline
-Inicio            & 1                 & 10 horas/semana  & 5 semanas       \\ \hline
-Elaboración       & 2                 & 20 horas/semana  & 4 semanas     \\ \hline
-Construcción      & 2                 & 20 horas/semana  & 6-7 semanas       \\ \hline
-Transición        & 1                 & 5 horas/semana   & 2-3 semanas       \\ \hline
+Inicio            & 1                 & 10 horas/semana  & 61 horas       \\ \hline
+Elaboración       & 2                 & 20 horas/semana  & 75 horas    \\ \hline
+Construcción      & 2                 & 20 horas/semana  & 108 horas       \\ \hline
+Transición        & 1                 & 20 horas/semana   & 42 horas       \\ \hline
 \end{tabular}
 \caption{Fases del proceso UPedu}
 \end{table}
+
+La duración estimada total es de 311 horas, a lo que habría que añadir las necesarias para acudir a las tutorías.
 
 \paragraph{Fase de inicio}\mbox{}\\
 
@@ -797,7 +800,7 @@ Revisión de requisitos      & 20/01/2018        & 21/12/2018   & 5 horas   \\ \
 Diagrama de casos de uso    & 22/01/2018        & 22/12/2018   & 1 hora   \\ \hline
 Realización de casos de uso & 22/01/2018        & 25/01/2018   & 10 horas  \\ \hline
 Diagramas de secuencia      & 26/01/2018        & 01/02/2018   & 20 horas  \\ \hline
-Modelo de Dominio 			 & 02/02/2018        & 03/02/2018   & 5 horas 	  \\ \hline
+Modelo de Dominio 			& 02/02/2018        & 03/02/2018   & 5 horas    \\ \hline
 Diseño de la Base de Datos  & 02/02/2018        & 02/02/2018   & 3 horas   \\ \hline
 Plan inicial de pruebas     & 03/02/2018        & 05/02/2018   & 5 horas   \\ \hline
 Arquitectura del sistema    & 05/02/2018        & 10/02/2018   & 13 horas   \\ \hline
@@ -833,20 +836,24 @@ Comienza el día 1 de Marzo de 2018 y finaliza el 16 de Abril de 2018.
 \begin{tabular}{|l|l|l|l|}
 \hline
 Nombre de la tarea             & Fecha de comienzo & Fecha de fin & Duración \\ \hline
-Implementación del sistema     & 01/03/2018        & 01/04/2018   & 32 días  \\ \hline
-Realización de casos de prueba & 01/03/2018        & 01/04/2018   & 32 días  \\ \hline
+Implementación del sistema & \multirow{2}{*}{01/03/2018}  & \multirow{2}{*}{01/04/2018}   & \multirow{2}{*}{91 horas}  \\
+Realización de casos de prueba & & & \\
+\hline
 \end{tabular}
 \caption{Iteración 3. Fase de construcción.}
 \end{table}
+
+En la iteración 3 (Fase de construcción) se ha estipulado la misma duración y mismas fechas a ambas tareas porque se planea implementar e inmediatamente probar.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
 Nombre de la tarea                & Fecha de comienzo & Fecha de fin & Duración \\ \hline
-Implementación del sistema        & 01/04/2018        & 16/04/2018   & 16 días  \\ \hline
-Elaboración del manual de usuario & 17/04/2018        & 24/04/2018   & 8 días   \\ \hline
-Realización de casos de prueba    & 01/04/2018        & 16/04/2018   & 16 días  \\ \hline
+Implementación del sistema        & \multirow{2}{*}{02/04/2018} & \multirow{2}{*}{05/04/2018}   & \multirow{2}{*}{7 horas}  \\
+Realización de casos de prueba    & &   &   \\ \hline
+Elaboración del manual de usuario & 05/04/2018        & 10/04/2018   & 10 horas   \\ \hline
+
 \end{tabular}
 \caption{Iteración 4. Fase de construcción.}
 \end{table}
@@ -860,8 +867,9 @@ Comienza el día 16 de Abril de 2018 y finaliza el 30 de Abril de 2018.
 \begin{tabular}{|l|l|l|l|}
 \hline
 Nombre de la tarea              & Fecha de comienzo & Fecha de fin & Duración \\ \hline
-Revisión de documentación       & 16/04/2018        & 23/04/2018   & 8 días   \\ \hline
-Revisión de entregables software & 23/04/2018        & 30/04/2018   & 8 días   \\ \hline
+Revisión de documentación       & 11/04/2018        & 15/04/2018   & 12 horas   \\ \hline
+Revisión de entregables software & 15/04/2018        & 18/04/2018   & 9 horas   \\ \hline
+Revisión de la memoria & 18/04/2018        & 25/04/2018   & 21 horas   \\ \hline
 \end{tabular}
 \caption{Iteración 5. Fase de transición.}
 \end{table}
@@ -1137,7 +1145,28 @@ Los costes indirectos son aquellos derivados del uso de calefacción, electricid
 El coste total de este apartado es de 2.872 \euro.
 
 \subsection{Desviaciones sobre el calendario planificado}
-A realizar cuando sea preciso.
+
+\begin{table}[H]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Iteración & Etapa        & Fecha de inicio real & Fecha inicio estimada & Fecha de fin real & Fecha fin estimada & Diferencia finalización \\ \hline
+0         & Inicio       & 03/11/2017           & 06/11/2017            & 12/12/2017        & 10/12/2017         & 2 días                  \\ \hline
+1         & Elaboración  & 20/01/2018           & 20/01/2018            & 15/02/2018        & 10/02/2018         & 5 días                  \\ \hline
+2         & Elaboración  & 16/02/2018           & 11/02/2018            &                   & 20/02/2018         &                         \\ \hline
+3         & Construcción &                      & 20/02/2018            &                   & 01/04/2018         &                         \\ \hline
+4         & Construcción &                      & 02/04/2018            &                   & 10/04/2018         &                         \\ \hline
+5         & Transición   &                      & 11/04/2018            &                   & 25/04/2018         &                         \\ \hline
+\end{tabular}%
+}
+\caption{Desviaciones sobre el calendario planificado}
+\end{table}
+
+Tras un análisis de los retrasos sobre la planificación establecida se extraen las siguientes conclusiones:
+
+
 \section{Análisis}
 \subsection{Requisitos}
 
@@ -1211,6 +1240,11 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{El sistema podrá utilizar la agenda de contactos del dispositivo para elegir a un usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios.}
+	\addrow{Descripción}{El sistema permitirá conceder premios a los usuarios.}
+\end{req}\\\stepcounter{functionalRequirements}
+
 \textbf{Relacionados con los grupos}\\
 
 \begin{req}
@@ -1268,6 +1302,28 @@ A realizar cuando sea preciso.
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del grupo/equipo a nivel global}
 	\addrow{Descripción}{El sistema mostrará la posición de un grupo en el juego}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\textbf{Relacionados con las misiones}\\
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones}
+	\addrow{Descripción}{El sistema mostrará al usuario qué acción debe realizar para considerar la misión como finalizada.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo juego}
+	\addrow{Descripción}{El sistema permitirá mostrar un juego para que el usuario pueda completar una misión de tipo juego}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo social}
+	\addrow{Descripción}{El sistema permitirá mostrar la información necesaria para completar una misión de tipo social.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo gasto}
+	\addrow{Descripción}{El sistema comprobará el gasto que haga el usuario en los restaurantes de la cadena, con el fin de comprobar si una misión de tipo gasto ha sido completada}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \textbf{Otros aspectos}\\
@@ -1431,9 +1487,10 @@ A realizar cuando sea preciso.
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Mapas}
-	\addrow{Descripción}{El sistema utilizará Google Maps API for Android \footnote{https://developers.google.com/maps/documentation/android-api/} para mostrar mapas al usuario.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de generación de códigos QR}
+	\addrow{Descripción}{El sistema utilizará la biblioteca ZXing para la generación de códigos QR}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
 
 \textbf{Otros aspectos}\\
 
@@ -1444,7 +1501,7 @@ A realizar cuando sea preciso.
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{"Room"}}
-	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{"Room"} para la transferencia de datos hacia y desde la base de datos local.}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia Room como ORM de gestión de la base de datos local no gestionada por Firebase}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1469,11 +1526,27 @@ A realizar cuando sea preciso.
 	\addrow{Descripción}{No se podrá acceder a realizar una misión perteneciente a un nivel más alto del que se encuentra el usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\subsubsection{Reglas de negocio}
-\newcounter{business}
+\textbf{Juegos}\\
 
 \begin{req}
-	\addheading{\textbf{RN\arabic{business}}}{Tipos de logros.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Juegos}
+	\addrow{Descripción}{Los juegos (misiones de tipo juego) estarán programados con tecnología Web}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Reproducción de juegos}
+	\addrow{Descripción}{Se utilizará un webview integrado en la aplicación para la reproducción de los juegos.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Recepción de la información}
+	\addrow{Descripción}{Se utilizará un \textit{bridge} Javascript con el fin de transferir los datos resultado del juego a la aplicación.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\textbf{Logros}\\
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de logros.}
 	\addrow{Descripción}{Existirán los siguientes tipos de logros:
 	\begin{itemize}
 	\item Logros asociados al consumo.
@@ -1482,7 +1555,7 @@ A realizar cuando sea preciso.
 	\item Logros asociados a darse de alta en la aplicación.
 	\item Logros asociados a la finalización de un nivel.
 	\end{itemize}}
-\end{req}\\\stepcounter{business}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \subsection{Casos de uso}
 
