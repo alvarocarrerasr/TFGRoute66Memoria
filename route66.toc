@@ -77,10 +77,10 @@
 \contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{54}
 \contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{56}
 \contentsline {section}{\numberline {3.5}Pruebas}{56}
-\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{57}
-\contentsline {section}{\numberline {4.1}Conclusiones}{57}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{57}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{58}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{59}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{60}
-\contentsline {chapter}{\numberline {6}Anexos}{61}
+\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{58}
+\contentsline {section}{\numberline {4.1}Conclusiones}{58}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{58}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{59}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{60}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{61}
+\contentsline {chapter}{\numberline {6}Anexos}{62}

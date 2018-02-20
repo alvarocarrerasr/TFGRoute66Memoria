@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  17 FEB 2018 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  20 FEB 2018 21:41
 entering extended mode
 **./route66.tex
 (route66.tex
@@ -1769,12 +1769,12 @@ n input line 2151.
 Package pdftex.def Info: Requested size: 352.69179pt x 292.09053pt on input lin
 e 2151.
 [54]
-<images/databaseNRusers.png, id=245, 790.45313pt x 516.42938pt>
+<images/databaseNRusers.png, id=245, 790.45313pt x 518.6878pt>
 File: images/databaseNRusers.png Graphic file (type png)
 <use images/databaseNRusers.png>
 Package pdftex.def Info: images/databaseNRusers.png  used on input line 2157. o
 n input line 2157.
-Package pdftex.def Info: Requested size: 395.22559pt x 258.21405pt on input lin
+Package pdftex.def Info: Requested size: 395.22559pt x 259.34326pt on input lin
 e 2157.
  [55 <./images/databaseNRteams.png> <./images/databaseNRusers.png>]
 <images/databaseRoom.png, id=251, 732.48656pt x 501.37312pt>
@@ -1785,98 +1785,98 @@ nput line 2165.
 Package pdftex.def Info: Requested size: 366.24237pt x 250.68594pt on input lin
 e 2165.
 
-[56 <./images/databaseRoom.png>]
+[56 <./images/databaseRoom.png>] [57]
 Cap\'{\i }tulo 4.
-[57
-
-]
-Cap\'{\i }tulo 5.
 [58
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2199--2200
+Cap\'{\i }tulo 5.
+[59
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
 []\OT1/phv/m/sc/10 Omnium Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El ma-yor ca-so
  de []exi-to de la lu-di-fi-ca-ci[]on en Es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2199--2200
+Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
 \OT1/phv/m/sl/10 pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 21 de N
 o-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
+Underfull \hbox (badness 10000) in paragraph at lines 2239--2240
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
+Underfull \hbox (badness 10000) in paragraph at lines 2239--2240
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2207--2208
+Underfull \hbox (badness 1648) in paragraph at lines 2245--2246
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 2209--2210
+Underfull \hbox (badness 5119) in paragraph at lines 2247--2248
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 2221--2222
+Underfull \hbox (badness 1365) in paragraph at lines 2259--2260
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[59
+[60
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2227--2228
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2266
 []\OT1/phv/m/sc/10 Zhitnitsky, Alex\OT1/phv/m/n/10 . The Top 10 Ex-cep-tion Ty-
 pes in Pro-duc-tion Ja-va Ap-pli-ca-tions -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2227--2228
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2266
 \OT1/phv/m/n/10 Ba-sed on 1B Events. Fe-cha de []ulti-ma vi-si-ta: 08/02/2018 $
 \OT1/cmtt/m/n/10 https : / / blog . takipi . com /
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 2237--2238
+Underfull \hbox (badness 2617) in paragraph at lines 2275--2276
 []\OT1/phv/m/sc/10 Servicio de in-form[]ati-ca de la Uni-ver-si-dad de Ali-can-
 te \OT1/phv/m/n/10 Mo-de-lo vis-ta con-tro-la-dor (MVC).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
+Underfull \hbox (badness 10000) in paragraph at lines 2275--2276
 \OT1/phv/m/n/10 Fe-cha de []ulti-ma vi-si-ta 11/02/2018 $\OT1/cmtt/m/n/10 https
  : / / si . ua . es / es / documentacion / asp-[]net-[]mvc-[]3 / 1-[]dia /
  []
 
-[60]
+[61]
 Cap\'{\i }tulo 6.
-[61
+[62
 
 ] (route66.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6151 strings out of 493312
- 81234 string characters out of 3138891
+ 6152 strings out of 493312
+ 81242 string characters out of 3138891
  270526 words of memory out of 3000000
- 9490 multiletter control sequences out of 15000+200000
+ 9491 multiletter control sequences out of 15000+200000
  40688 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,47p,1238b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1890,9 +1890,9 @@ nts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr1
 ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (66 pages, 10228549 bytes).
+Output written on route66.pdf (67 pages, 10234270 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
