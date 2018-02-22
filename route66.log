@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  21 FEB 2018 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  22 FEB 2018 19:03
 entering extended mode
 **./route66.tex
 (route66.tex
@@ -1682,201 +1682,247 @@ ine 2059.
 Package pdftex.def Info: Requested size: 440.83919pt x 425.48209pt on input lin
 e 2059.
 [47]
-<images/sequenceAddUserToGroup.png, id=203, 1068.99374pt x 675.27281pt>
-File: images/sequenceAddUserToGroup.png Graphic file (type png)
-<use images/sequenceAddUserToGroup.png>
-Package pdftex.def Info: images/sequenceAddUserToGroup.png  used on input line 
-2069. on input line 2069.
-Package pdftex.def Info: Requested size: 534.49556pt x 337.63557pt on input lin
-e 2069.
+<images/sequence/GetAGroupManagedByUser.png, id=203, 961.34157pt x 397.485pt>
+File: images/sequence/GetAGroupManagedByUser.png Graphic file (type png)
+<use images/sequence/GetAGroupManagedByUser.png>
+Package pdftex.def Info: images/sequence/GetAGroupManagedByUser.png  used on in
+put line 2068. on input line 2068.
+Package pdftex.def Info: Requested size: 480.66962pt x 198.742pt on input line 
+2068.
+ [48 <./images/clases.png>]
+<images/sequence/ModifyGroup.png, id=208, 695.59875pt x 445.665pt>
+File: images/sequence/ModifyGroup.png Graphic file (type png)
+<use images/sequence/ModifyGroup.png>
+Package pdftex.def Info: images/sequence/ModifyGroup.png  used on input line 20
+74. on input line 2074.
+Package pdftex.def Info: Requested size: 347.79852pt x 222.83195pt on input lin
+e 2074.
+<images/sequence/AddUserToGroup.png, id=209, 1068.99374pt x 687.31781pt>
+File: images/sequence/AddUserToGroup.png Graphic file (type png)
+<use images/sequence/AddUserToGroup.png>
+Package pdftex.def Info: images/sequence/AddUserToGroup.png  used on input line
+ 2080. on input line 2080.
+Package pdftex.def Info: Requested size: 534.49556pt x 343.65807pt on input lin
+e 2080.
 
-Overfull \hbox (36.57231pt too wide) in paragraph at lines 2069--2070
+Overfull \hbox (36.57231pt too wide) in paragraph at lines 2080--2081
 [][] 
  []
 
-[48 <./images/clases.png>]
-<images/sequenceNameAdmin.png, id=208, 834.86906pt x 566.115pt>
-File: images/sequenceNameAdmin.png Graphic file (type png)
-<use images/sequenceNameAdmin.png>
-Package pdftex.def Info: images/sequenceNameAdmin.png  used on input line 2074.
- on input line 2074.
-Package pdftex.def Info: Requested size: 417.43352pt x 283.05681pt on input lin
-e 2074.
- [49 <./images/sequenceAddUserToGroup.png>]
-<images/sequenceDeleteMember.png, id=213, 828.09375pt x 515.67656pt>
-File: images/sequenceDeleteMember.png Graphic file (type png)
-<use images/sequenceDeleteMember.png>
-Package pdftex.def Info: images/sequenceDeleteMember.png  used on input line 20
-79. on input line 2079.
-Package pdftex.def Info: Requested size: 414.04587pt x 257.83765pt on input lin
-e 2079.
-<images/structureHighLevel.png, id=214, 712.16063pt x 636.12656pt>
+[49 <./images/sequence/GetAGroupManagedByUser.png> <./images/sequence/ModifyGro
+up.png>]
+<images/sequence/setAdmin.png, id=215, 846.16125pt x 786.68906pt>
+File: images/sequence/setAdmin.png Graphic file (type png)
+<use images/sequence/setAdmin.png>
+Package pdftex.def Info: images/sequence/setAdmin.png  used on input line 2086.
+ on input line 2086.
+Package pdftex.def Info: Requested size: 423.07959pt x 393.34357pt on input lin
+e 2086.
+ [50 <./images/sequence/AddUserToGroup.png>]
+<images/sequence/deleleMemberGroup.png, id=221, 828.09375pt x 540.51938pt>
+File: images/sequence/deleleMemberGroup.png Graphic file (type png)
+<use images/sequence/deleleMemberGroup.png>
+Package pdftex.def Info: images/sequence/deleleMemberGroup.png  used on input l
+ine 2092. on input line 2092.
+Package pdftex.def Info: Requested size: 414.04587pt x 270.25902pt on input lin
+e 2092.
+ [51 <./images/sequence/setAdmin.png>]
+<images/sequence/removeTeam.png, id=226, 728.7225pt x 410.2828pt>
+File: images/sequence/removeTeam.png Graphic file (type png)
+<use images/sequence/removeTeam.png>
+Package pdftex.def Info: images/sequence/removeTeam.png  used on input line 209
+8. on input line 2098.
+Package pdftex.def Info: Requested size: 364.36035pt x 205.1409pt on input line
+ 2098.
+File: images/sequence/removeTeam.png Graphic file (type png)
+<use images/sequence/removeTeam.png>
+Package pdftex.def Info: images/sequence/removeTeam.png  used on input line 210
+4. on input line 2104.
+Package pdftex.def Info: Requested size: 364.36035pt x 205.1409pt on input line
+ 2104.
+ [52 <./images/sequence/deleleMemberGroup.png> <./images/sequence/removeTeam.pn
+g>]
+<images/sequence/realizarMision.png, id=232, 940.26282pt x 690.32906pt>
+File: images/sequence/realizarMision.png Graphic file (type png)
+<use images/sequence/realizarMision.png>
+Package pdftex.def Info: images/sequence/realizarMision.png  used on input line
+ 2110. on input line 2110.
+Package pdftex.def Info: Requested size: 470.13026pt x 345.16368pt on input lin
+e 2110.
+<images/structureHighLevel.png, id=233, 712.16063pt x 636.12656pt>
 File: images/structureHighLevel.png Graphic file (type png)
 <use images/structureHighLevel.png>
-Package pdftex.def Info: images/structureHighLevel.png  used on input line 2088
-. on input line 2088.
+Package pdftex.def Info: images/structureHighLevel.png  used on input line 2119
+. on input line 2119.
 Package pdftex.def Info: Requested size: 356.07944pt x 318.0625pt on input line
- 2088.
- [50 <./images/sequenceNameAdmin.png> <./images/sequenceDeleteMember.png>]
-<images/structureModel.png, id=221, 568.37344pt x 242.40562pt>
+ 2119.
+ [53 <./images/sequence/realizarMision.png>]
+<images/structureModel.png, id=238, 568.37344pt x 242.40562pt>
 File: images/structureModel.png Graphic file (type png)
 <use images/structureModel.png>
-Package pdftex.def Info: images/structureModel.png  used on input line 2096. on
- input line 2096.
+Package pdftex.def Info: images/structureModel.png  used on input line 2127. on
+ input line 2127.
 Package pdftex.def Info: Requested size: 341.02669pt x 145.44447pt on input lin
-e 2096.
-<images/structureLoginGameModel.png, id=222, 708.39656pt x 156.585pt>
+e 2127.
+<images/structureLoginGameModel.png, id=239, 708.39656pt x 156.585pt>
 File: images/structureLoginGameModel.png Graphic file (type png)
 <use images/structureLoginGameModel.png>
 Package pdftex.def Info: images/structureLoginGameModel.png  used on input line
- 2102. on input line 2102.
+ 2133. on input line 2133.
 Package pdftex.def Info: Requested size: 495.8742pt x 109.60873pt on input line
- 2102.
- [51 <./images/structureHighLevel.png> <./images/structureModel.png>]
-<images/structureMainActivity.png, id=228, 657.95813pt x 380.17032pt>
+ 2133.
+ [54 <./images/structureHighLevel.png> <./images/structureModel.png>]
+<images/structureMainActivity.png, id=245, 657.95813pt x 380.17032pt>
 File: images/structureMainActivity.png Graphic file (type png)
 <use images/structureMainActivity.png>
 Package pdftex.def Info: images/structureMainActivity.png  used on input line 2
-108. on input line 2108.
+139. on input line 2139.
 Package pdftex.def Info: Requested size: 394.77792pt x 228.10394pt on input lin
-e 2108.
-<images/structureMissions.png, id=229, 645.91313pt x 398.23781pt>
+e 2139.
+<images/structureMissions.png, id=246, 645.91313pt x 398.23781pt>
 File: images/structureMissions.png Graphic file (type png)
 <use images/structureMissions.png>
-Package pdftex.def Info: images/structureMissions.png  used on input line 2114.
- on input line 2114.
+Package pdftex.def Info: images/structureMissions.png  used on input line 2145.
+ on input line 2145.
 Package pdftex.def Info: Requested size: 452.13611pt x 278.76456pt on input lin
-e 2114.
- [52 <./images/structureLoginGameModel.png> <./images/structureMainActivity.png
+e 2145.
+ [55 <./images/structureLoginGameModel.png> <./images/structureMainActivity.png
 >]
-<images/structureTeam.png, id=235, 680.5425pt x 178.41656pt>
+<images/structureTeam.png, id=252, 680.5425pt x 178.41656pt>
 File: images/structureTeam.png Graphic file (type png)
 <use images/structureTeam.png>
-Package pdftex.def Info: images/structureTeam.png  used on input line 2121. on 
-input line 2121.
+Package pdftex.def Info: images/structureTeam.png  used on input line 2152. on 
+input line 2152.
 Package pdftex.def Info: Requested size: 408.32864pt x 107.05075pt on input lin
-e 2121.
- [53 <./images/structureMissions.png> <./images/structureTeam.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2145--2146
+e 2152.
+ [56 <./images/structureMissions.png> <./images/structureTeam.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2176--2177
 
  []
 
-<images/databaseNRteams.png, id=241, 705.38531pt x 584.1825pt>
+<images/databaseNRteams.png, id=259, 705.38531pt x 584.1825pt>
 File: images/databaseNRteams.png Graphic file (type png)
 <use images/databaseNRteams.png>
-Package pdftex.def Info: images/databaseNRteams.png  used on input line 2151. o
-n input line 2151.
+Package pdftex.def Info: images/databaseNRteams.png  used on input line 2182. o
+n input line 2182.
 Package pdftex.def Info: Requested size: 352.69179pt x 292.09053pt on input lin
-e 2151.
-[54]
-<images/databaseNRusers.png, id=245, 790.45313pt x 518.6878pt>
+e 2182.
+[57]
+<images/databaseNRusers.png, id=263, 790.45313pt x 518.6878pt>
 File: images/databaseNRusers.png Graphic file (type png)
 <use images/databaseNRusers.png>
-Package pdftex.def Info: images/databaseNRusers.png  used on input line 2157. o
-n input line 2157.
+Package pdftex.def Info: images/databaseNRusers.png  used on input line 2188. o
+n input line 2188.
 Package pdftex.def Info: Requested size: 395.22559pt x 259.34326pt on input lin
-e 2157.
- [55 <./images/databaseNRteams.png> <./images/databaseNRusers.png>]
-<images/databaseRoom.png, id=251, 732.48656pt x 501.37312pt>
+e 2188.
+ [58 <./images/databaseNRteams.png> <./images/databaseNRusers.png>]
+<images/databaseRoom.png, id=269, 732.48656pt x 501.37312pt>
 File: images/databaseRoom.png Graphic file (type png)
 <use images/databaseRoom.png>
-Package pdftex.def Info: images/databaseRoom.png  used on input line 2165. on i
-nput line 2165.
+Package pdftex.def Info: images/databaseRoom.png  used on input line 2196. on i
+nput line 2196.
 Package pdftex.def Info: Requested size: 366.24237pt x 250.68594pt on input lin
-e 2165.
+e 2196.
+<images/deploymentModel.png, id=270, 967.36406pt x 517.935pt>
+File: images/deploymentModel.png Graphic file (type png)
+<use images/deploymentModel.png>
+Package pdftex.def Info: images/deploymentModel.png  used on input line 2204. o
+n input line 2204.
+Package pdftex.def Info: Requested size: 483.68085pt x 258.96686pt on input lin
+e 2204.
 
-[56 <./images/databaseRoom.png>] [57]
+[59 <./images/databaseRoom.png> <./images/deploymentModel.png>] [60] [61]
 Cap\'{\i }tulo 4.
-[58
+[62
 
 ]
 Cap\'{\i }tulo 5.
-[59
+[63
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
+Underfull \hbox (badness 10000) in paragraph at lines 2277--2278
 []\OT1/phv/m/sc/10 Omnium Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El ma-yor ca-so
  de []exi-to de la lu-di-fi-ca-ci[]on en Es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2238
+Underfull \hbox (badness 10000) in paragraph at lines 2277--2278
 \OT1/phv/m/sl/10 pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 21 de N
 o-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2239--2240
+Underfull \hbox (badness 10000) in paragraph at lines 2279--2280
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
 i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2239--2240
+Underfull \hbox (badness 10000) in paragraph at lines 2279--2280
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2245--2246
+Underfull \hbox (badness 1648) in paragraph at lines 2285--2286
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 2247--2248
+Underfull \hbox (badness 5119) in paragraph at lines 2287--2288
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 2259--2260
+Underfull \hbox (badness 1365) in paragraph at lines 2299--2300
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[60
+[64
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2265--2266
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2306
 []\OT1/phv/m/sc/10 Zhitnitsky, Alex\OT1/phv/m/n/10 . The Top 10 Ex-cep-tion Ty-
 pes in Pro-duc-tion Ja-va Ap-pli-ca-tions -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2265--2266
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2306
 \OT1/phv/m/n/10 Ba-sed on 1B Events. Fe-cha de []ulti-ma vi-si-ta: 08/02/2018 $
 \OT1/cmtt/m/n/10 https : / / blog . takipi . com /
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 2275--2276
+Underfull \hbox (badness 2617) in paragraph at lines 2315--2316
 []\OT1/phv/m/sc/10 Servicio de in-form[]ati-ca de la Uni-ver-si-dad de Ali-can-
 te \OT1/phv/m/n/10 Mo-de-lo vis-ta con-tro-la-dor (MVC).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2276
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2316
 \OT1/phv/m/n/10 Fe-cha de []ulti-ma vi-si-ta 11/02/2018 $\OT1/cmtt/m/n/10 https
  : / / si . ua . es / es / documentacion / asp-[]net-[]mvc-[]3 / 1-[]dia /
  []
 
-[61]
+[65]
 Cap\'{\i }tulo 6.
-[62
+[66
 
 ] (route66.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6152 strings out of 493312
- 81242 string characters out of 3138891
- 270526 words of memory out of 3000000
- 9491 multiletter control sequences out of 15000+200000
+ 6179 strings out of 493312
+ 82118 string characters out of 3138891
+ 270530 words of memory out of 3000000
+ 9512 multiletter control sequences out of 15000+200000
  40688 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,47p,1238b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1890,9 +1936,9 @@ nts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr1
 ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (67 pages, 10233918 bytes).
+Output written on route66.pdf (71 pages, 10357923 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
+ 334 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

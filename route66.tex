@@ -2063,21 +2063,52 @@ Se identifican un único actor:
 
 \subsection{Diagramas de secuencia}
 
-Debido a su extensión, se han seleccionado los diagramas de secuencia de tres casos de uso relevantes para ser incorporados a esta memoria.
-
+%0
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequenceAddUserToGroup}
+\includegraphics[scale=0.5]{images/sequence/GetAGroupManagedByUser.png}
+\caption{Diagrama de secuencia Obtener un grupo de los administrados por el usuario}
+\end{figure}
+
+%1
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequence/ModifyGroup}
+\caption{Diagrama de secuencia del caso de uso Modificar grupo}
+\end{figure}
+
+%2
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequence/AddUserToGroup}
 \caption{Diagrama de secuencia del caso de uso A\~{n}adir usuario al grupo}
 \end{figure}
 
+%3
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequenceNameAdmin}
+\includegraphics[scale=0.5]{images/sequence/setAdmin}
 \caption{Diagrama de secuencia del caso de uso Nombrar un administrador}
 \end{figure}
 
+%4
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequenceDeleteMember}
-\caption{Diagrama de secuencia del caso de uso Eliminar a un usuario de un equipo}
+\includegraphics[scale=0.5]{images/sequence/deleleMemberGroup}
+\caption{Diagrama de secuencia del caso de uso Eliminar a un miembro de un equipo}
+\end{figure}
+
+%5
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequence/removeTeam}
+\caption{Diagrama de secuencia del caso de uso Eliminar un equipo}
+\end{figure}
+
+%5
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequence/removeTeam}
+\caption{Diagrama de secuencia del caso de uso Eliminar un equipo}
+\end{figure}
+
+%6
+\begin{figure}[H]
+\includegraphics[scale=0.5]{images/sequence/realizarMision}
+\caption{Diagrama de secuencia del caso de uso Realizar misión}
 \end{figure}
 
 \section{Diseño}
@@ -2144,7 +2175,7 @@ Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD
 \subsection{Esquema de la base de datos}
 Como se ha indicado en secciones anteriores, se ha decidido utilizar Firebase como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: Firebase Realtime Database y Firebase Firestore, se ha elegido la segunda ya que es mucho más compleja y permite una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
 
-Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de UML.
+Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de UML. La \cite{fireference} documentación que Google proporciona en la documentación de Firebase también ha servido de mucha ayuda.
 
 \begin{figure}[H]
 \centering
@@ -2165,6 +2196,15 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 \includegraphics[scale=0.5]{images/databaseRoom}
 \caption{Esquema de la base de datos relacional gestionada por el ORM \textit{Room}}
 \end{figure}
+
+\subsection{Diagrama de despliegue}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/deploymentModel}
+\caption{Diagrama de despliegue de la aplicación Android}
+\end{figure}
+
 
 \section{Implementación}
 
@@ -2275,6 +2315,7 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 \bibitem{mvcua} \textsc{Servicio de informática de la Universidad de Alicante} Modelo vista controlador (MVC). Fecha de última visita 11/02/2018 \url{https://si.ua.es/es/documentacion/asp-net-mvc-3/1-dia/modelo-vista-controlador-mvc.html}
 
 
+\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
 
 \section{Bibliografía}
 
