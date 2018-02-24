@@ -740,14 +740,14 @@ Como se ha indicado en los apartados anteriores, este proyecto se ha dividido en
 \hline
 Nombre de la fase & Núm.. Iteraciones & Horas de trabajo & Duración estimada \\ \hline
 Inicio            & 1                 & 10 horas/semana  & 61 horas       \\ \hline
-Elaboración       & 2                 & 20 horas/semana  & 75 horas    \\ \hline
+Elaboración       & 2                 & 20 horas/semana  & 80 horas    \\ \hline
 Construcción      & 2                 & 20 horas/semana  & 108 horas       \\ \hline
 Transición        & 1                 & 20 horas/semana   & 42 horas       \\ \hline
 \end{tabular}
 \caption{Fases del proceso UPedu}
 \end{table}
 
-La duración estimada total es de 311 horas, a lo que habría que añadir las necesarias para acudir a las tutorías.
+La duración estimada total es de 316 horas, a lo que habría que añadir las necesarias para acudir a las tutorías.
 
 \paragraph{Fase de inicio}\mbox{}\\
 
@@ -819,14 +819,17 @@ Reuniones realizadas con la tutora del T.F.G.:
 \begin{tabular}{|l|l|l|l|}
 \hline
 Nombre de la tarea                           & Fecha de comienzo & Fecha de fin & Duración \\ \hline
-Actualización de casos de uso                & 11/02/2018        & 13/02/2018   & 3 horas   \\ \hline
-Actualización de diagramas de secuencia      & 13/02/2018        & 15/02/2018   & 3 horas   \\ \hline
-Actualización del diseño de la Base de Datos & 15/02/2018        & 16/02/2018   & 2 horas   \\ \hline
-Actualización de Plan inicial de pruebas     & 16/02/2018        & 18/02/2018   & 2 horas   \\ \hline
-Actualización de la arquitectura del sistema & 18/02/2018        & 20/02/2018   & 3 horas   \\ \hline
+Actualización de casos de uso                & 11/02/2018        & 13/02/2018   & 5 horas   \\ \hline
+Actualización de diagramas de secuencia      & 14/02/2018        & 15/02/2018   & 4 horas   \\ \hline
+Actualización del diseño de la Base de Datos & 16/02/2018        & 16/02/2018   & 2 horas   \\ \hline
+Actualización de Plan inicial de pruebas     & 17/02/2018        & 18/02/2018   & 2 horas   \\ \hline
+Actualización de la arquitectura del sistema & 18/02/2018        & 20/02/2018   & 5 horas   \\ \hline
 \end{tabular}
 \caption{Iteración 2. Fase de elaboración.}
 \end{table}
+
+El día 20 de Febrero se hace entrega a la tutora de todos los entregables realizados hasta la fecha, con el fin de que puedan ser revisados y validados en profundidad.
+
 
 \paragraph{Fase de construcción}\mbox{}\\
 
@@ -1157,8 +1160,8 @@ Se adjunta a continuación la tabla de estimaciones de planificación, así como
 Iteración & Etapa        & Fecha de inicio real & Fecha inicio estimada & Fecha de fin real & Fecha fin estimada & Diferencia finalización \\ \hline
 0         & Inicio       & 03/11/2017           & 06/11/2017            & 12/12/2017        & 10/12/2017         & 2 días                  \\ \hline
 1         & Elaboración  & 20/01/2018           & 20/01/2018            & 15/02/2018        & 10/02/2018         & 5 días                  \\ \hline
-2         & Elaboración  & 16/02/2018           & 11/02/2018            &                   & 20/02/2018         &                         \\ \hline
-3         & Construcción &                      & 20/02/2018            &                   & 01/04/2018         &                         \\ \hline
+2         & Elaboración  & 16/02/2018           & 11/02/2018            & 23/02/2018        & 20/02/2018         & 3 días                 \\ \hline
+3         & Construcción & 24/02/2018           & 20/02/2018            &                   & 01/04/2018         &                         \\ \hline
 4         & Construcción &                      & 02/04/2018            &                   & 10/04/2018         &                         \\ \hline
 5         & Transición   &                      & 11/04/2018            &                   & 25/04/2018         &                         \\ \hline
 \end{tabular}%
@@ -1503,7 +1506,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{“Room“}}
-	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia Room como ORM de gestión de la base de datos local no gestionada por Firebase}
+	\addrow{Descripción}{La aplicación utilizará \cite{roompersistence} la biblioteca de persistencia Room como ORM de gestión de la base de datos local no gestionada por Firebase}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -2262,7 +2265,7 @@ En el caso de la aplicación Route66App, tanto las vistas como los controladores
 
 DAO realiza una capa de abstracción entre los servicios y llamadas de bajo nivel para acceder a los datos del resto de código, evitando así mezclar código de diferentes capas.
 
-Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD realizadas contra la base de datos que es administrada por el ORM \textit{Room} y no con la que gestiona Firebase Firestore.
+Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD realizadas contra la base de datos que es administrada por \cite{roompersistence} \textit{Room} y no con la que gestiona Firebase Firestore.
 
 
 \subsection{Esquema de la base de datos}
@@ -2282,12 +2285,12 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
 \end{figure}
 
-Paralelamente, con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por el ORM \textit{Room}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones así como las sincronizaciones que se hayan hecho para descargarse las nuevas misiones (ver apartado implementación).
+Paralelamente, con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia \cite{roompersistence} \textit{Room}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones así como las sincronizaciones que se hayan hecho para descargarse las nuevas misiones (ver apartado implementación).
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseRoom}
-\caption{Esquema de la base de datos relacional gestionada por el ORM \textit{Room}}
+\caption{Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \cite{roompersistence} \textit{Room}}
 \end{figure}
 
 \subsection{Diagrama de despliegue}
@@ -2301,18 +2304,94 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 
 \section{Implementación}
 
-Una aplicación Android está basada en cuatro tipos de componentes \cite{androidfund}:
+\subsection{Explicación de la arquitectura escogida}
+
+Una aplicación Android está basada en cuatro tipos de componentes \cite{androidfund} \cite{androidpacktpub}. Todos deben ser declarados explícitamente en el archivo AndroidManifest.xml:
 
 \begin{enumerate}
-\item Actividades:
-\item Servicios:
-\item Provedores de contenidos (\textit{“Content providers“}):
-\item Receptores de mensajes (\textit{“Broadcast receivers“}):
+\item Actividades: son los elementos más importantes y destacables en una aplicación Android, pues cumplen el papel de interfaz entre la aplicación y la vista.\\
+Route66 cuenta con las siguientes actividades:
+
+	\begin{itemize}
+	\item \textit{LoginActivity}: sirve para identificar y registrar a los usuarios en de la aplicación (incluyendo aquellos que tienen una invitación). Es la actividad que siempre se lanzará cuando la aplicación sea abierta. Si el usuario ha iniciado sesión, redirigirá  a \textit{MainActivity}.
+	
+	\item \textit{MainActivity}: es la única actividad que contará con un \textit{DrawerLayout} (el menú principal de la aplicación). De la misma dependen un conjunto de fragmentos (vistas que se acoplan y se desacoplan bajo demanda):
+	
+		\begin{enumerate}
+			\item \textit{Archivements}: es el fragmento encargado de mostrar al usuario el conjunto de logros que haya obtenido.
+			
+			\item \textit{Insignias}: es el fragmento encargado de mostrar las insignias que haya obtenido el usuario.
+			
+			\item \textit{Invite}: es el fragmento encargado de servir de interfaz entre la aplicación y el sistema de Firebase Invitations, con el fin de enviar invitaciones.
+			
+			\item \textit{MainGrid}: es el fragmento encargado de mostrar el conjunto de niveles con los que cuenta la aplicación y servirá como puerta de enlace a realizar misiones y consultar los usuarios que se encuentran en un determinado nivel.
+			
+			\item \textit{Prizes}: es el fragmento encargado de listar el conjunto de premios que hubiera conseguido el usuario, así como detalles específicos de los mismos.
+			
+			\item \textit{Profile}: es el fragmento que permite al usuario editar las propiedades de su perfil (avatar, nombre, restaurante favorito, etcétera).
+			
+			\item \textit{QRCode}: es el fragmento encargado de mostrar el código QR del usuario, con el fin de que posteriormente pueda ser utilizado para añadir un logro de tipo consumo.
+			
+			\item \textit{SocialRanking}: es el fragmento encargado de mostrar el ranking global de usuarios.
+			
+			\item \textit{Team}: es el fragmento encargado de listar el conjunto de equipos a los que pertenece el usuario, así como el de permitir crear uno nuevo.
+		\end{enumerate}
+		
+	\item \textit{MissionsActivity}: es la actividad que servirá como interfaz para realizar misiones de tipo consumo, así como de tipo social. 
+	
+		\begin{enumerate}
+		\item \textit{ExpenseMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo consumo y, si fuera el caso, marcarla como completada.
+		
+		\item \textit{SocialMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo social y, si fuera el caso, marcarla como completada.
+		\end{enumerate}
+		
+	\item \textit{GameActivity}: es la actividad que servirá como interfaz para realizar misiones de tipo juego. Por las características de este tipo de misiones (la vista es distinta, así como la posible rotación de la pantalla), se ha decidido separarlas de la actividad \textit{MissionsActivity}.
+	\begin{enumerate}
+		\item \textit{GameMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo juego y, si fuera el caso, marcarla como completada.
+		\end{enumerate}
+		
+	\item \textit{NormalActivity}: el objetivo de esta actividad es el de servir como auxiliar a la actividad principal (MainActivity). Es decir, será aquella actividad que será llamada por MainActivity.
+	
+	\begin{enumerate}
+		\item \textit{CreateGroup}: es el fragmento encargado de mostrar el formulario para crear un nuevo grupo.
+		\item \textit{HelpFragment}: es el fragmento encargado de mostrar la ayuda en la aplicación.
+		\item \textit{LevelDetail}: es el fragmento encargado de mostrar los detalles de un nivel. Su vista está basada en un \textit{TabLayout}, por lo que los fragmentos que se mostrarán en el \textit{ViewPager} son:
+		\begin{enumerate}
+		\item \textit{MissionsListFragment}: es el fragmento encargado de listar las distintas misiones de un nivel, indicando si han sido previamente completadas o no.
+		\item \textit{PeersFragment}: es el fragmento encargado de mostrar el conjunto de usuarios que se encuentran en un determinado nivel. Estos serán miembros de los mismos grupos a los que pertenezca el usuario.
+		\end{enumerate}
+		\item \textit{SettingsFragment}: es el fragmento encargado de mostrar un panel de configuración básico para ajustar parámetros como el tono de notificación que se deberá utilizar para notificar al usuario.
+	\end{enumerate}
+	\item \textit{TeamActivity}: es la actividad encargada de mostrar las distintas opciones que cuenta un equipo.
+	\end{itemize}
+
+\item Servicios: son componentes que se ejecutan en segundo plano (\textit{background}), tanto de forma automática (por ejemplo, al iniciar el dispositivo) como bajo demanda (mediante una llamada). Se utilizan fundamentalmente para procesar tareas pesadas o que puedan tomar mucho tiempo. A diferencia de las actividades no cuentan con interfaz de usuario, ya que están pensados para ser totalmente transparentes al usuario.\\
+Route66App cuenta solo con un servicio:
+	\begin{enumerate}
+	\item UpdaterService: es utilizado para actualizar la versión en caché de la aplicación de las misiones, niveles, insignias y premios y almacenar estos parámetros en la base de datos SQLite. Por otro lado, los ficheros asociados (en su gran mayoría imágenes), los guarda en una carpeta específica de la aplicación.
+	\end{enumerate}
+
+\item Provedores de contenidos (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación, además de proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
+Route66App no cuenta con ningún proveedor de contenidos.
+
+\item Receptores de mensajes (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas.
+Route66App contará con receptores de mensajes (inicio del sistema).
+\end{enumerate}
+
+\subsection{Almacenamiento de datos}
+
+La aplicación utiliza varios tipos de almacenamiento:
+\begin{enumerate}
+\item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
+\item En Firebase Firestore: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos, así como para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
+\item En Firebase Storage: se utiliza para almacenar los avatares de los usuarios y de los grupos.
+\item En una base de datos local SQLite: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también almacenará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
+\item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración del perfil del usuario, así como los parámetros principales de la aplicación (por ejemplo, el tono de notificación).
 \end{enumerate}
 
 \section{Pruebas}
 
-En el desarrollo de software resultan de especial relevancia las pruebas realizadas sobre el software, tanto de caja negra (sin visualizar el código) como de caja blanca. Una de las formas más efectivas de comprobar que aquel código que se modifica no “rompa“ el sistema (es decir, deje de funcionar tal y como está previsto), es mediante el uso de pruebas unitarias que en Android se suelen realizar mediante el framework \textit{JUnit}. En este proyecto, solo se van a realizar sobre una única parte de la aplicación: el Helper de Misiones. Esto es debido a que el resto de partes que tienen que ver con el acceso y minipulación de datos son gestionadas por software elaborado por terceros y ya se considera que debe haber pasado las pruebas necesarias.
+En el desarrollo de software resultan de especial relevancia las pruebas, que pueden ser tanto de caja negra (sin visualizar el código) como de caja blanca. Una de las formas más efectivas de comprobar que aquel código que se modifica no “rompa“ el sistema (es decir, deje de funcionar tal y como está previsto), es mediante el uso de pruebas unitarias que en Android se suelen realizar mediante el framework \textit{JUnit}. En este proyecto, solo se van a realizar sobre una única parte de la aplicación: el Helper de Misiones. Esto es debido a que el resto de partes que tienen que ver con el acceso y minipulación de datos son gestionadas por software elaborado por terceros y ya se considera que debe haber pasado las pruebas necesarias.
 
 Por otro lado, al hablar de una aplicación con interfaz gráfica también conviene señalar la importancia de las pruebas sobre la interfaz de usuario. El caso de las pruebas automáticas en esta categoría no suele ser muy conocido, pues muchos desarrolladores realizan las pruebas manualmente, probando la aplicación ellos mismos. En Android contamos con los siguientes frameworks diseñados por Google:
 \begin{itemize}
@@ -2402,6 +2481,8 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{pcuva} \textsc{Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}
 
+\bibitem{roompersistence} \textsc{Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}
+
 \bibitem{tapikinull} \textsc{Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}
 
 \bibitem{kotlin} \textsc{Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}
@@ -2414,9 +2495,10 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{mvcua} \textsc{Servicio de informática de la Universidad de Alicante} Modelo vista controlador (MVC). Fecha de última visita 11/02/2018 \url{https://si.ua.es/es/documentacion/asp-net-mvc-3/1-dia/modelo-vista-controlador-mvc.html}
 
-\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
+\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
 
-\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación \url{https://developer.android.com/guide/components/fundamentals.html}
+\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
+
 
 
 \section{Bibliografía}
@@ -2431,7 +2513,9 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{smovkotlin} \textsc{Adiego Rodríguez, Joaquín}. Departamento de Informática de la UVa. Apuntes de la asignatura Sistemas Móviles. Curso 2017-2018. Kotlin.
 
-\bibitem{databasedesign} \textsc{Hills, Ted}. NoSQL and SQL Data Modelling. Bringing together data, semantics and software
+\bibitem{databasedesign} \textsc{Hills, Ted}. NoSQL and SQL Data Modelling. Bringing together data, semantics and software. Technics Publications.
+
+\bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub
 
 
 

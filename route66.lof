@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.32}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}}}{62}
 \contentsline {figure}{\numberline {3.33}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{64}
 \contentsline {figure}{\numberline {3.34}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{64}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Esquema de la base de datos relacional gestionada por el ORM \textit {Room}}}{65}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \cite {roompersistence} \textit {Room}}}{65}
 \contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android}}{65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
