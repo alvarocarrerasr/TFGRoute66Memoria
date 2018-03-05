@@ -572,6 +572,14 @@ Firebase también tiene una serie de desventajas:
 
 \end{enumerate}
 
+En cuanto a las bases de datos de Firebase, se ha de destacar que ofrece en su paquete dos de tipo no relacional, Firebase Firestore (basada en documentos) y Firebase Realtime (basada en pares clave-valor). Para este trabajo se ha elegido la primera por varios motivos:
+
+\begin{enumerate}
+\item Mayor complejidad en las consultas: Firestore ofrece operaciones básicas de tipo WHERE. Igualmente, ofrece los operadores ORDER BY y LIMIT.
+\item Mayor escalabilidad: En Realtime cuando se accede a una parte del árbol (clave-valor), el usuario debe descargarse todos los hijos. En Firestore únicamente aquellos documentos que se deseen.
+\item Mayor seguridad: Firestore ofrece mayores medidas de seguridad al tener reglas de lectura y escritura más complejas y flexibles.
+\end{enumerate}
+
 \section{Comunicación con el servidor}
 La comunicación con el servidor es fundamental para el buen funcionamiento de la aplicación. En concreto, se deberá comunicar por los siguientes motivos:
 
@@ -2378,12 +2386,61 @@ Route66App contará con receptores de mensajes (inicio del sistema).
 
 La aplicación utiliza varios tipos de almacenamiento:
 \begin{enumerate}
-\item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
-\item En Firebase Firestore: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos, así como para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
-\item En Firebase Storage: se utiliza para almacenar los avatares de los usuarios y de los grupos.
+\item En \textit{Firebase Firestore}: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos, así como para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
+\item En \textit{Firebase Authentication}: gestionará todos los flujos de identificación de usuarios y gestionará el sistema de sesiones.
+\item En \textit{Firebase Analytics}: se almacenarán los diferentes datos recogidos por la aplicación, cuyo único interés sea el de realizar estadísticas.
+\item En \textit{Google Cloud Messaging}: donde se guardarán y enviarán las diferentes notificaciones que se mostrarán en los dispositivos de los usuarios.
+\item En \textit{Firebase Storage}: se utiliza para almacenar los avatares de los usuarios y de los grupos.
 \item En una base de datos local SQLite: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también almacenará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
-\item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración del perfil del usuario, así como los parámetros principales de la aplicación (por ejemplo, el tono de notificación).
+\item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
+\item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración de determinados parámetros de la aplicación, como por ejemplo, el tono de notificación.
 \end{enumerate}
+
+\subsection{Implementación del modelo}
+
+Tal y como se ha visto en el punto anterior (Almacenamiento de datos) se utilizan varios tipos de almacenamiento, dependiendo del tipo de datos que queremos tratar. Se indicará uno por uno los detalles de cada soporte de almacenamiento.
+
+\subsubsection{Firebase Firestore}
+
+Se ha de destacar que la misma base de datos instancia los objetos en aquellos de tipo Kotlin, de acuerdo con las especificaciones del programador (por medio de un objeto \textit{SnapshotParser}).\\
+
+\underline{Reglas de seguridad}\\
+
+Firestore internamente realiza cuantas comprobaciones de permisos sean precisas, para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un backend que no deja de ser otro punto en el que puede haber vulnerabilidades.\\
+
+Se adjuntan en el anexo las reglas que se han aplicado.\\
+
+\subsubsection{Authentication}
+
+Firebase Authentication es utilizado en el modelo para almacenar las sesiones, así como los diferentes métodos de autenticación del usuario en el sistema. Además es utilizado en primera instancia cuando el usuario se acaba de registrar para recuperar de los proveedores de acceso datos iniciales como su nombre o su correo electrónico.
+
+\subsubsection{Analytics}
+
+Esta parte está enfocada directamente a realizar las estadísticas que serán empleadas por la parte de gestión de la aplicación. Para ello se envían datos anonimizados y relacionados con:
+\begin{itemize}
+\item Intentos de misión.
+\item Tiempo de uso de la aplicación.
+\item Veces que abre la aplicación.
+\item Secciones que más visita.
+\end{itemize}
+
+La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, sexo, versión de la aplicación, versión de Android y franja de edad.
+\subsubsection{Storage}
+
+Firebase Storage es la parte encargada de almacenar los avatares de usuario y de grupo. Es un almacenamiento de objetos construido sobre Google Cloud Storage. \\
+
+Se ha utilizado la siguiente estructura de archivos:
+\begin{itemize}
+\item \textit{/avatares}: donde se almacenarán los avatares (imágenes de perfil) de los diferentes usuarios. Para facilitar su identificación cada archivo tendrá como nombre el mismo ID de usuario que asigna Firebase Authentication en el registro (sin extensión). 
+\item \textit{/groups}: similar al punto anterior, pero para las imágenes de perfil de los equipos. El identificador de la imagen será la clave del documento del equipo utilizada en la base de datos.
+\end{itemize}
+
+Por motivos de escalabilidad y de eficiencia se han establecido los siguientes requisitos:
+\begin{itemize}
+\item Formatos de imagen: JPG, PNG o GIF.
+\item Tamaño máximo: 2 MiB.
+\end{itemize}
+
 
 \section{Pruebas}
 
@@ -2519,6 +2576,7 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \chapter{Anexos}
 
+\section{Reglas de seguridad en Firebase}
 
 
 \end{document}
