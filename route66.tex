@@ -1418,7 +1418,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Medios sociales}
-	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Facebook, Google y Twitter.}
+	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google y Twitter.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -2283,11 +2283,28 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}
 \end{figure}
 
+De la anterior figura se tiene que aclarar la siguiente información:
+
+\begin{enumerate}
+
+\item Entre FirebaseStorageFile y Team no hay una relación directa en la base de datos, si no que se limita a buscar un archivo en el almacenamiento que se llame exactamente igual que la clave del documento que representa al equipo. En caso de existir, diremos que existe esa conexión.
+
+\end{enumerate}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseNRusers}
 \caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
 \end{figure}
+
+Del esquema anterior se deben indicar los siguientes datos:
+\begin{enumerate}
+
+\item Al igual que en el caso de los equipos, entre FirebaseStorageFile y User no hay una conexión como tal, sino que esta existe únicamente cuando el fichero se encuentra en este espacio de almacenamiento de archivos.
+\item Tampoco existe una conexión en Firestore entre User y FirebaseUser, si no que se va a hacer por medio del identificador único del usuario en Firebase Authentication.
+
+\end{enumerate}
+
 
 Paralelamente, con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia \cite{roompersistence} \textit{Room}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones así como las sincronizaciones que se hayan hecho para descargarse las nuevas misiones (ver apartado implementación).
 
@@ -2304,6 +2321,9 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 \includegraphics[scale=0.5]{images/deploymentModel}
 \caption{Diagrama de despliegue de la aplicación Android}
 \end{figure}
+
+\subsection{Funciones}
+
 
 
 \section{Implementación}
@@ -2394,6 +2414,7 @@ La aplicación utiliza varios tipos de almacenamiento:
 \item En una base de datos local SQLite: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también almacenará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
 \item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
 \item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración de determinados parámetros de la aplicación, como por ejemplo, el tono de notificación.
+\item En \textit{Firebase Remote Config}: se almacenará toda la información necesaria para la sincronzación de las misiones, niveles, logros e insignias. 
 \end{enumerate}
 
 \subsection{Implementación del modelo}
@@ -2425,6 +2446,22 @@ Esta parte está enfocada directamente a realizar las estadísticas que serán e
 \end{itemize}
 
 La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, sexo, versión de la aplicación, versión de Android y franja de edad.
+
+\subsection{Cloud Messaging}
+
+Cloud Messaging es el servicio de notificaciones que Google Cloud ofrece dentro del paquete de Firebase. \\
+
+Las notificaciones pueden ser enviadas, o bien a un dispositivo individual, o bien a un grupo (máximo 20 dispositivos). En el caso de Route66App utilizaremos siempre el envío a un grupo en concreto (todos los grupos de un mismo usuario) por varios motivos:
+
+\begin{enumerate}
+\item El usuario puede estar utilizado cualquier dispositivo vinculado a su cuenta. Si la notificación se enviara a uno distinto del que esté usando en ese momento, no la recibirá.
+
+\item Un usuario puede haber cedido su dispositivo a otra persona, o incluso, haber dejado de usarlo. Si no se actualiza en la lista de dispositivos de un usuario, nunca recibirá la notificación.
+\end{enumerate}
+
+Un usuario entrará en su grupo de dispositivos en el momento en el que inicie sesión o se registre en Route66App.
+
+
 \subsubsection{Storage}
 
 Firebase Storage es la parte encargada de almacenar los avatares de usuario y de grupo. Es un almacenamiento de objetos construido sobre Google Cloud Storage. \\
@@ -2441,6 +2478,40 @@ Por motivos de escalabilidad y de eficiencia se han establecido los siguientes r
 \item Tamaño máximo: 2 MiB.
 \end{itemize}
 
+\subsubsection{Base de datos local SQLite}
+
+Como se ha indicado anteriormente, se ha decidido utilizar la biblioteca de persistencia Room, ofrecida por Android y muy utilizada en el desarrollo de aplicaciones móviles.
+
+Para su utilización se ha empleado:
+
+\begin{itemize}
+
+\item Un archivo AppDatabase: representa a toda la base de datos SQLite. Es el punto de entrada hacia la misma (sigue el patrón Facade). Con el fin de asegurar que solo haya una única instancia he aplicado el patrón Singleton.
+
+\item DAOs: Un DAO en Room es simplemente una interfaz que incluye la cabecera de cuantos métodos se desee incluir. Tiene una serie de métodos ya implementados y con los que basta añadir una anotación y otros (como consultas SELECT complejas), en los que ya es preciso escribir la consulta completa.
+
+\item Entities: Representan una tabla concreta de la base de datos e incluye como atributos cada uno de los campos que la conforman (incluyendo su tipo, así ciertas propiedades características de una base de datos relacional como el uso de claves primarias o autoincrementos).
+
+
+\end{itemize}
+
+Esta base de datos es utilizada para mantener una sincronización de las diferentes misiones, niveles, insignias y logros. Se debe recordar que existe un requisito en el que se indicaba que estos debían ser actualizables en cualquier momento por parte del administrador, desde el back-end.
+
+\subsubsection{Ficheros}
+
+Los ficheros resultan de especial importancia para inicializar la aplicación. Se cuentan con los siguientes ficheros:
+
+\begin{itemize}
+\item \textit{missions.json}: Incluye el conjunto de niveles y misiones de la aplicación. El objetivo fundamental es que inicialice la base de datos SQLite (ver punto anterior).
+
+\item \textit{insignias.json}: 
+
+\item \textit{achivements.json}
+\end{itemize}
+
+\subsubsection{Shared Preferences}
+
+\subsection{Firebase Remote Config}
 
 \section{Pruebas}
 
@@ -2459,10 +2530,8 @@ Finalmente, se ha podido analizar, diseñar, implementar y probar un sistema inf
 
 \item El usuario se registra mediante correo electrónico.
 \item El usuario se registra utilizando Google.
-\item El usuario se registra utilizando Facebook.
 \item El usuario inicia sesión mediante correo electrónico.
 \item El usuario inicia sesión utilizando Google.
-\item El usuario inicia sesión utilizando Facebook.
 \item El usuario modifica su configuración de perfil.
 \item El usuario sube una fotografía de perfil (avatar).
 \item El usuario completa una misión de tipo social.

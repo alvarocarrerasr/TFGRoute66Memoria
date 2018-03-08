@@ -82,14 +82,19 @@
 \contentsline {subsection}{\numberline {3.4.3}Implementaci\IeC {\'o}n del modelo}{68}
 \contentsline {subsubsection}{\numberline {3.4.3.1}Firebase Firestore}{68}
 \contentsline {subsubsection}{\numberline {3.4.3.2}Authentication}{68}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Analytics}{68}
-\contentsline {subsubsection}{\numberline {3.4.3.4}Storage}{69}
-\contentsline {section}{\numberline {3.5}Pruebas}{69}
-\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{71}
-\contentsline {section}{\numberline {4.1}Conclusiones}{71}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{71}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{72}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{73}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{74}
-\contentsline {chapter}{\numberline {6}Anexos}{76}
-\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{76}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Analytics}{69}
+\contentsline {subsection}{\numberline {3.4.4}Cloud Messaging}{69}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Storage}{69}
+\contentsline {subsubsection}{\numberline {3.4.4.2}Base de datos local SQLite}{70}
+\contentsline {subsubsection}{\numberline {3.4.4.3}Ficheros}{70}
+\contentsline {subsubsection}{\numberline {3.4.4.4}Shared Preferences}{70}
+\contentsline {subsection}{\numberline {3.4.5}Firebase Remote Config}{70}
+\contentsline {section}{\numberline {3.5}Pruebas}{70}
+\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{72}
+\contentsline {section}{\numberline {4.1}Conclusiones}{72}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{72}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{73}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{74}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{75}
+\contentsline {chapter}{\numberline {6}Anexos}{77}
+\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{77}
