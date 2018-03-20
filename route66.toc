@@ -76,6 +76,7 @@
 \contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{62}
 \contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{62}
 \contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{65}
+\contentsline {subsection}{\numberline {3.3.5}Funciones}{66}
 \contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{66}
 \contentsline {subsection}{\numberline {3.4.1}Explicaci\IeC {\'o}n de la arquitectura escogida}{66}
 \contentsline {subsection}{\numberline {3.4.2}Almacenamiento de datos}{67}
@@ -87,14 +88,15 @@
 \contentsline {subsubsection}{\numberline {3.4.4.1}Storage}{69}
 \contentsline {subsubsection}{\numberline {3.4.4.2}Base de datos local SQLite}{70}
 \contentsline {subsubsection}{\numberline {3.4.4.3}Ficheros}{70}
-\contentsline {subsubsection}{\numberline {3.4.4.4}Shared Preferences}{70}
-\contentsline {subsection}{\numberline {3.4.5}Firebase Remote Config}{70}
-\contentsline {section}{\numberline {3.5}Pruebas}{70}
-\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{72}
-\contentsline {section}{\numberline {4.1}Conclusiones}{72}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{72}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{73}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{74}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{75}
-\contentsline {chapter}{\numberline {6}Anexos}{77}
-\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{77}
+\contentsline {subsubsection}{\numberline {3.4.4.4}Shared preferences}{70}
+\contentsline {subsubsection}{\numberline {3.4.4.5}Firebase Remote Config}{70}
+\contentsline {subsection}{\numberline {3.4.5}Funciones}{71}
+\contentsline {section}{\numberline {3.5}Pruebas}{71}
+\contentsline {chapter}{\numberline {4}Parte IV: Conclusiones y trabajo futuro.}{73}
+\contentsline {section}{\numberline {4.1}Conclusiones}{73}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{73}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{74}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{75}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{76}
+\contentsline {chapter}{\numberline {6}Anexos}{78}
+\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{78}

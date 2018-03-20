@@ -2230,7 +2230,7 @@ La estructura interna de los paquetes es:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{images/structureLoginGameModel}
+\includegraphics[scale=0.7]{images/structureloginGameModel.PNG}
 \caption{Diagrama de clases de los paquetes \textit{LoginActivity} y \textit{GameActivity}}
 \end{figure}
 
@@ -2407,13 +2407,20 @@ Route66App contará con receptores de mensajes (inicio del sistema).
 La aplicación utiliza varios tipos de almacenamiento:
 \begin{enumerate}
 \item En \textit{Firebase Firestore}: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos, así como para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
+
 \item En \textit{Firebase Authentication}: gestionará todos los flujos de identificación de usuarios y gestionará el sistema de sesiones.
+
 \item En \textit{Firebase Analytics}: se almacenarán los diferentes datos recogidos por la aplicación, cuyo único interés sea el de realizar estadísticas.
+
 \item En \textit{Google Cloud Messaging}: donde se guardarán y enviarán las diferentes notificaciones que se mostrarán en los dispositivos de los usuarios.
+
 \item En \textit{Firebase Storage}: se utiliza para almacenar los avatares de los usuarios y de los grupos.
 \item En una base de datos local SQLite: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también almacenará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
+
 \item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
+
 \item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración de determinados parámetros de la aplicación, como por ejemplo, el tono de notificación.
+
 \item En \textit{Firebase Remote Config}: se almacenará toda la información necesaria para la sincronzación de las misiones, niveles, logros e insignias. 
 \end{enumerate}
 
@@ -2504,23 +2511,56 @@ Los ficheros resultan de especial importancia para inicializar la aplicación. S
 \begin{itemize}
 \item \textit{missions.json}: Incluye el conjunto de niveles y misiones de la aplicación. El objetivo fundamental es que inicialice la base de datos SQLite (ver punto anterior).
 
-\item \textit{insignias.json}: 
+\item \textit{insignias.json}.
 
 \item \textit{achivements.json}
 \end{itemize}
 
-\subsubsection{Shared Preferences}
+\subsubsection{Shared preferences}
 
-\subsection{Firebase Remote Config}
+Las preferencias compartidas son un método de persistencia utilizado en Android para el almacenamiento de pequeñas cantidades de datos. Se utilizan en formato clave-valor, por lo que son un mecanismo ideal para el almacenamiento de parámetros de configuración.
+
+En Route66App se han utilizado para guardar únicamente el tono de notificación del usuario, que será el que suene cuando le llegue una notificación entrante proveniente de una confirmación de misión realizada o consumo realizado.
+
+\subsubsection{Firebase Remote Config}
+
+Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de Android instalada). De esta forma es posible aplicar un determinado ajuste a una franja de usuarios, para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese determinado ajuste. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
+
+En Route66App se ha utilizado este producto para ajustar la URL de los archivos de misiones, premios e insignias, así como la hora y fecha de última actualización de esos archivos.
+
+\subsection{Funciones}
+
+Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código ejecutados cuando ocurra una determinada condición. En el caso que nos ocupa, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
+
+\begin{enumerate}
+\item A las escrituras de \textit{Firebase Firestore}: Es preciso escuchar todos aquellos eventos de escritura y actualización sobre los objetos almacenados en las colecciones de \textit{Achivements} (logros). Esto es necesario para:
+	\begin{enumerate}
+		\item Poder actualizar la base de datos con la suma de las puntuaciones del usuario.
+		\item Poder notificar al usuario en caso de que se le añada un nuevo logro de tipo consumo.
+		\item Avisar de que un logro de tipo social ha sido comprobado.
+	\end{enumerate}
+
+\item A las llamadas HTTP contra el endpoint (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
+\end{enumerate}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{images/restAPI}
+\caption{Diagrama en el que se muestra la operación \textit{GET}}
+\end{figure}
 
 \section{Pruebas}
 
 En el desarrollo de software resultan de especial relevancia las pruebas, que pueden ser tanto de caja negra (sin visualizar el código) como de caja blanca. Una de las formas más efectivas de comprobar que aquel código que se modifica no “rompa“ el sistema (es decir, deje de funcionar tal y como está previsto), es mediante el uso de pruebas unitarias que en Android se suelen realizar mediante el framework \textit{JUnit}. En este proyecto, solo se van a realizar sobre una única parte de la aplicación: el Helper de Misiones. Esto es debido a que el resto de partes que tienen que ver con el acceso y minipulación de datos son gestionadas por software elaborado por terceros y ya se considera que debe haber pasado las pruebas necesarias.
 
 Por otro lado, al hablar de una aplicación con interfaz gráfica también conviene señalar la importancia de las pruebas sobre la interfaz de usuario. El caso de las pruebas automáticas en esta categoría no suele ser muy conocido, pues muchos desarrolladores realizan las pruebas manualmente, probando la aplicación ellos mismos. En Android contamos con los siguientes frameworks diseñados por Google:
+
 \begin{itemize}
 \item Espresso: se utilizará cuando tengamos acceso al código fuente de la aplicación (pues se realizan sobre el mismo proyecto de la aplicación). Útil cuando vamos a hacer pruebas sobre nuestra propia aplicación.
+
 \item UIAutomator: cuando no tengamos acceso al código fuente (por ejemplo, cuando queremos probar una aplicación de terceros).
+
 \end{itemize}
 En esta aplicación no se realizarán pruebas visuales automatizadas, sino que serán puramente manuales.
 
@@ -2615,8 +2655,6 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{firebaseadvdis} \textsc{Nathan, Lee. FreeCodeCamp} Firebase Pros and Cons and How to Deal With the Cons. Fecha de última visita 08/02/2018 \url{https://medium.com/@leetheguy/firebase-pros-and-cons-ce37c766190a}
 
-\bibitem{mvcua} \textsc{Servicio de informática de la Universidad de Alicante} Modelo vista controlador (MVC). Fecha de última visita 11/02/2018 \url{https://si.ua.es/es/documentacion/asp-net-mvc-3/1-dia/modelo-vista-controlador-mvc.html}
-
 \bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
 
 \bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
@@ -2635,14 +2673,13 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 \bibitem{pgpup} \textsc{De la Fuente Redondo, Pablo Lucio}. Departamento de Informática de la UVa. Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Tema 3: Proceso Unificado.
 
 
-
 \bibitem{smovkotlin} \textsc{Adiego Rodríguez, Joaquín}. Departamento de Informática de la UVa. Apuntes de la asignatura Sistemas Móviles. Curso 2017-2018. Kotlin.
 
 \bibitem{databasedesign} \textsc{Hills, Ted}. NoSQL and SQL Data Modelling. Bringing together data, semantics and software. Technics Publications.
 
 \bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub
 
-
+\bibitem{mvcua} \textsc{Crespo Carvajal, Yania; Gonzalo Tasis, Margarita; Hernández Díaz, Carmen; Martínez Monés, Alejandra} Modelo vista controlador (MVC). Prácticas. Apuntes de la asignatura Interacción Persona-Computador. Curso 2015-2016. Departamento de Informática de la UVa. Universidad de Valladolid. 
 
 \end{thebibliography}
 

@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.8)  8 MAR 2018 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  20 MAR 2018 16:17
 entering extended mode
-**./route66.tex
-(route66.tex
-LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**route66.tex
+(./route66.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 8 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,20 +24,20 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -247,17 +249,11 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -269,14 +265,12 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -316,8 +310,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -340,74 +334,60 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2017/11/03 3.15 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
-File: switch.def 2017/11/03 3.15 Babel switching mechanism
-)
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-spanish\spanish.ldf"
-Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/01/15 v5.0o Spanish support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2017/11/03 3.15 Babel common definitions
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
-File: switch.def 2017/11/03 3.15 Babel switching mechanism
-)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
 \es@quottoks=\toks16
 \es@quotdepth=\count89
-Package babel Info: Making " an active character on input line 561.
-Package babel Info: Making . an active character on input line 662.
-Package babel Info: Making < an active character on input line 707.
-Package babel Info: Making > an active character on input line 707.
-Package babel Info: Making ' an active character on input line 725.
+Package babel Info: Making " an active character on input line 533.
+Package babel Info: Making . an active character on input line 634.
+Package babel Info: Making < an active character on input line 679.
+Package babel Info: Making > an active character on input line 679.
+Package babel Info: Making ' an active character on input line 697.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2017/09/02 v2.17a AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen104
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count91
 \leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count93
 \DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
@@ -428,17 +408,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen113
 \lightrulewidth=\dimen114
@@ -458,14 +438,14 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count105
 \@thisrulewidth=\dimen125
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen126
 \extrarowheight=\dimen127
 \NC@list=\toks22
@@ -476,11 +456,11 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \c@nlinenum=\count106
 \TeXr@lab=\toks23
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count107
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count108
 \float@exts=\toks24
@@ -488,83 +468,87 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\rotating.sty"
-Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count109
 ))
 \Gin@req@height=\dimen129
 \Gin@req@width=\dimen130
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count109
+\c@r@tfl@t=\count110
 \rotFPtop=\skip48
 \rotFPbot=\skip49
 \rot@float@box=\box30
 \rot@mess@toks=\toks27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box31
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks28
 \minrowclearance=\skip50
 )
-\rownum=\count110
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+\rownum=\count111
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip51
-\multirow@cntb=\count111
-\multirow@dima=\skip52
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen131
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count112
 \mult@box=\box32
 \multicol@leftmargin=\dimen132
@@ -577,8 +561,8 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \page@free=\dimen134
 \premulticols=\dimen135
 \postmulticols=\dimen136
-\multicolsep=\skip53
-\multicolbaselineskip=\skip54
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
 \partial@page=\box33
 \last@line=\box34
 \maxbalancingoverflow=\dimen137
@@ -612,12 +596,12 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box57
 \mc@col@check@num=\count120
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\layout.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
 \oneinch=\count121
 \cnt@paperwidth=\count122
@@ -651,20 +635,21 @@ Package: layout 2014/10/28 v1.2c Show layout parameters
 \PositionY=\count150
 \ArrowLength=\count151
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count152
@@ -679,21 +664,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks29
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip55
-\f@nch@O@elh=\skip56
-\f@nch@O@erh=\skip57
-\f@nch@O@olh=\skip58
-\f@nch@O@orh=\skip59
-\f@nch@O@elf=\skip60
-\f@nch@O@erf=\skip61
-\f@nch@O@olf=\skip62
-\f@nch@O@orf=\skip63
-) (route66.aux
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip53
+\f@ncyO@elh=\skip54
+\f@ncyO@erh=\skip55
+\f@ncyO@olh=\skip56
+\f@ncyO@orh=\skip57
+\f@ncyO@elf=\skip58
+\f@ncyO@erf=\skip59
+\f@ncyO@olf=\skip60
+\f@ncyO@orf=\skip61
+) (./route66.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -712,14 +694,13 @@ LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 90.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count155
 \scratchdimen=\dimen149
@@ -732,54 +713,50 @@ LaTeX Info: Redefining \% on input line 90.
 \MPnumerator=\count159
 \makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks31
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -816,11 +793,9 @@ G,.JBIG2,.JB2,.eps]
 
 <images/logoUVa.jpg, id=1, 187.45032pt x 183.68625pt>
 File: images/logoUVa.jpg Graphic file (type jpg)
-<use images/logoUVa.jpg>
-Package pdftex.def Info: images/logoUVa.jpg  used on input line 94. on input li
-ne 94.
-Package pdftex.def Info: Requested size: 93.72491pt x 91.84288pt on input line 
-94.
+ <use images/logoUVa.jpg>
+Package pdftex.def Info: images/logoUVa.jpg used on input line 94.
+(pdftex.def)             Requested size: 93.72491pt x 91.84288pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
@@ -829,22 +804,22 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 103.
+
 [1
 
-{C:/Users/alvarocr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images
-/logoUVa.jpg>] (route66.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logoUVa.jpg>]
+(./route66.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -860,13 +835,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@toc=\write3
 \openout3 = `route66.toc'.
 
- [3] (route66.lof
+ [3] (./route66.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 3.
 LaTeX Font Info:    Try loading font information for OMS+phv on input line 4.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/it' in size <10> not available
@@ -879,7 +855,8 @@ LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
 \tf@lof=\write4
 \openout4 = `route66.lof'.
 
- [5] (route66.lot
+ [5]
+(./route66.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -897,127 +874,125 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 [1
 
 
-]
-<images/restaurantes/mcdo0.png, id=29, 542.025pt x 963.6pt>
+] <images/restaurantes/mcdo0.png, id=30, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo0.png Graphic file (type png)
+
 <use images/restaurantes/mcdo0.png>
-Package pdftex.def Info: images/restaurantes/mcdo0.png  used on input line 150.
- on input line 150.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 150.
-<images/restaurantes/mcdo1.png, id=30, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/mcdo0.png used on input line 150.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/mcdo1.png, id=31, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo1.png Graphic file (type png)
+
 <use images/restaurantes/mcdo1.png>
-Package pdftex.def Info: images/restaurantes/mcdo1.png  used on input line 151.
- on input line 151.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 151.
-<images/restaurantes/mcdo3.png, id=31, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/mcdo1.png used on input line 151.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/mcdo3.png, id=32, 542.025pt x 963.6pt>
 File: images/restaurantes/mcdo3.png Graphic file (type png)
+
 <use images/restaurantes/mcdo3.png>
-Package pdftex.def Info: images/restaurantes/mcdo3.png  used on input line 152.
- on input line 152.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 152.
+Package pdftex.def Info: images/restaurantes/mcdo3.png used on input line 152.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [2 <./images/restaurantes/mcdo0.png> <./images/restaurantes/mcdo1.png> <./imag
 es/restaurantes/mcdo3.png>]
-<images/restaurantes/burry0.png, id=35, 542.025pt x 963.6pt>
+<images/restaurantes/burry0.png, id=36, 542.025pt x 963.6pt>
 File: images/restaurantes/burry0.png Graphic file (type png)
+
 <use images/restaurantes/burry0.png>
-Package pdftex.def Info: images/restaurantes/burry0.png  used on input line 182
-. on input line 182.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 182.
-<images/restaurantes/burry1.png, id=36, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/burry0.png used on input line 182.
+
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/burry1.png, id=37, 542.025pt x 963.6pt>
 File: images/restaurantes/burry1.png Graphic file (type png)
+
 <use images/restaurantes/burry1.png>
-Package pdftex.def Info: images/restaurantes/burry1.png  used on input line 183
-. on input line 183.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 183.
+Package pdftex.def Info: images/restaurantes/burry1.png used on input line 183.
+
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [3 <./images/restaurantes/burry0.png> <./images/restaurantes/burry1.png>]
-<images/restaurantes/kfc0.png, id=40, 542.025pt x 963.6pt>
+<images/restaurantes/kfc0.png, id=41, 542.025pt x 963.6pt>
 File: images/restaurantes/kfc0.png Graphic file (type png)
+
 <use images/restaurantes/kfc0.png>
-Package pdftex.def Info: images/restaurantes/kfc0.png  used on input line 215. 
-on input line 215.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 215.
-<images/restaurantes/kfc1.png, id=41, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/kfc0.png used on input line 215.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/kfc1.png, id=42, 542.025pt x 963.6pt>
 File: images/restaurantes/kfc1.png Graphic file (type png)
+
 <use images/restaurantes/kfc1.png>
-Package pdftex.def Info: images/restaurantes/kfc1.png  used on input line 216. 
-on input line 216.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 216.
+Package pdftex.def Info: images/restaurantes/kfc1.png used on input line 216.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [4 <./images/restaurantes/kfc0.png> <./images/restaurantes/kfc1.png>]
-<images/restaurantes/vips0.png, id=45, 542.025pt x 963.6pt>
+<images/restaurantes/vips0.png, id=46, 542.025pt x 963.6pt>
 File: images/restaurantes/vips0.png Graphic file (type png)
+
 <use images/restaurantes/vips0.png>
-Package pdftex.def Info: images/restaurantes/vips0.png  used on input line 242.
- on input line 242.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 242.
-<images/restaurantes/vips1.png, id=46, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/vips0.png used on input line 242.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/vips1.png, id=47, 542.025pt x 963.6pt>
 File: images/restaurantes/vips1.png Graphic file (type png)
+
 <use images/restaurantes/vips1.png>
-Package pdftex.def Info: images/restaurantes/vips1.png  used on input line 243.
- on input line 243.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 243.
-<images/restaurantes/vips2.png, id=47, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/vips1.png used on input line 243.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/vips2.png, id=48, 542.025pt x 963.6pt>
 File: images/restaurantes/vips2.png Graphic file (type png)
+
 <use images/restaurantes/vips2.png>
-Package pdftex.def Info: images/restaurantes/vips2.png  used on input line 244.
- on input line 244.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 244.
+Package pdftex.def Info: images/restaurantes/vips2.png used on input line 244.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [5 <./images/restaurantes/vips0.png> <./images/restaurantes/vips1.png> <./imag
 es/restaurantes/vips2.png>]
-<images/restaurantes/pans0.png, id=51, 542.025pt x 963.6pt>
+<images/restaurantes/pans0.png, id=52, 542.025pt x 963.6pt>
 File: images/restaurantes/pans0.png Graphic file (type png)
+
 <use images/restaurantes/pans0.png>
-Package pdftex.def Info: images/restaurantes/pans0.png  used on input line 280.
- on input line 280.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 280.
-<images/restaurantes/pans1.png, id=52, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/pans0.png used on input line 280.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/pans1.png, id=53, 542.025pt x 963.6pt>
 File: images/restaurantes/pans1.png Graphic file (type png)
+
 <use images/restaurantes/pans1.png>
-Package pdftex.def Info: images/restaurantes/pans1.png  used on input line 281.
- on input line 281.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 281.
-<images/restaurantes/pans2.png, id=53, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/pans1.png used on input line 281.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/pans2.png, id=54, 542.025pt x 963.6pt>
 File: images/restaurantes/pans2.png Graphic file (type png)
+
 <use images/restaurantes/pans2.png>
-Package pdftex.def Info: images/restaurantes/pans2.png  used on input line 282.
- on input line 282.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 282.
+Package pdftex.def Info: images/restaurantes/pans2.png used on input line 282.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [6 <./images/restaurantes/pans0.png> <./images/restaurantes/pans1.png> <./imag
 es/restaurantes/pans2.png>]
-<images/restaurantes/foster0.png, id=57, 542.025pt x 963.6pt>
+<images/restaurantes/foster0.png, id=58, 542.025pt x 963.6pt>
 File: images/restaurantes/foster0.png Graphic file (type png)
+
 <use images/restaurantes/foster0.png>
-Package pdftex.def Info: images/restaurantes/foster0.png  used on input line 30
-8. on input line 308.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 308.
-<images/restaurantes/foster1.png, id=58, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/foster0.png used on input line 308
+.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/foster1.png, id=59, 542.025pt x 963.6pt>
 File: images/restaurantes/foster1.png Graphic file (type png)
+
 <use images/restaurantes/foster1.png>
-Package pdftex.def Info: images/restaurantes/foster1.png  used on input line 30
-9. on input line 309.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 309.
-<images/restaurantes/foster2.png, id=59, 542.025pt x 963.6pt>
+Package pdftex.def Info: images/restaurantes/foster1.png used on input line 309
+.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
+
+<images/restaurantes/foster2.png, id=60, 542.025pt x 963.6pt>
 File: images/restaurantes/foster2.png Graphic file (type png)
+
 <use images/restaurantes/foster2.png>
-Package pdftex.def Info: images/restaurantes/foster2.png  used on input line 31
-0. on input line 310.
-Package pdftex.def Info: Requested size: 135.5059pt x 240.89941pt on input line
- 310.
+Package pdftex.def Info: images/restaurantes/foster2.png used on input line 310
+.
+(pdftex.def)             Requested size: 135.5059pt x 240.89941pt.
  [7 <./images/restaurantes/foster0.png> <./images/restaurantes/foster1.png> <./
 images/restaurantes/foster2.png>] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 388--389
@@ -1056,31 +1031,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
 [11]
 Cap\'{\i }tulo 2.
-<images/kotlin.png, id=76, 1129.21875pt x 286.06876pt>
+<images/kotlin.png, id=77, 1129.21875pt x 286.06876pt>
 File: images/kotlin.png Graphic file (type png)
-<use images/kotlin.png>
-Package pdftex.def Info: images/kotlin.png  used on input line 508. on input li
-ne 508.
-Package pdftex.def Info: Requested size: 338.76823pt x 85.82129pt on input line
- 508.
+ <use images/kotlin.png>
+Package pdftex.def Info: images/kotlin.png used on input line 508.
+(pdftex.def)             Requested size: 338.76823pt x 85.82129pt.
+
 [12
 
-]
-<images/kotlinexample.png, id=82, 718.93594pt x 258.21469pt>
-File: images/kotlinexample.png Graphic file (type png)
-<use images/kotlinexample.png>
-Package pdftex.def Info: images/kotlinexample.png  used on input line 516. on i
-nput line 516.
-Package pdftex.def Info: Requested size: 431.3649pt x 154.93pt on input line 51
-6.
- [13 <./images/kotlin.png> <./images/kotlinexample.png>]
-<images/firebase.png, id=89, 843.15pt x 273.02pt>
+] <images/kotlinexample.PNG, id=83, 718.93594pt x 258.21469pt>
+File: images/kotlinexample.PNG Graphic file (type png)
+
+<use images/kotlinexample.PNG>
+Package pdftex.def Info: images/kotlinexample.PNG used on input line 516.
+(pdftex.def)             Requested size: 431.3649pt x 154.93pt.
+ [13 <./images/kotlin.png> <./images/kotlinexample.PNG>] <images/firebase.png, 
+id=90, 843.15pt x 273.02pt>
 File: images/firebase.png Graphic file (type png)
+
 <use images/firebase.png>
-Package pdftex.def Info: images/firebase.png  used on input line 546. on input 
-line 546.
-Package pdftex.def Info: Requested size: 252.94695pt x 81.90663pt on input line
- 546.
+Package pdftex.def Info: images/firebase.png used on input line 546.
+(pdftex.def)             Requested size: 252.94695pt x 81.90663pt.
  [14 <./images/firebase.png (PNG copy)>] [15]
 Cap\'{\i }tulo 3.
 [16
@@ -1105,13 +1076,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
-<images/upeduFases.png, id=102, 566.115pt x 293.095pt>
+<images/upeduFases.png, id=103, 566.115pt x 293.095pt>
 File: images/upeduFases.png Graphic file (type png)
+
 <use images/upeduFases.png>
-Package pdftex.def Info: images/upeduFases.png  used on input line 714. on inpu
-t line 714.
-Package pdftex.def Info: Requested size: 424.5852pt x 219.8207pt on input line 
-714.
+Package pdftex.def Info: images/upeduFases.png used on input line 714.
+(pdftex.def)             Requested size: 424.5852pt x 219.8207pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1535,14 +1506,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1557--1568
 
  []
 
-[32]
-<images/usecase.png, id=156, 1341.51187pt x 873.2625pt>
+[32] <images/usecase.png, id=157, 1341.51187pt x 873.2625pt>
 File: images/usecase.png Graphic file (type png)
+
 <use images/usecase.png>
-Package pdftex.def Info: images/usecase.png  used on input line 1573. on input 
-line 1573.
-Package pdftex.def Info: Requested size: 1341.5086pt x 873.26036pt on input lin
-e 1573.
+Package pdftex.def Info: images/usecase.png used on input line 1573.
+(pdftex.def)             Requested size: 1341.5086pt x 873.26036pt.
  [33]
 Overfull \vbox (6.35934pt too high) has occurred while \output is active []
 
@@ -1669,428 +1638,423 @@ Underfull \hbox (badness 10000) in paragraph at lines 2050--2062
 
  []
 
-<images/clases.png, id=202, 1151.05031pt x 825.83531pt>
+<images/clases.png, id=204, 1151.05031pt x 825.83531pt>
 File: images/clases.png Graphic file (type png)
-<use images/clases.png>
-Package pdftex.def Info: images/clases.png  used on input line 2067. on input l
-ine 2067.
-Package pdftex.def Info: Requested size: 460.41197pt x 330.32828pt on input lin
-e 2067.
-[47]
-<images/sequence/GetAGroupManagedByUser.png, id=206, 961.34157pt x 430.60875pt>
 
+<use images/clases.png>
+Package pdftex.def Info: images/clases.png used on input line 2067.
+(pdftex.def)             Requested size: 460.41197pt x 330.32828pt.
+ [47]
+<images/sequence/GetAGroupManagedByUser.png, id=208, 961.34157pt x 430.60875pt>
 File: images/sequence/GetAGroupManagedByUser.png Graphic file (type png)
 <use images/sequence/GetAGroupManagedByUser.png>
-Package pdftex.def Info: images/sequence/GetAGroupManagedByUser.png  used on in
-put line 2076. on input line 2076.
-Package pdftex.def Info: Requested size: 480.66962pt x 215.30383pt on input lin
-e 2076.
-<images/sequence/ModifyGroup.png, id=207, 695.59875pt x 445.665pt>
+Package pdftex.def Info: images/sequence/GetAGroupManagedByUser.png used on inp
+ut line 2076.
+(pdftex.def)             Requested size: 480.66962pt x 215.30383pt.
+
+<images/sequence/ModifyGroup.png, id=209, 695.59875pt x 445.665pt>
 File: images/sequence/ModifyGroup.png Graphic file (type png)
+
 <use images/sequence/ModifyGroup.png>
-Package pdftex.def Info: images/sequence/ModifyGroup.png  used on input line 20
-82. on input line 2082.
-Package pdftex.def Info: Requested size: 347.79852pt x 222.83195pt on input lin
-e 2082.
+Package pdftex.def Info: images/sequence/ModifyGroup.png used on input line 208
+2.
+(pdftex.def)             Requested size: 347.79852pt x 222.83195pt.
  [48 <./images/clases.png> <./images/sequence/GetAGroupManagedByUser.png>]
-<images/sequence/AddUserToGroup.png, id=213, 1068.99374pt x 687.31781pt>
+<images/sequence/AddUserToGroup.png, id=215, 1068.99374pt x 687.31781pt>
 File: images/sequence/AddUserToGroup.png Graphic file (type png)
+
 <use images/sequence/AddUserToGroup.png>
-Package pdftex.def Info: images/sequence/AddUserToGroup.png  used on input line
- 2088. on input line 2088.
-Package pdftex.def Info: Requested size: 534.49556pt x 343.65807pt on input lin
-e 2088.
+Package pdftex.def Info: images/sequence/AddUserToGroup.png used on input line 
+2088.
+(pdftex.def)             Requested size: 534.49556pt x 343.65807pt.
 
 Overfull \hbox (36.57231pt too wide) in paragraph at lines 2088--2089
 [][] 
  []
 
-<images/sequence/setAdmin.png, id=214, 846.16125pt x 786.68906pt>
+<images/sequence/setAdmin.png, id=216, 846.16125pt x 786.68906pt>
 File: images/sequence/setAdmin.png Graphic file (type png)
+
 <use images/sequence/setAdmin.png>
-Package pdftex.def Info: images/sequence/setAdmin.png  used on input line 2094.
- on input line 2094.
-Package pdftex.def Info: Requested size: 423.07959pt x 393.34357pt on input lin
-e 2094.
-[49 <./images/sequence/ModifyGroup.png> <./images/sequence/AddUserToGroup.png>]
-<images/sequence/deleleMemberGroup.png, id=221, 828.09375pt x 540.51938pt>
+Package pdftex.def Info: images/sequence/setAdmin.png used on input line 2094.
+(pdftex.def)             Requested size: 423.07959pt x 393.34357pt.
+ [49 <./images/sequence/ModifyGroup.png> <./images/sequence/AddUserToGroup.png>
+]
+<images/sequence/deleleMemberGroup.png, id=223, 828.09375pt x 540.51938pt>
 File: images/sequence/deleleMemberGroup.png Graphic file (type png)
+
 <use images/sequence/deleleMemberGroup.png>
-Package pdftex.def Info: images/sequence/deleleMemberGroup.png  used on input l
-ine 2100. on input line 2100.
-Package pdftex.def Info: Requested size: 414.04587pt x 270.25902pt on input lin
-e 2100.
-[50 <./images/sequence/setAdmin.png>]
-<images/sequence/removeTeam.png, id=226, 728.7225pt x 410.2828pt>
+Package pdftex.def Info: images/sequence/deleleMemberGroup.png used on input li
+ne 2100.
+(pdftex.def)             Requested size: 414.04587pt x 270.25902pt.
+ [50 <./images/sequence/setAdmin.png>] <images/sequence/removeTeam.png, id=228,
+ 728.7225pt x 410.2828pt>
 File: images/sequence/removeTeam.png Graphic file (type png)
+
 <use images/sequence/removeTeam.png>
-Package pdftex.def Info: images/sequence/removeTeam.png  used on input line 210
-6. on input line 2106.
-Package pdftex.def Info: Requested size: 364.36035pt x 205.1409pt on input line
- 2106.
+Package pdftex.def Info: images/sequence/removeTeam.png used on input line 2106
+.
+(pdftex.def)             Requested size: 364.36035pt x 205.1409pt.
 File: images/sequence/removeTeam.png Graphic file (type png)
-<use images/sequence/removeTeam.png>
-Package pdftex.def Info: images/sequence/removeTeam.png  used on input line 211
-2. on input line 2112.
-Package pdftex.def Info: Requested size: 364.36035pt x 205.1409pt on input line
- 2112.
- [51 <./images/sequence/deleleMemberGroup.png> <./images/sequence/removeTeam.pn
-g>]
-<images/sequence/realizarMision.png, id=232, 940.26282pt x 690.32906pt>
+ <use images/sequence/removeTeam.png>
+Package pdftex.def Info: images/sequence/removeTeam.png used on input line 2112
+.
+(pdftex.def)             Requested size: 364.36035pt x 205.1409pt.
+
+[51 <./images/sequence/deleleMemberGroup.png> <./images/sequence/removeTeam.png
+>] <images/sequence/realizarMision.png, id=234, 940.26282pt x 690.32906pt>
 File: images/sequence/realizarMision.png Graphic file (type png)
+
 <use images/sequence/realizarMision.png>
-Package pdftex.def Info: images/sequence/realizarMision.png  used on input line
- 2118. on input line 2118.
-Package pdftex.def Info: Requested size: 470.13026pt x 345.16368pt on input lin
-e 2118.
-<images/sequence/checkMissions.png, id=233, 865.73438pt x 426.09187pt>
+Package pdftex.def Info: images/sequence/realizarMision.png used on input line 
+2118.
+(pdftex.def)             Requested size: 470.13026pt x 345.16368pt.
+
+<images/sequence/checkMissions.png, id=235, 865.73438pt x 426.09187pt>
 File: images/sequence/checkMissions.png Graphic file (type png)
+
 <use images/sequence/checkMissions.png>
-Package pdftex.def Info: images/sequence/checkMissions.png  used on input line 
-2124. on input line 2124.
-Package pdftex.def Info: Requested size: 432.86613pt x 213.04541pt on input lin
-e 2124.
- [52 <./images/sequence/realizarMision.png>]
-<images/sequence/modifyProfile.png, id=238, 666.23906pt x 331.99031pt>
+Package pdftex.def Info: images/sequence/checkMissions.png used on input line 2
+124.
+(pdftex.def)             Requested size: 432.86613pt x 213.04541pt.
+ [52 <./images/sequence/realizarMision.png>] <images/sequence/modifyProfile.png
+, id=240, 666.23906pt x 331.99031pt>
 File: images/sequence/modifyProfile.png Graphic file (type png)
+
 <use images/sequence/modifyProfile.png>
-Package pdftex.def Info: images/sequence/modifyProfile.png  used on input line 
-2130. on input line 2130.
-Package pdftex.def Info: Requested size: 333.11871pt x 165.99474pt on input lin
-e 2130.
-<images/sequence/checkProfile.png, id=239, 654.94687pt x 305.64188pt>
+Package pdftex.def Info: images/sequence/modifyProfile.png used on input line 2
+130.
+(pdftex.def)             Requested size: 333.11871pt x 165.99474pt.
+
+<images/sequence/checkProfile.png, id=241, 654.94687pt x 305.64188pt>
 File: images/sequence/checkProfile.png Graphic file (type png)
+
 <use images/sequence/checkProfile.png>
-Package pdftex.def Info: images/sequence/checkProfile.png  used on input line 2
-136. on input line 2136.
-Package pdftex.def Info: Requested size: 327.47264pt x 152.82056pt on input lin
-e 2136.
-<images/sequence/checkArchivements.png, id=240, 660.21657pt x 308.65312pt>
+Package pdftex.def Info: images/sequence/checkProfile.png used on input line 21
+36.
+(pdftex.def)             Requested size: 327.47264pt x 152.82056pt.
+
+<images/sequence/checkArchivements.png, id=242, 660.21657pt x 308.65312pt>
 File: images/sequence/checkArchivements.png Graphic file (type png)
+
 <use images/sequence/checkArchivements.png>
-Package pdftex.def Info: images/sequence/checkArchivements.png  used on input l
-ine 2142. on input line 2142.
-Package pdftex.def Info: Requested size: 330.10747pt x 154.32617pt on input lin
-e 2142.
+Package pdftex.def Info: images/sequence/checkArchivements.png used on input li
+ne 2142.
+(pdftex.def)             Requested size: 330.10747pt x 154.32617pt.
  [53 <./images/sequence/checkMissions.png> <./images/sequence/modifyProfile.png
-> <./images/sequence/checkProfile.png>]
-<images/sequence/checkInsignias.png, id=247, 654.19406pt x 316.93407pt>
+> <./images/sequence/checkProfile.png>] <images/sequence/checkInsignias.png, id
+=249, 654.19406pt x 316.93407pt>
 File: images/sequence/checkInsignias.png Graphic file (type png)
+
 <use images/sequence/checkInsignias.png>
-Package pdftex.def Info: images/sequence/checkInsignias.png  used on input line
- 2148. on input line 2148.
-Package pdftex.def Info: Requested size: 327.09622pt x 158.46664pt on input lin
-e 2148.
-<images/sequence/checkQR.png, id=248, 647.41875pt x 371.13657pt>
+Package pdftex.def Info: images/sequence/checkInsignias.png used on input line 
+2148.
+(pdftex.def)             Requested size: 327.09622pt x 158.46664pt.
+
+<images/sequence/checkQR.png, id=250, 647.41875pt x 371.13657pt>
 File: images/sequence/checkQR.png Graphic file (type png)
+
 <use images/sequence/checkQR.png>
-Package pdftex.def Info: images/sequence/checkQR.png  used on input line 2154. 
-on input line 2154.
-Package pdftex.def Info: Requested size: 323.70857pt x 185.56783pt on input lin
-e 2154.
-<images/sequence/checkRanking.png, id=249, 514.92375pt x 283.0575pt>
+Package pdftex.def Info: images/sequence/checkQR.png used on input line 2154.
+(pdftex.def)             Requested size: 323.70857pt x 185.56783pt.
+
+<images/sequence/checkRanking.png, id=251, 514.92375pt x 283.0575pt>
 File: images/sequence/checkRanking.png Graphic file (type png)
+
 <use images/sequence/checkRanking.png>
-Package pdftex.def Info: images/sequence/checkRanking.png  used on input line 2
-160. on input line 2160.
-Package pdftex.def Info: Requested size: 257.46124pt x 141.5284pt on input line
- 2160.
+Package pdftex.def Info: images/sequence/checkRanking.png used on input line 21
+60.
+(pdftex.def)             Requested size: 257.46124pt x 141.5284pt.
  [54 <./images/sequence/checkArchivements.png> <./images/sequence/checkInsignia
 s.png> <./images/sequence/checkQR.png>]
-<images/sequence/checkTeam.png, id=256, 958.3303pt x 516.42938pt>
+<images/sequence/checkTeam.png, id=258, 958.3303pt x 516.42938pt>
 File: images/sequence/checkTeam.png Graphic file (type png)
+
 <use images/sequence/checkTeam.png>
-Package pdftex.def Info: images/sequence/checkTeam.png  used on input line 2166
-. on input line 2166.
-Package pdftex.def Info: Requested size: 479.16399pt x 258.21405pt on input lin
-e 2166.
-<images/sequence/createTeam.png, id=257, 889.07156pt x 388.45125pt>
+Package pdftex.def Info: images/sequence/checkTeam.png used on input line 2166.
+
+(pdftex.def)             Requested size: 479.16399pt x 258.21405pt.
+
+<images/sequence/createTeam.png, id=259, 889.07156pt x 388.45125pt>
 File: images/sequence/createTeam.png Graphic file (type png)
+
 <use images/sequence/createTeam.png>
-Package pdftex.def Info: images/sequence/createTeam.png  used on input line 217
-2. on input line 2172.
-Package pdftex.def Info: Requested size: 444.5347pt x 194.22514pt on input line
- 2172.
+Package pdftex.def Info: images/sequence/createTeam.png used on input line 2172
+.
+(pdftex.def)             Requested size: 444.5347pt x 194.22514pt.
  [55 <./images/sequence/checkRanking.png> <./images/sequence/checkTeam.png>]
-<images/sequence/register.png, id=264, 1037.37563pt x 301.125pt>
+<images/sequence/register.png, id=266, 1037.37563pt x 301.125pt>
 File: images/sequence/register.png Graphic file (type png)
+
 <use images/sequence/register.png>
-Package pdftex.def Info: images/sequence/register.png  used on input line 2178.
- on input line 2178.
-Package pdftex.def Info: Requested size: 518.68654pt x 150.56212pt on input lin
-e 2178.
+Package pdftex.def Info: images/sequence/register.png used on input line 2178.
+(pdftex.def)             Requested size: 518.68654pt x 150.56212pt.
 
 Overfull \hbox (20.76329pt too wide) in paragraph at lines 2178--2179
 [][] 
  []
 
-<images/sequence/acceptInvitation.png, id=265, 927.465pt x 588.69937pt>
+<images/sequence/acceptInvitation.png, id=267, 927.465pt x 588.69937pt>
 File: images/sequence/acceptInvitation.png Graphic file (type png)
-<use images/sequence/acceptInvitation.png>
-Package pdftex.def Info: images/sequence/acceptInvitation.png  used on input li
-ne 2185. on input line 2185.
-Package pdftex.def Info: Requested size: 463.73137pt x 294.34895pt on input lin
-e 2185.
-[56 <./images/sequence/createTeam.png> <./images/sequence/register.png>]
-<images/sequence/sendInvitation.png, id=271, 892.08281pt x 407.27156pt>
-File: images/sequence/sendInvitation.png Graphic file (type png)
-<use images/sequence/sendInvitation.png>
-Package pdftex.def Info: images/sequence/sendInvitation.png  used on input line
- 2191. on input line 2191.
-Package pdftex.def Info: Requested size: 446.04031pt x 203.63527pt on input lin
-e 2191.
-<images/sequence/login.png, id=272, 536.75531pt x 293.59688pt>
-File: images/sequence/login.png Graphic file (type png)
-<use images/sequence/login.png>
-Package pdftex.def Info: images/sequence/login.png  used on input line 2197. on
- input line 2197.
-Package pdftex.def Info: Requested size: 268.37698pt x 146.79807pt on input lin
-e 2197.
 
-[57 <./images/sequence/acceptInvitation.png> <./images/sequence/sendInvitation.
-png>]
-<images/sequence/showOtherPlayersPositions.png, id=278, 931.98187pt x 455.45157
+<use images/sequence/acceptInvitation.png>
+Package pdftex.def Info: images/sequence/acceptInvitation.png used on input lin
+e 2185.
+(pdftex.def)             Requested size: 463.73137pt x 294.34895pt.
+ [56 <./images/sequence/createTeam.png> <./images/sequence/register.png>]
+<images/sequence/sendInvitation.png, id=273, 892.08281pt x 407.27156pt>
+File: images/sequence/sendInvitation.png Graphic file (type png)
+
+<use images/sequence/sendInvitation.png>
+Package pdftex.def Info: images/sequence/sendInvitation.png used on input line 
+2191.
+(pdftex.def)             Requested size: 446.04031pt x 203.63527pt.
+
+<images/sequence/login.png, id=274, 536.75531pt x 293.59688pt>
+File: images/sequence/login.png Graphic file (type png)
+
+<use images/sequence/login.png>
+Package pdftex.def Info: images/sequence/login.png used on input line 2197.
+(pdftex.def)             Requested size: 268.37698pt x 146.79807pt.
+ [57 <./images/sequence/acceptInvitation.png> <./images/sequence/sendInvitation
+.png>]
+<images/sequence/showOtherPlayersPositions.png, id=280, 931.98187pt x 455.45157
 pt>
 File: images/sequence/showOtherPlayersPositions.png Graphic file (type png)
-<use images/sequence/showOtherPlayersPositions.png>
-Package pdftex.def Info: images/sequence/showOtherPlayersPositions.png  used on
- input line 2203. on input line 2203.
-Package pdftex.def Info: Requested size: 465.98979pt x 227.72522pt on input lin
-e 2203.
-<images/sequence/checkPrizes.png, id=279, 773.89125pt x 371.13657pt>
+ <use images/sequence/showOtherPlayersPositions.png>
+Package pdftex.def Info: images/sequence/showOtherPlayersPositions.png used on 
+input line 2203.
+(pdftex.def)             Requested size: 465.98979pt x 227.72522pt.
+
+<images/sequence/checkPrizes.png, id=281, 773.89125pt x 371.13657pt>
 File: images/sequence/checkPrizes.png Graphic file (type png)
+
 <use images/sequence/checkPrizes.png>
-Package pdftex.def Info: images/sequence/checkPrizes.png  used on input line 22
-09. on input line 2209.
-Package pdftex.def Info: Requested size: 386.94467pt x 185.56783pt on input lin
-e 2209.
-<images/structureHighLevel.png, id=280, 712.16063pt x 636.12656pt>
+Package pdftex.def Info: images/sequence/checkPrizes.png used on input line 220
+9.
+(pdftex.def)             Requested size: 386.94467pt x 185.56783pt.
+
+<images/structureHighLevel.png, id=282, 712.16063pt x 636.12656pt>
 File: images/structureHighLevel.png Graphic file (type png)
+
 <use images/structureHighLevel.png>
-Package pdftex.def Info: images/structureHighLevel.png  used on input line 2219
-. on input line 2219.
-Package pdftex.def Info: Requested size: 356.07944pt x 318.0625pt on input line
- 2219.
+Package pdftex.def Info: images/structureHighLevel.png used on input line 2219.
+
+(pdftex.def)             Requested size: 356.07944pt x 318.0625pt.
  [58 <./images/sequence/login.png> <./images/sequence/showOtherPlayersPositions
 .png> <./images/sequence/checkPrizes.png>]
-<images/structureModel.png, id=287, 568.37344pt x 242.40562pt>
-File: images/structureModel.png Graphic file (type png)
-<use images/structureModel.png>
-Package pdftex.def Info: images/structureModel.png  used on input line 2227. on
- input line 2227.
-Package pdftex.def Info: Requested size: 341.02669pt x 145.44447pt on input lin
-e 2227.
-<images/structureLoginGameModel.png, id=288, 708.39656pt x 156.585pt>
-File: images/structureLoginGameModel.png Graphic file (type png)
-<use images/structureLoginGameModel.png>
-Package pdftex.def Info: images/structureLoginGameModel.png  used on input line
- 2233. on input line 2233.
-Package pdftex.def Info: Requested size: 495.8742pt x 109.60873pt on input line
- 2233.
- [59 <./images/structureHighLevel.png> <./images/structureModel.png>]
-<images/structureMainActivity.png, id=294, 657.95813pt x 380.17032pt>
-File: images/structureMainActivity.png Graphic file (type png)
-<use images/structureMainActivity.png>
-Package pdftex.def Info: images/structureMainActivity.png  used on input line 2
-239. on input line 2239.
-Package pdftex.def Info: Requested size: 394.77792pt x 228.10394pt on input lin
-e 2239.
-<images/structureMissions.png, id=295, 645.91313pt x 398.23781pt>
-File: images/structureMissions.png Graphic file (type png)
-<use images/structureMissions.png>
-Package pdftex.def Info: images/structureMissions.png  used on input line 2245.
- on input line 2245.
-Package pdftex.def Info: Requested size: 452.13611pt x 278.76456pt on input lin
-e 2245.
- [60 <./images/structureLoginGameModel.png> <./images/structureMainActivity.png
+<images/structureModel.PNG, id=289, 568.37344pt x 242.40562pt>
+File: images/structureModel.PNG Graphic file (type png)
+
+<use images/structureModel.PNG>
+Package pdftex.def Info: images/structureModel.PNG used on input line 2227.
+(pdftex.def)             Requested size: 341.02669pt x 145.44447pt.
+
+<images/structureloginGameModel.PNG, id=290, 708.39656pt x 156.585pt>
+File: images/structureloginGameModel.PNG Graphic file (type png)
+
+<use images/structureloginGameModel.PNG>
+Package pdftex.def Info: images/structureloginGameModel.PNG used on input line 
+2233.
+(pdftex.def)             Requested size: 495.8742pt x 109.60873pt.
+ [59 <./images/structureHighLevel.png> <./images/structureModel.PNG>]
+<images/structureMainActivity.PNG, id=296, 657.95813pt x 380.17032pt>
+File: images/structureMainActivity.PNG Graphic file (type png)
+
+<use images/structureMainActivity.PNG>
+Package pdftex.def Info: images/structureMainActivity.PNG used on input line 22
+39.
+(pdftex.def)             Requested size: 394.77792pt x 228.10394pt.
+
+<images/structureMissions.PNG, id=297, 645.91313pt x 398.23781pt>
+File: images/structureMissions.PNG Graphic file (type png)
+
+<use images/structureMissions.PNG>
+Package pdftex.def Info: images/structureMissions.PNG used on input line 2245.
+(pdftex.def)             Requested size: 452.13611pt x 278.76456pt.
+ [60 <./images/structureloginGameModel.PNG> <./images/structureMainActivity.PNG
 >]
-<images/structureTeam.png, id=301, 680.5425pt x 178.41656pt>
-File: images/structureTeam.png Graphic file (type png)
-<use images/structureTeam.png>
-Package pdftex.def Info: images/structureTeam.png  used on input line 2252. on 
-input line 2252.
-Package pdftex.def Info: Requested size: 408.32864pt x 107.05075pt on input lin
-e 2252.
- [61 <./images/structureMissions.png> <./images/structureTeam.png>]
+<images/structureTeam.PNG, id=303, 680.5425pt x 178.41656pt>
+File: images/structureTeam.PNG Graphic file (type png)
+
+<use images/structureTeam.PNG>
+Package pdftex.def Info: images/structureTeam.PNG used on input line 2252.
+(pdftex.def)             Requested size: 408.32864pt x 107.05075pt.
+ [61 <./images/structureMissions.PNG> <./images/structureTeam.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
 
  []
 
-<images/databaseNRteams.png, id=308, 766.36313pt x 680.5425pt>
+<images/databaseNRteams.png, id=310, 766.36313pt x 680.5425pt>
 File: images/databaseNRteams.png Graphic file (type png)
-<use images/databaseNRteams.png>
-Package pdftex.def Info: images/databaseNRteams.png  used on input line 2282. o
-n input line 2282.
-Package pdftex.def Info: Requested size: 383.18063pt x 340.27042pt on input lin
-e 2282.
-[62]
-<images/databaseNRusers.png, id=312, 997.47656pt x 777.65532pt>
-File: images/databaseNRusers.png Graphic file (type png)
-<use images/databaseNRusers.png>
-Package pdftex.def Info: images/databaseNRusers.png  used on input line 2288. o
-n input line 2288.
-Package pdftex.def Info: Requested size: 498.73706pt x 388.8267pt on input line
- 2288.
 
-Overfull \hbox (0.81381pt too wide) in paragraph at lines 2288--2289
+<use images/databaseNRteams.png>
+Package pdftex.def Info: images/databaseNRteams.png used on input line 2282.
+(pdftex.def)             Requested size: 383.18063pt x 340.27042pt.
+ [62]
+<images/databaseNRusers.png, id=314, 997.47656pt x 777.65532pt>
+File: images/databaseNRusers.png Graphic file (type png)
+
+<use images/databaseNRusers.png>
+Package pdftex.def Info: images/databaseNRusers.png used on input line 2296.
+(pdftex.def)             Requested size: 498.73706pt x 388.8267pt.
+
+Overfull \hbox (0.81381pt too wide) in paragraph at lines 2296--2297
  [][] 
  []
 
 [63 <./images/databaseNRteams.png>]
-<images/databaseRoom.png, id=317, 732.48656pt x 501.37312pt>
+<images/databaseRoom.png, id=319, 732.48656pt x 501.37312pt>
 File: images/databaseRoom.png Graphic file (type png)
+
 <use images/databaseRoom.png>
-Package pdftex.def Info: images/databaseRoom.png  used on input line 2296. on i
-nput line 2296.
-Package pdftex.def Info: Requested size: 366.24237pt x 250.68594pt on input lin
-e 2296.
+Package pdftex.def Info: images/databaseRoom.png used on input line 2313.
+(pdftex.def)             Requested size: 366.24237pt x 250.68594pt.
  [64 <./images/databaseNRusers.png>]
-<images/deploymentModel.png, id=322, 967.36406pt x 517.935pt>
+<images/deploymentModel.png, id=324, 967.36406pt x 517.935pt>
 File: images/deploymentModel.png Graphic file (type png)
+
 <use images/deploymentModel.png>
-Package pdftex.def Info: images/deploymentModel.png  used on input line 2304. o
-n input line 2304.
-Package pdftex.def Info: Requested size: 483.68085pt x 258.96686pt on input lin
-e 2304.
-
-[65 <./images/databaseRoom.png> <./images/deploymentModel.png>] [66] [67]
-Underfull \hbox (badness 10000) in paragraph at lines 2406--2407
+Package pdftex.def Info: images/deploymentModel.png used on input line 2321.
+(pdftex.def)             Requested size: 483.68085pt x 258.96686pt.
+ [65 <./images/databaseRoom.png> <./images/deploymentModel.png>] [66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 2433--2434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2408--2409
+Underfull \hbox (badness 10000) in paragraph at lines 2435--2436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2410--2411
+Underfull \hbox (badness 10000) in paragraph at lines 2437--2438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2412--2413
+Underfull \hbox (badness 10000) in paragraph at lines 2439--2440
 
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 2432--2433
+Underfull \hbox (badness 10000) in paragraph at lines 2459--2460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2447--2448
+Underfull \hbox (badness 10000) in paragraph at lines 2474--2475
 
  []
 
-[69] [70] [71]
+[69] [70] <images/restAPI.png, id=346, 767.86874pt x 266.49562pt>
+File: images/restAPI.png Graphic file (type png)
+
+<use images/restAPI.png>
+Package pdftex.def Info: images/restAPI.png used on input line 2549.
+(pdftex.def)             Requested size: 537.50446pt x 186.54565pt.
+
+Overfull \hbox (39.5812pt too wide) in paragraph at lines 2549--2550
+ [][] 
+ []
+
+[71 <./images/restAPI.png>] [72]
 Cap\'{\i }tulo 4.
-[72
-
-]
-Cap\'{\i }tulo 5.
 [73
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2558--2559
+Cap\'{\i }tulo 5.
+[74
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2618--2619
 []\OT1/phv/m/sc/10 Omnium Ga-mes. \OT1/phv/m/sl/10 BB-VA Ga-me: El ma-yor ca-so
  de []exi-to de la lu-di-fi-ca-ci[]on en Es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2558--2559
+Underfull \hbox (badness 10000) in paragraph at lines 2618--2619
 \OT1/phv/m/sl/10 pa[]na.\OT1/phv/m/n/10 , Fe-cha de []ulti-ma vi-si-ta: 21 de N
 o-viem-bre de 2017 $\OT1/cmtt/m/n/10 http : / / omniumgames . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2560--2561
+Underfull \hbox (badness 10000) in paragraph at lines 2620--2621
 []\OT1/phv/m/sc/10 Ferran Al-ta-rri-ba Ber-tran. IEBS School \OT1/phv/m/sl/10 T
-i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]a
+i-pos de ju-ga-do-res en Ga-mi-fi-ca-tion: teor[]^^Pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2560--2561
+Underfull \hbox (badness 10000) in paragraph at lines 2620--2621
 \OT1/phv/m/sl/10 Bartle\OT1/phv/m/n/10 . Fe-cha de []ulti-ma vi-si-ta: 6 de No-
 viem-bre de 2017, $\OT1/cmtt/m/n/10 http : / / www . iebschool . com / blog /
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 2566--2567
+Underfull \hbox (badness 1648) in paragraph at lines 2626--2627
 []\OT1/phv/m/sc/10 KFC\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil KF
 C pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / ap
 ps / details ? id = es . kfc .
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 2568--2569
+Underfull \hbox (badness 5119) in paragraph at lines 2628--2629
 []\OT1/phv/m/sc/10 VIPS\OT1/phv/m/n/10 ,\OT1/phv/m/sl/10 Aplicaci[]on m[]ovil V
 IPS pa-ra An-droid $\OT1/cmtt/m/n/10 https : / / play . google . com / store / 
 apps / details ? id = com .
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 2580--2581
+Underfull \hbox (badness 1365) in paragraph at lines 2640--2641
 []\OT1/phv/m/sc/10 McDonalds\OT1/phv/m/n/10 . Mo-no-poly Ga-na-dor de Mc-Do-nal
 ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[74
+[75
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2588--2589
+Underfull \hbox (badness 10000) in paragraph at lines 2648--2649
 []\OT1/phv/m/sc/10 Zhitnitsky, Alex\OT1/phv/m/n/10 . The Top 10 Ex-cep-tion Ty-
 pes in Pro-duc-tion Ja-va Ap-pli-ca-tions -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2588--2589
+Underfull \hbox (badness 10000) in paragraph at lines 2648--2649
 \OT1/phv/m/n/10 Ba-sed on 1B Events. Fe-cha de []ulti-ma vi-si-ta: 08/02/2018 $
 \OT1/cmtt/m/n/10 https : / / blog . takipi . com /
  []
 
-
-Underfull \hbox (badness 2617) in paragraph at lines 2598--2599
-[]\OT1/phv/m/sc/10 Servicio de in-form[]ati-ca de la Uni-ver-si-dad de Ali-can-
-te \OT1/phv/m/n/10 Mo-de-lo vis-ta con-tro-la-dor (MVC).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2599
-\OT1/phv/m/n/10 Fe-cha de []ulti-ma vi-si-ta 11/02/2018 $\OT1/cmtt/m/n/10 https
- : / / si . ua . es / es / documentacion / asp-[]net-[]mvc-[]3 / 1-[]dia /
- []
-
-[75] [76]
+[76] [77]
 Cap\'{\i }tulo 6.
-[77
+[78
 
-] (route66.aux
+] (./route66.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6238 strings out of 493312
- 84354 string characters out of 3138891
- 270542 words of memory out of 3000000
- 9556 multiletter control sequences out of 15000+200000
- 40688 words of font info for 75 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,12n,47p,1242b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/eurosym/feymr1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (83 pages, 10708326 bytes).
+ 6149 strings out of 494850
+ 82732 string characters out of 6178024
+ 266320 words of memory out of 5000000
+ 9221 multiletter control sequences out of 15000+600000
+ 40688 words of font info for 75 fonts, out of 8000000 for 9000
+ 62 hyphenation exceptions out of 8191
+ 41i,12n,47p,1240b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on route66.pdf (84 pages, 11118661 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 276 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
