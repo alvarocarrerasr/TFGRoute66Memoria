@@ -575,6 +575,7 @@ Por otro lado, también resulta de interés considerar las desventajas que supon
 \end{enumerate}
 
 \subsection{Firebase}
+\label{firebase}
 
 \begin{figure}[H]
 \centering
@@ -2464,25 +2465,28 @@ La aplicación utiliza varios tipos de almacenamiento:
 
 \subsection{Implementación del modelo}
 
-Tal y como se ha visto en el punto anterior (Almacenamiento de datos) se utilizan varios tipos de almacenamiento, dependiendo del tipo de datos que queremos tratar. Se indicará uno por uno los detalles de cada soporte de almacenamiento.
+Tal y como se ha visto en el punto anterior (Almacenamiento de datos) se utilizan varios tipos de almacenamiento dependiendo del tipo de datos que queremos tratar. Se indicarán a continuación los detalles de cada soporte de almacenamiento.
 
 \subsubsection{Firebase Firestore}
 
-Se ha de destacar que la misma base de datos instancia los objetos en aquellos de tipo Kotlin, de acuerdo con las especificaciones del programador (por medio de un objeto \textit{SnapshotParser}).\\
+Firebase Firestore es la base de datos principal del servicio y en donde se almacena información crucial para el correcto funcionamiento del sistema informático como:
+\begin{itemize}
+\item Datos sobre las misiones completadas por los usuarios y equipos.
+\item Parámetros del perfil del usuario.
+\item Premios obtenidos.
+\item Insignias recibidas.
+\end{itemize} 
 
-\underline{Reglas de seguridad}\\
-
-Firestore internamente realiza cuantas comprobaciones de permisos sean precisas, para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un backend que no deja de ser otro punto en el que puede haber vulnerabilidades.\\
-
-Se adjuntan en el anexo las reglas que se han aplicado.\\
+Así mismo, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas, para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un backend que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
 
 \subsubsection{Authentication}
 
-Firebase Authentication es utilizado en el modelo para almacenar las sesiones, así como los diferentes métodos de autenticación del usuario en el sistema. Además es utilizado en primera instancia cuando el usuario se acaba de registrar para recuperar de los proveedores de acceso datos iniciales como su nombre o su correo electrónico.
+Firebase Authentication es utilizado en el sistema informático para almacenar las sesiones, así como los diferentes métodos de autenticación del usuario en el sistema. Además, es utilizado en primera instancia cuando el usuario se acaba de registrar para recuperar de los proveedores de acceso datos iniciales como su nombre o su correo electrónico.
 
 \subsubsection{Analytics}
 
-Esta parte está enfocada directamente a realizar las estadísticas que serán empleadas por la parte de gestión de la aplicación. Para ello se envían datos anonimizados y relacionados con:
+Esta parte está enfocada directamente a realizar las estadísticas que pueden ser empleados por la parte de gestión de la aplicación. Para ello se envían datos anonimizados y relacionados con:
+
 \begin{itemize}
 \item Intentos de misión.
 \item Tiempo de uso de la aplicación.
@@ -2506,7 +2510,6 @@ Las notificaciones pueden ser enviadas, o bien a un dispositivo individual, o bi
 
 Un usuario entrará en su grupo de dispositivos en el momento en el que inicie sesión o se registre en Route66App.
 
-
 \subsubsection{Storage}
 
 Firebase Storage es la parte encargada de almacenar los avatares de usuario y de grupo. Es un almacenamiento de objetos construido sobre Google Cloud Storage. \\
@@ -2520,7 +2523,15 @@ Se ha utilizado la siguiente estructura de archivos:
 Por motivos de escalabilidad y de eficiencia se han establecido los siguientes requisitos:
 \begin{itemize}
 \item Formatos de imagen: JPG, PNG o GIF.
-\item Tamaño máximo: 2 MiB.
+\item Tamaño máximo: 0.2 MiB.
+\end{itemize}
+
+Todas las imágenes subidas al servicio serán previamente redimensionadas para ajustar al tamaño máximo indicado anteriormente. De esta forma se consigue que:
+
+\begin{itemize}
+\item Se reduzca la cantidad de datos que se deben transmitir por la red.
+\item Se evite tener que tener una función (con el gasto que eso conlleva de tiempo) que realice esta modificación.
+\item Se ahorra espacio en Firebase Storage
 \end{itemize}
 
 \subsubsection{Base de datos local SQLite}
@@ -2532,26 +2543,23 @@ Para su utilización se ha empleado:
 \begin{itemize}
 
 \item Un archivo AppDatabase: representa a toda la base de datos SQLite. Es el punto de entrada hacia la misma (sigue el patrón Facade). Con el fin de asegurar que solo haya una única instancia he aplicado el patrón Singleton.
-
 \item DAOs: Un DAO en Room es simplemente una interfaz que incluye la cabecera de cuantos métodos se desee incluir. Tiene una serie de métodos ya implementados y con los que basta añadir una anotación y otros (como consultas SELECT complejas), en los que ya es preciso escribir la consulta completa.
-
 \item Entities: Representan una tabla concreta de la base de datos e incluye como atributos cada uno de los campos que la conforman (incluyendo su tipo, así ciertas propiedades características de una base de datos relacional como el uso de claves primarias o autoincrementos).
-
-
 \end{itemize}
 
 Esta base de datos es utilizada para mantener una sincronización de las diferentes misiones, niveles, insignias y logros. Se debe recordar que existe un requisito en el que se indicaba que estos debían ser actualizables en cualquier momento por parte del administrador, desde el back-end.
 
 \subsubsection{Ficheros}
 
-Los ficheros resultan de especial importancia para inicializar la aplicación. Se cuentan con los siguientes ficheros:
+Los ficheros resultan de especial importancia para inicializar la base de datos en casos de que la primera vez que el usuario abre la aplicación no tiene conexión o esta es de mala calidad. Se cuentan con los siguientes ficheros:
 
 \begin{itemize}
-\item \textit{missions.json}: Incluye el conjunto de niveles y misiones de la aplicación. El objetivo fundamental es que inicialice la base de datos SQLite (ver punto anterior).
+\item \textit{missions.json}: Incluye el conjunto de niveles y misiones de la aplicación. 
 
-\item \textit{insignias.json}.
+\item \textit{insignias.json}: Incluye las insignias con las que cuenta la aplicación.
 
-\item \textit{achivements.json}
+\item \textit{prizes.json}: Incluye los diferentes premios existentes en el sistema, junto con la dirección a la imagen que los representa y una breve descripción en castellano.
+
 \end{itemize}
 
 \subsubsection{Shared preferences}
@@ -2562,13 +2570,13 @@ En Route66App se han utilizado para guardar únicamente el tono de notificación
 
 \subsubsection{Firebase Remote Config}
 
-Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de Android instalada). De esta forma es posible aplicar un determinado ajuste a una franja de usuarios, para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese determinado ajuste. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
+Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de Android instalada). De esta forma, es posible aplicar un determinado ajuste a una franja de usuarios, para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese parámetro. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
 
 En Route66App se ha utilizado este producto para ajustar la URL de los archivos de misiones, premios e insignias, así como la hora y fecha de última actualización de esos archivos.
 
 \subsection{Funciones}
 
-Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código ejecutados cuando ocurra una determinada condición. En el caso que nos ocupa, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
+Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código que son ejecutados en el caso de que ocurra una determinada condición. En Route66App, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
 
 \begin{enumerate}
 \item A las escrituras de \textit{Firebase Firestore}: Es preciso escuchar todos aquellos eventos de escritura y actualización sobre los objetos almacenados en las colecciones de \textit{Achivements} (logros). Esto es necesario para:
@@ -2590,9 +2598,9 @@ Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy
 
 \section{Pruebas}
 
-En el desarrollo de software resultan de especial relevancia las pruebas, que pueden ser tanto de caja negra (sin visualizar el código) como de caja blanca. Una de las formas más efectivas de comprobar que aquel código que se modifica no “rompa“ el sistema (es decir, deje de funcionar tal y como está previsto), es mediante el uso de pruebas unitarias que en Android se suelen realizar mediante el framework \textit{JUnit}. En este proyecto, solo se van a realizar sobre una única parte de la aplicación: el Helper de Misiones. Esto es debido a que el resto de partes que tienen que ver con el acceso y minipulación de datos son gestionadas por software elaborado por terceros y ya se considera que debe haber pasado las pruebas necesarias.
+En el desarrollo de software resultan de especial relevancia las pruebas de código, que pueden ser tanto de caja negra (sin visualizar el código) como de caja blanca. Una de las formas más efectivas de comprobar que aquel código que se modifica no “rompa“ el sistema (es decir, deje de funcionar tal y como está previsto), es mediante el uso de pruebas unitarias que, en Android, se suelen realizar mediante el framework \textit{JUnit}. 
 
-Por otro lado, al hablar de una aplicación con interfaz gráfica también conviene señalar la importancia de las pruebas sobre la interfaz de usuario. El caso de las pruebas automáticas en esta categoría no suele ser muy conocido, pues muchos desarrolladores realizan las pruebas manualmente, probando la aplicación ellos mismos. En Android contamos con los siguientes frameworks diseñados por Google:
+Por otro lado, al hablar de una aplicación con interfaz gráfica también conviene señalar la importancia de las pruebas sobre la interfaz de usuario, que no suelen ser muy conocidas, pues muchos desarrolladores las realizan manualmente, probando la aplicación ellos mismos. En Android contamos con los siguientes frameworks diseñados por Google:
 
 \begin{itemize}
 \item Espresso: se utilizará cuando tengamos acceso al código fuente de la aplicación (pues se realizan sobre el mismo proyecto de la aplicación). Útil cuando vamos a hacer pruebas sobre nuestra propia aplicación.
@@ -2600,9 +2608,9 @@ Por otro lado, al hablar de una aplicación con interfaz gráfica también convi
 \item UIAutomator: cuando no tengamos acceso al código fuente (por ejemplo, cuando queremos probar una aplicación de terceros).
 
 \end{itemize}
-En esta aplicación no se realizarán pruebas visuales automatizadas, sino que serán puramente manuales.
 
-Finalmente, se ha podido analizar, diseñar, implementar y probar un sistema informático. Sin embargo, mientras no pase las pruebas de aceptación, aquellas que indican que el software tiene unas ciertas garantías y que se comporta de acuerdo a lo establecido en los requisitos, el producto no puede ser entregado. Estas pruebas son las que describiré con detalle a continuación.
+
+Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino que serán puramente manuales y de caja negra, de acuerdo con los requisitos señalados por la tutora del T.F.G. Estas pruebas son las que describiré con detalle a continuación.
 
 \begin{enumerate}
 
