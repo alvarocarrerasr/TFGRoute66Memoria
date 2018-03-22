@@ -2612,7 +2612,34 @@ Por otro lado, al hablar de una aplicación con interfaz gráfica también convi
 
 Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino que serán puramente manuales y de caja negra, de acuerdo con los requisitos señalados por la tutora del T.F.G. Estas pruebas son las que describiré con detalle a continuación.
 
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Modificar equipo} 
+  \addrow{Actor}{App user.}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario selecciona “Gestionar un equipo“. %1
+        \item El sistema muestra al usuario el listado de equipos. %2
+        \item El usuario selecciona un equipo de la lista. %3
+        \item El sistema muestra el conjunto de parámetros de configuración del grupo, así como el valor de los mismos. %4
+        \item El usuario elige un parámetro y lo modifica. %5
+        \item El sistema actualiza la configuración del grupo. %6
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 2a El sistema no encuentra ningún equipo administrado por el usuario. En ese caso, se muestra un mensaje y el caso de uso queda sin efecto.
+  		\item 6a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 5.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+
 \begin{enumerate}
+
+
 
 \item El usuario se registra mediante correo electrónico.
 \item El usuario se registra utilizando Google.
