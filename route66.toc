@@ -54,16 +54,16 @@
 \contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{25}
 \contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{25}
 \contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{27}
-\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{27}
-\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{27}
+\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{28}
+\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{28}
 \contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{28}
-\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{28}
+\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{29}
 \contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{29}
 \contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{30}
 \contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{30}
 \contentsline {subsection}{\numberline {3.2.1}Requisitos}{30}
 \contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{30}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{32}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{33}
 \contentsline {subsection}{\numberline {3.2.2}Casos de uso}{35}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{36}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{37}
@@ -91,6 +91,8 @@
 \contentsline {subsubsection}{\numberline {3.4.4.5}Firebase Remote Config}{73}
 \contentsline {subsection}{\numberline {3.4.5}Funciones}{73}
 \contentsline {section}{\numberline {3.5}Pruebas}{73}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{76}
+\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{76}
 \contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{77}
 \contentsline {section}{\numberline {4.1}Conclusiones}{77}
 \contentsline {section}{\numberline {4.2}Trabajo futuro}{77}
