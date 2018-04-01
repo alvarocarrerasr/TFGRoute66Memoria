@@ -46,57 +46,57 @@
 \contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{21}
 \contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{22}
 \contentsline {paragraph}{Fase de transici\IeC {\'o}n}{23}
-\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{23}
-\contentsline {paragraph}{Fase de inicio\\}{23}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{23}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{23}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{24}
-\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{24}
-\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{24}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{26}
-\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{26}
-\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{26}
-\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{27}
-\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{27}
-\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{28}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{29}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{29}
-\contentsline {subsection}{\numberline {3.2.1}Requisitos}{29}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{29}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{31}
-\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{34}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{35}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{36}
-\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{49}
-\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{49}
-\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{60}
-\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{60}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{62}
-\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{62}
-\contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{63}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{63}
-\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{66}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{67}
-\contentsline {subsection}{\numberline {3.4.1}Explicaci\IeC {\'o}n de la arquitectura escogida}{67}
-\contentsline {subsection}{\numberline {3.4.2}Almacenamiento de datos}{68}
-\contentsline {subsection}{\numberline {3.4.3}Implementaci\IeC {\'o}n del modelo}{69}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Firebase Firestore}{69}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Authentication}{69}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Analytics}{70}
-\contentsline {subsection}{\numberline {3.4.4}Cloud Messaging}{70}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Storage}{70}
-\contentsline {subsubsection}{\numberline {3.4.4.2}Base de datos local SQLite}{71}
-\contentsline {subsubsection}{\numberline {3.4.4.3}Ficheros}{71}
-\contentsline {subsubsection}{\numberline {3.4.4.4}Shared preferences}{71}
-\contentsline {subsubsection}{\numberline {3.4.4.5}Firebase Remote Config}{72}
-\contentsline {subsection}{\numberline {3.4.5}Funciones}{72}
-\contentsline {section}{\numberline {3.5}Pruebas}{72}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{75}
-\contentsline {section}{\numberline {4.1}Conclusiones}{75}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{75}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{76}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{77}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{78}
-\contentsline {chapter}{\numberline {6}Anexos}{80}
-\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{80}
-\contentsline {section}{\numberline {6.2}Prototipos iniciales}{80}
+\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{24}
+\contentsline {paragraph}{Fase de inicio\\}{24}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{24}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{24}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{25}
+\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto.}{25}
+\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos.}{25}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones.}{27}
+\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes.}{27}
+\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{27}
+\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{28}
+\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{28}
+\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{29}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{30}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{30}
+\contentsline {subsection}{\numberline {3.2.1}Requisitos}{30}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{30}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{32}
+\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{35}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{36}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{37}
+\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{50}
+\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{50}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{61}
+\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{61}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{63}
+\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{63}
+\contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{64}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{64}
+\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{67}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{68}
+\contentsline {subsection}{\numberline {3.4.1}Explicaci\IeC {\'o}n de la arquitectura escogida}{68}
+\contentsline {subsection}{\numberline {3.4.2}Almacenamiento de datos}{69}
+\contentsline {subsection}{\numberline {3.4.3}Implementaci\IeC {\'o}n del modelo}{70}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Firebase Firestore}{70}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Authentication}{70}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Analytics}{71}
+\contentsline {subsection}{\numberline {3.4.4}Cloud Messaging}{71}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Storage}{71}
+\contentsline {subsubsection}{\numberline {3.4.4.2}Base de datos local SQLite}{72}
+\contentsline {subsubsection}{\numberline {3.4.4.3}Ficheros}{72}
+\contentsline {subsubsection}{\numberline {3.4.4.4}Shared preferences}{72}
+\contentsline {subsubsection}{\numberline {3.4.4.5}Firebase Remote Config}{73}
+\contentsline {subsection}{\numberline {3.4.5}Funciones}{73}
+\contentsline {section}{\numberline {3.5}Pruebas}{73}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{77}
+\contentsline {section}{\numberline {4.1}Conclusiones}{77}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{77}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{78}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{79}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{80}
+\contentsline {chapter}{\numberline {6}Anexos}{82}
+\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{82}
+\contentsline {section}{\numberline {6.2}Prototipos iniciales}{82}
