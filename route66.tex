@@ -2466,11 +2466,9 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 
 \section{Implementación}
 
-\subsection{Niveles, premios e insignias}
+\subsection{Niveles, insignias y premios}
 \subsubsection{De usuarios}
-Los usuarios de la aplicación contarán con un conjunto de niveles, misiones, premios e insignias que deberán ir obteniendo o completando para avanzar en la aplicación.
-
-Se resume en este apartado aquellos detalles y decisiones que se han tomado al no haberlos encontrados lo suficientemente desarrollados en la memoria del T.F.G. sobre el que está basado este trabajo. 
+Los usuarios de la aplicación contarán con un conjunto de niveles, misiones, premios e insignias que deberán ir obteniendo o completando para avanzar en la aplicación. Se ha decidido incluir este apartado al no haberlo encontrado lo suficientemente desarrollado en el \cite{cristinatfg} T.F.G. sobre el que está basada la idea de este proyecto.
 
 Los niveles y los detalles concretos de los mismos son los siguientes:
 
@@ -2509,6 +2507,38 @@ En cada nivel habrá cinco casillas:
 No se impone que el usuario deba realizar todo el consumo correspondiente a una misión de tipo consumo en una sola ocasión, permitiendo dividirlo en varias ocasiones (siempre y cuando enseñe el código QR correspondiente a la misión concreta). Por otra parte, todo consumo que exceda del indicado (por ejemplo si registra un gasto de 10\euro \vspace{0.1cm} en el nivel Springfield), no será acumulado para la siguiente ciudad.
 
 Igualmente, las insignias y premios que conforman la aplicación son:
+\begin{itemize}
+\item Insignias: Hay una por cada nivel y se obtienen cuando el jugador concluye todas las pruebas del mismo.
+\item Premios: Se obtienen dos por cada nivel:
+	\begin{itemize}
+	\item Nivel 1 (Chicago): “Bebida gratis comprando un plato principal“ y “Dos acompañamientos (ensalada y patatas) gratis comprando un plato principal“.
+	\item Nivel 2 (Springfield): “Descuento del 9\%“ y “Postre gratis con compras superiores a 30 \euro“.
+	\item Nivel 3 (St. Louis): “Descuento del 11\%“ y “Patatas gratis con compras superiores a 30 \euro“.
+	\item Nivel 4 (Tulsa): “Descuento del 13\%“ y “Plato principal gratis con compras superiores a 30\euro“.
+	\item Nivel 5 (Oklahoma City): “Descuento del 15\%“ y “Producto nuevo gratis con compras superiores a 30\euro“.
+	\item Nivel 6 (Amarillo): “Descuento del 17\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
+	\item Nivel 7 (Santa Fe): “Descuento del 19\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
+	\item Nivel 8 (Alburquerque): “Descuento del 21\%“ y “Dos postres gratis con compras superiores a 30\euro“.
+	\item Nivel 9 (Flagstaff): “Descuento del 23\%“ y “Dos de patatas gratis con compras superiores a 30\euro“.
+	\item Nivel 10 (Williams): “Descuento del 25\%“ y “Dos platos principales gratis con compras superiores a 30\euro“.
+	\item Nivel 11 (Los Ángeles): “Descuento del 27\%“ y “Dos productos nuevos gratis con compras superiores a 30\euro“.
+	\end{itemize}
+	Igualmente, los diez primeros usuarios que completen todo el juego obtendrán un viaje a Estados Unidos, representado por el premio “Viaje a Estados Unidos gratis“.
+\end{itemize}
+
+\subsection{Dependencias}
+
+La aplicación Route66App cuenta con las siguientes dependencias externas:
+\begin{itemize}
+\item \textbf{FirebaseUI Firestore} \cite{firebaseuifirestore}: ofrece un conjunto de clases utilizadas para mostrar consultas de la base de datos de Firestore en un RecyclerView.
+
+\item  \textbf{Mikepenz MaterialDrawer} \cite{mikepenzmaterialdrawer}: sirve para generar un DrawerLayout siguiendo las guías del lenguaje visual Material Design.
+
+\item \textbf{Firebase Crashanalytics} \cite{crashanalyticsfb}: utilizado para generar informes de excepciones y de errores en tiempo de ejecución.
+
+\end{itemize}
+
+
 
 
 
@@ -2577,13 +2607,15 @@ Route66 cuenta con las siguientes actividades:
 Route66App cuenta solo con un servicio:
 	\begin{enumerate}
 	\item UpdaterService: es utilizado para actualizar la versión en caché de la aplicación de las misiones, niveles, insignias y premios y almacenar estos parámetros en la base de datos SQLite. Por otro lado, los ficheros asociados (en su gran mayoría imágenes), los guarda en una carpeta específica de la aplicación.
+	
+	\item Route66MessagingService: es el servicio encargado de recibir los mensajes de notificación que llegan del servicio \textit{Firebase Cloud Messaging} y de realizar la notificación adecuada.
 	\end{enumerate}
 
 \item Proveedores de contenidos (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación, además de proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
 Route66App no cuenta con ningún proveedor de contenidos.
 
-\item Receptores de mensajes (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas.
-Route66App contará con receptores de mensajes (inicio del sistema).
+\item Receptores de mensajes (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas. \\
+Route66App no cuenta con receptores de mensajes.
 \end{enumerate}
 
 \subsection{Almacenamiento de datos}
@@ -3010,6 +3042,12 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
 
+\bibitem{firebaseuifirestore} \textsc{Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}
+
+\bibitem{mikepenzmaterialdrawer} \textsc{Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}
+
+\bibitem{crashanalyticsfb} \textsc{Firebase Crashanalytics} 
+Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
 
 
 \section{Bibliografía}
