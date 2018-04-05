@@ -2466,6 +2466,52 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 
 \section{Implementación}
 
+\subsection{Niveles, premios e insignias}
+\subsubsection{De usuarios}
+Los usuarios de la aplicación contarán con un conjunto de niveles, misiones, premios e insignias que deberán ir obteniendo o completando para avanzar en la aplicación.
+
+Se resume en este apartado aquellos detalles y decisiones que se han tomado al no haberlos encontrados lo suficientemente desarrollados en la memoria del T.F.G. sobre el que está basado este trabajo. 
+
+Los niveles y los detalles concretos de los mismos son los siguientes:
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Nivel & Nombre       & Puntos sociales & Puntos competitivos & Puntos de consumo & Consumo mínimo & Puntuación mínima juego \\ \hline
+1     & Chicago      & 500             & 0                   & 0                 & 0 \euro        & 0                       \\ \hline
+2     & Springfield  & 300             & 300                 & 300               & 5 \euro        & 300                     \\ \hline
+3     & San Louis    & 400             & 400                 & 400               & 10 \euro       & 400                     \\ \hline
+4     & Tulsa        & 500             & 500                 & 500               & 15 \euro       & 500                     \\ \hline
+5     & Oklahoma     & 600             & 600                 & 600               & 20 \euro       & 600                     \\ \hline
+6     & Amarillo     & 700             & 700                 & 700               & 25 \euro       & 700                     \\ \hline
+7     & Santa Fe     & 800             & 800                 & 800               & 30 \euro       & 800                     \\ \hline
+8     & Alburquerque & 900             & 900                 & 900               & 35 \euro       & 900                     \\ \hline
+9     & Flagstaff    & 1000            & 1000                & 1000              & 40 \euro       & 1000                    \\ \hline
+10    & Williams     & 1100            & 1100                & 1100              & 45 \euro       & 1100                    \\ \hline
+11    & Los Ángeles  & 1200            & 1200                & 1200              & 50 \euro       & 1200                    \\ \hline
+\end{tabular}
+}
+\caption{Misiones del juego junto con sus detalles correspondientes.}
+\end{table}
+
+En cada nivel habrá cinco casillas:
+\begin{itemize}
+    \item Casillas de tipo social: Dependerá del tipo de nivel:
+    \begin{itemize}
+        \item Nivel 1 (Chicago): Habrá cinco casillas de tipo social, es decir, todas. Cada una vendrá dedicada a un tipo de misión social.
+        \item Resto de niveles: Por cada ciudad habrá dos casillas sociales y se considerarán de tipo libre, es decir, el usuario puede elegir qué acción desea realizar para completarla.
+    \end{itemize}
+    \item Casillas de tipo competitivo: exceptuando el primer nivel habrá dos casillas, cada una será de un juego concreto y su nivel de dificultad irá aumentando gradualmente (la puntuación que se deberá alcanzar será mayor).
+    \item Casillas de tipo consumo: habrá una casilla por ciudad (exceptuando en el nivel uno, que no habrá ninguna). El consumo irá aumentando en cada nivel en cinco euros.
+\end{itemize}
+
+No se impone que el usuario deba realizar todo el consumo correspondiente a una misión de tipo consumo en una sola ocasión, permitiendo dividirlo en varias ocasiones (siempre y cuando enseñe el código QR correspondiente a la misión concreta). Por otra parte, todo consumo que exceda del indicado (por ejemplo si registra un gasto de 10\euro \vspace{0.1cm} en el nivel Springfield), no será acumulado para la siguiente ciudad.
+
+Igualmente, las insignias y premios que conforman la aplicación son:
+
+
+
 \subsection{Explicación de la arquitectura escogida}
 
 Una aplicación Android está basada en cuatro tipos de componentes \cite{androidfund} \cite{androidpacktpub}. Todos deben ser declarados explícitamente en el archivo AndroidManifest.xml:
@@ -2632,6 +2678,8 @@ Todas las imágenes subidas al servicio serán previamente redimensionadas para 
 \item Se evite tener que tener una función (con el gasto que eso conlleva de tiempo) que realice esta modificación.
 \item Se ahorra espacio en Firebase Storage
 \end{itemize}
+
+Igualmente, con el fin de reducir el uso de datos y el número de descargas, se realizará una caché de los datos gracias a Glide, un plugin de visualización de imágenes en Android.
 
 \subsubsection{Base de datos local SQLite}
 
