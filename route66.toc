@@ -80,28 +80,28 @@
 \contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{68}
 \contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{68}
 \contentsline {subsection}{\numberline {3.4.2}Dependencias}{69}
-\contentsline {subsection}{\numberline {3.4.3}Explicaci\IeC {\'o}n de la arquitectura escogida}{69}
-\contentsline {subsection}{\numberline {3.4.4}Almacenamiento de datos}{71}
+\contentsline {subsection}{\numberline {3.4.3}Explicaci\IeC {\'o}n de la arquitectura escogida}{70}
+\contentsline {subsection}{\numberline {3.4.4}Almacenamiento de datos}{72}
 \contentsline {subsection}{\numberline {3.4.5}Implementaci\IeC {\'o}n del modelo}{72}
 \contentsline {subsubsection}{\numberline {3.4.5.1}Firebase Firestore}{72}
-\contentsline {subsubsection}{\numberline {3.4.5.2}Authentication}{72}
-\contentsline {subsubsection}{\numberline {3.4.5.3}Analytics}{72}
-\contentsline {subsection}{\numberline {3.4.6}Cloud Messaging}{73}
-\contentsline {subsubsection}{\numberline {3.4.6.1}Storage}{73}
-\contentsline {subsubsection}{\numberline {3.4.6.2}Base de datos local SQLite}{73}
-\contentsline {subsubsection}{\numberline {3.4.6.3}Ficheros}{74}
-\contentsline {subsubsection}{\numberline {3.4.6.4}Shared preferences}{74}
-\contentsline {subsubsection}{\numberline {3.4.6.5}Firebase Remote Config}{74}
-\contentsline {subsection}{\numberline {3.4.7}Funciones}{75}
-\contentsline {section}{\numberline {3.5}Pruebas}{75}
-\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{78}
-\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{78}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{79}
-\contentsline {section}{\numberline {4.1}Conclusiones}{79}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{79}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{80}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{81}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{82}
-\contentsline {chapter}{\numberline {6}Anexos}{84}
-\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{84}
-\contentsline {section}{\numberline {6.2}Prototipos iniciales}{84}
+\contentsline {subsubsection}{\numberline {3.4.5.2}Authentication}{73}
+\contentsline {subsubsection}{\numberline {3.4.5.3}Analytics}{73}
+\contentsline {subsubsection}{\numberline {3.4.5.4}Cloud Messaging}{73}
+\contentsline {subsubsection}{\numberline {3.4.5.5}Storage}{74}
+\contentsline {subsubsection}{\numberline {3.4.5.6}Base de datos local SQLite}{74}
+\contentsline {subsubsection}{\numberline {3.4.5.7}Ficheros}{75}
+\contentsline {subsubsection}{\numberline {3.4.5.8}Shared preferences}{75}
+\contentsline {subsubsection}{\numberline {3.4.5.9}Firebase Remote Config}{75}
+\contentsline {subsection}{\numberline {3.4.6}Funciones}{75}
+\contentsline {section}{\numberline {3.5}Pruebas}{76}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{79}
+\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{79}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{80}
+\contentsline {section}{\numberline {4.1}Conclusiones}{80}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{80}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{81}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{82}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{84}
+\contentsline {chapter}{\numberline {6}Anexos}{86}
+\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{86}
+\contentsline {section}{\numberline {6.2}Prototipos iniciales}{86}

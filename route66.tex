@@ -2529,12 +2529,64 @@ Igualmente, las insignias y premios que conforman la aplicación son:
 \subsection{Dependencias}
 
 La aplicación Route66App cuenta con las siguientes dependencias externas:
-\begin{itemize}
+\begin{enumerate}
 \item \textbf{FirebaseUI Firestore} \cite{firebaseuifirestore}: ofrece un conjunto de clases utilizadas para mostrar consultas de la base de datos de Firestore en un RecyclerView.
 
 \item  \textbf{Mikepenz MaterialDrawer} \cite{mikepenzmaterialdrawer}: sirve para generar un DrawerLayout siguiendo las guías del lenguaje visual Material Design.
 
 \item \textbf{Firebase Crashanalytics} \cite{crashanalyticsfb}: utilizado para generar informes de excepciones y de errores en tiempo de ejecución.
+
+\item \textbf{Room} \cite{roomdependencies}: biblioteca de gestión de bases de datos SQLite en Android.
+
+\item \textbf{Glide} \cite{glidedependencies}: biblioteca de visualización de imágenes. Ofrece la posibilidad de realizar una caché de las imágenes, con el fin de reducir el número de descargas.
+
+\item \textbf{Firebase Auth} \cite{firebaseauthdependencies}: servicio de Firebase para ofrecer autenticación y mantener un sistema de sesiones.
+
+\item \textbf{Google Play Services: Authentication} \cite{googleservicesauthdependencies}: biblioteca para gestionar la autenticación de los usuarios por medio de Google Accounts.
+
+\item \textbf{Zxing Core} \cite{zxingdependencies}: biblioteca para generar códigos QR.
+
+\item \textbf{Firebase Invites} \cite{finvitesdependencies}: servicio de Firebase para enviar y recibir invitaciones de usuarios.
+
+\item \textbf{Firebase Firestore} \cite{ffirestoredependencies}: base de datos no relacional basada en documentos de la suite Firebase.
+
+\item \textbf{Firebase Storage} \cite{fstoragedependencies}: almacenamiento de datos de tipo fichero.
+
+\item \textbf{Firebase Remote Config} \cite{fremoteconfigdependencies}: servicio de Firebase para almacenar y actualizar una serie de parámetros de configuración cambiables sin tener que realizar una modificación del APK.
+
+\item \textbf{Firebase Cloud Messaging} \cite{fcmessagingdependencies}: servicio de Firebase utilizado para enviar y recibir mensajes que pueden ser posteriormente mostrados como una notificación en el dispositivo.
+
+\item \textbf{Firebase Core} \cite{fcanalyticsdependencies}: bibliotecas centrales de Firebase. Ofrecen soporte a Firebase CrashAnalytics y Firebase Analytics.
+
+\item \textbf{OKHttp} \cite{okhttpdependencies}: Biblioteca de gestión de solicitudes HTTP.
+
+\item \textbf{CircleImageView} \cite{circleimagevdependencies}: Widget que muestra imágenes (avatares) en una vista redondeada.
+
+\item \textbf{Material Spinner} \cite{materialspinnerdependencies}: Widget que muestra un Spinner con un texto anexado en la parte superior, siguiendo así la guía de Material Design.
+
+\item \textbf{FAB (Floating Action Button)} \cite{fabdependencies}: Widget que permite personalizar un Floating Action Button, así como añadir opciones adicionales.
+
+\item \textbf{Image Compressor} \cite{icompressordependencies}: Biblioteca de comprensión de imágenes.
+
+\end{enumerate}
+
+\subsection{Juegos}
+
+Se han escogido dos juegos que serán los utilizados y modificados para servir en las misiones de tipo competitivo. Deben cumplir los siguientes criterios:
+
+\begin{itemize}
+\item Ser fácilmente modificables: deben tener un código fácil de entender y que permita realizar una serie de modificaciones que se utilizarán para notificar a la aplicación Android el resultado de la partida.
+
+\item Deben tener una licencia que permita su uso y modificación.
+
+\item Deben estar escritos en JavaScript y ser enteramente ejecutables por un navegador web móvil.
+\end{itemize}
+
+Los juegos escogidos son:
+
+\begin{itemize}
+\item \textbf{Distance Flyer Blueprint} \cite{distancegame}: el motor de juegos KiwiJS ofrece en su página oficial, en la sección \textit{Blueprints}, el código ejemplo de un clon del famoso juego \textit{Flappy Bird}.
+
 
 \end{itemize}
 
@@ -2673,7 +2725,7 @@ Esta parte está enfocada directamente a realizar las estadísticas que pueden s
 
 La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, sexo, versión de la aplicación, versión de Android y franja de edad.
 
-\subsection{Cloud Messaging}
+\subsubsection{Cloud Messaging}
 
 Cloud Messaging es el servicio de notificaciones que Google Cloud ofrece dentro del paquete de Firebase. \\
 
@@ -2797,71 +2849,71 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra mediante correo electrónico} 
-  \addrow{Resultado esperado}{App user.}
-  \addrow{Resultado obtenido}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Resultado esperado}{El usuario se registra. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra utilizando Google.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
+  \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase. Se añade y se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario inicia sesión mediante correo electrónico.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{El usuario inicia sesión. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario inicia sesión utilizando Google.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{El usuario inicia sesión. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario modifica su configuración de perfil.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se actualiza la configuración de su perfil y aparece reflejado como tal en el Drawer de la aplicación.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
+  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (aparece actualizada en el Drawer y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a Glide a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio y se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario completa una misión de tipo social.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza una misión de tipo social.} 
+  \addrow{Resultado esperado}{La misión aparece en estado de comprobación. Cuando ha sido revisada por el equipo de Route66App, es marcada como completada en caso de ser validada.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario completa una misión de tipo consumo.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza un consumo en una misión de tal tipo.} 
+  \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
+  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario completa una misión de tipo competitiva.} 
-  \addrow{Resultado esperado}{}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza una misión de tipo competitiva.} 
+  \addrow{Resultado esperado}{Aparece una descripción del juego correspondiente, así como la puntuación que debe alcanzar.}
   \addrow{Resultado obtenido}{}
 \end{test}\\\stepcounter{test}
 
@@ -2869,64 +2921,56 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros recibidos.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
+  \addrow{Resultado obtenido}{Efectivamente se visualzan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza las insignias recibidas.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se muestran las insignias recibidas.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los premios que tiene asignados.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza el código QR que tiene asignado.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se muestran los premios que tiene asignados.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario envía una invitación.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se envía la invitación}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario acepta la invitación y se registra.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{El usuario se registra y el que le ha invitado es notificado.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza su ranking global.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza el ranking global.} 
+  \addrow{Resultado esperado}{Se muestra el ranking global de los diez usuarios con más puntuación en la aplicación.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los equipos que tiene asignados.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se muestra el listado de los equipos que tiene asignado el usuario, junto con la imagen de avatar de cada uno de ellos.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -2941,14 +2985,14 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario crea un nuevo equipo.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se muestra un formulario preguntando el nombre del nuevo equipo, se introduce el dato y se crea un nuevo equipo.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador en un equipo, invita a un usuario.} 
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, añade un usuario al equipo.} 
   \addrow{Resultado esperado}{}
   \addrow{Resultado obtenido}{}
 \end{test}\\\stepcounter{test}
@@ -3048,6 +3092,60 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{crashanalyticsfb} \textsc{Firebase Crashanalytics} 
 Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
+
+\bibitem{roomdependencies} \textsc{Room} 
+Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}
+
+\bibitem{glidedependencies} \textsc{Glide} 
+Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}
+
+\bibitem{firebaseauthdependencies} \textsc{Firebase Authentication} 
+Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}
+
+\bibitem{googleservicesauthdependencies} \textsc{Google Play Services: Authentication} 
+Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}
+
+\bibitem{zxingdependencies} \textsc{ZXing Core: Android} 
+Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}
+
+\bibitem{finvitesdependencies} \textsc{Firebase Invites} 
+Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}
+
+\bibitem{ffirestoredependencies} \textsc{Firebase Firestore} 
+Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}
+
+\bibitem{fstoragedependencies} \textsc{Firebase Storage} 
+Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}
+
+
+\bibitem{fremoteconfigdependencies} \textsc{Firebase Remote Config} 
+Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}
+
+\bibitem{fcmessagingdependencies} \textsc{Firebase Cloud Messaging} 
+Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}
+
+\bibitem{fcanalyticsdependencies} \textsc{Firebase Analytics} 
+Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}
+
+\bibitem{okhttpdependencies} \textsc{OkHTTP} 
+Documentación de OkHTTP. Fecha de última visita 01/03/2018. \url{http://square.github.io/okhttp/}
+
+\bibitem{circleimagevdependencies} \textsc{Dodenhof, Henning} 
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}
+
+\bibitem{materialspinnerdependencies} \textsc{MaterialSpinner} 
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}
+
+\bibitem{fabdependencies} \textsc{Tarianyk, Dmytro} 
+Repositorio en GitHub de Floating Action Button. Fecha de última visita 01/03/2018. \url{https://github.com/Clans/FloatingActionButton}
+
+\bibitem{icompressordependencies} \textsc{Compressor} 
+Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}
+
+\bibitem{distancegame} \textsc{KiwiJS} 
+\textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+
+
 
 
 \section{Bibliografía}
