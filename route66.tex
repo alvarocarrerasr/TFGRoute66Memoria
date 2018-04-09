@@ -1318,6 +1318,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \section{Análisis}
 \subsection{Requisitos}
 
+
 \newcounter{functionalRequirements}
 \subsubsection{Requisitos funcionales}
 
@@ -1345,7 +1346,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ranking de usuarios}
-	\addrow{Descripción}{El sistema permitirá ver el ranking de usuarios}
+	\addrow{Descripción}{El sistema permitirá ver el ranking global de usuarios}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
@@ -1369,24 +1370,33 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios.}
+	\addrow{Descripción}{El sistema permitirá consultar los premios que tiene un usuario}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Código QR.}
 	\addrow{Descripción}{El sistema permitirá mostrar el código QR asociado a una misión de tipo consumo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Progreso del usuario}
-	\addrow{Descripción}{El sistema permitirá mostrar el círculo de progresos relativo a cada usuario.}
+	\addrow{Descripción}{El sistema permitirá mostrar los círculos de progresos relativos a cada usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Identificación de usuarios}
-	\addrow{Descripción}{El sistema permitirá identificar usuarios por correo electrónico o número de teléfono.}
+	\addrow{Descripción}{El sistema permitirá identificar usuarios por correo electrónico.}
 \end{req}\\\stepcounter{functionalRequirements}
-
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios.}
 	\addrow{Descripción}{El sistema permitirá conceder premios a los usuarios.}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios.}
+	\addrow{Descripción}{El sistema permitirá conceder insignias a los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \textbf{Relacionados con los grupos}\\
@@ -1432,20 +1442,20 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición de los miembros del equipo.}
-	\addrow{Descripción}{El sistema mostrará la posición del resto de miembros del equipo. }
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Listado de los miembros del equipo.}
+	\addrow{Descripción}{El sistema permitirá mostrar el listado de usuarios miembros del grupo. }
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ascenso en un grupo.}
+	\addrow{Descripción}{El sistema permitirá ascender a un usuario al rol administrador. }
 \end{req}\\\stepcounter{functionalRequirements}
 
 \textbf{Relacionados con el ranking}\\
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del usuario a nivel global}
-	\addrow{Descripción}{El sistema mostrará la posición de un usuario en el juego}
-\end{req}\\\stepcounter{functionalRequirements}
-
-\begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Posición del grupo/equipo a nivel global}
-	\addrow{Descripción}{El sistema mostrará la posición de un grupo en el juego}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Puntuación del usuario a nivel global}
+	\addrow{Descripción}{El sistema mostrará la puntuación del usuario en el juego}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \textbf{Relacionados con las misiones}\\
@@ -1457,7 +1467,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo juego}
-	\addrow{Descripción}{El sistema permitirá mostrar un juego para que el usuario pueda completar una misión de tipo juego}
+	\addrow{Descripción}{El sistema permitirá mostrar un juego para que el usuario pueda completar una misión de tipo juego (competitiva)}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
@@ -1466,26 +1476,20 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo gasto}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo consumo}
 	\addrow{Descripción}{El sistema comprobará el gasto que haga el usuario en los restaurantes de la cadena, con el fin de comprobar si una misión de tipo gasto ha sido completada}
+\end{req}\\\stepcounter{functionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Consumo restante en misiones de tipo consumo}
+	\addrow{Descripción}{El sistema permitirá mostrar el consumo que ya ha realizado el usuario en una determinada misión de tipo consumo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \textbf{Otros aspectos}\\
 
 \begin{req}
-	\label{rfcompromiso}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Compromiso del usuario/grupo con la aplicación}
-	\addrow{Descripción}{El sistema medirá el compromiso del usuario/grupo con la aplicación.}
-\end{req}\\\stepcounter{functionalRequirements}
-
-\begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Notificaciones}
 	\addrow{Descripción}{El sistema emitirá notificaciones.}
-\end{req}\\\stepcounter{functionalRequirements}
-
-\begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Redes sociales}
-	\addrow{Descripción}{El sistema permitirá compartir texto e imágenes por redes sociales}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
@@ -1498,6 +1502,11 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{El sistema monitorizará los errores de aplicación de los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Estadísticas.}
+	\addrow{Descripción}{El sistema registrará estadísticas de uso de la aplicación.}
+\end{req}\\\stepcounter{functionalRequirements}
+
 \textbf{Requisitos funcionales de información}\\
 
 \begin{req}
@@ -1506,16 +1515,15 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	El sistema almacenará, para cada jugador, la siguiente información.
 	\begin{multicols}{2}
 	\begin{itemize}
-		\item Nombre de usuario.
-		\item Nombre.
-		\item Apellidos.
+		\item Nombre público.
 		\item Correo electrónico.
-		\item Teléfono.
+		\item Sexo.
 		\item Contraseña.
 		\item Avatar.
 		\item Misiones cumplidas.
 		\item Logros del jugador.
 		\item Insignias recibidas.
+		\item Premios obtenidos.
 		\item Consumos realizados.
 	\end{itemize}
 	\end{multicols}
@@ -1530,9 +1538,8 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\begin{itemize}
 		\item Nombre del grupo.
 		\item Administrador del grupo
-		\item Descripción del grupo.
 		\item Avatar del grupo.
-		\item Misiones del grupo cumplidas.
+		\item Premios obtenidos.
 		\item Insignias del grupo recibidas.
 	\end{itemize}
 	\end{multicols}
@@ -1540,8 +1547,6 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \end{req}\\\stepcounter{functionalRequirements}
 
 \subsubsection{Requisitos no funcionales}
-
-
 
 \textbf{Relacionados con los usuarios}\\
 
@@ -1553,24 +1558,24 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Medios sociales}
-	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google y Twitter.}
+	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Identificación de usuarios}
-	\addrow{Descripción}{Se identificarán a los usuarios por correo electrónico, teléfono o identificador único de usuario.}
+	\addrow{Descripción}{Se identificarán a los usuarios por el identificador único de usuario generado por Firebase.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \textbf{Relacionados con los grupos/equipos}\\
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del administrador del grupo.}
-	\addrow{Descripción}{Solo puede haber un único administrador por grupo.}
+	\addrow{Descripción}{Únicamente se permitirá que haya un único administrador por grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Edición de parámetros del grupo.}
-	\addrow{Descripción}{El avatar y descripciones del grupo solo podrán ser modificados por el administrador del grupo}
+	\addrow{Descripción}{El avatar del grupo solo podrá ser modificado por el administrador del grupo}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1581,11 +1586,6 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Nombramiento del administrador del grupo.}
 	\addrow{Descripción}{El administrador del grupo será aquel que creó el grupo, o bien, aquel que fue designado por un anterior administrador del grupo}
-\end{req}\\\stepcounter{nonFunctionalRequirements}
-
-\begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Posición del resto de miembros del grupo.}
-	\addrow{Descripción}{Se mostrará la posición del resto de usuarios mediante un mapa, o bien, mediante una lista.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1617,12 +1617,12 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a un grupo.}
-	\addrow{Descripción}{El sistema utilizará Firebase Dynamic Links para invitar a un usuario a un grupo.}
+	\addrow{Descripción}{El sistema utilizará el nombre visible de los usuarios para la búsqueda a la hora de invitar a un usuario a un grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a la aplicación.}
-	\addrow{Descripción}{El sistema utilizará Firebase Invitations para invitar a un usuario a la aplicación.}
+	\addrow{Descripción}{El sistema utilizará Firebase Invitates para invitar a un usuario a la aplicación.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1635,6 +1635,10 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{El sistema utilizará la biblioteca ZXing para la generación de códigos QR}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Grupos de notificaciones.}
+	\addrow{Descripción}{Se utilizará la estrategia de envío de notificaciones por tema.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \textbf{Otros aspectos}\\
 
@@ -1648,26 +1652,12 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{La aplicación utilizará \cite{roompersistence} la biblioteca de persistencia Room como ORM de gestión de la base de datos local no gestionada por Firebase}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Redes sociales}
-	\addrow{Descripción}{La aplicación permitirá compartir texto y fotos en las siguientes redes sociales:
-	\begin{itemize}
-	\item Twitter.
-	\item Facebook.
-	\item Instagram.
-	\end{itemize}}
-\end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \textbf{Dinámica del juego}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Niveles}
 	\addrow{Descripción}{Un nivel solo podrá ser completado cuando todas las misiones del mismo hayan sido completadas.}
-\end{req}\\\stepcounter{nonFunctionalRequirements}
-
-\begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Acceso a misiones}
-	\addrow{Descripción}{No se podrá acceder a realizar una misión perteneciente a un nivel más alto del que se encuentra el usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \textbf{Juegos}\\
@@ -1679,7 +1669,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Reproducción de juegos}
-	\addrow{Descripción}{Se utilizará un webview integrado en la aplicación para la reproducción de los juegos.}
+	\addrow{Descripción}{Se utilizará un \textit{Webview} integrado en la aplicación para la reproducción de los juegos.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1693,11 +1683,18 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de logros.}
 	\addrow{Descripción}{Existirán los siguientes tipos de logros:
 	\begin{itemize}
-	\item Logros asociados al consumo.
 	\item Logros asociados a una invitación (invitación del usuario a la aplicación).
 	\item Logros asociados al hecho de completar una misión.
-	\item Logros asociados a darse de alta en la aplicación.
-	\item Logros asociados a la finalización de un nivel.
+	\end{itemize}}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de premios.}
+	\addrow{Descripción}{Existirán los siguientes tipos de premios:
+	\begin{itemize}
+	\item Premios de tipo descuento.
+	\item Premios de tipo producto gratis.
+	\item Premio de un viaje a Estados Unidos.
 	\end{itemize}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
