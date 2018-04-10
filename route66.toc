@@ -103,6 +103,4 @@
 \contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{81}
 \contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{82}
 \contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{84}
-\contentsline {chapter}{\numberline {6}Anexos}{86}
-\contentsline {section}{\numberline {6.1}Reglas de seguridad en Firebase}{86}
-\contentsline {section}{\numberline {6.2}Prototipos iniciales}{86}
+\contentsline {part}{I\hspace {1em}Anexos}{86}

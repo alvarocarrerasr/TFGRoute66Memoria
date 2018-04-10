@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  9 APR 2018 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  10 APR 2018 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2204,9 +2204,9 @@ Underfull \hbox (badness 2293) in paragraph at lines 3102--3104
 o-cu-men-ta-ci[]on de Goo-gle Play Ser-vi-ces Aut-hen-ti-ca-
  []
 
-[83] [84] [85]
-Cap\'{\i }tulo 6.
-[86
+[83] [84] [85] [86
+
+] [87
 
 ] (./route66.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -2235,10 +2235,10 @@ ymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (96 pages, 11659667 bytes).
+Output written on route66.pdf (97 pages, 11660012 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
+ 466 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
