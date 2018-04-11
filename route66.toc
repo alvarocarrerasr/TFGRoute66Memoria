@@ -69,6 +69,7 @@
 \contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{37}
 \contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{50}
 \contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{50}
+\contentsline {subsection}{\numberline {3.2.5}An\IeC {\'a}lisis de usabilidad}{61}
 \contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{61}
 \contentsline {subsection}{\numberline {3.3.1}Arquitectura}{61}
 \contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{63}
@@ -79,20 +80,21 @@
 \contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{68}
 \contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{68}
 \contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{68}
+\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{69}
 \contentsline {subsection}{\numberline {3.4.2}Dependencias}{69}
 \contentsline {subsection}{\numberline {3.4.3}Juegos}{70}
-\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{70}
+\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{71}
 \contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{72}
 \contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{73}
 \contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{73}
 \contentsline {subsubsection}{\numberline {3.4.6.2}Authentication}{73}
-\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{73}
+\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{74}
 \contentsline {subsubsection}{\numberline {3.4.6.4}Cloud Messaging}{74}
 \contentsline {subsubsection}{\numberline {3.4.6.5}Storage}{74}
-\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local SQLite}{74}
+\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local SQLite}{75}
 \contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{75}
 \contentsline {subsubsection}{\numberline {3.4.6.8}Shared preferences}{75}
-\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{75}
+\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{76}
 \contentsline {subsection}{\numberline {3.4.7}Funciones}{76}
 \contentsline {section}{\numberline {3.5}Pruebas}{76}
 \contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{79}

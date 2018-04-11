@@ -580,9 +580,9 @@ Los motivos por los que se ha decidido utilizar Kotlin frente a Java son los sig
 
 \item Es conciso: Kotlin elimina gran cantidad de \textit{“boilerplate“} en el código fuente. Por ejemplo, en el caso de una clase \textit{POJO}, los setters y los getters son generados en tiempo de compilación en el caso de que empleemos una clase de datos (\textit{data class)}.
 
-\item Es \textit{“null-safe“}: Según el blog de programación \cite{tapikinull} \textit{Tapiki}, en un estudio realizado sobre 1.000 sistemas informáticos, un 70\% de ellos contenían errores de puntero nulo, que fue el motivo de excepción más frecuente. Kotlin intenta solucionar este problema forzando al programador a utilizar objetos que no pueden ser nulos, o bien, haciendo que tenga que indicar expresamente que un puntero puede ser nulo.
+\item Es \textit{“null-safe“}: Según el blog de programación \textit{Tapiki} \cite{tapikinull}, en un estudio realizado sobre 1.000 sistemas informáticos, un 70\% de ellos contenían errores de puntero nulo, que fue el motivo de excepción más frecuente. Kotlin intenta solucionar este problema forzando al programador a utilizar objetos que no pueden ser nulos, o bien, haciendo que tenga que indicar expresamente que un puntero puede ser nulo.
 
-\item Por motivos académicos: En la asignatura \cite{smovkotlin} Sistemas Móviles del curso 2017-2018, impartida por D. Joaquín Adiego Rodríguez, se nos presentó esta tecnología y esto me motivó a querer utilizarla.
+\item Por motivos académicos: En la asignatura Sistemas Móviles \cite{smovkotlin} del curso 2017-2018, impartida por D. Joaquín Adiego Rodríguez, se nos presentó esta tecnología y esto me motivó a querer utilizarla.
 
 \item Por motivos de estándares: El apoyo que Google está dando al lenguaje de programación es tal que resulta más que recomendable empezar a utilizarlo y acostumbrarse al mismo.
 \end{enumerate}
@@ -666,7 +666,7 @@ Encontraremos dos tipos de conexiones:
 \section{Plan de Desarrollo del Software}
 \subsection{Descripción del proyecto}
 
-La ludificación comenzó a popularizarse en 2010\cite{anatfg}, y desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en variados ámbitos (educación, ventas, proveedores, etcétera). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
+La ludificación comenzó a popularizarse en 2010 \cite{anatfg}, y desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en variados ámbitos (educación, ventas, proveedores, etcétera). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo de una aplicación similar que aplique la ludificación.
 
 Route66App consiste en una app para dispositivos móviles que aplica las ideas expuestas en el Trabajo Fin de Grado de una alumna del Grado en Organización Industrial \cite{cristinatfg}. Esta aplicación aplicará la teoría Bartle para identificar los diferentes tipos de jugador y buscará fidelizar y comprometer al usuario con los objetivos del negocio, por medio del juego.
 
@@ -720,6 +720,8 @@ Se imponen las siguientes restricciones, extraídas tras una serie de entrevista
 \item \textbf{Plazo mínimo de entrega:} Este proyecto se podrá entregar cuando haya terminado el resto de asignaturas de la Mención. Por tanto, hasta que no termine y tenga calificada la única asignatura que tendré en el segundo cuatrimestre (Prácticas en Empresa), no podrá ser entregado. Las prácticas curriculares en la empresa \textit{Telefónica Investigación y Desarrollo} concluyen el día 10 de Abril de 2018.
 
 \item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales Android, cuya versión de API sea igual o superior a la 19 (Android 4.4, KitKat). Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la grandísima mayoría de los dispositivos (un 92.5 \%, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
+
+\item \textbf{Requisitos de software}: Se impone que la aplicación se deba desarrollar en el lenguaje de programación Kotlin. Así mismo, la tutora recomienda el uso de \textit{Firebase} como plataforma para alojar la base de datos y gestionar las sesiones.
 
 \item \textbf{Datos en el dispositivo}: la aplicación deberá contar con una caché de los datos en el dispositivo del cliente con el fin de reducir el número de peticiones que se hagan contra Firebase, así como para acelerar el funcionamiento de la aplicación en lugares con una baja conectividad.
 \end{enumerate}
@@ -973,6 +975,11 @@ Elaboración del manual de usuario & 05/04/2018        & 10/04/2018   & 10 horas
 \caption{Iteración 4. Fase de construcción.}
 \end{table}
 
+Reuniones realizadas con la tutora del T.F.G.:
+\begin{itemize}
+\item 10 de Abril de 2018.
+\end{itemize}
+
 \paragraph{Fase de transición}\mbox{}\\
 
 Comienza el día 16 de Abril de 2018 y finaliza el 30 de Abril de 2018.
@@ -1163,7 +1170,7 @@ En el caso de este proyecto se han utilizado dos repositorios privados en \texti
 
 \subsection{Estimación de los costes.}
 
-Para una correcta estimación de los costes se debe procurar partir de datos de proyectos reales, que nos permita realizarla partiendo de una experiencia. Desafortunadamente, como estos no se hacen públicos (pues son parte de la estrategia de la empresa), no es posible contar con ellos. Por este motivo, he realizado los cálculos basándome en lo que he estudiado en la asignatura \cite{pgptema2} Planificación y Gestión de Proyectos, así como aquella información que he encontrado por Internet.
+Para una correcta estimación de los costes se debe procurar partir de datos de proyectos reales, que nos permita realizarla partiendo de una experiencia. Desafortunadamente, como estos no se hacen públicos (pues son parte de la estrategia de la empresa), no es posible contar con ellos. Por este motivo, he realizado los cálculos basándome en lo que he estudiado en la asignatura Planificación y Gestión de Proyectos \cite{pgptema2}, así como aquella información que he encontrado por Internet.
 
 El resultado de la estimación total de costes es de \textbf{12.459,96\euro}, que se detallarán a continuación.
 
@@ -1238,7 +1245,7 @@ Director de proyecto & 59.615 \euro    & 31,05 \euro & & \\ \cline{1-3}
 \caption{Costes de los Recursos Humanos}
 \end{table}
 
-Los datos de la tabla anterior han sido calculados basándose en los datos de \cite{infojobs2016} Informe Anual Infojobs 2016 España (salario promedio bruto anual de un director de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
+Los datos de la tabla anterior han sido calculados basándose en los datos del Informe Anual Infojobs 2016 España \cite{infojobs2016} (salario promedio bruto anual de un director de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
 
 Similarmente, también habría que considerar el coste de los seguros sociales. Como la estimación del proyecto se ha realizado  habiendo un único empleado, en régimen de autónomo, se aplicaría, por tanto, el coste de las cuotas que establece el Régimen Especial de Autónomos, que en 2018 es de 50 \euro \vspace{0.1cm} al mes para nuevos autónomos menores de 30 años \cite{segsocialautonomos}.
 
@@ -1259,7 +1266,7 @@ Los costes indirectos son aquellos derivados del uso de calefacción, electricid
 
 \begin{itemize}
 
-\item Alquiler: se utilizará el servicio de vivero de empresas que propone el \cite{pcuva} Parque Científico de la Universidad de Valladolid para una sala de 23 ${m}^{2}$.
+\item Alquiler: se utilizará el servicio de vivero de empresas que propone el Parque Científico de la Universidad de Valladolid \cite{pcuva} para una sala de 23 ${m}^{2}$.
 	\begin{itemize}
 		\item \textbf{Coste estimado (mensual): } 276 \euro.
 		\item \textbf{Número de meses:} 7.
@@ -1296,9 +1303,9 @@ Se adjunta a continuación la tabla de estimaciones de planificación, así como
 Iteración & Etapa        & Fecha de inicio real & Fecha inicio estimada & Fecha de fin real & Fecha fin estimada & Diferencia finalización \\ \hline
 0         & Inicio       & 03/11/2017           & 06/11/2017            & 12/12/2017        & 10/12/2017         & 2 días                  \\ \hline
 1         & Elaboración  & 20/01/2018           & 20/01/2018            & 15/02/2018        & 10/02/2018         & 5 días                  \\ \hline
-2         & Elaboración  & 16/02/2018           & 11/02/2018            & 23/02/2018        & 20/02/2018         & 3 días                 \\ \hline
-3         & Construcción & 24/02/2018           & 20/02/2018            & 03/04/2018        & 01/04/2018         &            2 días\\ \hline
-4         & Construcción &                      & 02/04/2018            &                   & 10/04/2018         &                         \\ \hline
+2         & Elaboración  & 16/02/2018           & 11/02/2018            & 23/02/2018        & 20/02/2018         & 3 días                  \\ \hline
+3         & Construcción & 24/02/2018           & 20/02/2018            & 03/04/2018        & 01/04/2018         & 2 días                  \\ \hline
+4         & Construcción & 04/04/2018           & 02/04/2018            & 12/04/2018        & 10/04/2018         & 2 días                  \\ \hline
 5         & Transición   &                      & 11/04/2018            &                   & 25/04/2018         &                         \\ \hline
 \end{tabular}%
 }
@@ -1310,7 +1317,11 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \item La planificación ha estado bastante ajustada a las estimaciones realizadas, encontrándose una mayor desviación en la iteración 1, correspondiente a la fase de elaboración. El motivo fue que se tuvo que compaginar el comienzo de las prácticas (y formación adicional) junto con el T.F.G., por lo que durante esos días no pude contar con el número de horas especificadas.
 
+\item En la segunda fase de elaboración, el retraso de tres días se debe a unos rediseños en el modelo de dominio y de la base de datos, para ajustarse más al problema concreto.
+
 \item En la primera fase de construcción, hubo dos días en los que no pude trabajar porque decidí adquirir ampliar la memoria del ordenador, así como sustituir el disco duro por uno de estado sólido (SSD) con el fin de aumentar la productividad en esta fase. En esos días me dediqué a instalar esos dos componentes, así como los elementos software requeridos para la continuación del trabajo.
+
+\item En la segunda fase de construcción, el retraso de esos dos días se debe al tiempo que dediqué a redactar la memoria de las Prácticas en Empresa. Fue un retraso que no conté en la planificación inicial.
 
 \end{itemize}
 
@@ -1649,7 +1660,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{“Room“}}
-	\addrow{Descripción}{La aplicación utilizará \cite{roompersistence} la biblioteca de persistencia Room como ORM de gestión de la base de datos local no gestionada por Firebase}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia Room \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 
@@ -2349,6 +2360,8 @@ Se identifican un único actor:
 \caption{Diagrama de secuencia del caso de uso “Consultar premios“}
 \end{figure}
 
+\subsection{Análisis de usabilidad}
+
 
 \section{Diseño}
 \subsection{Arquitectura}
@@ -2408,13 +2421,13 @@ En el caso de la aplicación Route66App, tanto las vistas como los controladores
 
 DAO realiza una capa de abstracción entre los servicios y llamadas de bajo nivel para acceder a los datos del resto de código, evitando así mezclar código de diferentes capas.
 
-Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD realizadas contra la base de datos que es administrada por \cite{roompersistence} \textit{Room} y no con la que gestiona Firebase Firestore.
+Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD realizadas contra la base de datos que es administrada por \textit{Room} \cite{roompersistence} y no con la que gestiona Firebase Firestore.
 
 
 \subsection{Esquema de la base de datos}
 Como se ha indicado en secciones anteriores, se ha decidido utilizar Firebase como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: Firebase Realtime Database y Firebase Firestore, se ha elegido la segunda ya que es mucho más compleja y permite una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
 
-Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de UML. La \cite{fireference} documentación que Google proporciona en la documentación de Firebase también ha servido de mucha ayuda.
+Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de UML. La documentación que Google proporciona \cite{fireference} también ha servido de mucha ayuda.
 
 \begin{figure}[H]
 \centering
@@ -2445,12 +2458,12 @@ Del esquema anterior se deben indicar los siguientes datos:
 \end{enumerate}
 
 
-Paralelamente, con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia \cite{roompersistence} \textit{Room}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones así como las sincronizaciones que se hayan hecho para descargarse las nuevas misiones (ver apartado implementación).
+Paralelamente, con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia  \textit{Room} \cite{roompersistence}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones así como las sincronizaciones que se hayan hecho para descargarse las nuevas misiones (ver apartado implementación).
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseRoom}
-\caption{Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \cite{roompersistence} \textit{Room}}
+\caption{Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit{Room} \cite{roompersistence}}
 \end{figure}
 
 \subsection{Diagrama de despliegue}
@@ -2464,10 +2477,31 @@ Paralelamente, con el fin de cumplir con los requisitos de persistencia y permit
 \section{Implementación}
 
 \subsection{Niveles, insignias y premios}
-\subsubsection{De usuarios}
-Los usuarios de la aplicación contarán con un conjunto de niveles, misiones, premios e insignias que deberán ir obteniendo o completando para avanzar en la aplicación. Se ha decidido incluir este apartado al no haberlo encontrado lo suficientemente desarrollado en el \cite{cristinatfg} T.F.G. sobre el que está basada la idea de este proyecto.
 
-Los niveles y los detalles concretos de los mismos son los siguientes:
+\subsubsection{De usuarios}
+
+Los usuarios de la aplicación contarán con un conjunto de niveles, misiones, premios e insignias que deberán ir obteniendo o completando para avanzar en la aplicación. 
+
+\begin{itemize}
+\item Insignias: Hay una por cada nivel y se obtienen cuando el jugador concluye todas las pruebas del mismo.
+\item Premios: Se obtienen dos por cada nivel:
+	\begin{itemize}
+	\item Nivel 1 (Chicago): “Bebida gratis comprando un plato principal“ y “Dos acompañamientos (ensalada y patatas) gratis comprando un plato principal“.
+	\item Nivel 2 (Springfield): “Descuento del 9\%“ y “Postre gratis con compras superiores a 30 \euro“.
+	\item Nivel 3 (St. Louis): “Descuento del 11\%“ y “Patatas gratis con compras superiores a 30 \euro“.
+	\item Nivel 4 (Tulsa): “Descuento del 13\%“ y “Plato principal gratis con compras superiores a 30\euro“.
+	\item Nivel 5 (Oklahoma City): “Descuento del 15\%“ y “Producto nuevo gratis con compras superiores a 30\euro“.
+	\item Nivel 6 (Amarillo): “Descuento del 17\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
+	\item Nivel 7 (Santa Fe): “Descuento del 19\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
+	\item Nivel 8 (Alburquerque): “Descuento del 21\%“ y “Dos postres gratis con compras superiores a 30\euro“.
+	\item Nivel 9 (Flagstaff): “Descuento del 23\%“ y “Dos de patatas gratis con compras superiores a 30\euro“.
+	\item Nivel 10 (Williams): “Descuento del 25\%“ y “Dos platos principales gratis con compras superiores a 30\euro“.
+	\item Nivel 11 (Los Ángeles): “Descuento del 27\%“ y “Dos productos nuevos gratis con compras superiores a 30\euro“.
+	\end{itemize}
+	Igualmente, los diez primeros usuarios que completen todo el juego obtendrán un viaje a Estados Unidos, representado por el premio “Viaje a Estados Unidos gratis“.
+\end{itemize}
+
+Por otro lado, se ha decidido rediseñar parte de la estrategia del juego, basándose siempre en la idea desarrollada en el T.F.G. \cite{cristinatfg} sobre el que está basado este proyecto, al no contar con el suficiente detalle que se ha requerido en la implementación. De esta forma, los niveles y los detalles concretos de los mismos son los siguientes:
 
 \begin{table}[H]
 \resizebox{\textwidth}{!}{%
@@ -2487,14 +2521,14 @@ Nivel & Nombre       & Puntos sociales & Puntos competitivos & Puntos de consumo
 11    & Los Ángeles  & 1200            & 1200                & 1200              & 50 \euro       & 1200                    \\ \hline
 \end{tabular}
 }
-\caption{Misiones del juego junto con sus detalles correspondientes.}
+\caption{Niveles del juego junto con sus detalles correspondientes.}
 \end{table}
 
 En cada nivel habrá cinco casillas:
 \begin{itemize}
     \item Casillas de tipo social: Dependerá del tipo de nivel:
     \begin{itemize}
-        \item Nivel 1 (Chicago): Habrá cinco casillas de tipo social, es decir, todas. Cada una vendrá dedicada a un tipo de misión social.
+        \item Nivel 1 (Chicago): Habrá cinco casillas de tipo social (todas). Cada una vendrá dedicada a un tipo de misión social.
         \item Resto de niveles: Por cada ciudad habrá dos casillas sociales y se considerarán de tipo libre, es decir, el usuario puede elegir qué acción desea realizar para completarla.
     \end{itemize}
     \item Casillas de tipo competitivo: exceptuando el primer nivel habrá dos casillas, cada una será de un juego concreto y su nivel de dificultad irá aumentando gradualmente (la puntuación que se deberá alcanzar será mayor).
@@ -2503,24 +2537,19 @@ En cada nivel habrá cinco casillas:
 
 No se impone que el usuario deba realizar todo el consumo correspondiente a una misión de tipo consumo en una sola ocasión, permitiendo dividirlo en varias ocasiones (siempre y cuando enseñe el código QR correspondiente a la misión concreta). Por otra parte, todo consumo que exceda del indicado (por ejemplo si registra un gasto de 10\euro \vspace{0.1cm} en el nivel Springfield), no será acumulado para la siguiente ciudad.
 
-Igualmente, las insignias y premios que conforman la aplicación son:
+\subsubsection{De grupos/equipos}
+
+En los equipos solo contaremos con logros y premios:
 \begin{itemize}
-\item Insignias: Hay una por cada nivel y se obtienen cuando el jugador concluye todas las pruebas del mismo.
-\item Premios: Se obtienen dos por cada nivel:
-	\begin{itemize}
-	\item Nivel 1 (Chicago): “Bebida gratis comprando un plato principal“ y “Dos acompañamientos (ensalada y patatas) gratis comprando un plato principal“.
-	\item Nivel 2 (Springfield): “Descuento del 9\%“ y “Postre gratis con compras superiores a 30 \euro“.
-	\item Nivel 3 (St. Louis): “Descuento del 11\%“ y “Patatas gratis con compras superiores a 30 \euro“.
-	\item Nivel 4 (Tulsa): “Descuento del 13\%“ y “Plato principal gratis con compras superiores a 30\euro“.
-	\item Nivel 5 (Oklahoma City): “Descuento del 15\%“ y “Producto nuevo gratis con compras superiores a 30\euro“.
-	\item Nivel 6 (Amarillo): “Descuento del 17\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
-	\item Nivel 7 (Santa Fe): “Descuento del 19\%“ y “Dos bebidas gratis con compras superiores a 30\euro“.
-	\item Nivel 8 (Alburquerque): “Descuento del 21\%“ y “Dos postres gratis con compras superiores a 30\euro“.
-	\item Nivel 9 (Flagstaff): “Descuento del 23\%“ y “Dos de patatas gratis con compras superiores a 30\euro“.
-	\item Nivel 10 (Williams): “Descuento del 25\%“ y “Dos platos principales gratis con compras superiores a 30\euro“.
-	\item Nivel 11 (Los Ángeles): “Descuento del 27\%“ y “Dos productos nuevos gratis con compras superiores a 30\euro“.
-	\end{itemize}
-	Igualmente, los diez primeros usuarios que completen todo el juego obtendrán un viaje a Estados Unidos, representado por el premio “Viaje a Estados Unidos gratis“.
+	\item \textbf{Logros}:
+		\begin{itemize}
+		\item Añadido el primer miembro.
+		\item Añadido el quinto miembro.
+		\item Añadido el décimo miembro.
+		\item Celebrados dos cumpleaños en un mismo año.
+		\item Celebrados cinco cumpleaños en un mismo año.
+		\end{itemize}
+	\item \textbf{Premios}: serán exactamente los mismos que en el caso de los usuarios, aunque de aplicación a todo el grupo.
 \end{itemize}
 
 \subsection{Dependencias}
@@ -2584,12 +2613,8 @@ Los juegos escogidos son:
 \begin{itemize}
 \item \textbf{Distance Flyer Blueprint} \cite{distancegame}: el motor de juegos KiwiJS ofrece en su página oficial, en la sección \textit{Blueprints}, el código ejemplo de un clon del famoso juego \textit{Flappy Bird}.
 
-
+\item \textbf{2048} \cite{2048game}: clon en \textit{JavaScript} del juego 2048.
 \end{itemize}
-
-
-
-
 
 \subsection{Explicación de la arquitectura escogida}
 
@@ -2703,11 +2728,11 @@ Firebase Firestore es la base de datos principal del servicio y en donde se alma
 \item Insignias recibidas.
 \end{itemize} 
 
-Así mismo, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas, para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un backend que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
+Así mismo, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un backend que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
 
 \subsubsection{Authentication}
 
-Firebase Authentication es utilizado en el sistema informático para almacenar las sesiones, así como los diferentes métodos de autenticación del usuario en el sistema. Además, es utilizado en primera instancia cuando el usuario se acaba de registrar para recuperar de los proveedores de acceso datos iniciales como su nombre o su correo electrónico.
+Firebase Authentication es utilizado en el sistema informático para almacenar las sesiones, así como los diferentes métodos de autenticación del usuario. Además, es utilizado en primera instancia cuando el usuario se acaba de registrar para recuperar de los proveedores de acceso datos iniciales así como su nombre o su correo electrónico.
 
 \subsubsection{Analytics}
 
@@ -2720,13 +2745,13 @@ Esta parte está enfocada directamente a realizar las estadísticas que pueden s
 \item Secciones que más visita.
 \end{itemize}
 
-La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, sexo, versión de la aplicación, versión de Android y franja de edad.
+La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, versión de la aplicación y versión de Android.
 
 \subsubsection{Cloud Messaging}
 
 Cloud Messaging es el servicio de notificaciones que Google Cloud ofrece dentro del paquete de Firebase. \\
 
-Las notificaciones pueden ser enviadas, o bien a un dispositivo individual, o bien a un grupo (máximo 20 dispositivos). En el caso de Route66App utilizaremos siempre el envío a un grupo en concreto (todos los grupos de un mismo usuario) por varios motivos:
+Las notificaciones pueden ser enviadas bien a un dispositivo individual, bien a un grupo (máximo 20 dispositivos). En el caso de Route66App utilizaremos siempre el envío a un grupo en concreto (todos los grupos de un mismo usuario) por varios motivos:
 
 \begin{enumerate}
 \item El usuario puede estar utilizado cualquier dispositivo vinculado a su cuenta. Si la notificación se enviara a uno distinto del que esté usando en ese momento, no la recibirá.
@@ -2749,7 +2774,7 @@ Se ha utilizado la siguiente estructura de archivos:
 Por motivos de escalabilidad y de eficiencia se han establecido los siguientes requisitos:
 \begin{itemize}
 \item Formatos de imagen: JPG, PNG o GIF.
-\item Tamaño máximo: 0.2 MiB.
+\item Tamaño de referencia: 0.2 MiB.
 \end{itemize}
 
 Todas las imágenes subidas al servicio serán previamente redimensionadas para ajustar al tamaño máximo indicado anteriormente. De esta forma se consigue que:
@@ -2760,7 +2785,7 @@ Todas las imágenes subidas al servicio serán previamente redimensionadas para 
 \item Se ahorra espacio en Firebase Storage
 \end{itemize}
 
-Igualmente, con el fin de reducir el uso de datos y el número de descargas, se realizará una caché de los datos gracias a Glide, un plugin de visualización de imágenes en Android.
+Igualmente, con el fin de reducir el uso de datos y el número de descargas, se realizará una caché de los datos gracias a \textit{Glide}, un plugin de visualización de imágenes en Android.
 
 \subsubsection{Base de datos local SQLite}
 
@@ -2911,7 +2936,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza una misión de tipo competitiva.} 
   \addrow{Resultado esperado}{Aparece una descripción del juego correspondiente, así como la puntuación que debe alcanzar.}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -2919,7 +2944,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros recibidos.} 
   \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
-  \addrow{Resultado obtenido}{Efectivamente se visualzan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas.}
+  \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -2974,8 +2999,8 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros de un equipo.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{Se visualizan los logros del equipo}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3141,6 +3166,9 @@ Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{ht
 
 \bibitem{distancegame} \textsc{KiwiJS} 
 \textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+
+\bibitem{2048game} \textsc{Cirulli, Gabriel} 
+Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}
 
 
 
