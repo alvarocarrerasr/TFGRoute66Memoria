@@ -18,42 +18,42 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 3 (fase de construcci\IeC {\'o}n)}}{23}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 4 (fase de construcci\IeC {\'o}n)}}{23}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 5 (fase de transici\IeC {\'o}n)}}{24}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de casos de uso. Parte I.}}{36}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de casos de uso. Parte II.}}{36}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Modelo de dominio}}{50}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de secuencia \IeC {\textquotedblleft }Obtener un grupo de los administrados por el usuario\IeC {\textquotedblleft }}}{50}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar grupo\IeC {\textquotedblleft }}}{51}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }A\~{n}adir usuario al grupo\IeC {\textquotedblleft }}}{51}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Nombrar un administrador\IeC {\textquotedblleft }}}{52}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar a un miembro de un equipo\IeC {\textquotedblleft }}}{53}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{53}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{54}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Realizar misi\IeC {\'o}n\IeC {\textquotedblleft }}}{54}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar misiones\IeC {\textquotedblleft }}}{55}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar perfil\IeC {\textquotedblleft }}}{55}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar perfil\IeC {\textquotedblleft }}}{55}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar logros\IeC {\textquotedblleft }}}{56}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar insignias\IeC {\textquotedblleft }}}{56}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar C\IeC {\'o}digo QR\IeC {\textquotedblleft }}}{56}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar Ranking global\IeC {\textquotedblleft }}}{57}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar equipo\IeC {\textquotedblleft }}}{57}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Crear equipo\IeC {\textquotedblleft }}}{58}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Registrarse\IeC {\textquotedblleft }}}{58}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Aceptar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{59}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Enviar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{59}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Iniciar sesi\IeC {\'o}n\IeC {\textquotedblleft }}}{60}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Ver posici\IeC {\'o}n de otros jugadores\IeC {\textquotedblleft }}}{60}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar premios\IeC {\textquotedblleft }}}{60}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Diagrama de paquetes de alto nivel de la aplicaci\IeC {\'o}n}}{61}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama de clases \textit {Model}}}{61}
-\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity} y \textit {GameActivity}}}{62}
-\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}}}{62}
-\contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama de clases del paquete \textit {MissionsActivity}}}{63}
-\contentsline {figure}{\numberline {3.39}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}}}{63}
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{65}
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{66}
-\contentsline {figure}{\numberline {3.42}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit {Room} \cite {roompersistence}}}{67}
-\contentsline {figure}{\numberline {3.43}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android}}{67}
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Diagrama en el que se muestra la operaci\IeC {\'o}n \textit {GET}}}{76}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de casos de uso. Parte I.}}{37}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de casos de uso. Parte II.}}{38}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Modelo de dominio}}{52}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de secuencia \IeC {\textquotedblleft }Obtener un grupo de los administrados por el usuario\IeC {\textquotedblleft }}}{52}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar grupo\IeC {\textquotedblleft }}}{53}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }A\~{n}adir usuario al grupo\IeC {\textquotedblleft }}}{53}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Nombrar un administrador\IeC {\textquotedblleft }}}{54}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar a un miembro de un equipo\IeC {\textquotedblleft }}}{55}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{55}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{56}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Realizar misi\IeC {\'o}n\IeC {\textquotedblleft }}}{56}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar misiones\IeC {\textquotedblleft }}}{57}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar perfil\IeC {\textquotedblleft }}}{57}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar perfil\IeC {\textquotedblleft }}}{57}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar logros\IeC {\textquotedblleft }}}{58}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar insignias\IeC {\textquotedblleft }}}{58}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar C\IeC {\'o}digo QR\IeC {\textquotedblleft }}}{58}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar Ranking global\IeC {\textquotedblleft }}}{59}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar equipo\IeC {\textquotedblleft }}}{59}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Crear equipo\IeC {\textquotedblleft }}}{60}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Registrarse\IeC {\textquotedblleft }}}{60}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Aceptar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{61}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Enviar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{61}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Iniciar sesi\IeC {\'o}n\IeC {\textquotedblleft }}}{62}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Ver posici\IeC {\'o}n de otros jugadores\IeC {\textquotedblleft }}}{62}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar premios\IeC {\textquotedblleft }}}{62}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Diagrama de paquetes de alto nivel de la aplicaci\IeC {\'o}n}}{63}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama de clases \textit {Model}}}{63}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity} y \textit {GameActivity}}}{64}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}}}{64}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama de clases del paquete \textit {MissionsActivity}}}{65}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}}}{65}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{67}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{68}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit {Room} \cite {roompersistence}}}{69}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android}}{69}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Diagrama en el que se muestra la operaci\IeC {\'o}n \textit {GET}}}{78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
