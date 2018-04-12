@@ -9,6 +9,7 @@
 \usepackage{lipsum}
 \raggedbottom
 \usepackage{float}
+\usepackage{listings}
 \usepackage{url}
 \usepackage{rotating}
 \usepackage{eurosym}
@@ -23,6 +24,18 @@
 \usepackage{helvet}
 \usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
+
+\lstset
+{ %Formatting for code in appendix
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+
 
 \addto\captionsspanish{\renewcommand{\bibname}{}}
 \addto\captionsspanish{\renewcommand{\contentsname}{Índice de contenidos}}
@@ -3198,7 +3211,65 @@ Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última v
 \part{Anexos}
 
 \chapter*{Anexo I: Reglas de seguridad en Firebase}
+\section*{\textit{Firestore}}
+Se han establecido las siguientes reglas de seguridad que se explican detalladamente a continuación:
 
-\section*{Prototipos iniciales}
+\begin{lstlisting}
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth.uid != null;
+    }
+    match /users/{userId}{
+    	allow write: if request.auth.uid == userId;
+      match /achivements {
+    		allow read, write: if request.auth.uid == userId;
+    	}
+      match /insignias {
+    		allow read, write: if request.auth.uid == userId;
+    	}
+      match /prizes {
+    		allow read, write: if request.auth.uid == userId;
+    	}
+    }
+  }
+}
+\end{lstlisting}
+
+Por defecto, \textit{Firebase Firestore} deniega tanto la lectura y escritura de todos los documentos. Solo si se cumple la regla de seguridad que corresponda se podrá proceder a la lectura o a la escritura. \\
+
+Las reglas de seguridad anteriores:
+\begin{itemize}
+\item Impiden que un usuario no registrado pueda ni leer ni escribir sobre la base de datos (línea 4).
+\item Impiden que un usuario pueda editar el perfil de otro usuario (línea 7).
+\item Impiden que un usuario pueda ver las insignias, premios, logros o misiones que haya completado otro usuario (líneas 9, 12 y 15).
+\end{itemize}
+
+\clearpage
+
+\section*{\textit{Firebase Storage}}
+
+Por otra parte, las reglas de seguridad del almacenamiento son las siguientes:
+
+\begin{lstlisting}
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null 
+      		&& request.resource.size < 2 * 1024 * 1024
+          && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
+\end{lstlisting}
+
+Las reglas anteriores aseguran tres cosas sobre todo aquel archivo que se suba al servicio:
+\begin{itemize}
+\item Solo pueden subir imágenes usuarios autenticados.
+\item El tamaño máximo de un archivo es de 2 MiB.
+\item Todos los ficheros que se suban son de tipo imagen.
+\end{itemize}
+
+
 
 \end{document}
