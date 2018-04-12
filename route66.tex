@@ -1364,7 +1364,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
  
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro e inicio de sesión rápido.}
-	\addrow{Descripción}{El sistema permitirá iniciar sesión y registrarse mediante el uso de servicios de terceros.}
+	\addrow{Descripción}{El sistema permitirá iniciar sesión y registrarse mediante el uso de proveedores de acceso.}
 \end{req} \\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
@@ -1753,7 +1753,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Medios sociales}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Proveedores de acceso.}
 	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
@@ -1761,7 +1761,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Identificación de usuarios}
-	\addrow{Descripción}{Se identificarán a los usuarios por el identificador único de usuario generado por Firebase.}
+	\addrow{Descripción}{Se identificará a los usuarios internamente por el identificador único de usuario generado por Firebase.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{1cm}
@@ -1773,84 +1773,121 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{Únicamente se permitirá que haya un único administrador por grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Edición de parámetros del grupo.}
 	\addrow{Descripción}{El avatar del grupo solo podrá ser modificado por el administrador del grupo}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Expulsión de usuarios del grupo.}
 	\addrow{Descripción}{El administrador del grupo será el único miembro que podrá expulsar a un usuario del mismo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Nombramiento del administrador del grupo.}
 	\addrow{Descripción}{El administrador del grupo será aquel que creó el grupo, o bien, aquel que fue designado por un anterior administrador del grupo}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Número mínimo y máximo de usuarios en un grupo.}
 	\addrow{Descripción}{Un equipo podrá estar formado, como mínimo por un usuario y como máximo por diez.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{1cm}
+
 \textbf{Software a utilizar para el despliegue de la aplicación.}\\
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación.}
-	\addrow{Descripción}{El sistema utilizará Firebase Analytics para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones, etcétera.)}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Analytics} para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones, etcétera.)}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
-\begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de archivos.}
-	\addrow{Descripción}{El sistema utilizará Firebase Storage para la gestión de los archivos internos de la aplicación (avatares o datos para descargar)}
-\end{req}\\\stepcounter{nonFunctionalRequirements}
+\vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de gestión de solicitudes HTTP.}
-	\addrow{Descripción}{El sistema utilizará OkHTTP como biblioteca de gestión de solicitudes HTTP}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Almacenamiento de avatares.}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Storage} para el almacenamiento de los avatares de perfil tanto de los usuarios como de los grupos.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de gestión de solicitudes \textit{HTTP}.}
+	\addrow{Descripción}{El sistema utilizará \textit{OkHTTP} como biblioteca de gestión de solicitudes \textit{HTTP}}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de sesiones.}
-	\addrow{Descripción}{El sistema utilizará Firebase Auth para la gestión de sesiones.}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Authentication} para la gestión de sesiones.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 	
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a un grupo.}
 	\addrow{Descripción}{El sistema utilizará el nombre visible de los usuarios para la búsqueda a la hora de invitar a un usuario a un grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a la aplicación.}
-	\addrow{Descripción}{El sistema utilizará Firebase Invitates para invitar a un usuario a la aplicación.}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Invites} para invitar a un usuario a la aplicación.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Notificaciones a los usuarios.}
-	\addrow{Descripción}{El sistema utilizará Firebase Notifications para el envío y recepción de notificaciones}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Notifications} para el envío y recepción de notificaciones}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de generación de códigos QR}
-	\addrow{Descripción}{El sistema utilizará la biblioteca ZXing para la generación de códigos QR}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de generación de códigos \textit{QR}}
+	\addrow{Descripción}{El sistema utilizará la biblioteca \textit{ZXing} para la generación de códigos \textit{QR}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Grupos de notificaciones.}
 	\addrow{Descripción}{Se utilizará la estrategia de envío de notificaciones por tema.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{1cm}
+
 \textbf{Otros aspectos}\\
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{SDK mínimo}
-	\addrow{Descripción}{La aplicación se compilará con un SDK que soporte, como mínimo, la API 19 de Android (Android 4.4, KitKat)\cite{androidversiondist}}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{\textit{SDK} mínimo}
+	\addrow{Descripción}{La aplicación se compilará con un \textit{SDK} que soporte, como mínimo, la \textit{API} 19 de \textit{Android} (\textit{Android} 4.4, \textit{KitKat})\cite{androidversiondist}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{“Room“}}
-	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia Room \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{Room} \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\begin{req}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Avatares y tamaño máximo}
+	\addrow{Descripción}{Los avatares serán en formato imagen y de un tamaño máximo de 2MiB.}
+\end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{1cm}
 
 
 \textbf{Dinámica del juego}
@@ -1860,6 +1897,8 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{Un nivel solo podrá ser completado cuando todas las misiones del mismo hayan sido completadas.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{1cm}
+
 \textbf{Juegos}\\
 
 \begin{req}
@@ -1867,15 +1906,21 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\addrow{Descripción}{Los juegos (misiones de tipo juego) estarán programados con tecnología Web}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Reproducción de juegos}
 	\addrow{Descripción}{Se utilizará un \textit{Webview} integrado en la aplicación para la reproducción de los juegos.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Recepción de la información}
 	\addrow{Descripción}{Se utilizará un \textit{bridge} Javascript con el fin de transferir los datos resultado del juego a la aplicación.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{1cm}
 
 \textbf{Logros}\\
 
@@ -1888,6 +1933,8 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\end{itemize}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
+\vspace{0.25cm}
+
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de premios.}
 	\addrow{Descripción}{Existirán los siguientes tipos de premios:
@@ -1897,6 +1944,8 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 	\item Premio de un viaje a Estados Unidos.
 	\end{itemize}}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
+
+\vspace{1cm}
 
 \subsection{Casos de uso}
 
