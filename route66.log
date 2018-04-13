@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  13 APR 2018 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  13 APR 2018 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2014,81 +2014,99 @@ Package pdftex.def Info: images/structureHighLevel.png used on input line 2609.
 (pdftex.def)             Requested size: 356.07944pt x 318.0625pt.
  [62 <./images/sequence/login.png> <./images/sequence/showOtherPlayersPositions
 .png> <./images/sequence/checkPrizes.png>]
-<images/structureModel.PNG, id=323, 568.37344pt x 242.40562pt>
+<images/structureModel.PNG, id=323, 882.29625pt x 295.1025pt>
 File: images/structureModel.PNG Graphic file (type png)
 
 <use images/structureModel.PNG>
 Package pdftex.def Info: images/structureModel.PNG used on input line 2617.
-(pdftex.def)             Requested size: 341.02669pt x 145.44447pt.
+(pdftex.def)             Requested size: 529.38184pt x 177.06285pt.
 
-<images/structureloginGameModel.PNG, id=324, 708.39656pt x 156.585pt>
+Overfull \hbox (31.45859pt too wide) in paragraph at lines 2617--2618
+ [][] 
+ []
+
+<images/structureloginGameModel.PNG, id=324, 945.5325pt x 192.72pt>
 File: images/structureloginGameModel.PNG Graphic file (type png)
 
 <use images/structureloginGameModel.PNG>
 Package pdftex.def Info: images/structureloginGameModel.PNG used on input line 
 2623.
-(pdftex.def)             Requested size: 495.8742pt x 109.60873pt.
- [63 <./images/structureHighLevel.png> <./images/structureModel.PNG>]
-<images/structureMainActivity.PNG, id=331, 657.95813pt x 380.17032pt>
+(pdftex.def)             Requested size: 661.86824pt x 134.90306pt.
+
+Overfull \hbox (163.94499pt too wide) in paragraph at lines 2623--2624
+ [][] 
+ []
+
+[63 <./images/structureHighLevel.png> <./images/structureModel.PNG>]
+<images/structureMainActivity.PNG, id=331, 980.66376pt x 562.1pt>
 File: images/structureMainActivity.PNG Graphic file (type png)
 
 <use images/structureMainActivity.PNG>
 Package pdftex.def Info: images/structureMainActivity.PNG used on input line 26
 29.
-(pdftex.def)             Requested size: 394.77792pt x 228.10394pt.
+(pdftex.def)             Requested size: 588.4028pt x 337.2626pt.
 
-<images/structureMissions.PNG, id=332, 645.91313pt x 398.23781pt>
+Overfull \hbox (90.47955pt too wide) in paragraph at lines 2629--2630
+ [][] 
+ []
+
+<images/structureMissions.PNG, id=332, 908.39375pt x 527.9725pt>
 File: images/structureMissions.PNG Graphic file (type png)
 
 <use images/structureMissions.PNG>
 Package pdftex.def Info: images/structureMissions.PNG used on input line 2635.
-(pdftex.def)             Requested size: 452.13611pt x 278.76456pt.
- [64 <./images/structureloginGameModel.PNG> <./images/structureMainActivity.PNG
->]
-<images/structureTeam.PNG, id=338, 680.5425pt x 178.41656pt>
+(pdftex.def)             Requested size: 635.87129pt x 369.57823pt.
+
+Overfull \hbox (137.94804pt too wide) in paragraph at lines 2635--2636
+ [][] 
+ []
+
+[64 <./images/structureloginGameModel.PNG> <./images/structureMainActivity.PNG>
+] <images/structureTeam.PNG, id=338, 986.68625pt x 443.6575pt>
 File: images/structureTeam.PNG Graphic file (type png)
 
 <use images/structureTeam.PNG>
 Package pdftex.def Info: images/structureTeam.PNG used on input line 2642.
-(pdftex.def)             Requested size: 408.32864pt x 107.05075pt.
- [65 <./images/structureMissions.PNG> <./images/structureTeam.PNG>]
+(pdftex.def)             Requested size: 592.01631pt x 266.19655pt.
+
+Overfull \hbox (94.09306pt too wide) in paragraph at lines 2642--2643
+ [][] 
+ []
+
+[65 <./images/structureMissions.PNG>] [66 <./images/structureTeam.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 2666--2667
 
  []
 
-<images/databaseNRteams.png, id=344, 770.88pt x 504.38437pt>
+<images/databaseNRteams.png, id=347, 770.88pt x 504.38437pt>
 File: images/databaseNRteams.png Graphic file (type png)
 
 <use images/databaseNRteams.png>
 Package pdftex.def Info: images/databaseNRteams.png used on input line 2672.
 (pdftex.def)             Requested size: 385.43906pt x 252.19156pt.
- [66 <./images/databaseNRteams.png>]
-<images/databaseNRusers.png, id=349, 1114.91531pt x 813.0375pt>
+
+<images/databaseNRusers.png, id=348, 880.03781pt x 781.41937pt>
 File: images/databaseNRusers.png Graphic file (type png)
 
 <use images/databaseNRusers.png>
 Package pdftex.def Info: images/databaseNRusers.png used on input line 2686.
-(pdftex.def)             Requested size: 557.4563pt x 406.51776pt.
-
-Overfull \hbox (59.53305pt too wide) in paragraph at lines 2686--2687
- [][] 
- []
-
-<images/databaseRoom.png, id=350, 732.48656pt x 501.37312pt>
+(pdftex.def)             Requested size: 440.01782pt x 390.70872pt.
+ [67 <./images/databaseNRteams.png>]
+<images/databaseRoom.png, id=353, 786.68906pt x 452.4403pt>
 File: images/databaseRoom.png Graphic file (type png)
 
 <use images/databaseRoom.png>
 Package pdftex.def Info: images/databaseRoom.png used on input line 2703.
-(pdftex.def)             Requested size: 366.24237pt x 250.68594pt.
- [67 <./images/databaseNRusers.png>]
-<images/deploymentModel.png, id=355, 967.36406pt x 517.935pt>
+(pdftex.def)             Requested size: 393.34357pt x 226.2196pt.
+ [68 <./images/databaseNRusers.png>]
+<images/deploymentModel.png, id=358, 967.36406pt x 517.935pt>
 File: images/deploymentModel.png Graphic file (type png)
 
 <use images/deploymentModel.png>
 Package pdftex.def Info: images/deploymentModel.png used on input line 2711.
 (pdftex.def)             Requested size: 483.68085pt x 258.96686pt.
- [68 <./images/databaseRoom.png> <./images/deploymentModel.png>] [69] [70] [71]
- [72] [73] [74]
+ [69 <./images/databaseRoom.png> <./images/deploymentModel.png>] [70] [71] [72]
+ [73] [74] [75]
 Underfull \hbox (badness 10000) in paragraph at lines 2990--2991
 
  []
@@ -2098,14 +2116,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3004--3005
 
  []
 
-[75] [76] <images/restAPI.png, id=387, 767.86874pt x 266.49562pt>
+[76] [77] <images/restAPI.png, id=390, 767.86874pt x 266.49562pt>
 File: images/restAPI.png Graphic file (type png)
 
 <use images/restAPI.png>
 Package pdftex.def Info: images/restAPI.png used on input line 3086.
 (pdftex.def)             Requested size: 497.92325pt x 172.81346pt.
 \c@test=\count173
- [77 <./images/restAPI.png>]
+ [78 <./images/restAPI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 3110--3115
 
  []
@@ -2135,7 +2153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3150--3155
 
  []
 
-[78]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 3158--3163
 
  []
@@ -2180,7 +2198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3222--3227
 
  []
 
-[79]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 3230--3235
 
  []
@@ -2200,13 +2218,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3254--3259
 
  []
 
-[80]
+[81]
 Cap\'{\i }tulo 4.
-[81
+[82
 
 ]
 Cap\'{\i }tulo 5.
-[82
+[83
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 3305--3306
@@ -2253,7 +2271,7 @@ ds Fe-cha de []ulti-ma vi-si-ta: 20/01/2018 $\OT1/cmtt/m/n/10 https : / / www .
 
  []
 
-[83
+[84
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 3335--3336
@@ -2280,7 +2298,7 @@ Underfull \hbox (badness 2293) in paragraph at lines 3365--3367
 o-cu-men-ta-ci[]on de Goo-gle Play Ser-vi-ces Aut-hen-ti-ca-
  []
 
-[84] [85] [86] [87
+[85] [86] [87] [88
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <14.4> not available
@@ -2297,7 +2315,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3464--3465
 
  []
 
-[88
+[89
 
 ]
 LaTeX Font Info:    Try loading font information for OML+phv on input line 3484
@@ -2308,7 +2326,7 @@ File: omlphv.fd
 LaTeX Font Info:    Font shape `OML/phv/m/n' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 3484.
 
- [89
+ [90
 
 ]
 (./route66.aux
@@ -2340,10 +2358,10 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (99 pages, 11624159 bytes).
+Output written on route66.pdf (100 pages, 11691774 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
+ 483 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
