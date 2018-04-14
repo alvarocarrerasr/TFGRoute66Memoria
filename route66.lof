@@ -1,75 +1,74 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }McDonald's Espa\IeC {\~n}a - Ofertas\IeC {\textquotedblleft }}.}}{2}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }BURGER KING\IeC {\textregistered } Espa\IeC {\~n}a\IeC {\textquotedblleft }}.}}{3}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }KFC Espa\IeC {\~n}a\IeC {\textendash }ofertas cerca de ti\IeC {\textquotedblleft }}.}}{4}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Club VIPS: Promociones y pedidos Take Away\IeC {\textquotedblleft }}.}}{5}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Pans \& Company\IeC {\textquotedblleft }}.}}{6}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Foster's Hollywood\IeC {\textquotedblleft }}.}}{7}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }McDonald's Espa\IeC {\~n}a - Ofertas\IeC {\textquotedblleft }}.\relax }}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }BURGER KING\IeC {\textregistered } Espa\IeC {\~n}a\IeC {\textquotedblleft }}.\relax }}{3}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }KFC Espa\IeC {\~n}a\IeC {\textendash }ofertas cerca de ti\IeC {\textquotedblleft }}.\relax }}{4}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Club VIPS: Promociones y pedidos Take Away\IeC {\textquotedblleft }}.\relax }}{5}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Pans \& Company\IeC {\textquotedblleft }}.\relax }}{6}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Capturas de pantalla de la aplicaci\IeC {\'o}n \textit {\IeC {\textquotedblleft }Foster's Hollywood\IeC {\textquotedblleft }}.\relax }}{7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Logotipo de Kotlin}}{13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \textit {Snippet} ejemplo de un \textit {POJO} Punto}}{13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Logotipo de Firebase}}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Logotipo de Kotlin\relax }}{13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \textit {Snippet} ejemplo de un \textit {POJO} Punto\relax }}{13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Logotipo de Firebase\relax }}{14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Fases de la metodolog\IeC {\'\i }a UPedu}}{19}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 0 (fase de inicio)}}{20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 1 (fase de elaboraci\IeC {\'o}n)}}{21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 2 (fase de elaboraci\IeC {\'o}n)}}{22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 3 (fase de construcci\IeC {\'o}n)}}{23}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 4 (fase de construcci\IeC {\'o}n)}}{23}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 5 (fase de transici\IeC {\'o}n)}}{24}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de casos de uso. Parte I.}}{38}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de casos de uso. Parte II.}}{38}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Modelo de dominio}}{52}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de secuencia \IeC {\textquotedblleft }Obtener un grupo de los administrados por el usuario\IeC {\textquotedblleft }}}{52}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar grupo\IeC {\textquotedblleft }}}{53}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }A\~{n}adir usuario al grupo\IeC {\textquotedblleft }}}{53}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Nombrar un administrador\IeC {\textquotedblleft }}}{54}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar a un miembro de un equipo\IeC {\textquotedblleft }}}{55}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{55}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }}}{56}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Realizar misi\IeC {\'o}n\IeC {\textquotedblleft }}}{56}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar misiones\IeC {\textquotedblleft }}}{57}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar perfil\IeC {\textquotedblleft }}}{57}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar perfil\IeC {\textquotedblleft }}}{57}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar logros\IeC {\textquotedblleft }}}{58}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar insignias\IeC {\textquotedblleft }}}{58}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar C\IeC {\'o}digo QR\IeC {\textquotedblleft }}}{58}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar Ranking global\IeC {\textquotedblleft }}}{59}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar equipo\IeC {\textquotedblleft }}}{59}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Crear equipo\IeC {\textquotedblleft }}}{60}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Registrarse\IeC {\textquotedblleft }}}{60}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Aceptar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{61}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Enviar invitaci\IeC {\'o}n\IeC {\textquotedblleft }}}{61}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Iniciar sesi\IeC {\'o}n\IeC {\textquotedblleft }}}{62}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Ver posici\IeC {\'o}n de otros jugadores\IeC {\textquotedblleft }}}{62}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar premios\IeC {\textquotedblleft }}}{62}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Diagrama de paquetes de alto nivel de la aplicaci\IeC {\'o}n}}{63}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama de clases \textit {Model}}}{64}
-\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity} y \textit {GameActivity}}}{64}
-\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}}}{65}
-\contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama de clases de los paquetes \textit {MissionsActivity} y \textit {NormalActivity}}}{65}
-\contentsline {figure}{\numberline {3.39}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}}}{66}
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}}{67}
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}}{68}
-\contentsline {figure}{\numberline {3.42}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit {Room} \cite {roompersistence}}}{69}
-\contentsline {figure}{\numberline {3.43}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android}}{69}
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Diagrama en el que se muestra la operaci\IeC {\'o}n \textit {GET}}}{78}
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Captura de pantalla de la vista de inicio de sesi\IeC {\'o}n y registro.}}{82}
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Capturas de pantalla del selector de niveles, el men\IeC {\'u} principal sin puntuaciones asociadas y el men\IeC {\'u} principal con puntuaciones asociadas.}}{83}
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Vista \IeC {\textquotedblleft }Mi perfil\IeC {\textquotedblleft }.}}{84}
-\contentsline {figure}{\numberline {3.48}{\ignorespaces Vista \IeC {\textquotedblleft }Mis logros\IeC {\textquotedblleft }, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}}{84}
-\contentsline {figure}{\numberline {3.49}{\ignorespaces Vista \IeC {\textquotedblleft }Mis logros\IeC {\textquotedblleft }, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}}{85}
-\contentsline {figure}{\numberline {3.50}{\ignorespaces Vista \IeC {\textquotedblleft }Mis insignias\IeC {\textquotedblleft }, sin insignias conseguidas (izquierda) y con insignias (derecha) }}{85}
-\contentsline {figure}{\numberline {3.51}{\ignorespaces Vista \IeC {\textquotedblleft }Mis premios\IeC {\textquotedblleft }, sin premios conseguidos (izquierda) y con premios (derecha) }}{86}
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Vistas \IeC {\textquotedblleft }Invitar\IeC {\textquotedblleft }, \IeC {\textquotedblleft }Ranking global\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Equipos\IeC {\textquotedblleft } }}{86}
-\contentsline {figure}{\numberline {3.53}{\ignorespaces Vista principal de un equipo, sin y con el men\IeC {\'u} de opciones deplegado con el rol administrador y con el men\IeC {\'u} desplegado con el rol usuario normal.}}{87}
-\contentsline {figure}{\numberline {3.54}{\ignorespaces Vistas \IeC {\textquotedblleft }Gestionar usuario\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Configuraci\IeC {\'o}n del equipo\IeC {\textquotedblleft }. Esta \IeC {\'u}ltima, a la izquierda, con el seguro de borrado activado y a la derecha, sin activar. }}{88}
-\contentsline {figure}{\numberline {3.55}{\ignorespaces Vistas \IeC {\textquotedblleft }C\IeC {\'o}digo QR del equipo\IeC {\textquotedblleft } y \IeC {\textquotedblleft }A\IeC {\~n}adir miembro al equipo\IeC {\textquotedblleft } .}}{88}
-\contentsline {figure}{\numberline {3.56}{\ignorespaces Vistas \IeC {\textquotedblleft }Salir del equipo\IeC {\textquotedblleft }, con y sin el seguro activado.}}{89}
-\contentsline {figure}{\numberline {3.57}{\ignorespaces Vistas de un nivel. A la izquierda, miembros de la aplicaci\IeC {\'o}n que se encuentran en ese nivel. A la derecha, misiones correspondientes al mismo, indicando para cada una de ellas su tipo.}}{90}
-\contentsline {figure}{\numberline {3.58}{\ignorespaces Vistas correspondientes a una misi\IeC {\'o}n de tipo social. A la izquierda, misi\IeC {\'o}n social del nivel Chicago (no se puede modificar la misi\IeC {\'o}n); en el centro, misi\IeC {\'o}n social libre y a la derecha, misi\IeC {\'o}n social en comprobaci\IeC {\'o}n. }}{91}
-\contentsline {figure}{\numberline {3.59}{\ignorespaces Vistas correspondientes a una misi\IeC {\'o}n de tipo competitivo. A la izquierda, descripci\IeC {\'o}n de la puntuaci\IeC {\'o}n que se debe alcanzar; en el centro, juego en progreso y a la derecha, mensaje de no haber completado la misi\IeC {\'o}n. }}{91}
-\contentsline {figure}{\numberline {3.60}{\ignorespaces Vista correspondiente a una misi\IeC {\'o}n de tipo consumo.}}{92}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Fases de la metodolog\IeC {\'\i }a UPedu\relax }}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 0 (fase de inicio)\relax }}{20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 1 (fase de elaboraci\IeC {\'o}n)\relax }}{21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 2 (fase de elaboraci\IeC {\'o}n)\relax }}{22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 3 (fase de construcci\IeC {\'o}n)\relax }}{23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 4 (fase de construcci\IeC {\'o}n)\relax }}{23}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt para la iteraci\IeC {\'o}n 5 (fase de transici\IeC {\'o}n)\relax }}{24}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de casos de uso. Parte I.\relax }}{38}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de casos de uso. Parte II.\relax }}{38}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Modelo de dominio\relax }}{52}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrama de secuencia \IeC {\textquotedblleft }Obtener un grupo de los administrados por el usuario\IeC {\textquotedblleft }\relax }}{52}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar grupo\IeC {\textquotedblleft }\relax }}{53}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }A\~{n}adir usuario al grupo\IeC {\textquotedblleft }\relax }}{53}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Nombrar un administrador\IeC {\textquotedblleft }\relax }}{54}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar a un miembro de un equipo\IeC {\textquotedblleft }\relax }}{55}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }\relax }}{55}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Eliminar un equipo\IeC {\textquotedblleft }\relax }}{56}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Realizar misi\IeC {\'o}n\IeC {\textquotedblleft }\relax }}{56}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar misiones\IeC {\textquotedblleft }\relax }}{57}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Modificar perfil\IeC {\textquotedblleft }\relax }}{57}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar perfil\IeC {\textquotedblleft }\relax }}{57}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar logros\IeC {\textquotedblleft }\relax }}{58}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar insignias\IeC {\textquotedblleft }\relax }}{58}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar C\IeC {\'o}digo QR\IeC {\textquotedblleft }\relax }}{58}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar Ranking global\IeC {\textquotedblleft }\relax }}{59}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar equipo\IeC {\textquotedblleft }\relax }}{59}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Crear equipo\IeC {\textquotedblleft }\relax }}{60}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Registrarse\IeC {\textquotedblleft }\relax }}{60}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Aceptar invitaci\IeC {\'o}n\IeC {\textquotedblleft }\relax }}{61}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Enviar invitaci\IeC {\'o}n\IeC {\textquotedblleft }\relax }}{61}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Iniciar sesi\IeC {\'o}n\IeC {\textquotedblleft }\relax }}{62}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Ver posici\IeC {\'o}n de otros jugadores\IeC {\textquotedblleft }\relax }}{62}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Diagrama de secuencia del caso de uso \IeC {\textquotedblleft }Consultar premios\IeC {\textquotedblleft }\relax }}{62}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Diagrama de paquetes de alto nivel de la aplicaci\IeC {\'o}n\relax }}{64}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Diagrama de clases \textit {Model}\relax }}{65}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Diagrama de clases de los paquetes \textit {LoginActivity} y \textit {GameActivity}\relax }}{65}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}\relax }}{66}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama de clases de los paquetes \textit {MissionsActivity} y \textit {NormalActivity}\relax }}{66}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}\relax }}{67}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos\relax }}{68}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios\relax }}{69}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit {Room} \cite {roompersistence}\relax }}{70}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android\relax }}{70}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Diagrama en el que se muestra la operaci\IeC {\'o}n \textit {GET}\relax }}{79}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Captura de pantalla de la vista de inicio de sesi\IeC {\'o}n y registro.\relax }}{83}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Capturas de pantalla de la vista principal de la aplicaci\IeC {\'o}n.\relax }}{84}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Captura de pantalla de \IeC {\textquotedblleft }Mi perfil\IeC {\textquotedblleft }.\relax }}{85}
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis logros\IeC {\textquotedblleft }\relax }}{85}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis insignias\IeC {\textquotedblleft }\relax }}{86}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis premios\IeC {\textquotedblleft }\relax }}{87}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Invitar\IeC {\textquotedblleft }, \IeC {\textquotedblleft }Ranking global\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Equipos\IeC {\textquotedblleft }\relax }}{88}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Capturas de pantalla de la vista que muestra los detalles de un equipo.\relax }}{89}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Gestionar usuario\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Configuraci\IeC {\'o}n del equipo\IeC {\textquotedblleft }\relax }}{90}
+\contentsline {figure}{\numberline {3.54}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }C\IeC {\'o}digo QR del equipo\IeC {\textquotedblleft } y \IeC {\textquotedblleft }A\IeC {\~n}adir miembro al equipo\IeC {\textquotedblleft }.\relax }}{90}
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Salir del equipo\IeC {\textquotedblleft }\relax }}{91}
+\contentsline {figure}{\numberline {3.56}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Miembros de un nivel\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Misiones de un nivel\IeC {\textquotedblleft }.\relax }}{92}
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo social.\relax }}{93}
+\contentsline {figure}{\numberline {3.58}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo competitiva.\relax }}{94}
+\contentsline {figure}{\numberline {3.59}{\ignorespaces Vista correspondiente a una misi\IeC {\'o}n de tipo consumo.\relax }}{95}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -72,40 +72,40 @@
 \contentsline {subsection}{\numberline {3.2.5}Usabilidad}{63}
 \contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{63}
 \contentsline {subsection}{\numberline {3.3.1}Arquitectura}{63}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{66}
-\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{66}
-\contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{67}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{67}
-\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{69}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{70}
-\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{70}
-\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{70}
-\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{71}
-\contentsline {subsection}{\numberline {3.4.2}Dependencias}{71}
-\contentsline {subsection}{\numberline {3.4.3}Juegos}{72}
-\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{73}
-\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{74}
-\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{75}
-\contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{75}
-\contentsline {subsubsection}{\numberline {3.4.6.2}Authentication}{75}
-\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{76}
-\contentsline {subsubsection}{\numberline {3.4.6.4}Cloud Messaging}{76}
-\contentsline {subsubsection}{\numberline {3.4.6.5}Storage}{76}
-\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local SQLite}{77}
-\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{77}
-\contentsline {subsubsection}{\numberline {3.4.6.8}Shared preferences}{77}
-\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{78}
-\contentsline {subsection}{\numberline {3.4.7}Funciones}{78}
-\contentsline {section}{\numberline {3.5}Pruebas}{78}
-\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{81}
-\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{81}
-\contentsline {subsection}{\numberline {3.7.1}Usuarios}{81}
-\contentsline {subsection}{\numberline {3.7.2}Equipos}{87}
-\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{89}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{93}
-\contentsline {section}{\numberline {4.1}Conclusiones}{93}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{93}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{94}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{95}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{97}
-\contentsline {part}{I\hspace {1em}Anexos}{99}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{67}
+\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{67}
+\contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{68}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{68}
+\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{70}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{71}
+\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{71}
+\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{71}
+\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{72}
+\contentsline {subsection}{\numberline {3.4.2}Dependencias}{72}
+\contentsline {subsection}{\numberline {3.4.3}Juegos}{73}
+\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{74}
+\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{75}
+\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{76}
+\contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{76}
+\contentsline {subsubsection}{\numberline {3.4.6.2}Authentication}{76}
+\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{77}
+\contentsline {subsubsection}{\numberline {3.4.6.4}Cloud Messaging}{77}
+\contentsline {subsubsection}{\numberline {3.4.6.5}Storage}{77}
+\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local SQLite}{78}
+\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{78}
+\contentsline {subsubsection}{\numberline {3.4.6.8}Shared preferences}{78}
+\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{79}
+\contentsline {subsection}{\numberline {3.4.7}Funciones}{79}
+\contentsline {section}{\numberline {3.5}Pruebas}{79}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{82}
+\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{82}
+\contentsline {subsection}{\numberline {3.7.1}Usuarios}{82}
+\contentsline {subsection}{\numberline {3.7.2}Equipos}{88}
+\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{91}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{96}
+\contentsline {section}{\numberline {4.1}Conclusiones}{96}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{96}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{97}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{98}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{100}
+\contentsline {part}{I\hspace {1em}Anexos}{102}

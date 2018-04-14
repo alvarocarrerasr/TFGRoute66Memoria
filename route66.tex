@@ -17,6 +17,7 @@
 \setcounter{secnumdepth}{3} %Profundidad en el índice de contenidos.
 \usepackage{multirow}
 \usepackage{multicol}
+\usepackage{graphicx,subcaption}
 \usepackage{cite}
 \usepackage{layout}
 \renewcommand{\baselinestretch}{1.2}
@@ -1255,7 +1256,7 @@ Diseñador          & 59.615 \euro      & 31,05 \euro & & \\ \cline{1-3}
 Director de proyecto & 59.615 \euro    & 31,05 \euro & & \\ \cline{1-3}
 \hline
 \end{tabular}
-\caption{Costes de los Recursos Humanos}
+\caption{Costes de los recursos humanos}
 \end{table}
 
 Los datos de la tabla anterior han sido calculados basándose en los datos del Informe Anual Infojobs 2016 España \cite{infojobs2016} (salario promedio bruto anual de un director de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
@@ -2601,14 +2602,15 @@ Se identifican un único actor:
 \subsection{Usabilidad}
 \label{usabilitymatters}
 
-Para el diseño de la interfaz gráfica de Route66App (iconos, \textit{widgets} a utilizar y disposiciones de elementos) se ha tenido siempre encuenta el estándar de diseño de aplicaciones para la plataforma \textit{Android}, 	\textit{Material Design} \cite{materialil} \cite{materialdocs}. El motivo ha sido que los usuarios están más acostumbrados a interactuar con interfaces que aplican este estándar, por lo que la curva de aprendizaje será siempre mucho menor. \\
+Para el diseño de la interfaz gráfica de Route66App (iconos, \textit{widgets} a utilizar y disposiciones de elementos) se ha tenido siempre encuenta el estándar de diseño de aplicaciones para la plataforma \textit{Android}, 	\textit{Material Design} \cite{materialil} \cite{materialdocs}. El motivo de todo esto ha sido que los usuarios están más acostumbrados a interactuar con interfaces que aplican este estándar, por lo que la curva de aprendizaje será siempre mucho menor. \\
 
 Por otro lado, también se ha basado el diseño en determinados patrones visuales:
 \begin{enumerate}
-	\item \textbf{Navigation Drawer}
-	\item \textbf{Notificaciones}:
-	\item \textbf{Preferencias}:
-	\item \textbf{Cards}:
+	\item \textbf{Navigation Drawer}: es un patrón muy típico en Android. Consiste en un menú desplegable que se encuentra en la parte izquierda de la aplicación.
+	\item \textbf{Notificaciones}: avisos sonoros y visuales que se muestran de forma asíncrona en la bandeja de notificaciones del sistema.
+	\item \textbf{Preferencias}: recoger las preferencias en lugares habilitados para las mismas.
+	\item \textbf{Cards}: visualización de información muy concreta y muy relacionada en un lugar determinado y delimitado de la pantalla.
+	\item \textbf{Secciones de navegación}: etiquetas muy concretas que indican en qué sección se encuentra el usuario y la información que puede encontrar en la misma.
 \end{enumerate}
 
 
@@ -3306,10 +3308,19 @@ Una vez se haya iniciado sesión (registrarse implica iniciar sesión automátic
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/1.png}
-\includegraphics[scale=0.25]{images/userguide/2.png}
-\includegraphics[scale=0.25]{images/userguide/3.png}
-\caption{Capturas de pantalla del selector de niveles, el menú principal sin puntuaciones asociadas y el menú principal con puntuaciones asociadas.}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/1.png}
+		\caption{Vista del selector de niveles.}
+	\end{subfigure}\hspace{3mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/2.png}
+		\caption{Menú principal sin puntuaciones asociadas}
+	\end{subfigure}\hspace{3mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/3.png}
+		\caption{Menú principal con puntuaciones asociadas}
+	\end{subfigure}
+\caption{Capturas de pantalla de la vista principal de la aplicación.}
 \end{center}
 \end{figure}
 
@@ -3330,39 +3341,49 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.25]{images/userguide/4.png}
-\caption{Vista “Mi perfil“.}
+\caption{Captura de pantalla de “Mi perfil“.}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/5.png}
-\includegraphics[scale=0.25]{images/userguide/6.png}
-\caption{Vista “Mis logros“, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/5.png}
+		\caption{“Mis logros“ sin logros obtenidos}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth} 
+		\includegraphics[scale=0.25]{images/userguide/6.png}
+		\caption{“Mis logros“ con logros obtenidos}
+	\end{subfigure}
+\caption{Capturas de pantalla de “Mis logros“}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/5.png}
-\includegraphics[scale=0.25]{images/userguide/6.png}
-\caption{Vista “Mis logros“, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/7.png}
+		\caption{“Mis insignias“ sin insignias conseguidas}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/8.png}
+		\caption{“Mis insignias“ con insignias conseguidas}
+	\end{subfigure}
+\caption{Capturas de pantalla de “Mis insignias“}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/7.png}
-\includegraphics[scale=0.25]{images/userguide/8.png}
-\caption{Vista “Mis insignias“, sin insignias conseguidas (izquierda) y con insignias (derecha) }
-\end{center}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.25]{images/userguide/9.png}
-\includegraphics[scale=0.25]{images/userguide/10.png}
-\caption{Vista “Mis premios“, sin premios conseguidos (izquierda) y con premios (derecha) }
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/9.png}
+		\caption{“Mis premios“ sin premios conseguidos}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/10.png}
+		\caption{“Mis premios“ con premios}
+	\end{subfigure}
+\caption{Capturas de pantalla de “Mis premios“}
 \end{center}
 \end{figure}
 
@@ -3370,10 +3391,19 @@ La vista invitar permite incluir un mensaje personalizado que será adjuntado al
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/11.png}
-\includegraphics[scale=0.25]{images/userguide/12.png}
-\includegraphics[scale=0.25]{images/userguide/13.png}
-\caption{Vistas “Invitar“, “Ranking global“ y “Equipos“      }
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/11.png}
+		\caption{Vista “Invitar“}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/12.png}
+		\caption{Vista “Ranking global“}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/13.png}
+		\caption{Vista “Equipos“}
+	\end{subfigure}\hspace{2mm}%
+\caption{Capturas de pantalla de “Invitar“, “Ranking global“ y “Equipos“}
 \end{center}
 \end{figure}
 
@@ -3382,10 +3412,19 @@ La vista invitar permite incluir un mensaje personalizado que será adjuntado al
 En cuanto a los equipos, la vista principal de uno concreto es la siguiente:
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/14.png}
-\includegraphics[scale=0.25]{images/userguide/15.png}
-\includegraphics[scale=0.25]{images/userguide/16.png}
-\caption{Vista principal de un equipo, sin y con el menú de opciones deplegado con el rol administrador y con el menú desplegado con el rol usuario normal.}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/14.png}
+		\caption{Vista principal de un equipo (rol administrador)}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/15.png}
+		\caption{Vista principal de un equipo con  el menú de opciones deplegado (rol administrador)}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/16.png}
+		\caption{Vista principal de un equipo (rol usuario normal)}
+	\end{subfigure}\hspace{2mm}%
+\caption{Capturas de pantalla de la vista que muestra los detalles de un equipo.}
 \end{center}
 \end{figure}
 
@@ -3408,27 +3447,48 @@ Por otro lado, siendo administrador, se da la posibilidad de ascender a administ
 A continuación se muestran las capturas de pantalla de cada una de estas opciones:
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/15a.png}
-\includegraphics[scale=0.25]{images/userguide/17.png}
-\includegraphics[scale=0.25]{images/userguide/18.png}
-\caption{Vistas “Gestionar usuario“ y “Configuración del equipo“. Esta última, a la izquierda, con el seguro de borrado activado y a la derecha, sin activar. }
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/15a.png}
+		\caption{Vista “Gestionar usuario“}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/17.png}
+		\caption{Vista “Configuración del equipo“}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/18.png}
+		\caption{Vista “Configuración del equipo“}
+	\end{subfigure}\hspace{2mm}%
+\caption{Capturas de pantalla de “Gestionar usuario“ y “Configuración del equipo“}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/19.png}
-\includegraphics[scale=0.25]{images/userguide/20.png}
-\caption{Vistas “Código QR del equipo“ y “Añadir miembro al equipo“ .}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/19.png}
+		\caption{Vista “Código QR del equipo“}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/20.png}
+		\caption{Vista “Añadir miembro al equipo“}
+	\end{subfigure}\hspace{5mm}%
+\caption{Capturas de pantalla de “Código QR del equipo“ y “Añadir miembro al equipo“.}
 \end{center}
 \end{figure}
 
 Por último, como rol de usuario normal, además de permitir mostrar el código QR (la vista es igual que en el caso de administrador), se permite salir de un grupo.
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/21.png}
-\includegraphics[scale=0.25]{images/userguide/22.png}
-\caption{Vistas “Salir del equipo“, con y sin el seguro activado.}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/21.png}
+		\caption{Vista “Salir del equipo“}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/22.png}
+		\caption{Vista “Salir del equipo“}
+	\end{subfigure}\hspace{5mm}%
+\caption{Capturas de pantalla de “Salir del equipo“}
 \end{center}
 \end{figure}
 
@@ -3436,27 +3496,54 @@ Por último, como rol de usuario normal, además de permitir mostrar el código 
 Cuando entramos en un nivel desde la vista principal de usuarios veremos las siguientes vistas:
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/23.png}
-\includegraphics[scale=0.25]{images/userguide/24.png}
-\caption{Vistas de un nivel. A la izquierda, miembros de la aplicación que se encuentran en ese nivel. A la derecha, misiones correspondientes al mismo, indicando para cada una de ellas su tipo.}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/23.png}
+		\caption{Vista “Miembros de un nivel“}
+	\end{subfigure}\hspace{5mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/24.png}
+		\caption{Vista “Misiones de un nivel“}
+	\end{subfigure}\hspace{5mm}%
+\caption{Capturas de pantalla de “Miembros de un nivel“ y “Misiones de un nivel“.}
 \end{center}
 \end{figure}
 Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo y consumo. Se adjuntan las imágenes de las mismas.
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/25.png}
-\includegraphics[scale=0.25]{images/userguide/26.png}
-\includegraphics[scale=0.25]{images/userguide/27.png}
-\caption{Vistas correspondientes a una misión de tipo social. A la izquierda, misión social del nivel Chicago (no se puede modificar la misión); en el centro,  misión social libre y a la derecha, misión social en comprobación. }
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/25.png}
+		\caption{Vista “Misión social“ restringida. Nivel \textit{Chicago}.}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/26.png}
+		\caption{Vista “Misión social“ libre.}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\caption{Vista “Misión social“ libre en estado de comprobación.}
+	\end{subfigure}\hspace{2mm}%
+\caption{Capturas de pantalla de una misión de tipo social.}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\caption{Puntuación que se debe alcanzar en esta misión.}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\caption{Misión en progreso.}
+	\end{subfigure}\hspace{2mm}%
+	\begin{subfigure}[t]{.3\linewidth}
+		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\caption{Mensaje de no haber completado la misión.}
+	\end{subfigure}\hspace{2mm}%
 \includegraphics[scale=0.25]{images/userguide/28.png}
 \includegraphics[scale=0.25]{images/userguide/29.png}
 \includegraphics[scale=0.25]{images/userguide/30.png}
-\caption{Vistas correspondientes a una misión de tipo competitivo. A la izquierda, descripción de la puntuación que se debe alcanzar; en el centro, juego en progreso y a la derecha, mensaje de no haber completado la misión. }
+\caption{Capturas de pantalla de una misión de tipo competitiva.}
 \end{center}
 \end{figure}
 
