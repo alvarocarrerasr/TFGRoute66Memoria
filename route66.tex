@@ -2598,7 +2598,8 @@ Se identifican un único actor:
 \caption{Diagrama de secuencia del caso de uso “Consultar premios“}
 \end{figure}
 
-\subsection{Análisis de usabilidad}
+\subsection{Usabilidad}
+\label{usabilitymatters}
 
 
 \section{Diseño}
@@ -2610,36 +2611,38 @@ La aplicación se estructura, a alto nivel en los siguientes paquetes:
 \caption{Diagrama de paquetes de alto nivel de la aplicación}
 \end{figure}
 
+\clearpage
+
 La estructura interna de los paquetes es:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{images/structureModel}
+\includegraphics[height=7cm,width=\textwidth]{images/structureModel.PNG}
 \caption{Diagrama de clases \textit{Model}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{images/structureloginGameModel.PNG}
+\includegraphics[height=4cm,width=0.8\textwidth]{images/structureloginGameModel.PNG}
 \caption{Diagrama de clases de los paquetes \textit{LoginActivity} y \textit{GameActivity}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{images/structureMainActivity}
+\includegraphics[height=10cm,width=\textwidth]{images/structureMainActivity.PNG}
 \caption{Diagrama de clases del paquete \textit{MainActivity}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{images/structureMissions}
-\caption{Diagrama de clases del paquete \textit{MissionsActivity}}
+\includegraphics[height=10cm,width=\textwidth]{images/structureMissions.PNG}
+\caption{Diagrama de clases de los paquetes \textit{MissionsActivity} y \textit{NormalActivity}}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{images/structureTeam}
+\includegraphics[height=10cm,width=0.9\textwidth]{images/structureTeam.PNG}
 \caption{Diagrama de clases del paquete \textit{TeamActivity}}
 \end{figure}
 
@@ -3259,10 +3262,202 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \section{Manual de instalación}
 
-Manual de instalación
+Los pasos que hay que seguir para la instalación de Route66App son los mismos de cualquier aplicación \textit{Android} nativa que no se encuentra alojada en una tienda oficial de aplicaciones (como \textit{Google Play Store}), aunque habrá que prestar atención que el dispositivo sobre el que se ejecuta la aplicación cumple los siguientes requisitos mínimos:
+
+\begin{itemize}
+	\item \textbf{Versión mínima de \textit{Android}}: \textit{Android} 4.4 (más conocido como \textit{Android KitKat}).
+	\item \textbf{Software con el que debe contar el dispositivo}: \textit{Google Play Services} actualizado, \textit{WebView} del sistema \textit{Android}.
+	\item \textbf{Conexión a Internet}: conexión a Internet estable.
+	\item \textbf{Espacio de almacenamiento}: se requerirán, al menos, 50 MiB libres de almacenamiento en el dispositivo.
+\end{itemize}
 
 \section{Guía de usuario}
-Guía de usuario
+
+\subsection{Usuarios}
+La aplicación sigue totalmente los estándares de Material Design, con el fin de conseguir que el usuario medio de Android le resulte una interfaz gráfica familiar. En el apartado “Usabilidad“ (página \pageref{usabilitymatters}) se han explicado los diferentes principios de Interacción Persona-Computadora aplicados en la interfaz gráfica de la aplicación.\\
+
+Una vez instalada la aplicación nos encontramos con la siguiente vista que permite iniciar sesión o registrarse.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.2]{images/userguide/0.png}
+\caption{Captura de pantalla de la vista de inicio de sesión y registro.}
+\end{center}
+\end{figure}
+
+Esta vista permite:
+\begin{itemize}
+\item Iniciar sesión o registrarse utilizando una de las cuentas de \textit{Google} registradas en el dispositivo.
+\item Iniciar sesión con una cuenta previamente registrada en el sistema utilizando el método de registro con correo electrónico y contraseña.
+\item Registrarse en el sistema por medio de correo electrónico y contraseña.
+\end{itemize}
+
+Una vez se haya iniciado sesión (registrarse implica iniciar sesión automáticamente), se verá la actividad principal de la aplicación. A continuación se muestran capturas de pantalla del selector de niveles, menú principal sin puntuaciones asociadas y menú principal con puntuaciones asociadas.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/1.png}
+\includegraphics[scale=0.15]{images/userguide/2.png}
+\includegraphics[scale=0.15]{images/userguide/3.png}
+\caption{Capturas de pantalla del selector de niveles, el menú principal sin puntuaciones asociadas y el menú principal con puntuaciones asociadas.}
+\end{center}
+\end{figure}
+
+En el menú podemos observar las diversas opciones con las que contamos:
+\begin{enumerate}
+	\item \textbf{Inicio}: para volver a la vista principal de la aplicación.
+	\item \textbf{Mi perfil}: permite editar el perfil de usuario, con opciones como subir una nueva fotografía (avatar), cambiar la contraseña o modificar el nombre, restaurante favorito, sexo o la fecha de nacimiento.
+	\item \textbf{Mis logros}: lista el conjunto de logros de un usuario. Un logro es una invitación que se haya completado o una misión terminada. Cabe destacar que solo los logros conllevan un incremento de puntuación, por lo que esta misma vista puede servir como historial de la puntuación del usuario.
+	\item \textbf{Mis insignias}: lista las insignias que tiene asociadas el usuario. Las insignias indican los niveles terminados por parte del usuario.
+	\item \textbf{Mis premios}: muestra los premios que tiene asignados el usuario, destacando las fechas de comienzo y finalización de los mismos.
+	\item \textbf{Invitar}: permite enviar una invitación a otro usuario por correo electrónico. Cuando una misión se completa se añaden los puntos correspondientes en el perfil del usuario que ha enviado la invitación.
+	\item \textbf{Ranking}: consiste en un listado de todos los usuarios de la aplicación, ordenados por la puntuación que han obtenido.
+	\item \textbf{Equipo}: acceso a las opciones correspondientes de los equipos. Se detallarán más adelante.
+\end{enumerate}
+
+A continuación se muestran las vistas de las opciones indicadas con anterioridad:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/4.png}
+\caption{Vista “Mi perfil“.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/5.png}
+\includegraphics[scale=0.15]{images/userguide/6.png}
+\caption{Vista “Mis logros“, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/5.png}
+\includegraphics[scale=0.15]{images/userguide/6.png}
+\caption{Vista “Mis logros“, sin logros obtenidos (izquierda) y con logros obtenidos (derecha)}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/7.png}
+\includegraphics[scale=0.15]{images/userguide/8.png}
+\caption{Vista “Mis insignias“, sin insignias conseguidas (izquierda) y con insignias (derecha) }
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/9.png}
+\includegraphics[scale=0.15]{images/userguide/10.png}
+\caption{Vista “Mis premios“, sin premios conseguidos (izquierda) y con premios (derecha) }
+\end{center}
+\end{figure}
+
+La vista invitar permite incluir un mensaje personalizado que será adjuntado al correo electrónico que se envíe.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/11.png}
+\includegraphics[scale=0.15]{images/userguide/12.png}
+\includegraphics[scale=0.15]{images/userguide/13.png}
+\caption{Vistas “Invitar“, “Ranking global“ y “Equipos“      }
+\end{center}
+\end{figure}
+
+\subsection{Equipos}
+
+En cuanto a los equipos, la vista principal de uno concreto es la siguiente:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/14.png}
+\includegraphics[scale=0.15]{images/userguide/15.png}
+\includegraphics[scale=0.15]{images/userguide/16.png}
+\caption{Vista principal de un equipo, sin y con el menú de opciones deplegado con el rol administrador y con el menú desplegado con el rol usuario normal.}
+\end{center}
+\end{figure}
+
+En el menú desplegado tenemos las siguientes opciones:
+\begin{enumerate}
+	\item En caso de ser administrador:
+	\begin{enumerate}
+		\item Configuración del equipo: permite editar la imagen de perfil (avatar) del equipo, así como cambiar el nombre del mismo e incluso, eliminarlo.
+		\item Código QR: muestra el código QR del equipo.
+		\item Añadir miembro: permite buscar a un miembro de la plataforma y añadirlo al equipo.
+	\end{enumerate}
+	\item En caso de ser usuario normal:
+	\begin{enumerate}
+		\item Código QR: muestra el código QR del equipo.
+		\item Salir del equipo.
+	\end{enumerate}
+\end{enumerate}
+Por otro lado, siendo administrador, se da la posibilidad de ascender a administrador a otro miembro del equipo y de expulsar.
+
+A continuación se muestran las capturas de pantalla de cada una de estas opciones:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/15a.png}
+\includegraphics[scale=0.15]{images/userguide/17.png}
+\includegraphics[scale=0.15]{images/userguide/18.png}
+\caption{Vistas “Gestionar usuario“ y “Configuración del equipo“. Esta última, a la izquierda, con el seguro de borrado activado y a la derecha, sin activar. }
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/19.png}
+\includegraphics[scale=0.15]{images/userguide/20.png}
+\caption{Vistas “Código QR del equipo“ y “Añadir miembro al equipo“ .}
+\end{center}
+\end{figure}
+
+Por último, como rol de usuario normal, además de permitir mostrar el código QR (la vista es igual que en el caso de administrador), se permite salir de un grupo.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/21.png}
+\includegraphics[scale=0.15]{images/userguide/22.png}
+\caption{Vistas “Salir del equipo“, con y sin el seguro activado.}
+\end{center}
+\end{figure}
+
+\subsection{Niveles y misiones}
+Cuando entramos en un nivel desde la vista principal de usuarios veremos las siguientes vistas:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/23.png}
+\includegraphics[scale=0.15]{images/userguide/24.png}
+\caption{Vistas de un nivel. A la izquierda, miembros de la aplicación que se encuentran en ese nivel. A la derecha, misiones correspondientes al mismo, indicando para cada una de ellas su tipo.}
+\end{center}
+\end{figure}
+Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo y consumo. Se adjuntan las imágenes de las mismas.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/25.png}
+\includegraphics[scale=0.15]{images/userguide/26.png}
+\includegraphics[scale=0.15]{images/userguide/27.png}
+\caption{Vistas correspondientes a una misión de tipo social. A la izquierda, misión social del nivel Chicago (no se puede modificar la misión); en el centro,  misión social libre y a la derecha, misión social en comprobación. }
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/28.png}
+\includegraphics[scale=0.15]{images/userguide/29.png}
+\includegraphics[scale=0.15]{images/userguide/30.png}
+\caption{Vistas correspondientes a una misión de tipo competitivo. A la izquierda, descripción de la puntuación que se debe alcanzar; en el centro, juego en progreso y a la derecha, mensaje de no haber completado la misión. }
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/userguide/31.png}
+\caption{Vista correspondiente a una misión de tipo consumo.}
+\end{center}
+\end{figure}
+
+
 
 \chapter{Conclusiones y trabajo futuro.}
 \section{Conclusiones}
