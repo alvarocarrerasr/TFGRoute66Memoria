@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  14 APR 2018 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.20)  14 APR 2018 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,19 +1712,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1949--1958
 
  []
 
-<images/usecase0.png, id=189, 889.07156pt x 642.14906pt>
+<images/usecase0.png, id=189, 895.84688pt x 642.90187pt>
 File: images/usecase0.png Graphic file (type png)
 
 <use images/usecase0.png>
 Package pdftex.def Info: images/usecase0.png used on input line 1965.
-(pdftex.def)             Requested size: 417.8637pt x 301.8101pt.
+(pdftex.def)             Requested size: 421.0481pt x 302.16393pt.
  [37]
-<images/usecase1.png, id=193, 1084.80281pt x 498.36188pt>
+<images/usecase1.png, id=193, 1084.80281pt x 504.38437pt>
 File: images/usecase1.png Graphic file (type png)
 
 <use images/usecase1.png>
 Package pdftex.def Info: images/usecase1.png used on input line 1972.
-(pdftex.def)             Requested size: 509.85739pt x 234.2301pt.
+(pdftex.def)             Requested size: 509.85739pt x 237.06068pt.
 
 Overfull \hbox (11.93414pt too wide) in paragraph at lines 1972--1973
  [] 
@@ -2132,12 +2132,12 @@ File: images/databaseRoom.png Graphic file (type png)
 Package pdftex.def Info: images/databaseRoom.png used on input line 2728.
 (pdftex.def)             Requested size: 393.34357pt x 226.2196pt.
  [69 <./images/databaseNRusers.png>]
-<images/deploymentModel.png, id=362, 967.36406pt x 517.935pt>
+<images/deploymentModel.png, id=362, 972.63374pt x 584.1825pt>
 File: images/deploymentModel.png Graphic file (type png)
 
 <use images/deploymentModel.png>
 Package pdftex.def Info: images/deploymentModel.png used on input line 2736.
-(pdftex.def)             Requested size: 483.68085pt x 258.96686pt.
+(pdftex.def)             Requested size: 486.31567pt x 292.09053pt.
  [70 <./images/databaseRoom.png> <./images/deploymentModel.png>] [71] [72] [73]
  [74] [75] [76]
 Underfull \hbox (badness 10000) in paragraph at lines 3015--3016
@@ -2778,7 +2778,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb>
-Output written on route66.pdf (114 pages, 17859225 bytes).
+Output written on route66.pdf (114 pages, 17876516 bytes).
 PDF statistics:
  594 PDF objects out of 1000 (max. 8388607)
  294 compressed objects within 3 object streams
