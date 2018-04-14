@@ -101,11 +101,11 @@
 \contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{81}
 \contentsline {subsection}{\numberline {3.7.1}Usuarios}{81}
 \contentsline {subsection}{\numberline {3.7.2}Equipos}{87}
-\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{90}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{94}
-\contentsline {section}{\numberline {4.1}Conclusiones}{94}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{94}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{95}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{96}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{98}
-\contentsline {part}{I\hspace {1em}Anexos}{100}
+\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{89}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{93}
+\contentsline {section}{\numberline {4.1}Conclusiones}{93}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{93}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{94}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{95}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{97}
+\contentsline {part}{I\hspace {1em}Anexos}{99}
