@@ -9,6 +9,7 @@
 \usepackage{lipsum}
 \raggedbottom
 \usepackage{float}
+\usepackage{color}
 \usepackage{listings}
 \usepackage{url}
 \usepackage{rotating}
@@ -1809,7 +1810,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Número mínimo y máximo de usuarios en un grupo.}
-	\addrow{Descripción}{Un equipo podrá estar formado, como mínimo por un usuario y como máximo por diez.}
+	\addrow{Descripción}{Un equipo podrá estar formado, como mínimo por un usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{1cm}
@@ -2011,6 +2012,8 @@ Se identifica un único actor:
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Invitar usuario al equipo} 
   \addrow{Actor}{App user}
@@ -2021,23 +2024,24 @@ Se identifica un único actor:
   		\item El usuario elige “Invitar usuario al equipo“. %1
   		\item El sistema muestra al usuario el listado de equipos que administra. %2
   		\item El usuario elige un equipo. %3
-  		\item El sistema comprueba que el equipo tenga menos de 10 miembros. %4
-  		\item El sistema pregunta al usuario el correo electrónico o número de teléfono del usuario que desea agregar. %5
-  		\item El usuario introduce la información. %6
-  		\item El sistema comprueba el dato y añade al usuario al equipo. %7
+  		\item El sistema pregunta al usuario el nombre del usuario que desea añadir. %4
+  		\item El usuario introduce el nombre. %5
+  		\item El sistema comprueba el dato y añade al usuario al equipo. %6
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 1a 3a 6a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 4a El usuario ha elegido un grupo que tiene 10 usuarios o más. En este caso, el sistema muestra un mensaje y vuelve al paso 2.
-  		\item 5a El correo electrónico o teléfono del usuario no se corresponde con un usuario de la aplicación. En ese caso se notifica al usuario y se vuelve al paso 5, indicando en el formulario el correo electrónico o teléfono que hubiera introducido el usuario con anterioridad.
+  		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 2a El usuario no administra ningún equipo. En ese caso, se notifica al usuario y el caso de uso queda sin efecto.
+  		\item 6a El nombre de usuario no se corresponde con un usuario de la aplicación. En ese caso se notifica al usuario y se vuelve al paso 5, indicando en el formulario el nombre que hubiera introducido el usuario con anterioridad.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Nombrar administrador} 
+  \addheading{\textbf{CU\arabic{usecase}}}{Nombrar administrador de un equipo.} 
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
@@ -2054,12 +2058,15 @@ Se identifica un único actor:
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 2a El usuario no administra ningún equipo. En ese caso, se notifica al usuario y el caso de uso queda sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Eliminar miembro del equipo} 
+  \addheading{\textbf{CU\arabic{usecase}}}{Eliminar miembro de un equipo} 
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
@@ -2076,9 +2083,12 @@ Se identifica un único actor:
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 2a El usuario no administra ningún equipo. En ese caso, se notifica al usuario y el caso de uso queda sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Eliminar equipo} 
@@ -2096,10 +2106,12 @@ Se identifica un único actor:
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 2a El usuario no administra ningún equipo. En ese caso, se notifica al usuario y el caso de uso queda sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
@@ -2134,6 +2146,8 @@ Se identifica un único actor:
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión de consumo mínimo} 
   \addrow{Actor}{App user}
@@ -2142,16 +2156,18 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado.
-  		\item El sistema muestra al usuario el consumo que debe realizar para marcar la misión como completada.
-  		\item El sistema comprueba si existe algún registro de consumo asociado al usuario que tenga un importe, como mínimo, el que exige la misión para ser completada. Este registro deberá haberse registrado con fecha posterior a la hora de entrada, por primera vez a la actividad.
+  		\item El sistema muestra al usuario el consumo que debe realizar para marcar la misión como completada. Igualmente, también muestra el código QR asociado a esta misión de consumo mínimo.
+  		\item El sistema comprueba si existe algún registro de consumo asociado al usuario que tenga un importe, como mínimo, el que exige la misión para ser completada. Este registro deberá haberse registrado con fecha posterior a la hora de entrada por primera vez a la actividad.
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 3a No existe ningún registro de consumo que cumpla tales caracterísiticas, en ese caso, se informa al usuario.
+  		\item 3a No existe ningún registro de consumo que cumpla tales caracterísiticas, en ese caso, se informa al usuario y el caso de uso quedaría sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar minijuego.} 
@@ -2170,10 +2186,13 @@ Se identifica un único actor:
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
-  		\item 6a Los parámetros recibidos no se corresponden con los valores que se exigen para completar la misión. En ese caso, se muestra un mensaje al usuario, se envía un mensaje de reporte al servidor y se pregunta al usuario si desea volver a intentar la misión. En caso afirmativo se volvería al paso 2. En caso negativo, se saldría de los casos de uso Realizar misión y Realizar minijuego.
+  		\item 2a 4a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 6a Los parámetros recibidos no se corresponden con los valores que se exigen para completar la misión. En ese caso, se muestra un mensaje al usuario, se envía un mensaje de reporte al servidor y se pregunta al usuario si desea volver a intentar la misión. En caso afirmativo se volvería al paso 2. En caso negativo, el caso de uso quedaría sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar juego social.} 
@@ -2182,17 +2201,20 @@ Se identifica un único actor:
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
-  		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado.
-  		\item El sistema muestra al usuario el reto social que debe realizar para marcar la misión como completada.
-  		\item El sistema comprueba si existe algún registro de reto socal asociado al usuario. Este registro deberá haberse registrado con fecha posterior a la hora de entrada, por primera vez a la actividad.
+  		\item El sistema obtiene los detalles de la misión, a partir del identificador de misión que se ha proporcionado. %1
+  		\item El sistema muestra al usuario el reto social que debe realizar para marcar la misión como completada. %2
+  		\item El sistema comprueba si existe algún registro de esta misión social asociado al usuario. Este registro deberá haberse registrado con fecha posterior a la hora de entrada, por primera vez a la actividad. %3
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
+  		\item 2a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 3a No existe ningún registro de consumo que cumpla tales caracterísiticas, en ese caso, se informa al usuario.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
@@ -2202,18 +2224,20 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Consultar misiones“. %1
-  		\item El sistema muestra al usuario el listado de niveles, destacando aquellos niveles que ya haya completado y marcando de una forma especial aquel nivel en el que se encuentre el usuario (que tenga misiones sin completar). %2
+  		\item El sistema muestra al usuario el listado de niveles. %2
   		\item El usuario selecciona un nivel. %3
-  		\item El sistema muestra al usuario las distintas misiones que conforman el nivel, destacando aquellas que hayan sido resueltas con anterioridad. %4
+  		\item El sistema muestra al usuario las distintas misiones que conforman el nivel. %4
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 3a. El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 3b. El usuario ha seleccionado un nivel superior a aquel en el que se encuentra el usuario. En este caso, se muestra un mensaje al usuario y se vuelve al paso 2.
+  		\item 3b. El usuario ha seleccionado un nivel distinto a aquel en el que se encuentra actualmente. En este caso, se muestra un mensaje al usuario y se vuelve al paso 2.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar perfil} 
@@ -2231,10 +2255,12 @@ Se identifica un único actor:
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 4a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 5.
+  		\item 4a El parámetro introducido por el usuario no es válido (porque se ha introducido en un formato incorrecto). En ese caso, se notifica al usuario y se vuelve al paso 2.
   		\end{itemize}
   		}
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar perfil} 
@@ -2244,10 +2270,13 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Consultar perfil“.
-  		\item El sistema muestra al usuario su perfil, incluidos aquellos detalles como sus  “porcentajes de compromiso“ con la aplicación. (Ver página \pageref{rfcompromiso}).
+  		\item El sistema muestra al usuario su perfil, incluidos aquellos detalles como sus  “porcentajes de compromiso“ con la aplicación.
   		\end{enumerate}
   }
+  \addrow{Flujos alternativos}{Ninguno}
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar logros} 
@@ -2257,10 +2286,13 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Consultar mis logros“.
-  		\item El sistema muestra al usuario los logros realizados, ordenados por fecha.
+  		\item El sistema muestra al usuario los logros realizados, ordenados por puntuación obtenida.
   		\end{enumerate}
   }
+  \addrow{Flujos alternativos}{Ninguno}
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar insignias} 
@@ -2273,20 +2305,10 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario las insignias obtenidas, ordenadas por fecha.
   		\end{enumerate}
   }
+  \addrow{Flujos alternativos}{Ninguno}
 \end{usecase}\\\stepcounter{usecase}
 
-\begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Consultar código QR} 
-  \addrow{Actor}{App user}
-  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
-  \addrow{Flujo principal}{
-  		\begin{enumerate}
-  		\item El usuario elige “Consultar código QR“.
-  		\item El sistema muestra al usuario su código QR.
-  		\end{enumerate}
-  }
-\end{usecase}\\\stepcounter{usecase}
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar ranking} 
@@ -2296,10 +2318,13 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Consultar ranking“.
-  		\item El sistema muestra al usuario el ranking global de usuarios, ordenados por los puntos obtenidos.
+  		\item El sistema muestra al usuario el ranking global de usuarios, ordenados por la puntuación global obtenida.
   		\end{enumerate}
   }
+  \addrow{Flujos alternativos}{Ninguno}
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar equipo} 
@@ -2311,7 +2336,7 @@ Se identifica un único actor:
   		\item El usuario elige “Consultar equipo“. %1
   		\item El sistema muestra al usuario el listado de equipos en los que es miembro. %2
   		\item El usuario selecciona un equipo. %3
-  		\item El sistema muestra al usuario los detalles de ese equipo (miembros, nombre, visibilidad y avatar). %4
+  		\item El sistema muestra al usuario los detalles de ese equipo (miembros, nombre, avatar, logros y premios). %4
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
@@ -2322,6 +2347,8 @@ Se identifica un único actor:
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Crear equipo} 
   \addrow{Actor}{App user}
@@ -2330,19 +2357,19 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Crear equipo“. %1
-  		\item El sistema pregunta al usuario el nombre del equipo, así como el tipo de visibilidad del equipo. %2
-  		\item El usuario introduce los datos. %3
-  		\item El sistema comprueba los datos y crea el equipo. %4
-  		\item Se pasa al caso de uso “Invitar usuario al equipo“, indicando cuál es el equipo que acaba de ser recién creado.
+  		\item El sistema pregunta al usuario el nombre del equipo. %2
+  		\item El usuario introduce el dato solicitado. %3
+  		\item El sistema  crea el equipo. %4
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a 5a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 4a El usuario ha introducido un nombre de equipo ya existente. En este caso, el sistema muestra un mensaje y le vuelve a solicitar el dato.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Registrarse} 
@@ -2352,7 +2379,7 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Registrarse“. %1
-  		\item El sistema pregunta al usuario cuál es su correo electrónico, una contraseña, así como su nombre y apellidos. %2
+  		\item El sistema pregunta al usuario cuál es su correo electrónico y su contraseña. %2
   		\item El usuario introduce la información. %3
   		\item El sistema comprueba la información y crea el usuario. %4
   		\end{enumerate}
@@ -2360,22 +2387,29 @@ Se identifica un único actor:
   \addrow{Flujos alternativos}{
   		\begin{itemize}
   		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 4a El sistema identifica un usuario ya registrado con el correo electrónico proporcionado. En ese caso, se muestra al usuario un mensaje alertándole y se vuelve al paso 2, pero completando el formulario con la información que ya hubiera introducido el usuario.
+  		\item 4a El sistema identifica un usuario ya registrado con el correo electrónico proporcionado. En ese caso, se le notifica y el caso de uso queda sin efecto.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Aceptar invitación.} 
   \addrow{Actor}{App user}
-  \addrow{Precondiciones}{Ninguna.}
-  \addrow{Postcondiciones}{Ninguna.}
-  \addrow{Nota}{Este caso de uso depende del componente Firebase Invitations, que a su vez depende de Firebase Dynamic Links.}
+  \addrow{Precondiciones}{Existe una conexión estable a Internet.}
+  \addrow{Postcondiciones}{
+  		\begin{itemize}
+  		\item Se ha creado un usuario nuevo.
+  		\item Se ha generado un logro de tipo invitación.
+  		\end{itemize}
+  }
+  \addrow{Nota}{Este caso de uso depende del componente \textit{Firebase Invites}.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
-  		\item El sistema recibe una llamada de Firebase Invitations que le proporciona el identificador de la invitación.
-  		\item El sistema busca en la base de datos qué usuario ha enviado esa invitación.
-  		\item Se pasa al caso de uso “Registrarse“, junto con el dato del usuario que ha enviado la invitación.
+  		\item El sistema recibe una llamada de \textit{Firebase Invites} que le proporciona el identificador del usuario que ha enviado la invitación. %1
+  		\item Se pasa al caso de uso “Registrarse“, junto con el dato del usuario que ha enviado la invitación. %2
+  		\item El sistema envía una solicitud \textit{HTTP} contra un \textit{endpoint} que habilita la función \textit{lambda} que añade los puntos y notifica al usuario que ha generado la invitación. %3
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
@@ -2385,6 +2419,8 @@ Se identifica un único actor:
   }
 \end{usecase}\\\stepcounter{usecase}
 
+\vspace{0.5cm}
+
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Enviar invitación} 
   \addrow{Actor}{App user}
@@ -2392,10 +2428,11 @@ Se identifica un único actor:
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
-  		\item El usuario elige “Enviar invitación“.
-  		\item El sistema genera un identificador único de invitación.
-  		\item El sistema muestra al usuario el cuadro de diálogo del sistema para enviar la invitación.
-  		\item El usuario comparte la invitación.
+  		\item El usuario elige “Enviar invitación“. %1
+  		\item El sistema pregunta al usuario qué mensaje desea añadir a la invitación. %2
+  		\item El usuario introduce el mensaje. %3
+  		\item El sistema comprueba el mensaje y muestra al usuario el cuadro de diálogo del sistema para enviar la invitación. %4
+  		\item El usuario comparte la invitación por correo electrónico. %5
   		\end{enumerate}
   }
   \addrow{Flujos alternativos}{
@@ -2404,6 +2441,8 @@ Se identifica un único actor:
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Iniciar sesión} 
@@ -2423,9 +2462,12 @@ Se identifica un único actor:
   		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
   		\item 4a El usuario ha introducido un correo electrónico de un usuario no perteneciente al sistema. En este caso, se notifica al usuario y se vuelve al paso 2.
   		\item 4b El usuario ha introducido una contraseña distinta a la que tiene el usuario. En este caso, se notifica al usuario y se vuelve al paso 2.
+  		\item 4c El usuario ha introducido un correo electrónico que no se ajusta al formato. En ese caso se notifica al usuario y se vuelve al paso 2.
   		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Ver posiciones de otros jugadores} 
@@ -2435,16 +2477,13 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige un nivel.
-  		\item El sistema muestra al usuario las distintas posiciones de los miembros de los equipos a los que pertenece y que se encuentren en ese nivel.
+  		\item El sistema muestra al usuario las distintas posiciones de los miembros que se encuentren en ese nivel.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{
-  		\begin{itemize}
-  		\item 2a El usuario no pertenece a ningún equipo o estos solo están integrados por un solo miembro. En este caso,  se muestra un mensaje indicándoselo.
-  		\item 2b En el nivel no se encuentra ningún usuario de equipos a los que pertenece el usuario. En este caso, se muestra un mensaje indicándoselo.
-  		\end{itemize}
-  }
+  \addrow{Flujos alternativos}{Ninguno}
 \end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar premios} 
@@ -2454,8 +2493,33 @@ Se identifica un único actor:
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Consultar mis premios“.
-  		\item El sistema muestra al usuario los premios obtenidos que sigan estando vigentes.
+  		\item El sistema muestra al usuario los premios obtenidos que sigan estando vigentes, ordenados por fecha de caducidad.
   		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{Ninguno}
+\end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
+
+\begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Salir de un equipo} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Salir de un equipo“. %1
+  		\item El sistema muestra al usuario el conjunto de grupos a los que pertenece. %2
+  		\item El usuario escoge un grupo. %3
+  		\item El sistema comprueba la posibilidad de que el usuario abandone el equipo. %4
+  		\item El sistema elimina al usuario del equipo.
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 1a 3a El usuario cancela la operación. En este caso, el caso de uso se cancela y queda sin efecto.
+  		\item 4a El usuario es administrador del grupo escogido. En ese caso se notifica y se vuelve al paso 2.
+  		\end{itemize}
   }
 \end{usecase}\\\stepcounter{usecase}
 
@@ -3141,23 +3205,23 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra utilizando Google.} 
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
   \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
-  \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase. Se añade y se obtiene el resultado esperado.}
+  \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra/inicia sesión utilizando Google.} 
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario inicia sesión mediante correo electrónico.} 
-  \addrow{Resultado esperado}{El usuario inicia sesión. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
-  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario inicia sesión utilizando Google.} 
   \addrow{Resultado esperado}{El usuario inicia sesión. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
   \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
@@ -3173,9 +3237,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
+  \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
+  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio y se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (aparece actualizada en el Drawer y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a Glide a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio y se obtiene el resultado esperado.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3189,9 +3259,17 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario realiza un consumo en una misión de tal tipo.}} 
+  \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
+  \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante. Se corrige.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza un consumo en una misión de tal tipo.} 
   \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
-  \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3205,9 +3283,17 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario visualiza los logros recibidos.}}
+  \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
+  \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas modificando el \textit{adapter} asociado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros recibidos.} 
   \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
-  \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3215,7 +3301,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza las insignias recibidas.} 
   \addrow{Resultado esperado}{Se muestran las insignias recibidas.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3223,14 +3309,14 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los premios que tiene asignados.} 
   \addrow{Resultado esperado}{Se muestran los premios que tiene asignados.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario envía una invitación.} 
-  \addrow{Resultado esperado}{Se envía la invitación}
+  \addrow{Resultado esperado}{Se envía la invitación.}
   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3278,8 +3364,8 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, añade un usuario al equipo.} 
-  \addrow{Resultado esperado}{}
-  \addrow{Resultado obtenido}{}
+  \addrow{Resultado esperado}{El usuario es añadido al equipo.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \section{Manual de instalación}
