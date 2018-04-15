@@ -60,9 +60,9 @@
 \contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{29}
 \contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{29}
 \contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{30}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{30}
-\contentsline {subsection}{\numberline {3.2.1}Requisitos}{30}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{30}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{31}
+\contentsline {subsection}{\numberline {3.2.1}Requisitos}{31}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{31}
 \contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{35}
 \contentsline {subsection}{\numberline {3.2.2}Casos de uso}{38}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{39}
@@ -74,7 +74,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Arquitectura}{64}
 \contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{68}
 \contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{68}
-\contentsline {subsubsection}{\numberline {3.3.2.2}DAO (Data Access Object)}{69}
+\contentsline {subsubsection}{\numberline {3.3.2.2}D.A.O. (\textit {Data Access Object})}{69}
 \contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{69}
 \contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{71}
 \contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{72}
@@ -87,13 +87,13 @@
 \contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{76}
 \contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{77}
 \contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{77}
-\contentsline {subsubsection}{\numberline {3.4.6.2}Authentication}{77}
+\contentsline {subsubsection}{\numberline {3.4.6.2}\textit {Authentication}}{77}
 \contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{78}
-\contentsline {subsubsection}{\numberline {3.4.6.4}Cloud Messaging}{78}
-\contentsline {subsubsection}{\numberline {3.4.6.5}Storage}{78}
-\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local SQLite}{79}
+\contentsline {subsubsection}{\numberline {3.4.6.4}\textit {Cloud Messaging}}{78}
+\contentsline {subsubsection}{\numberline {3.4.6.5}\textit {Storage}}{78}
+\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local \textit {SQLite}}{79}
 \contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{79}
-\contentsline {subsubsection}{\numberline {3.4.6.8}Shared preferences}{79}
+\contentsline {subsubsection}{\numberline {3.4.6.8}\textit {Shared preferences}}{79}
 \contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{80}
 \contentsline {subsection}{\numberline {3.4.7}Funciones}{80}
 \contentsline {section}{\numberline {3.5}Pruebas}{80}
