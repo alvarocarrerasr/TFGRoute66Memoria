@@ -3209,14 +3209,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
   \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
   \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra/inicia sesión utilizando Google.} 
-  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3240,18 +3233,12 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio y se obtiene el resultado esperado.}
+  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
-  \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza una misión de tipo social.} 
@@ -3265,14 +3252,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario realiza un consumo en una misión de tal tipo.}} 
   \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
   \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante. Se corrige.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza un consumo en una misión de tal tipo.} 
-  \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3289,14 +3269,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario visualiza los logros recibidos.}}
   \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
   \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas modificando el \textit{adapter} asociado.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros recibidos.} 
-  \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3366,49 +3339,35 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}} 
-  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
-  \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
+ \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}}
+ \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
+ \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
+  \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, añade un usuario al equipo.} 
-  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+ \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, elimina un equipo.}
+ \addrow{Resultado esperado}{El equipo es eliminado.}
+ \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, elimina un equipo.} 
-  \addrow{Resultado esperado}{El equipo es eliminado.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+ \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol usuario normal, sale de un equipo.}
+ \addrow{Resultado esperado}{El usuario sale del equipo.}
+ \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol usuario normal, sale de un equipo.} 
-  \addrow{Resultado esperado}{El usuario sale del equipo.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}} 
-  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
-  \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad \textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
-\end{test}\\\stepcounter{test}
-
-\vspace{0.5cm}
-
-\begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{Cierre de sesión}}
-  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
-  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+ \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}}
+ \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
+ \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad 			\textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
+ \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 

@@ -50,25 +50,25 @@
 \contentsline {figure}{\numberline {3.37}{\ignorespaces Diagrama de clases del paquete \textit {MainActivity}\relax }}{67}
 \contentsline {figure}{\numberline {3.38}{\ignorespaces Diagrama de clases de los paquetes \textit {MissionsActivity} y \textit {NormalActivity}\relax }}{67}
 \contentsline {figure}{\numberline {3.39}{\ignorespaces Diagrama de clases del paquete \textit {TeamActivity}\relax }}{68}
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos\relax }}{69}
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios\relax }}{70}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con equipos\relax }}{69}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con usuarios\relax }}{70}
 \contentsline {figure}{\numberline {3.42}{\ignorespaces Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit {Room} \cite {roompersistence}\relax }}{71}
 \contentsline {figure}{\numberline {3.43}{\ignorespaces Diagrama de despliegue de la aplicaci\IeC {\'o}n Android\relax }}{71}
 \contentsline {figure}{\numberline {3.44}{\ignorespaces Diagrama en el que se muestra la operaci\IeC {\'o}n \textit {GET}\relax }}{80}
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Captura de pantalla de la vista de inicio de sesi\IeC {\'o}n y registro.\relax }}{84}
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Capturas de pantalla de la vista principal de la aplicaci\IeC {\'o}n.\relax }}{85}
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Captura de pantalla de \IeC {\textquotedblleft }Mi perfil\IeC {\textquotedblleft }.\relax }}{86}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Captura de pantalla de la vista de inicio de sesi\IeC {\'o}n y registro.\relax }}{85}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Capturas de pantalla de la vista principal de la aplicaci\IeC {\'o}n.\relax }}{86}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Captura de pantalla de \IeC {\textquotedblleft }Mi perfil\IeC {\textquotedblleft }.\relax }}{87}
 \contentsline {figure}{\numberline {3.48}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis logros\IeC {\textquotedblleft }\relax }}{87}
-\contentsline {figure}{\numberline {3.49}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis insignias\IeC {\textquotedblleft }\relax }}{87}
-\contentsline {figure}{\numberline {3.50}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis premios\IeC {\textquotedblleft }\relax }}{88}
-\contentsline {figure}{\numberline {3.51}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Invitar\IeC {\textquotedblleft }, \IeC {\textquotedblleft }Ranking global\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Equipos\IeC {\textquotedblleft }\relax }}{89}
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Capturas de pantalla de la vista que muestra los detalles de un equipo.\relax }}{90}
-\contentsline {figure}{\numberline {3.53}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Gestionar usuario\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Configuraci\IeC {\'o}n del equipo\IeC {\textquotedblleft }\relax }}{91}
-\contentsline {figure}{\numberline {3.54}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }C\IeC {\'o}digo QR del equipo\IeC {\textquotedblleft } y \IeC {\textquotedblleft }A\IeC {\~n}adir miembro al equipo\IeC {\textquotedblleft }.\relax }}{91}
-\contentsline {figure}{\numberline {3.55}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Salir del equipo\IeC {\textquotedblleft }\relax }}{92}
-\contentsline {figure}{\numberline {3.56}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Miembros de un nivel\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Misiones de un nivel\IeC {\textquotedblleft }.\relax }}{93}
-\contentsline {figure}{\numberline {3.57}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo social.\relax }}{94}
-\contentsline {figure}{\numberline {3.58}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo competitiva.\relax }}{95}
-\contentsline {figure}{\numberline {3.59}{\ignorespaces Captura de pantalla de una misi\IeC {\'o}n de tipo consumo.\relax }}{96}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis insignias\IeC {\textquotedblleft }\relax }}{88}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Mis premios\IeC {\textquotedblleft }\relax }}{89}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Invitar\IeC {\textquotedblleft }, \IeC {\textquotedblleft }Ranking global\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Equipos\IeC {\textquotedblleft }\relax }}{90}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Capturas de pantalla de la vista que muestra los detalles de un equipo.\relax }}{91}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Gestionar usuario\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Configuraci\IeC {\'o}n del equipo\IeC {\textquotedblleft }\relax }}{92}
+\contentsline {figure}{\numberline {3.54}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }C\IeC {\'o}digo QR del equipo\IeC {\textquotedblleft } y \IeC {\textquotedblleft }A\IeC {\~n}adir miembro al equipo\IeC {\textquotedblleft }.\relax }}{92}
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Salir del equipo\IeC {\textquotedblleft }\relax }}{93}
+\contentsline {figure}{\numberline {3.56}{\ignorespaces Capturas de pantalla de \IeC {\textquotedblleft }Miembros de un nivel\IeC {\textquotedblleft } y \IeC {\textquotedblleft }Misiones de un nivel\IeC {\textquotedblleft }.\relax }}{94}
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo social.\relax }}{95}
+\contentsline {figure}{\numberline {3.58}{\ignorespaces Capturas de pantalla de una misi\IeC {\'o}n de tipo competitiva.\relax }}{96}
+\contentsline {figure}{\numberline {3.59}{\ignorespaces Captura de pantalla de una misi\IeC {\'o}n de tipo consumo.\relax }}{97}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
