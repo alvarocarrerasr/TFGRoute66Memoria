@@ -784,10 +784,11 @@ Solo se identifica un rol en la estructura organizativa externa: el del usuario 
 En este proyecto se utilizará la metodología UPedu \cite{upedu}, compuesta por fases y estas por iteraciones.
 
 \begin{figure}[h]
-\label{upeduChart}
 \begin{center}
 \includegraphics[scale=0.75]{images/upeduFases}
-\caption{Fases de la metodología UPedu} \cite{upedu}
+\caption{Fases de la metodología UPedu} 
+\label{upeduChart}
+\cite{upedu}
 \end{center}
 \end{figure}
 
@@ -1188,7 +1189,7 @@ En el caso de este proyecto se han utilizado dos repositorios privados en \texti
 
 Para una correcta estimación de los costes, se debe procurar partir de los datos proporcionados por proyectos reales, que nos permitan realizarla partiendo de una experiencia. Desafortunadamente, como estos no se hacen públicos (pues son parte de la estrategia de la empresa), no es posible contar con ellos. Por este motivo, los cálculos se han realizado basándose en lo estudiado en la asignatura Planificación y Gestión de Proyectos \cite{pgptema2} y en información encontrada por Internet.
 
-El resultado de la estimación total de costes es de \textbf{12.459,96\euro}, que se detallarán a continuación.
+El resultado de la estimación total de costes es de \textbf{12.474,96\euro}, que se detallarán a continuación.
 
 \subsubsection{Costes \textit{hardware} y \textit{software}}
 \textbf{Costes \textit{hardware}}
@@ -1236,11 +1237,11 @@ En cuanto a los viajes, aquellos que serían precisos realizar para poder reunir
 \begin{itemize}
 \item \textbf{Kilómetros recorridos por viaje:} 33 (16,5 por trayecto).
 \item \textbf{Coste por viaje:} 3 \euro \hspace{0.1cm} (1,50 \euro \hspace{0.1cm} por trayecto).
-\item \textbf{Viajes realizados:} 10.
-\item \textbf{Coste total viajes:} 30 \euro.
+\item \textbf{Viajes realizados:} 15.
+\item \textbf{Coste total viajes:} 45 \euro.
 \end{itemize}
 
-Por tanto, el coste total de este apartado es: \textbf{30\euro}.
+Por tanto, el coste total de este apartado es: \textbf{45\euro}.
 
 \subsubsection{Coste del esfuerzo (recursos humanos y seguros sociales)}
 
@@ -1322,7 +1323,7 @@ Iteración & Etapa        & Fecha de inicio real & Fecha inicio estimada & Fecha
 2         & Elaboración  & 16/02/2018           & 11/02/2018            & 23/02/2018        & 20/02/2018         & 3 días                  \\ \hline
 3         & Construcción & 24/02/2018           & 20/02/2018            & 03/04/2018        & 01/04/2018         & 2 días                  \\ \hline
 4         & Construcción & 04/04/2018           & 02/04/2018            & 12/04/2018        & 10/04/2018         & 2 días                  \\ \hline
-5         & Transición   &                      & 11/04/2018            &                   & 25/04/2018         &                         \\ \hline
+5         & Transición   & 13/04/2018           & 11/04/2018            & 24/04/2018        & 25/04/2018         & 1 día                   \\ \hline
 \end{tabular}%
 }
 \caption{Desviaciones sobre el calendario planificado}
@@ -2761,30 +2762,18 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseNRteams}
-\caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con equipos}
+\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con equipos}
+\label{nrteams}
 \end{figure}
-
-De la anterior figura se tiene que aclarar la siguiente información:
-
-\begin{enumerate}
-
-\item Entre FirebaseStorageFile y Team no hay una relación directa en la base de datos, si no que se limita a buscar un archivo en el almacenamiento que se llame exactamente igual que la clave del documento que representa al equipo. En caso de existir, diremos que existe esa conexión.
-
-\end{enumerate}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseNRusers}
-\caption{Esquema No Relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
+\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
+\label{nrusers}
 \end{figure}
 
-Del esquema anterior se deben indicar los siguientes datos:
-\begin{enumerate}
-
-\item Al igual que en el caso de los equipos, entre FirebaseStorageFile y User no hay una conexión como tal, sino que esta existe únicamente cuando el fichero se encuentra en este espacio de almacenamiento de archivos.
-\item Tampoco existe una conexión en Firestore entre User y FirebaseUser, si no que se va a hacer por medio del identificador único del usuario en Firebase Authentication.
-
-\end{enumerate}
+De las figuras \ref{nrusers} y \ref{nrteams} es preciso aclarar que los elementos etiquetados con los estereotipos \textit{FirebaseAuthentication} y \textit{FirebaseStorage} no pertenecen a la base de datos \textit{Firebase Firestore}, sino que se ubican en sus respectivos servicios. Se han querido señalar en este esquema por su gran relación con el resto de colecciones y documentos de la base de datos.
 
 
 Con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia  \textit{Room} \cite{roompersistence}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones y las sincronizaciones que se hayan hecho para descargarse las nuevas misiones, logros y premios.
@@ -2950,13 +2939,13 @@ Los juegos escogidos son:
 Una aplicación Android está basada en cuatro tipos de componentes \cite{androidfund} \cite{androidpacktpub}. Todos deben ser declarados explícitamente en el archivo AndroidManifest.xml:
 
 \begin{enumerate}
-\item Actividades: son los elementos más importantes y destacables en una aplicación Android y cumplen el papel de interfaz entre la aplicación y la vista.\\
+\item \textbf{\underline{Actividades}}: son los elementos más importantes y destacables en una aplicación Android y cumplen el papel de interfaz entre la aplicación y la vista.\\
 Route66 cuenta con las siguientes actividades:
 
 	\begin{itemize}
-	\item \textit{LoginActivity}: sirve para identificar y registrar a los usuarios en la aplicación (incluyendo aquellos que tienen una invitación). Es la actividad que siempre se lanzará cuando la aplicación sea abierta. Si el usuario ha iniciado sesión le redirigirá  a \textit{MainActivity}.
+	\item \textbf{\textit{LoginActivity}}: sirve para identificar y registrar a los usuarios en la aplicación (incluyendo aquellos que tienen una invitación). Es la actividad que siempre se lanzará cuando la aplicación sea abierta. Si el usuario ha iniciado sesión le redirigirá  a \textit{MainActivity}.
 	
-	\item \textit{MainActivity}: es la única actividad que contará con un \textit{DrawerLayout} (el menú principal de la aplicación). De la misma dependen un conjunto de fragmentos (vistas que se acoplan y se desacoplan bajo demanda):
+	\item \textbf{\textit{MainActivity}}: es la única actividad que contará con un \textit{DrawerLayout} (el menú principal de la aplicación). De la misma dependen un conjunto de fragmentos (vistas que se acoplan y se desacoplan bajo demanda):
 	
 		\begin{enumerate}
 			\item \textit{Archievements}: es el fragmento encargado de mostrar al usuario el conjunto de logros que haya obtenido.
@@ -2976,46 +2965,52 @@ Route66 cuenta con las siguientes actividades:
 			\item \textit{Team}: es el fragmento encargado de listar el conjunto de equipos a los que pertenece el usuario, así como el de permitir crear uno nuevo.
 		\end{enumerate}
 		
-	\item \textit{MissionsActivity}: es la actividad que servirá como interfaz para realizar misiones de tipo consumo, así como de tipo social. 
+	\item \textbf{\textit{MissionsActivity}}: es la actividad que servirá como interfaz para realizar misiones de tipo consumo, social y competitivo. 
 	
 		\begin{enumerate}
-		\item \textit{ExpenseMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo consumo y, si fuera el caso, marcarla como completada.
+		\item \textit{ExpenseMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo consumo, incluyendo el código \textit{QR}.
 		
-		\item \textit{SocialMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo social y, si fuera el caso, marcarla como completada.
+		\item \textit{SocialMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo social.
+		\item \textit{GameMission}: : es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo competitivo.
 		\end{enumerate}
 		
-	\item \textit{GameActivity}: es la actividad que servirá como interfaz para realizar misiones de tipo juego. Por las características de este tipo de misiones (la vista es distinta, así como la posible rotación de la pantalla), se ha decidido separarlas de la actividad \textit{MissionsActivity}.
+	\item \textbf{\textit{GameActivity}}: es la actividad que servirá como interfaz para realizar misiones de tipo juego. Por las características de este tipo de misiones (la vista es distinta, así como la posible rotación de la pantalla), se ha decidido separarlas de la actividad \textit{MissionsActivity}.
 	\begin{enumerate}
 		\item \textit{GameMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo juego y, si fuera el caso, marcarla como completada.
 		\end{enumerate}
 		
-	\item \textit{NormalActivity}: el objetivo de esta actividad es el de servir como auxiliar a la actividad principal (MainActivity). Es decir, será aquella actividad que será llamada por MainActivity.
+	\item \textbf{\textit{NormalActivity}}: el objetivo de esta actividad es el de servir como auxiliar a la actividad principal (MainActivity). Es decir, será aquella actividad que será llamada por MainActivity.
 	
 	\begin{enumerate}
 		\item \textit{CreateGroup}: es el fragmento encargado de mostrar el formulario para crear un nuevo grupo.
-		\item \textit{HelpFragment}: es el fragmento encargado de mostrar la ayuda en la aplicación.
-		\item \textit{LevelDetail}: es el fragmento encargado de mostrar los detalles de un nivel. Su vista está basada en un \textit{TabLayout}, por lo que los fragmentos que se mostrarán en el \textit{ViewPager} son:
+		\item \textit{LevelDetail}: es el fragmento encargado de mostrar los detalles de un nivel. Su vista está basada en un \textit{TabLayout} mostrando las siguientes vistas:
 		\begin{enumerate}
-		\item \textit{MissionsListFragment}: es el fragmento encargado de listar las distintas misiones de un nivel, indicando si han sido previamente completadas o no.
-		\item \textit{PeersFragment}: es el fragmento encargado de mostrar el conjunto de usuarios que se encuentran en un determinado nivel. Estos serán miembros de los mismos grupos a los que pertenezca el usuario.
+		\item \textit{MissionsListFragment}: es el fragmento encargado de listar las distintas misiones de un nivel.
+		\item \textit{PeersFragment}: es el fragmento encargado de mostrar el conjunto de usuarios que se encuentran en el nivel.
 		\end{enumerate}
-		\item \textit{SettingsFragment}: es el fragmento encargado de mostrar un panel de configuración básico para ajustar parámetros como el tono de notificación que se deberá utilizar para notificar al usuario.
+		\item \textit{SettingsFragment}: es el fragmento encargado de mostrar un panel de configuración básica para ajustar el tono de notificación que se deberá utilizar para notificar al usuario.
 	\end{enumerate}
-	\item \textit{TeamActivity}: es la actividad encargada de mostrar las distintas opciones que cuenta un equipo.
+	\item \textbf{\textit{TeamActivity}}: es la actividad encargada de mostrar las distintas opciones que cuenta un equipo.
+		\begin{enumerate}
+		\item \textit{AddANewMember}: fragmento utilizado para buscar a los nuevos miembros que serán añadidos al grupo.
+		\item \textit{QRCodeTeam}: vista que muestra el código \textit{QR} asociado a un equipo.
+		\item \textit{TeamDetails}: muestra los detalles del grupo, entre los que se encuentran el nombre, los premios, miembros y logros. 
+		\item \textit{TeamSettings}: panel de administración de los grupos. Permite modificar la imagen de perfil, el nombre e incluso eliminar el equipo.
+		\end{enumerate}
 	\end{itemize}
 
-\item Servicios: son componentes que se ejecutan en segundo plano (\textit{background}), tanto de forma automática (por ejemplo, al iniciar el dispositivo) como bajo demanda (mediante una llamada). Se utilizan fundamentalmente para procesar tareas pesadas o que puedan tomar mucho tiempo. A diferencia de las actividades no cuentan con interfaz de usuario y están pensados para serle totalmente transparentes.\\
+\item \textbf{\underline{Servicios}}: son componentes que se ejecutan en segundo plano (\textit{background}), tanto de forma automática (por ejemplo, al iniciar el dispositivo) como bajo demanda (mediante una llamada). Se utilizan fundamentalmente para procesar tareas pesadas o que puedan tomar mucho tiempo. A diferencia de las actividades no cuentan con interfaz de usuario y están pensados para serle totalmente transparentes.\\
 Route66App cuenta con dos servicios:
 	\begin{enumerate}
-	\item \textit{UpdaterService}: es utilizado para actualizar la versión en caché de la aplicación de las misiones, niveles, insignias y premios y almacenar estos parámetros en la base de datos \textit{SQLite}. Por otro lado, los ficheros asociados (en su gran mayoría imágenes), los guarda en una carpeta específica de la aplicación.
+	\item \textbf{\textit{UpdaterService}}: es utilizado para actualizar la versión en caché de la aplicación de las misiones, niveles, insignias y premios y almacenar estos parámetros en la base de datos \textit{SQLite}. Por otro lado, los ficheros asociados (en su gran mayoría imágenes), los guarda en una carpeta específica de la aplicación.
 	
-	\item \textit{Route66MessagingService}: es el servicio encargado de recibir los mensajes de notificación que llegan del servicio \textit{Firebase Cloud Messaging} y de realizar la notificación adecuada.
+	\item \textbf{\textit{Route66MessagingService}}: es el servicio encargado de recibir los mensajes de notificación que llegan del servicio \textit{Firebase Cloud Messaging} y de realizar la notificación adecuada.
 	\end{enumerate}
 
-\item Proveedores de contenidos (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación, además de proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
+\item \textbf{\underline{Proveedores de contenidos}} (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación, además de proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
 Route66App no cuenta con ningún proveedor de contenidos.
 
-\item Receptores de mensajes (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas. \\
+\item \textbf{\underline{Receptores de mensajes}} (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas. \\
 Route66App no cuenta con receptores de mensajes.
 \end{enumerate}
 
@@ -3248,6 +3243,8 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio y se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
+\vspace{0.5cm}
+
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
@@ -3369,10 +3366,51 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}} 
+  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
+  \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, añade un usuario al equipo.} 
-  \addrow{Resultado esperado}{El usuario es añadido al equipo.}
+  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, elimina un equipo.} 
+  \addrow{Resultado esperado}{El equipo es eliminado.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol usuario normal, sale de un equipo.} 
+  \addrow{Resultado esperado}{El usuario sale del equipo.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}} 
+  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
+  \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad \textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{Cierre de sesión}}
+  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
 
 \section{Manual de instalación}
 
