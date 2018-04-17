@@ -13,6 +13,7 @@
 \usepackage{listings}
 \usepackage{url}
 \usepackage{rotating}
+\usepackage{verbatim}
 \usepackage{eurosym}
 \usepackage[table,xcdraw]{xcolor}
 \setcounter{secnumdepth}{3} %Profundidad en el índice de contenidos.
@@ -143,6 +144,7 @@ Route66App es una aplicación nativa para dispositivos Android, orientada a apli
 
 
 \section*{Abstract}
+
 
 It is more and more common to find the gamification applied to the different business procedures as a way of increasing the productivity over a certain business aspect. One of the most common applications is the earning of customers loyalty where, thanks to different games and activities, customers are encouraged to increase the expense in the products of the brand and that is exactly the main idea of this Bachelor's Thesis.
 
@@ -570,7 +572,7 @@ Para la elaboración de esta memoria he utilizado las siguientes herramientas:
 \end{itemize}
 
 \section{Motivación de las tecnologías utilizadas}
-En esta sección se indican las diferentes tecnologías que no han sido señaladas por la tutora como condiciones esenciales para elaborar este trabajo pero que, por los motivos que se indican, el alumno ha decidido utilizar.
+En esta sección se indican las diferentes tecnologías señaladas por la tutora para elaborar este trabajo: Firebase y Kotlin.
 
 \subsection{Kotlin}
 
@@ -718,7 +720,7 @@ Los objetivos serán:
 \end{itemize}
 
 \subsection{Metodología de Desarrollo del proyecto}
-El proyecto aplicará el Proceso Unificado (\textit{Unified Process}), en concreto el proceso UPedu \cite{upedu}, cuyas caracterísiticas básicas \cite{pgpup} son: 
+El proyecto aplicará el Proceso Unificado (\textit{Unified Process}), en concreto el proceso UPedu \cite{upedu}, cuyas características básicas \cite{pgpup} son: 
 \begin{itemize}
 \item Dirigido por los casos de uso.
 \item Centrado en la arquitectura.
@@ -736,7 +738,7 @@ Se imponen las siguientes restricciones, extraídas tras una serie de entrevista
 
 \item \textbf{Requisitos de la plataforma:} La aplicación será instalable en terminales \textit{Android} cuya versión de API sea igual o superior a la 19 (Android 4.4, KitKat). Según el sitio Web oficial de desarrolladores de Android \footnote{\url{https://developer.android.com/}}, esto supone cubrir la ingente mayoría de los dispositivos (un 92.5 \%, a fecha 25 de Noviembre de 2017)\cite{androidversiondist}.
 
-\item \textbf{Requisitos de software}: Se impone que la aplicación se deba desarrollar en el lenguaje de programación \textit{Kotlin}. Así mismo, la tutora recomienda el uso de \textit{Firebase} como plataforma para alojar la base de datos y gestionar las sesiones.
+\item \textbf{Requisitos de software}: Se impone que la aplicación se deba desarrollar en el lenguaje de programación \textit{Kotlin}. Así mismo, se ha recomendado el uso de \textit{Firebase} como plataforma para alojar la base de datos y gestionar las sesiones.
 
 \item \textbf{Datos en el dispositivo}: la aplicación deberá contar con una caché de los datos en el dispositivo del cliente con el fin de reducir el número de peticiones que se hagan contra Firebase, así como para acelerar el funcionamiento de la aplicación en lugares con una baja conectividad.
 \end{enumerate}
@@ -835,7 +837,7 @@ La duración estimada total es de 316 horas, a las que habría que añadir las n
 
 \paragraph{Fase de inicio}\mbox{}\\
 
-Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017. Consta de una única iteración. Principalmente se trabajará en el T.F.G. durante los viernes y fines de semana.
+Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017. Consta de una única iteración. 
 
 \begin{figure}[h]
 \begin{center}
@@ -2526,16 +2528,17 @@ Se identifica un único actor:
 \end{usecase}\\\stepcounter{usecase}
 
 \subsection{Modelo de dominio}
-
+\begin{comment}
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.4]{images/clases.png}
 \caption{Modelo de dominio}
 \end{center}
 \end{figure}
+\end{comment}
 
 \subsection{Diagramas de secuencia}
-
+\begin{comment}
 %0
 \begin{figure}[H]
 \includegraphics[scale=0.5]{images/sequence/GetAGroupManagedByUser.png}
@@ -2675,12 +2678,19 @@ Se identifica un único actor:
 \caption{Diagrama de secuencia del caso de uso “Consultar premios“}
 \end{figure}
 
+\end{comment}
 \subsection{Usabilidad}
 \label{usabilitymatters}
 
-Para el diseño de la interfaz gráfica de Route66App (iconos, \textit{widgets} utilizados y disposiciones de elementos) se ha tenido siempre encuenta el estándar de diseño de aplicaciones para la plataforma \textit{Android}, 	\textit{Material Design} \cite{materialil} \cite{materialdocs}. El motivo de todo esto ha sido que los usuarios están más acostumbrados a interactuar con interfaces que aplican este estándar, por lo que la curva de aprendizaje será siempre mucho menor. \\
+Para el diseño de la interfaz gráfica de Route66App (iconos, \textit{widgets} utilizados y disposiciones de elementos) se ha tenido siempre encuenta el estándar de diseño de aplicaciones para la plataforma \textit{Android}, 	\textit{Material Design} \cite{materialil} \cite{materialdocs}. El motivo de todo esto ha sido que los usuarios están más acostumbrados a interactuar con interfaces que aplican este estándar, por lo que la curva de aprendizaje será siempre mucho menor. Se han aplicado los siguientes \textbf{atributos de usabilidad}:
 
-Por otro lado, también se ha basado el diseño en determinados patrones visuales:
+\begin{itemize}
+\item Facilidad de recuerdo: ayudar al usuario a recordar cómo funciona el sistema informático.
+\item Facilidad de aprendizaje: el usuario puede deducir cómo se usa el sistema explorando la interfaz y probando las diferentes acciones.
+\item Gestión de errores: evitar los posibles errores al introducir datos en la interfaz, o bien, se informa de ello.
+\end{itemize}
+
+Por otro lado, también se ha basado el diseño en determinados \textbf{patrones visuales}:
 \begin{enumerate}
 	\item \textbf{Navigation Drawer}: es un patrón muy típico en Android. Consiste en un menú desplegable que se encuentra en la parte izquierda de la aplicación.
 	\item \textbf{Notificaciones}: avisos sonoros y visuales que se muestran de forma asíncrona en la bandeja de notificaciones del sistema.
@@ -3209,6 +3219,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
   \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
   \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
+   %\addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
+ % \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
    \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3226,6 +3245,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{El usuario modifica su configuración de perfil.} 
   \addrow{Resultado esperado}{Se actualiza la configuración de su perfil y aparece reflejado como tal en el Drawer de la aplicación.}
   \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
+  \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
+  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3258,9 +3286,27 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario realiza un consumo en una misión de tal tipo.}} 
+  \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
+  \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante. Se corrige.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza una misión de tipo competitiva.} 
   \addrow{Resultado esperado}{Aparece una descripción del juego correspondiente, así como la puntuación que debe alcanzar.}
   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario visualiza los logros recibidos.}}
+  \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
+  \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas modificando el \textit{adapter} asociado.}
+   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3348,6 +3394,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
+ \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}}
+ \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
+ \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
+  \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, elimina un equipo.}
  \addrow{Resultado esperado}{El equipo es eliminado.}
  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
@@ -3359,6 +3414,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
  \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol usuario normal, sale de un equipo.}
  \addrow{Resultado esperado}{El usuario sale del equipo.}
  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
+\end{test}\\\stepcounter{test}
+
+\vspace{0.5cm}
+
+\begin{test}
+ \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}}
+ \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
+ \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad 			\textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
+ \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3391,7 +3455,7 @@ Una vez instalada la aplicación nos encontramos con la siguiente vista que perm
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.3]{images/userguide/0.png}
+\includegraphics[scale=0.2]{images/userguide/0.png}
 \caption{Captura de pantalla de la vista de inicio de sesión y registro.}
 \end{center}
 \end{figure}
@@ -3408,15 +3472,15 @@ Una vez se haya iniciado sesión (registrarse implica iniciar sesión automátic
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/1.png}
+		\includegraphics[scale=0.2]{images/userguide/1.png}
 		\caption{Vista del selector de niveles.}
 	\end{subfigure}\hspace{3mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/2.png}
+		\includegraphics[scale=0.2]{images/userguide/2.png}
 		\caption{Menú principal sin puntuaciones asociadas}
 	\end{subfigure}\hspace{3mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/3.png}
+		\includegraphics[scale=0.2]{images/userguide/3.png}
 		\caption{Menú principal con puntuaciones asociadas}
 	\end{subfigure}
 \caption{Capturas de pantalla de la vista principal de la aplicación.}
@@ -3439,7 +3503,7 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/4.png}
+\includegraphics[scale=0.2]{images/userguide/4.png}
 \caption{Captura de pantalla de “Mi perfil“.}
 \end{center}
 \end{figure}
@@ -3447,11 +3511,11 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/5.png}
+		\includegraphics[scale=0.2]{images/userguide/5.png}
 		\caption{“Mis logros“ sin logros obtenidos}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth} 
-		\includegraphics[scale=0.25]{images/userguide/6.png}
+		\includegraphics[scale=0.2]{images/userguide/6.png}
 		\caption{“Mis logros“ con logros obtenidos}
 	\end{subfigure}
 \caption{Capturas de pantalla de “Mis logros“}
@@ -3461,11 +3525,11 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/7.png}
+		\includegraphics[scale=0.2]{images/userguide/7.png}
 		\caption{“Mis insignias“ sin insignias conseguidas}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/8.png}
+		\includegraphics[scale=0.2]{images/userguide/8.png}
 		\caption{“Mis insignias“ con insignias conseguidas}
 	\end{subfigure}
 \caption{Capturas de pantalla de “Mis insignias“}
@@ -3475,11 +3539,11 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/9.png}
+		\includegraphics[scale=0.2]{images/userguide/9.png}
 		\caption{“Mis premios“ sin premios conseguidos}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/10.png}
+		\includegraphics[scale=0.2]{images/userguide/10.png}
 		\caption{“Mis premios“ con premios}
 	\end{subfigure}
 \caption{Capturas de pantalla de “Mis premios“}
@@ -3491,15 +3555,15 @@ La vista invitar permite incluir un mensaje personalizado que será adjuntado al
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/11.png}
+		\includegraphics[scale=0.2]{images/userguide/11.png}
 		\caption{Vista “Invitar“}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/12.png}
+		\includegraphics[scale=0.2]{images/userguide/12.png}
 		\caption{Vista “Ranking global“}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/13.png}
+		\includegraphics[scale=0.2]{images/userguide/13.png}
 		\caption{Vista “Equipos“}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de “Invitar“, “Ranking global“ y “Equipos“}
@@ -3512,15 +3576,15 @@ En cuanto a los equipos, la vista principal de uno concreto es la siguiente:
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/14.png}
+		\includegraphics[scale=0.2]{images/userguide/14.png}
 		\caption{Vista principal de un equipo (rol administrador)}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/15.png}
+		\includegraphics[scale=0.2]{images/userguide/15.png}
 		\caption{Vista principal de un equipo con  el menú de opciones deplegado (rol administrador)}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/16.png}
+		\includegraphics[scale=0.2]{images/userguide/16.png}
 		\caption{Vista principal de un equipo (rol usuario normal)}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de la vista que muestra los detalles de un equipo.}
@@ -3547,15 +3611,15 @@ A continuación se muestran las capturas de pantalla de cada una de estas opcion
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/15a.png}
+		\includegraphics[scale=0.2]{images/userguide/15a.png}
 		\caption{Vista “Gestionar usuario“}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/17.png}
+		\includegraphics[scale=0.2]{images/userguide/17.png}
 		\caption{Vista “Configuración del equipo“}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/18.png}
+		\includegraphics[scale=0.2]{images/userguide/18.png}
 		\caption{Vista “Configuración del equipo“}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de “Gestionar usuario“ y “Configuración del equipo“}
@@ -3565,11 +3629,11 @@ A continuación se muestran las capturas de pantalla de cada una de estas opcion
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/19.png}
+		\includegraphics[scale=0.2]{images/userguide/19.png}
 		\caption{Vista “Código QR del equipo“}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/20.png}
+		\includegraphics[scale=0.2]{images/userguide/20.png}
 		\caption{Vista “Añadir miembro al equipo“}
 	\end{subfigure}\hspace{5mm}%
 \caption{Capturas de pantalla de “Código QR del equipo“ y “Añadir miembro al equipo“.}
@@ -3580,11 +3644,11 @@ Por último, como rol de usuario normal, además de permitir mostrar el código 
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/21.png}
+		\includegraphics[scale=0.2]{images/userguide/21.png}
 		\caption{Vista “Salir del equipo“}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/22.png}
+		\includegraphics[scale=0.2]{images/userguide/22.png}
 		\caption{Vista “Salir del equipo“}
 	\end{subfigure}\hspace{5mm}%
 \caption{Capturas de pantalla de “Salir del equipo“}
@@ -3596,11 +3660,11 @@ Cuando entramos en un nivel desde la vista principal de usuarios veremos las sig
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/23.png}
+		\includegraphics[scale=0.2]{images/userguide/23.png}
 		\caption{Vista “Miembros de un nivel“}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/24.png}
+		\includegraphics[scale=0.2]{images/userguide/24.png}
 		\caption{Vista “Misiones de un nivel“}
 	\end{subfigure}\hspace{5mm}%
 \caption{Capturas de pantalla de “Miembros de un nivel“ y “Misiones de un nivel“.}
@@ -3610,15 +3674,15 @@ Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/25.png}
+		\includegraphics[scale=0.2]{images/userguide/25.png}
 		\caption{Vista “Misión social“ restringida. Nivel \textit{Chicago}.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/26.png}
+		\includegraphics[scale=0.2]{images/userguide/26.png}
 		\caption{Vista “Misión social“ libre.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\includegraphics[scale=0.2]{images/userguide/27.png}
 		\caption{Vista “Misión social“ libre en estado de comprobación.}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de una misión de tipo social.}
@@ -3628,27 +3692,24 @@ Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\includegraphics[scale=0.2]{images/userguide/28.png}
 		\caption{Puntuación que se debe alcanzar en esta misión.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\includegraphics[scale=0.2]{images/userguide/29.png}
 		\caption{Misión en progreso.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
-		\includegraphics[scale=0.25]{images/userguide/27.png}
+		\includegraphics[scale=0.2]{images/userguide/30.png}
 		\caption{Mensaje de no haber completado la misión.}
 	\end{subfigure}\hspace{2mm}%
-\includegraphics[scale=0.25]{images/userguide/28.png}
-\includegraphics[scale=0.25]{images/userguide/29.png}
-\includegraphics[scale=0.25]{images/userguide/30.png}
 \caption{Capturas de pantalla de una misión de tipo competitiva.}
 \end{center}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.25]{images/userguide/31.png}
+\includegraphics[scale=0.2]{images/userguide/31.png}
 \caption{Captura de pantalla de una misión de tipo consumo.}
 \end{center}
 \end{figure}
@@ -3873,7 +3934,7 @@ Por defecto, \textit{Firebase Firestore} deniega tanto la lectura y escritura de
 
 Las reglas de seguridad anteriores:
 \begin{itemize}
-\item Impiden que un usuario no registrado pueda ni leer ni escribir sobre la base de datos (línea 4).
+\item Impiden que un usuario no registrado pueda leer o escribir sobre la base de datos (línea 4).
 \item Impiden que un usuario pueda editar el perfil de otro usuario (línea 7).
 \item Impiden que un usuario pueda ver las insignias, premios, logros o misiones que haya completado otro usuario (líneas 9, 12 y 15).
 \end{itemize}
