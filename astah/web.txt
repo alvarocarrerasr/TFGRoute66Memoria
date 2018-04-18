@@ -1,0 +1,48 @@
+Marc Rodríguez. IEBS Comunidad} \textit{La ludificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
+María Benito} \textit{“Gamificación o cómo lograr que los empleados hagan un trabajo extra gratis“}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.elconfidencial.com/empresas/2014-04-27/gamificacion-o-como-lograr-que-los-empleados-hagan-un-trabajo-extra-gratis_121168/}. 
+Accenture} \textit{Why gamification is serious business}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.accenture.com/us-en/insight-outlook-why-gamification-is-serious-business}.  
+Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la ludificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}.  
+Ferran Altarriba Bertran. IEBS School} \textit{Tipos de jugadores en Gamification: teoría Bartle}. Fecha de última visita: 6 de Noviembre de 2017, \url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}.  
+McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
+Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
+KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
+VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
+Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
+Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
+Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 02 de Diciembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
+Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf} 
+Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017 \url{http://www.upedu.org/process/workers/wk_implm.htm}
+McDonalds}. Monopoly Ganador de McDonalds Fecha de última visita: 20/01/2018 \url{https://www.mcdonalds.es/sites/default/files/mcdonalds_lanza_su_nuevo_monopoly_ganador.pdf}
+Infoautónomos. El Economista}. Tarifa plana de 50 \euro \hspace{0.1cm} para autónomos, jóvenes y mayores de 30. Fecha de última visita: 22/01/2018 \url{https://infoautonomos.eleconomista.es/seguridad-social/tarifa-plana-autonomos-50-euros-mayores-30-jovenes/}
+Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}
+Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}
+Material Design} Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://material.io/}
+MaterialDoc} Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://materialdoc.com/}
+Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}
+Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}
+Firebase}. Página Web de Firebase. Fecha de última visita: 08/02/2018 \url{https://firebase.google.com/}
+Timokhina, Valeria. DZone}. The Pros and Cons of Kotlin for Android Development. Fecha de última visita 08/02/2018. \url{https://dzone.com/articles/the-pros-and-cons-of-kotlin-for-android-developmen}
+Nathan, Lee. FreeCodeCamp} Firebase Pros and Cons and How to Deal With the Cons. Fecha de última visita 08/02/2018 \url{https://medium.com/@leetheguy/firebase-pros-and-cons-ce37c766190a}
+Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
+Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
+Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}
+Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}
+Firebase Crashanalytics} Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
+Room} Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}
+Glide} Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}
+Firebase Authentication} Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}
+Google Play Services: Authentication} Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}
+ZXing Core: Android} Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}
+Firebase Invites} Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}
+Firebase Firestore} Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}
+Firebase Storage} Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}
+Firebase Remote Config} Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}
+Firebase Cloud Messaging} Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}
+Firebase Analytics} Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}
+OkHTTP} Documentación de OkHTTP. Fecha de última visita 01/03/2018. \url{http://square.github.io/okhttp/}
+Dodenhof, Henning} Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}
+MaterialSpinner} Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}
+Tarianyk, Dmytro} Repositorio en GitHub de Floating Action Button. Fecha de última visita 01/03/2018. \url{https://github.com/Clans/FloatingActionButton}
+Compressor} Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}
+KiwiJS} \textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+Cirulli, Gabriel} Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}

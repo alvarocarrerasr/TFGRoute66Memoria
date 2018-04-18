@@ -582,15 +582,16 @@ En esta sección se indican las diferentes tecnologías señaladas por la tutora
 \caption{Logotipo de Kotlin} \cite{kotlin}
 \end{figure}
 
-Kotlin es un lenguaje de programación diseñado por la empresa \textit{IntelliJ} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de Java (JVM). Fue señalado por Google en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas Web).
+Kotlin\cite{smovkotlin} es un lenguaje de programación diseñado por la empresa \textit{IntelliJ} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de Java (JVM). Fue señalado por Google en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas Web).
+
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{images/kotlinexample}\\
+\includegraphics[width=\textwidth]{images/kotlinexample}\\
 \caption{\textit{Snippet} ejemplo de un \textit{POJO} Punto} A la izquierda, la versión en Java, a la derecha, la de Kotlin. Elaboración propia.
 \end{figure}
 
-Los motivos por los que se ha decidido utilizar Kotlin frente a Java son los siguientes \cite{kotlin}:
+Kotlin tiene una serie de ventajas que merecen la pena señalar\cite{kotlin}:
 \begin{enumerate}
 
 \item Permite una interoperabilidad completa con Java: al utilizar ambos la misma máquina virtual (y compilar en \textit{bytecode}), es posible la ejecución de métodos de Java en Kotlin y viceversa. De esta forma, permite integrar componentes desarrollados en un lenguaje desde el otro.
@@ -599,12 +600,10 @@ Los motivos por los que se ha decidido utilizar Kotlin frente a Java son los sig
 
 \item Es \textit{“null-safe“}: Según el blog de programación \textit{Tapiki} \cite{tapikinull}, en un estudio realizado sobre 1.000 sistemas informáticos, un 70\% de ellos contenían errores de puntero nulo, que fue el motivo de excepción más frecuente. Kotlin intenta solucionar este problema forzando al programador a utilizar objetos que no pueden ser nulos, o bien, haciendo que tenga que indicar expresamente que un puntero puede ser nulo.
 
-\item Por motivos académicos: En la asignatura Sistemas Móviles \cite{smovkotlin} del curso 2017-2018, impartida por D. Joaquín Adiego Rodríguez, se nos presentó esta tecnología y esto me motivó a querer utilizarla.
-
-\item Por motivos de estándares: El apoyo que Google está dando al lenguaje de programación es tal que resulta más que recomendable empezar a utilizarlo y acostumbrarse al mismo.
+\item Es actualmente un estándar en programación de aplicaciones \textit{Android}: El apoyo que Google está dando al lenguaje de programación es tal que resulta más que recomendable empezar a utilizarlo y acostumbrarse al mismo.
 \end{enumerate}
 
-Por otro lado, también resulta de interés considerar las desventajas que suponen utilizar esta tecnología \cite{disadvKotlin}:
+Por otro lado, también resulta de interés considerar los inconvenientes que suponen utilizar esta tecnología \cite{disadvKotlin}:
 \begin{enumerate}
 
 \item Curva de aprendizaje: Kotlin tiene características que no tiene Java y, por tanto, existe una cierta curva de aprendizaje que es necesario solventar.
@@ -1191,7 +1190,7 @@ En el caso de este proyecto se han utilizado dos repositorios privados en \texti
 
 Para una correcta estimación de los costes, se debe procurar partir de los datos proporcionados por proyectos reales, que nos permitan realizarla partiendo de una experiencia. Desafortunadamente, como estos no se hacen públicos (pues son parte de la estrategia de la empresa), no es posible contar con ellos. Por este motivo, los cálculos se han realizado basándose en lo estudiado en la asignatura Planificación y Gestión de Proyectos \cite{pgptema2} y en información encontrada por Internet.
 
-El resultado de la estimación total de costes es de \textbf{12.474,96\euro}, que se detallarán a continuación.
+El resultado de la estimación total de costes es de \textbf{10.094,96\euro}, que se detallarán a continuación.
 
 \subsubsection{Costes \textit{hardware} y \textit{software}}
 \textbf{Costes \textit{hardware}}
@@ -1254,17 +1253,17 @@ Para el caso de los primeros, los costes de los recursos humanos, debemos ver el
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 Rol                & Salario medio & \euro/Hora   & Horas estimadas & Coste total \\ \hline
-Analista           & 59.615 \euro      & 31,05 \euro & \multirow{5}{*}{300 horas} & \multirow{5}{*}{9.315 \euro} \\\cline{1-3}
-Desarrollador      & 59.615 \euro      & 31,05 \euro  & & \\\cline{1-3}
-Gestor de proyecto & 59.615 \euro      & 31,05 \euro & & \\ \cline{1-3}
-Diseñador          & 59.615 \euro      & 31,05 \euro & & \\ \cline{1-3}
-Director de proyecto & 59.615 \euro    & 31,05 \euro & & \\ \cline{1-3}
+Analista           & 42.987 \euro      & 22 \euro & \multirow{5}{*}{300 horas} & \multirow{5}{*}{6.600 \euro} \\\cline{1-3}
+Desarrollador      & 42.987 \euro      & 22 \euro  & & \\\cline{1-3}
+Gestor de proyecto & 42.987 \euro      & 22 \euro & & \\ \cline{1-3}
+Diseñador          & 42.987 \euro      & 22 \euro & & \\ \cline{1-3}
+Director de proyecto & 42.987 \euro    & 22 \euro & & \\ \cline{1-3}
 \hline
 \end{tabular}
 \caption{Costes de los recursos humanos}
 \end{table}
 
-Los datos de la tabla anterior han sido calculados basándose en los datos del Informe Anual \textit{Infojobs} 2016 España \cite{infojobs2016} (salario promedio bruto anual de un director de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
+Los datos de la tabla anterior han sido calculados basándose en los datos del Informe Anual \textit{Infojobs} 2016 España \cite{infojobs2016} (salario promedio bruto anual de un arquitecto de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
 
 Igualmente, habría que considerar el coste de los seguros sociales. Como la estimación del proyecto se ha realizado teniendo un único empleado en régimen de autónomo, solo se aplicaría el coste de las cuotas que establece el Régimen Especial de Autónomos, que en 2018 es de 50 \euro \vspace{0.1cm} al mes para nuevos autónomos menores de 30 años \cite{segsocialautonomos}.
 
@@ -1277,7 +1276,7 @@ Igualmente, habría que considerar el coste de los seguros sociales. Como la est
 	\end{itemize}
 \end{itemize}
 
-El coste total de este apartado es de \textbf{9.715 \euro}.
+El coste total de este apartado es de \textbf{6.950 \euro}.
 
 \subsubsection{Costes indirectos aplicados al personal del proyecto}
 
@@ -2118,6 +2117,29 @@ Se identifica un único actor:
 \vspace{0.5cm}
 
 \begin{usecase}
+  \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
+  \addrow{Actor}{App user}
+  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
+  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Flujo principal}{
+  		\begin{enumerate}
+  		\item El usuario elige “Consultar misiones“. %1
+  		\item El sistema muestra al usuario el listado de niveles. %2
+  		\item El usuario selecciona un nivel. %3
+  		\item El sistema muestra al usuario las distintas misiones que conforman el nivel. %4
+  		\end{enumerate}
+  }
+  \addrow{Flujos alternativos}{
+  		\begin{itemize}
+  		\item 3a. El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
+  		\item 3b. El usuario ha seleccionado un nivel distinto a aquel en el que se encuentra actualmente. En este caso, se muestra un mensaje al usuario y se vuelve al paso 2.
+  		\end{itemize}
+  }
+\end{usecase}\\\stepcounter{usecase}
+
+\vspace{0.5cm}
+
+\begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
   \addrow{Actor}{App user}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
@@ -2220,28 +2242,6 @@ Se identifica un único actor:
 
 \vspace{0.5cm}
 
-\begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
-  \addrow{Actor}{App user}
-  \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
-  \addrow{Flujo principal}{
-  		\begin{enumerate}
-  		\item El usuario elige “Consultar misiones“. %1
-  		\item El sistema muestra al usuario el listado de niveles. %2
-  		\item El usuario selecciona un nivel. %3
-  		\item El sistema muestra al usuario las distintas misiones que conforman el nivel. %4
-  		\end{enumerate}
-  }
-  \addrow{Flujos alternativos}{
-  		\begin{itemize}
-  		\item 3a. El usuario cancela la operación. En este caso, el caso de uso termina y queda sin efecto.
-  		\item 3b. El usuario ha seleccionado un nivel distinto a aquel en el que se encuentra actualmente. En este caso, se muestra un mensaje al usuario y se vuelve al paso 2.
-  		\end{itemize}
-  }
-\end{usecase}\\\stepcounter{usecase}
-
-\vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar perfil} 
@@ -2528,157 +2528,219 @@ Se identifica un único actor:
 \end{usecase}\\\stepcounter{usecase}
 
 \subsection{Modelo de dominio}
-\begin{comment}
+
+El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interacciona con la base de datos de \textit{Firebase Firestore} y aquella que solo lo hace con la local (\textit{SQLite}). 
+
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4]{images/clases.png}
-\caption{Modelo de dominio}
+\includegraphics[scale=0.45]{images/clasesFirebase.png}
+\caption{Modelo de dominio. Parte que interacciona con \textit{Firebase}.}
 \end{center}
 \end{figure}
-\end{comment}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.55]{images/clasesRoom.png}
+\caption{Modelo de dominio. Parte que interacciona con la base de datos local.}
+\end{center}
+\end{figure}
+
 
 \subsection{Diagramas de secuencia}
-\begin{comment}
-%0
-\begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/GetAGroupManagedByUser.png}
-\caption{Diagrama de secuencia “Obtener un grupo de los administrados por el usuario“}
-\end{figure}
 
 %1
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/ModifyGroup}
-\caption{Diagrama de secuencia del caso de uso “Modificar grupo“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU1}
+\caption{Diagrama de secuencia 1 “Modificar equipo“}
+\end{center}
 \end{figure}
 
 %2
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/AddUserToGroup}
-\caption{Diagrama de secuencia del caso de uso “A\~{n}adir usuario al grupo“}
+\begin{center}
+\includegraphics[scale=0.45]{images/sequence/CU2}
+\caption{Diagrama de secuencia del caso de uso 2 “Invitar usuario al equipo“}
+\end{center}
 \end{figure}
 
 %3
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/setAdmin}
-\caption{Diagrama de secuencia del caso de uso “Nombrar un administrador“}
+\begin{center}
+\includegraphics[scale=0.55]{images/sequence/CU3}
+\caption{Diagrama de secuencia del caso de uso 3  “Nombrar un administrador“}
+\end{center}
 \end{figure}
 
 %4
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/deleleMemberGroup}
-\caption{Diagrama de secuencia del caso de uso “Eliminar a un miembro de un equipo“}
+\begin{center}
+\includegraphics[scale=0.55]{images/sequence/CU4}
+\caption{Diagrama de secuencia del caso de uso 4 “Eliminar a un miembro de un equipo“}
+\end{center}
 \end{figure}
 
 %5
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/removeTeam}
-\caption{Diagrama de secuencia del caso de uso “Eliminar un equipo“}
-\end{figure}
-
-%5
-\begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/removeTeam}
-\caption{Diagrama de secuencia del caso de uso “Eliminar un equipo“}
+\begin{center}
+\includegraphics[scale=0.55]{images/sequence/CU5}
+\caption{Diagrama de secuencia del caso de uso 5 “Eliminar un equipo“}
+\end{center}
 \end{figure}
 
 %6
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/realizarMision}
-\caption{Diagrama de secuencia del caso de uso “Realizar misión“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU6}
+\caption{Diagrama de secuencia del caso de uso 6 “Consultar misiones“}
+\end{center}
+\end{figure}
+
+%7
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU7}
+\caption{Diagrama de secuencia del caso de uso 7 “Realizar misión“}
+\end{center}
+\end{figure}
+
+%8
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.65]{images/sequence/CU8}
+\caption{Diagrama de secuencia del caso de uso 8  “Realizar misión de consumo mínimo“}
+\end{center}
+\end{figure}
+
+%9
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{images/sequence/CU9}
+\caption{Diagrama de secuencia del caso de uso 9 “Realizar misión competitiva“}
+\end{center}
 \end{figure}
 
 %10
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkMissions}
-\caption{Diagrama de secuencia del caso de uso “Consultar misiones“}
+\begin{center}
+\includegraphics[scale=0.5]{images/sequence/CU10}
+\caption{Diagrama de secuencia del caso de uso 10 “Realizar juego social“}
+\end{center}
 \end{figure}
 
 %11
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/modifyProfile}
-\caption{Diagrama de secuencia del caso de uso “Modificar perfil“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU11}
+\caption{Diagrama de secuencia del caso de uso 11 “Modificar perfil“}
+\end{center}
 \end{figure}
 
 %12
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkProfile}
-\caption{Diagrama de secuencia del caso de uso “Consultar perfil“}
+\begin{center}
+\includegraphics[scale=0.75]{images/sequence/CU12}
+\caption{Diagrama de secuencia del caso de uso 12 “Consultar perfil“}
+\end{center}
 \end{figure}
 
 %13
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkArchivements}
-\caption{Diagrama de secuencia del caso de uso “Consultar logros“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU13}
+\caption{Diagrama de secuencia del caso de uso 13 “Consultar logros“}
+\end{center}
 \end{figure}
 
 %14
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkInsignias}
-\caption{Diagrama de secuencia del caso de uso “Consultar insignias“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU14}
+\caption{Diagrama de secuencia del caso de uso 14 “Consultar insignias“}
+\end{center}
 \end{figure}
 
 %15
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkQR}
-\caption{Diagrama de secuencia del caso de uso “Consultar Código QR“}
+\begin{center}
+\includegraphics[scale=0.7]{images/sequence/CU15}
+\caption{Diagrama de secuencia del caso de uso 15 “Consultar ranking“}
+\end{center}
 \end{figure}
 
 %16
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkRanking}
-\caption{Diagrama de secuencia del caso de uso “Consultar Ranking global“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU16}
+\caption{Diagrama de secuencia del caso de uso 16 “Consultar equipo“}
+\end{center}
 \end{figure}
 
 %17
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkTeam}
-\caption{Diagrama de secuencia del caso de uso “Consultar equipo“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU17}
+\caption{Diagrama de secuencia del caso de uso 17 “Crear equipo“}
+\end{center}
 \end{figure}
+
 
 %18
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/createTeam}
-\caption{Diagrama de secuencia del caso de uso “Crear equipo“}
+\begin{center}
+\includegraphics[scale=0.7]{images/sequence/CU18}
+\caption{Diagrama de secuencia del caso de uso 18 “Registrarse“}
+\end{center}
 \end{figure}
 
 %19
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/register}
-\caption{Diagrama de secuencia del caso de uso “Registrarse“}
+\begin{center}
+\includegraphics[scale=0.65]{images/sequence/CU19}
+\caption{Diagrama de secuencia del caso de uso 19 “Aceptar invitación“}
+\end{center}
 \end{figure}
-
 
 %20
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/acceptInvitation}
-\caption{Diagrama de secuencia del caso de uso “Aceptar invitación“}
+\begin{center}
+\includegraphics[scale=0.65]{images/sequence/CU20}
+\caption{Diagrama de secuencia del caso de uso  20 “Enviar invitación“}
+\end{center}
 \end{figure}
 
 %21
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/sendInvitation}
-\caption{Diagrama de secuencia del caso de uso “Enviar invitación“}
+\begin{center}
+\includegraphics[scale=0.7]{images/sequence/CU21}
+\caption{Diagrama de secuencia del caso de uso  21 “Iniciar sesión“}
+\end{center}
 \end{figure}
 
 %22
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/login}
-\caption{Diagrama de secuencia del caso de uso “Iniciar sesión“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU22}
+\caption{Diagrama de secuencia del caso de uso 22 “Ver posiciones de otros jugadores“}
+\end{center}
 \end{figure}
 
 %23
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/showOtherPlayersPositions}
-\caption{Diagrama de secuencia del caso de uso “Ver posición de otros jugadores“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU23}
+\caption{Diagrama de secuencia del caso de uso 23 “Consultar premios“}
+\end{center}
 \end{figure}
 
-%23
+%24
 \begin{figure}[H]
-\includegraphics[scale=0.5]{images/sequence/checkPrizes}
-\caption{Diagrama de secuencia del caso de uso “Consultar premios“}
+\begin{center}
+\includegraphics[width=\textwidth]{images/sequence/CU24}
+\caption{Diagrama de secuencia del caso de uso 24 “Salir de un equipo“}
+\end{center}
 \end{figure}
 
-\end{comment}
 \subsection{Usabilidad}
 \label{usabilitymatters}
 
@@ -3754,41 +3816,79 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 \begin{thebibliography}{a} 
 \section{Webgrafía}
 
-\bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La ludificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
-
-\bibitem{confidencialcorreosgami} \textsc{María Benito} \textit{“Gamificación o cómo lograr que los empleados hagan un trabajo extra gratis“}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.elconfidencial.com/empresas/2014-04-27/gamificacion-o-como-lograr-que-los-empleados-hagan-un-trabajo-extra-gratis_121168/}. 
-
 \bibitem{accentureGami} \textsc{Accenture} \textit{Why gamification is serious business}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.accenture.com/us-en/insight-outlook-why-gamification-is-serious-business}.  
-
-\bibitem{bbvag} \textsc{Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la ludificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}.  
-
-\bibitem{iebsctj} \textsc{Ferran Altarriba Bertran. IEBS School} \textit{Tipos de jugadores en Gamification: teoría Bartle}. Fecha de última visita: 6 de Noviembre de 2017, \url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}.  
-
-\bibitem{mcdo} \textsc{McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
-
-\bibitem{burgerk} \textsc{Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
-
-\bibitem{kfcapp} \textsc{KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
-
-\bibitem{vipsapp} \textsc{VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
-
-\bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
-
-\bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
 
 \bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 02 de Diciembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
 
-\bibitem{infojobs2016} \textsc{Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf} 
+\bibitem{roompersistence} \textsc{Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}
 
-\bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017 \url{http://www.upedu.org/process/workers/wk_implm.htm}
+\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
 
-\bibitem{monopolymcdo} \textsc{McDonalds}. Monopoly Ganador de McDonalds Fecha de última visita: 20/01/2018 \url{https://www.mcdonalds.es/sites/default/files/mcdonalds_lanza_su_nuevo_monopoly_ganador.pdf}
+\bibitem{burgerk} \textsc{Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
+
+\bibitem{2048game} \textsc{Cirulli, Gabriel} 
+Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}
+
+\bibitem{icompressordependencies} \textsc{Compressor} 
+Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}
+
+\bibitem{circleimagevdependencies} \textsc{Dodenhof, Henning} 
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}
+
+\bibitem{iebsctj} \textsc{Ferran Altarriba Bertran. IEBS School} \textit{Tipos de jugadores en Gamification: teoría Bartle}. Fecha de última visita: 6 de Noviembre de 2017, \url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}.  
+
+\bibitem{fcanalyticsdependencies} \textsc{Firebase Analytics} 
+Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}
+
+\bibitem{firebaseauthdependencies} \textsc{Firebase Authentication} 
+Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}
+
+\bibitem{fcmessagingdependencies} \textsc{Firebase Cloud Messaging} 
+Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}
+
+\bibitem{crashanalyticsfb} \textsc{Firebase CrashAnalytics} 
+Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
+
+\bibitem{ffirestoredependencies} \textsc{Firebase Firestore} 
+Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}
+
+\bibitem{firebaseuifirestore} \textsc{Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}
+
+\bibitem{finvitesdependencies} \textsc{Firebase Invites} 
+Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}
+
+\bibitem{fremoteconfigdependencies} \textsc{Firebase Remote Config} 
+Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}
+
+\bibitem{fstoragedependencies} \textsc{Firebase Storage} 
+Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}
+
+\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
+
+\bibitem{firebase} \textsc{Firebase}. Página Web de Firebase. Fecha de última visita: 08/02/2018 \url{https://firebase.google.com/}
+
+\bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
+
+\bibitem{glidedependencies} \textsc{Glide} 
+Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}
+
+\bibitem{googleservicesauthdependencies} \textsc{Google Play Services: Authentication} 
+Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}
 
 \bibitem{segsocialautonomos} \textsc{Infoautónomos. El Economista}. Tarifa plana de 50 \euro \hspace{0.1cm} para autónomos, jóvenes y mayores de 30. Fecha de última visita: 22/01/2018 \url{https://infoautonomos.eleconomista.es/seguridad-social/tarifa-plana-autonomos-50-euros-mayores-30-jovenes/}
 
-\bibitem{pcuva} \textsc{Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}
+\bibitem{infojobs2016} \textsc{Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf} 
 
-\bibitem{roompersistence} \textsc{Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}
+\bibitem{kfcapp} \textsc{KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
+
+\bibitem{distancegame} \textsc{KiwiJS} 
+\textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+
+\bibitem{kotlin} \textsc{Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}
+
+\bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La ludificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
+
+\bibitem{confidencialcorreosgami} \textsc{María Benito} \textit{“Gamificación o cómo lograr que los empleados hagan un trabajo extra gratis“}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.elconfidencial.com/empresas/2014-04-27/gamificacion-o-como-lograr-que-los-empleados-hagan-un-trabajo-extra-gratis_121168/}. 
 
 \bibitem{materialil} \textsc{Material Design} 
 Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://material.io/}
@@ -3796,109 +3896,60 @@ Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/
 \bibitem{materialdocs} \textsc{MaterialDoc} 
 Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://materialdoc.com/}
 
+\bibitem{materialspinnerdependencies} \textsc{MaterialSpinner} 
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}
 
+\bibitem{mcdo} \textsc{McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
 
-\bibitem{tapikinull} \textsc{Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}
-
-\bibitem{kotlin} \textsc{Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}
-
-\bibitem{firebase} \textsc{Firebase}. Página Web de Firebase. Fecha de última visita: 08/02/2018 \url{https://firebase.google.com/}
-
-\bibitem{disadvKotlin} \textsc{Timokhina, Valeria. DZone}. The Pros and Cons of Kotlin for Android Development. Fecha de última visita 08/02/2018. \url{https://dzone.com/articles/the-pros-and-cons-of-kotlin-for-android-developmen}
+\bibitem{monopolymcdo} \textsc{McDonalds}. Monopoly Ganador de McDonalds Fecha de última visita: 20/01/2018 \url{https://www.mcdonalds.es/sites/default/files/mcdonalds_lanza_su_nuevo_monopoly_ganador.pdf}
 
 \bibitem{firebaseadvdis} \textsc{Nathan, Lee. FreeCodeCamp} Firebase Pros and Cons and How to Deal With the Cons. Fecha de última visita 08/02/2018 \url{https://medium.com/@leetheguy/firebase-pros-and-cons-ce37c766190a}
-
-\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
-
-\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
-
-\bibitem{firebaseuifirestore} \textsc{Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}
-
-\bibitem{mikepenzmaterialdrawer} \textsc{Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}
-
-\bibitem{crashanalyticsfb} \textsc{Firebase Crashanalytics} 
-Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
-
-\bibitem{roomdependencies} \textsc{Room} 
-Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}
-
-\bibitem{glidedependencies} \textsc{Glide} 
-Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}
-
-\bibitem{firebaseauthdependencies} \textsc{Firebase Authentication} 
-Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}
-
-\bibitem{googleservicesauthdependencies} \textsc{Google Play Services: Authentication} 
-Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}
-
-\bibitem{zxingdependencies} \textsc{ZXing Core: Android} 
-Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}
-
-\bibitem{finvitesdependencies} \textsc{Firebase Invites} 
-Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}
-
-\bibitem{ffirestoredependencies} \textsc{Firebase Firestore} 
-Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}
-
-\bibitem{fstoragedependencies} \textsc{Firebase Storage} 
-Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}
-
-
-\bibitem{fremoteconfigdependencies} \textsc{Firebase Remote Config} 
-Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}
-
-\bibitem{fcmessagingdependencies} \textsc{Firebase Cloud Messaging} 
-Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}
-
-\bibitem{fcanalyticsdependencies} \textsc{Firebase Analytics} 
-Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}
 
 \bibitem{okhttpdependencies} \textsc{OkHTTP} 
 Documentación de OkHTTP. Fecha de última visita 01/03/2018. \url{http://square.github.io/okhttp/}
 
-\bibitem{circleimagevdependencies} \textsc{Dodenhof, Henning} 
-Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}
+\bibitem{bbvag} \textsc{Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la ludificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}. 
 
-\bibitem{materialspinnerdependencies} \textsc{MaterialSpinner} 
-Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}
+\bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
+
+\bibitem{mikepenzmaterialdrawer} \textsc{Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}
+
+\bibitem{roomdependencies} \textsc{Room} 
+Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}
 
 \bibitem{fabdependencies} \textsc{Tarianyk, Dmytro} 
 Repositorio en GitHub de Floating Action Button. Fecha de última visita 01/03/2018. \url{https://github.com/Clans/FloatingActionButton}
 
-\bibitem{icompressordependencies} \textsc{Compressor} 
-Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}
+\bibitem{disadvKotlin} \textsc{Timokhina, Valeria. DZone}. The Pros and Cons of Kotlin for Android Development. Fecha de última visita 08/02/2018. \url{https://dzone.com/articles/the-pros-and-cons-of-kotlin-for-android-developmen}
 
-\bibitem{distancegame} \textsc{KiwiJS} 
-\textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+\bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017 \url{http://www.upedu.org/process/workers/wk_implm.htm}
 
-\bibitem{2048game} \textsc{Cirulli, Gabriel} 
-Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}
+\bibitem{pcuva} \textsc{Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}
 
+\bibitem{vipsapp} \textsc{VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
 
+\bibitem{tapikinull} \textsc{Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}
 
-
-
-
+\bibitem{zxingdependencies} \textsc{ZXing Core: Android} 
+Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}
 
 \section{Bibliografía}
 
-\bibitem{cristinatfg} \textsc{Martínez Martínez, Cristina} \textit{T.F.G. “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Ingeniería en Organización Industrial. Universidad de Valladolid. 
+\bibitem{smovkotlin} \textsc{Adiego Rodríguez, Joaquín}. Departamento de Informática de la UVa. Apuntes de la asignatura Sistemas Móviles. Curso 2017-2018. Kotlin.
 
-\bibitem{anatfg} \textsc{Ruiz Caballero, Ana} \textit{T.F.G. “Estudio de la ludificación de una empresa para incentivar la motivación. “}. Curso 2015-2016. Grado en Ingeniería en Organización Industrial. Universidad de Valladolid. 
+\bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub
 
+\bibitem{mvcua} \textsc{Crespo Carvajal, Yania; Gonzalo Tasis, Margarita; Hernández Díaz, Carmen; Martínez Monés, Alejandra} Modelo vista controlador (MVC). Prácticas. Apuntes de la asignatura Interacción Persona-Computador. Curso 2015-2016. Departamento de Informática de la UVa. Universidad de Valladolid. 
 
 \bibitem{pgptema2} \textsc{De la Fuente Redondo, Pablo Lucio}. Departamento de Informática de la UVa. Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Tema 2: Planificación de Proyectos.
 
 \bibitem{pgpup} \textsc{De la Fuente Redondo, Pablo Lucio}. Departamento de Informática de la UVa. Apuntes de la asignatura Planificación y Gestión de Proyectos. Curso 2017-2018. Tema 3: Proceso Unificado.
 
-
-\bibitem{smovkotlin} \textsc{Adiego Rodríguez, Joaquín}. Departamento de Informática de la UVa. Apuntes de la asignatura Sistemas Móviles. Curso 2017-2018. Kotlin.
-
 \bibitem{databasedesign} \textsc{Hills, Ted}. NoSQL and SQL Data Modelling. Bringing together data, semantics and software. Technics Publications.
 
-\bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub
+\bibitem{cristinatfg} \textsc{Martínez Martínez, Cristina} \textit{T.F.G. “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”}. Curso 2016-2017. Grado en Ingeniería en Organización Industrial. Universidad de Valladolid. 
 
-\bibitem{mvcua} \textsc{Crespo Carvajal, Yania; Gonzalo Tasis, Margarita; Hernández Díaz, Carmen; Martínez Monés, Alejandra} Modelo vista controlador (MVC). Prácticas. Apuntes de la asignatura Interacción Persona-Computador. Curso 2015-2016. Departamento de Informática de la UVa. Universidad de Valladolid. 
+\bibitem{anatfg} \textsc{Ruiz Caballero, Ana} \textit{T.F.G. “Estudio de la ludificación de una empresa para incentivar la motivación. “}. Curso 2015-2016. Grado en Ingeniería en Organización Industrial. Universidad de Valladolid. 
 
 \end{thebibliography}
 

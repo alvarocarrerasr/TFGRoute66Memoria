@@ -68,44 +68,44 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{39}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{39}
 \contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{52}
-\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{52}
-\contentsline {subsection}{\numberline {3.2.5}Usabilidad}{52}
-\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{53}
-\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{53}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{56}
-\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{56}
-\contentsline {subsubsection}{\numberline {3.3.2.2}D.A.O. (\textit {Data Access Object})}{57}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{57}
-\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{59}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{60}
-\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{60}
-\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{60}
-\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{61}
-\contentsline {subsection}{\numberline {3.4.2}Dependencias}{61}
-\contentsline {subsection}{\numberline {3.4.3}Juegos}{62}
-\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{63}
-\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{64}
-\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{65}
-\contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{65}
-\contentsline {subsubsection}{\numberline {3.4.6.2}\textit {Authentication}}{65}
-\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{66}
-\contentsline {subsubsection}{\numberline {3.4.6.4}\textit {Cloud Messaging}}{66}
-\contentsline {subsubsection}{\numberline {3.4.6.5}\textit {Storage}}{66}
-\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local \textit {SQLite}}{67}
-\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{67}
-\contentsline {subsubsection}{\numberline {3.4.6.8}\textit {Shared preferences}}{67}
-\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{68}
-\contentsline {subsection}{\numberline {3.4.7}Funciones}{68}
-\contentsline {section}{\numberline {3.5}Pruebas}{68}
-\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{73}
-\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{73}
-\contentsline {subsection}{\numberline {3.7.1}Usuarios}{73}
-\contentsline {subsection}{\numberline {3.7.2}Equipos}{77}
-\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{79}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{82}
-\contentsline {section}{\numberline {4.1}Conclusiones}{82}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{82}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{83}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{84}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{86}
-\contentsline {part}{I\hspace {1em}Anexos}{88}
+\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{54}
+\contentsline {subsection}{\numberline {3.2.5}Usabilidad}{65}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{66}
+\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{66}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{70}
+\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{70}
+\contentsline {subsubsection}{\numberline {3.3.2.2}D.A.O. (\textit {Data Access Object})}{71}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{71}
+\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{73}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{74}
+\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{74}
+\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{74}
+\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{75}
+\contentsline {subsection}{\numberline {3.4.2}Dependencias}{75}
+\contentsline {subsection}{\numberline {3.4.3}Juegos}{76}
+\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{77}
+\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{78}
+\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{79}
+\contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{79}
+\contentsline {subsubsection}{\numberline {3.4.6.2}\textit {Authentication}}{79}
+\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{80}
+\contentsline {subsubsection}{\numberline {3.4.6.4}\textit {Cloud Messaging}}{80}
+\contentsline {subsubsection}{\numberline {3.4.6.5}\textit {Storage}}{80}
+\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local \textit {SQLite}}{81}
+\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{81}
+\contentsline {subsubsection}{\numberline {3.4.6.8}\textit {Shared preferences}}{81}
+\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{82}
+\contentsline {subsection}{\numberline {3.4.7}Funciones}{82}
+\contentsline {section}{\numberline {3.5}Pruebas}{82}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{87}
+\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{87}
+\contentsline {subsection}{\numberline {3.7.1}Usuarios}{87}
+\contentsline {subsection}{\numberline {3.7.2}Equipos}{91}
+\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{93}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro.}{96}
+\contentsline {section}{\numberline {4.1}Conclusiones}{96}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{96}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{97}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{98}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{100}
+\contentsline {part}{I\hspace {1em}Anexos}{102}
