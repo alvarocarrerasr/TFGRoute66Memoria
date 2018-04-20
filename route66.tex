@@ -2845,10 +2845,10 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \label{nrusers}
 \end{figure}
 
-De las figuras \ref{nrusers} y \ref{nrteams} es preciso aclarar que los elementos etiquetados con los estereotipos \textit{FirebaseAuthentication} y \textit{FirebaseStorage} no pertenecen a la base de datos \textit{Firebase Firestore}, sino que se ubican en sus respectivos servicios. Se han querido señalar en este esquema por su gran relación con el resto de colecciones y documentos de la base de datos.
+De las figuras \ref{nrteams} y \ref{nrusers} es preciso aclarar que los elementos etiquetados con los estereotipos \textit{FirebaseAuthentication} y \textit{FirebaseStorage} no pertenecen a la base de datos \textit{Firebase Firestore}, sino que se ubican en sus respectivos servicios. Se han querido señalar en este esquema por su gran relación con el resto de colecciones y documentos de la base de datos.
 
 
-Con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia  \textit{Room} \cite{roompersistence}. Esta base de datos tendrá como objetivo el de mantener un listado de niveles, misiones y las sincronizaciones que se hayan hecho para descargarse las nuevas misiones, logros y premios.
+Con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia  \textit{Room} \cite{roompersistence}. Esta base de datos tendrá como objetivo mantener un listado de niveles, misiones y las sincronizaciones que se hayan hecho para descargarse las nuevas misiones, logros y premios.
 
 \begin{figure}[H]
 \centering
@@ -3020,21 +3020,21 @@ Route66 cuenta con las siguientes actividades:
 	\item \textbf{\textit{MainActivity}}: es la única actividad que contará con un \textit{DrawerLayout} (el menú principal de la aplicación). De la misma dependen un conjunto de fragmentos (vistas que se acoplan y se desacoplan bajo demanda):
 	
 		\begin{enumerate}
-			\item \textit{Archievements}: es el fragmento encargado de mostrar al usuario el conjunto de logros que haya obtenido.
+			\item \textit{Archievements}: es la vista que muestra al usuario el conjunto de logros que haya obtenido.
 			
 			\item \textit{Insignias}: es el fragmento encargado de mostrar las insignias que haya obtenido el usuario.
 			
-			\item \textit{Invite}: está encargado de servir de interfaz entre la aplicación y el sistema de Firebase Invitations, con el fin de enviar invitaciones.
+			\item \textit{Invite}: su finalidad es servir de interfaz entre la aplicación y el sistema de Firebase Invitations, con el fin de enviar invitaciones.
 			
 			\item \textit{MainGrid}: muestra el conjunto de niveles con los que cuenta la aplicación y servirá como puerta de enlace a realizar misiones y consultar los usuarios que se encuentran en un determinado nivel.
 			
 			\item \textit{Prizes}: lista el conjunto de premios que hubiera conseguido el usuario, así como detalles específicos de los mismos.
 			
-			\item \textit{Profile}: es el fragmento que permite al usuario editar las propiedades de su perfil (avatar, nombre, restaurante favorito, etcétera).
+			\item \textit{Profile}: permite al usuario editar las propiedades de su perfil (avatar, nombre, restaurante favorito, etcétera).
 			
 			\item \textit{SocialRanking}: es el fragmento encargado de mostrar el ranking global de usuarios.
 			
-			\item \textit{Team}: es el fragmento encargado de listar el conjunto de equipos a los que pertenece el usuario, así como el de permitir crear uno nuevo.
+			\item \textit{Team}: es el fragmento que lista el conjunto de equipos a los que pertenece el usuario, así como el de permitir crear uno nuevo.
 		\end{enumerate}
 		
 	\item \textbf{\textit{MissionsActivity}}: es la actividad que servirá como interfaz para realizar misiones de tipo consumo, social y competitivo. 
@@ -3043,7 +3043,7 @@ Route66 cuenta con las siguientes actividades:
 		\item \textit{ExpenseMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo consumo, incluyendo el código \textit{QR}.
 		
 		\item \textit{SocialMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo social.
-		\item \textit{GameMission}: : es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo competitivo.
+		\item \textit{GameMission}: : ofrece al usuario los detalles de una misión de tipo competitivo.
 		\end{enumerate}
 		
 	\item \textbf{\textit{GameActivity}}: es la actividad que servirá como interfaz para realizar misiones de tipo juego. Por las características de este tipo de misiones (la vista es distinta, así como la posible rotación de la pantalla), se ha decidido separarlas de la actividad \textit{MissionsActivity}.
@@ -3060,7 +3060,7 @@ Route66 cuenta con las siguientes actividades:
 		\item \textit{MissionsListFragment}: es el fragmento encargado de listar las distintas misiones de un nivel.
 		\item \textit{PeersFragment}: es el fragmento encargado de mostrar el conjunto de usuarios que se encuentran en el nivel.
 		\end{enumerate}
-		\item \textit{SettingsFragment}: es el fragmento encargado de mostrar un panel de configuración básica para ajustar el tono de notificación que se deberá utilizar para notificar al usuario.
+		\item \textit{SettingsFragment}: panel de configuración básica para ajustar el tono de notificación que se deberá utilizar para notificar al usuario.
 	\end{enumerate}
 	\item \textbf{\textit{TeamActivity}}: es la actividad encargada de mostrar las distintas opciones que cuenta un equipo.
 		\begin{enumerate}
@@ -3071,15 +3071,15 @@ Route66 cuenta con las siguientes actividades:
 		\end{enumerate}
 	\end{itemize}
 
-\item \textbf{\underline{Servicios}}: son componentes que se ejecutan en segundo plano (\textit{background}), tanto de forma automática (por ejemplo, al iniciar el dispositivo) como bajo demanda (mediante una llamada). Se utilizan fundamentalmente para procesar tareas pesadas o que puedan tomar mucho tiempo. A diferencia de las actividades no cuentan con interfaz de usuario y están pensados para serle totalmente transparentes.\\
+\item \textbf{\underline{Servicios}}: son componentes que se ejecutan en segundo plano (\textit{background}), tanto de forma automática (por ejemplo, al iniciar el dispositivo), como bajo demanda (mediante una llamada). Se utilizan fundamentalmente para procesar tareas pesadas o que puedan necesitar mucho tiempo. A diferencia de las actividades, no cuentan con interfaz de usuario y están pensados para serle totalmente transparentes.\\
 Route66App cuenta con dos servicios:
 	\begin{enumerate}
 	\item \textbf{\textit{UpdaterService}}: es utilizado para actualizar la versión en caché de la aplicación de las misiones, niveles, insignias y premios y almacenar estos parámetros en la base de datos \textit{SQLite}. Por otro lado, los ficheros asociados (en su gran mayoría imágenes), los guarda en una carpeta específica de la aplicación.
 	
-	\item \textbf{\textit{Route66MessagingService}}: es el servicio encargado de recibir los mensajes de notificación que llegan del servicio \textit{Firebase Cloud Messaging} y de realizar la notificación adecuada.
+	\item \textbf{\textit{Route66MessagingService}}: es el servicio encargado de recibir los mensajes de notificación que llegan de \textit{Firebase Cloud Messaging} y de realizar la notificación adecuada.
 	\end{enumerate}
 
-\item \textbf{\underline{Proveedores de contenidos}} (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación, además de proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
+\item \textbf{\underline{Proveedores de contenidos}} (\textit{“Content providers“}): sirven de interfaz para administrar el acceso a un conjunto compartido de datos de la aplicación y proporcionar los mecanismos de seguridad necesarios para ello. Una de sus principales aplicaciones es el de permitir compartir grandes cantidades de información entre procesos, aunque también pueden ser utilizados únicamente por la misma aplicación en la que están contenidos.\\
 Route66App no cuenta con ningún proveedor de contenidos.
 
 \item \textbf{\underline{Receptores de mensajes}} (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema Android, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas. \\
@@ -3090,23 +3090,23 @@ Route66App no cuenta con receptores de mensajes.
 
 La aplicación utiliza varios tipos de almacenamiento:
 \begin{enumerate}
-\item En \textit{Firebase Firestore}: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos, así como para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
+\item En \textit{Firebase Firestore}: es la base de datos principal de la aplicación. Contiene la información necesaria para saber las misiones, los logros o los premios obtenidos y para conocer a qué grupos pertenece el usuario y los parámetros de los mismos. Hay una versión almacenada localmente en el dispositivo (\textit{caché)}, que se sincronizará con la parte remota cuando el usuario disponga de una conexión a Internet.
 
 \item En \textit{Firebase Authentication}: gestionará todos los flujos de identificación de usuarios y gestionará el sistema de sesiones.
 
-\item En \textit{Firebase Analytics}: se almacenarán los diferentes datos recogidos por la aplicación cuyo único interés sea el de realizar estadísticas.
+\item En \textit{Firebase Analytics}: almacenará los diferentes datos recogidos por la aplicación cuyo único interés sea el de realizar estadísticas.
 
-\item En \textit{Firebase Cloud Messaging}: donde se guardarán y enviarán las diferentes notificaciones que se mostrarán en los dispositivos de los usuarios.
+\item En \textit{Firebase Cloud Messaging}: guardará y enviará las diferentes notificaciones que se mostrarán en los dispositivos de los usuarios.
 
-\item En \textit{Firebase Storage}: se utiliza para sincronizar los avatares de los usuarios y de los grupos.
+\item En \textit{Firebase Storage}: sincroniza los avatares de los usuarios y de los grupos.
 
-\item En una base de datos local SQLite: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también guardará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
+\item En una base de datos local \textit{SQLite}: sirve para almacenar los niveles, insignias, premios y misiones de la aplicación, con sus correspondientes parámetros. De igual forma, también guardará el historial de sincronizaciones de los mismos. Está gestionada por \cite{roompersistence} la biblioteca de persistencia Room.
 
 \item En ficheros: se utilizan ficheros para mostrar las imágenes de los niveles, los avatares de los usuarios, etcétera (cuando estos se encuentren en la caché). Igualmente, también se requieren ficheros para obtener los niveles y misiones en cuanto el usuario instale la aplicación y no se tenga en ese momento conexión a Internet.
 
 \item En \textit{Shared Preferences}: empleada para el almacenamiento persistente de la configuración de determinados parámetros de la aplicación, como por ejemplo, el tono de notificación.
 
-\item En \textit{Firebase Remote Config}: se almacenará toda la información necesaria para la sincronzación de las misiones, niveles, logros e insignias. 
+\item En \textit{Firebase Remote Config}: almacena toda la información necesaria para la sincronzación de las misiones, niveles, logros e insignias. 
 \end{enumerate}
 
 \subsection{Implementación del modelo}
@@ -3119,11 +3119,11 @@ Firebase Firestore es la base de datos principal del servicio y en donde se alma
 \begin{itemize}
 \item Datos sobre las misiones completadas por los usuarios y equipos.
 \item Parámetros del perfil del usuario.
-\item Premios obtenidos.
+item Premios obtenidos.
 \item Insignias recibidas.
 \end{itemize} 
 
-De igual manera, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una capa de seguridad muy buena y evitamos tener que recurrir a un \textit{backend} que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
+De igual manera, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una buena capa de seguridad  y evitamos tener que recurrir a un \textit{backend} que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
 
 \subsubsection{\textit{Authentication}}
 
@@ -3140,13 +3140,13 @@ Esta parte está enfocada directamente a realizar las estadísticas que pueden s
 \item Secciones que más visita.
 \end{itemize}
 
-La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo Firebase Analytics por medio de la dirección IP y los datos de sesión (así como la cuenta de Google asociada al terminal Android), es capaz de determinar la ubicación, versión de la aplicación y versión de Android.
+La implementación se hace directamente llamando a los métodos adecuados desde el mismo controlador. El mismo \textit{Firebase Analytics} por medio de la dirección IP y los datos de sesión (así como la cuenta de \textit{Google} asociada al terminal \textit{Android}), es capaz de determinar la ubicación, versión de la aplicación y versión de \textit{Android}.
 
 \subsubsection{\textit{Cloud Messaging}}
 
 \textit{Cloud Messaging} es el servicio de notificaciones que \textit{Google Cloud} ofrece dentro del paquete de \textit{Firebase}. \\
 
-Las notificaciones pueden ser enviadas bien a un dispositivo individual, bien a un grupo (máximo 20 dispositivos). En el caso de Route66App utilizaremos siempre el envío a un grupo en concreto (todos los grupos de un mismo usuario) por varios motivos:
+Las notificaciones pueden ser enviadas a un dispositivo individual o a un grupo (máximo 20 dispositivos). En el caso de Route66App utilizaremos siempre el envío a un grupo en concreto (todos los grupos de un mismo usuario) por varios motivos:
 
 \begin{enumerate}
 \item El usuario puede estar utilizado cualquier dispositivo vinculado a su cuenta. Si la notificación se enviara a uno distinto del que esté usando en ese momento, no la recibirá.
@@ -3178,7 +3178,7 @@ Por motivos de escalabilidad y de eficiencia se han establecido los siguientes r
 Todas las imágenes subidas al servicio serán previamente redimensionadas para ajustar al tamaño máximo indicado anteriormente. De esta forma se consigue que:
 
 \begin{itemize}
-\item Se reduzca la cantidad de datos que se deben transmitir por la red.
+\item Se decremente la cantidad de datos que se deben transmitir por la red.
 \item Se evite tener que tener una función (con el gasto que eso conlleva de tiempo) que realice esta modificación.
 \item Se ahorre espacio en \textit{Firebase} Storage
 \end{itemize}
@@ -3197,7 +3197,7 @@ Para su utilización se ha empleado:
 
 \item \textit{D.A.O.}: Un \textit{D.A.O.} en \textit{Room} es simplemente una interfaz que incluye la cabecera de cuantos métodos se desee incluir. Tiene una serie de métodos ya implementados y con los que basta añadir una anotación y otros (como consultas \textit{SELECT} complejas), en los que ya es preciso escribir la consulta completa.
 
-\item \textit{Entities}: Representan una tabla concreta de la base de datos e incluye como atributos cada uno de los campos que la conforman (incluyendo su tipo, ciertas propiedades características de una base de datos relacional y el uso de claves primarias o autoincrementos).
+\item \textit{Entities}: Representan una tabla concreta de la base de datos e incluye como atributos cada uno de los campos que la conforman, (incluyendo su tipo, ciertas propiedades características de una base de datos relacional y el uso de claves primarias o autoincrementos).
 \end{itemize}
 
 Esta base de datos permite mantener una sincronización de las diferentes misiones, niveles, insignias y logros. Se debe recordar que existe un requisito en el que se indicaba que estos debían ser actualizables en cualquier momento por parte del administrador desde el \textit{backend}.
@@ -3223,23 +3223,23 @@ En Route66App se han utilizado para guardar únicamente el tono de notificación
 
 \subsubsection{Firebase Remote Config}
 
-Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de Android instalada). De esta forma, es posible aplicar un determinado ajuste a una franja de usuarios, para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese parámetro. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
+Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación, cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de \textit{Android} instalada). De esta forma, es posible aplicar un determinado ajuste a una franja de usuarios para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese parámetro. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
 
 En Route66App se ha utilizado este producto para ajustar la URL de los archivos de misiones, premios e insignias, así como la hora y fecha de última actualización de esos archivos.
 
 \subsection{Funciones}
 
-Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código que son ejecutados en el caso de que ocurra una determinada condición. En Route66App, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
+Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código que se ejecutan en el caso de que ocurra una determinada condición. En Route66App, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
 
 \begin{enumerate}
-\item A las escrituras de \textit{Firebase Firestore}: Es preciso escuchar todos aquellos eventos de escritura y actualización sobre los objetos almacenados en las colecciones de \textit{Achivements} (logros). Esto es necesario para:
+\item Las escrituras de \textit{Firebase Firestore}: Es preciso escuchar todos aquellos eventos de escritura y actualización sobre los objetos almacenados en las colecciones de \textit{Achivements} (logros). Esto es necesario para:
 	\begin{enumerate}
 		\item Poder actualizar la base de datos con la suma de las puntuaciones del usuario.
 		\item Poder notificar al usuario en caso de que se le añada un nuevo logro de tipo consumo.
 		\item Avisar de que un logro de tipo social ha sido comprobado.
 	\end{enumerate}
 
-\item A las llamadas HTTP contra el endpoint (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
+\item Las llamadas HTTP contra el endpoint (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
 \end{enumerate}
 
 
@@ -3281,7 +3281,6 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
   \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
   \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
-   %\addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3289,8 +3288,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
   \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
- % \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3315,15 +3313,13 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
   \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio.}
    \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3348,10 +3344,9 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario realiza un consumo en una misión de tal tipo.}} 
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario realiza un consumo en una misión de tal tipo.} 
   \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
-  \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante. Se corrige.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3511,7 +3506,7 @@ Los pasos que hay que seguir para la instalación de Route66App son los mismos d
 \section{Guía de usuario}
 
 \subsection{Usuarios}
-La aplicación sigue totalmente los estándares de Material Design, con el fin de conseguir que el usuario medio de Android le resulte una interfaz gráfica familiar. En el apartado “Usabilidad“ (página \pageref{usabilitymatters}) se han explicado los diferentes principios de Interacción Persona-Computadora aplicados en la interfaz gráfica de la aplicación.\\
+La aplicación sigue totalmente los estándares de \textit{Material Design}, con el fin de conseguir que el usuario medio de Android le resulte una interfaz gráfica familiar. En el apartado “Usabilidad“ (página \pageref{usabilitymatters}) se han explicado los diferentes principios de Interacción Persona-Computadora aplicados en la interfaz gráfica de la aplicación.\\
 
 Una vez instalada la aplicación nos encontramos con la siguiente vista que permite iniciar sesión o registrarse.
 
@@ -3529,7 +3524,7 @@ Esta vista permite:
 \item Registrarse en el sistema por medio de correo electrónico y contraseña.
 \end{itemize}
 
-Una vez se haya iniciado sesión (registrarse implica iniciar sesión automáticamente), se verá la actividad principal de la aplicación. A continuación se muestran capturas de pantalla del selector de niveles, menú principal sin puntuaciones asociadas y menú principal con puntuaciones asociadas.
+Una vez se haya iniciado sesión (registrarse implica iniciar sesión automáticamente), se verá la actividad principal de la aplicación.
 
 \begin{figure}[H]
 \begin{center}
@@ -3781,10 +3776,10 @@ Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo
 \chapter{Conclusiones y trabajo futuro.}
 \section{Conclusiones}
 
-Se extraen las siguientes conclusiones a este Trabajo Fin de Grado:
+Conclusiones de este Trabajo Fin de Grado:
 \begin{enumerate}
 
-\item Se ha elaborado un sistema informático basado en la ludificación a partir de una idea desarrollada en el T.F.G. de una alumna de nuestra Universidad.
+\item Se ha elaborado un sistema informático basado en la ludificación a partir de una idea desarrollada en el T.F.G. de Dña. Cristina Martínez Martínez, alumna de nuestra Universidad.
 
 \item Se ha implementado una aplicación Android que permite fidelizar clientes, por medio de la realización de una serie de misiones y la obtención de insignias y premios, con el objetivo de satisfacer los criterios de cada uno de los tipos de usuario de la teoría de Bartle \cite{iebsctj}.
 
@@ -3800,13 +3795,13 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 \begin{enumerate}
 \item Integrar el sistema de ludificación desarrollado en una aplicación que será utilizada en un ambiente real. Un ejemplo podría ser utilizar la cafetería de la Escuela de Ingeniería Informática para ello.
 
-\item Al igual que se ha visto en el estudio de alternativas en el caso de VIPS, permitir pagar la cuenta directamente con saldo recargable. Con cada recarga, el usuario se llevaría una serie de puntos por completar logros de recargas.
+\item Al igual que se ha visto en el estudio de alternativas en el caso de \textit{VIPS}, permitir pagar la cuenta directamente con saldo recargable. Con cada recarga, el usuario obtendría una serie de puntos por completar logros de recargas.
 
 \item Poder realizar pedidos directamente desde la aplicación.
 
 \item Realizar la aplicación para la plataforma iOS.
 
-\item Traducir la aplicación a más idiomas, incluyendo el inglés, catalán, euskera, gallego y valenciano.
+\item Traducir la aplicación a idiomas como el inglés, catalán, euskera, gallego, valenciano, etcétera.
 
 \item Incluir más métodos de autenticación.
 \end{enumerate}
@@ -3981,7 +3976,7 @@ service cloud.firestore {
 }
 \end{lstlisting}
 
-Por defecto, \textit{Firebase Firestore} deniega tanto la lectura y escritura de todos los documentos. Solo si se cumple la regla de seguridad que corresponda se podrá proceder a la lectura o a la escritura. \\
+Por defecto, \textit{Firebase Firestore} deniega la lectura y escritura de todos los documentos. Solo si se cumple la regla de seguridad que corresponda se podrá proceder a la lectura o a la escritura. \\
 
 Las reglas de seguridad anteriores:
 \begin{itemize}

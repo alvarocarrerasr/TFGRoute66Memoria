@@ -97,7 +97,7 @@
 \contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{82}
 \contentsline {subsection}{\numberline {3.4.7}Funciones}{82}
 \contentsline {section}{\numberline {3.5}Pruebas}{82}
-\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{87}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{86}
 \contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{87}
 \contentsline {subsection}{\numberline {3.7.1}Usuarios}{87}
 \contentsline {subsection}{\numberline {3.7.2}Equipos}{91}
