@@ -140,15 +140,15 @@ Dña. Margarita Gonzalo Tasis\end{large}
 
 Cada vez es más común encontrarse la ludificación aplicada a los procesos empresariales como una forma de incrementar la productividad sobre un determinado aspecto. Una de las aplicaciones más comunes es la fidelización de clientes, en donde, por medio de una serie de juegos y actividades, se incita a aumentar el consumo de los usuarios sobre la marca y esta es justa la idea fundamental sobre la que se sustenta este Trabajo de Fin de Grado.
 
-Route66App es una aplicación nativa para dispositivos Android, orientada a aplicar técnicas de ludificación empresarial de fidelización de clientes para una cadena de restaurantes de comida rápida. Se ha realizado con las últimas tecnologías propuestas por Google para el desarrollo de aplicaciones móviles: Firebase y Kotlin.
+\textit{Route66App} es una aplicación nativa para dispositivos \textit{Android}, orientada a aplicar técnicas de ludificación empresarial de fidelización de clientes para una cadena de restaurantes de comida rápida. Se ha realizado con las últimas tecnologías propuestas por \textit{Google} para el desarrollo de aplicaciones móviles: \textit{Firebase} y \textit{Kotlin}.
 
 
-\section*{Abstract}
+\section*{\textit{Abstract}}
 
 
-It is more and more common to find the gamification applied to the different business procedures as a way of increasing the productivity over a certain business aspect. One of the most common applications is the earning of customers loyalty where, thanks to different games and activities, customers are encouraged to increase the expense in the products of the brand and that is exactly the main idea of this Bachelor's Thesis.
+\textit{It is more and more common to find the gamification applied to the different business procedures as a way of increasing the productivity over a certain business aspect. One of the most common applications is the earning of customers loyalty where, thanks to different games and activities, customers are encouraged to increase the expense in the products of the brand and that is exactly the main idea of this Bachelor's Thesis.}
 
-Route66App is a native Android application oriented to apply the business gamification techniques of earning the customers loyalty for a quick-meal restaurant chain. It has been made using the latest technologies proposed by Google for the mobile app development: Firebase and Kotlin.
+\textit{Route66App is a native Android application oriented to apply the business gamification techniques of earning the customers loyalty for a quick-meal restaurant chain. It has been made using the latest technologies proposed by Google for the mobile app development: Firebase and Kotlin.}
 
 \clearpage
 
@@ -166,7 +166,7 @@ Agradecimientos
 
 \textit{En segundo lugar, a mi familia y amigos, por el apoyo que me han dado en estos cuatro años de carrera y en especial a mis padres por haberme ayudado en este trabajo con sus ideas y opiniones.} \vspace{0.5cm}
 
-\textit{Por último, a mis compañeros de equipo de Telefónica Investigación y Desarrollo, que me han dado la oportunidad de aprender tecnologías muy utilizadas y relacionadas con el desarrollo de aplicaciones Android.} \vspace{0.5cm}
+\textit{Por último, a mis compañeros de equipo de Telefónica Investigación y Desarrollo, que me han dado la oportunidad de aprender tecnologías muy utilizadas y relacionadas con el desarrollo de aplicaciones \textit{Android}.} \vspace{0.5cm}
 
 \textit{Gracias a todos.}
 \end{flushright}
@@ -188,26 +188,26 @@ Agradecimientos
 \pagenumbering{arabic}
 
 
-\chapter{Introducción y contexto.}
-\section{Introducción y objetivos.}
+\chapter{Introducción y contexto}
+\section{Introducción y objetivos}
 
-\subsection{Introducción.}
+\subsection{Introducción}
 
 La ludificación consiste, según IEBSchool \cite{iebschoolGami} en \textit{“el uso de mecánicas de juego en un contexto de no juego para conducir el comportamiento de los participantes (mediante la participación, la interacción, la adicción o, incluso, la competición) hacia la consecución de un determinado objetivo de negocio”}. 
 
 Aunque habitualmente se ha enfocado la ludificación al área comercial o de ventas de cara a los clientes, (como por ejemplo el \cite{monopolymcdo} \textit{Monopoly Ganador de McDonalds}), existen también ejemplos en la educación, en las relaciones con los proveedores e, incluso, para incrementar el número de ventas en un centro comercial, (ludificación orientada a los empleados), tal como se recoge en el Trabajo de Fin de Grado de la alumna del Grado en Ingeniería Industrial, \cite{anatfg} Dña. Ana Ruiz Caballero.
 
-Hoy en día, miles de compañías utilizan la ludificación en sus procesos empresariales desde sus relaciones con los empleados hasta con los clientes, pasando por sus comerciales. La ludificación realmente funciona y, por increíble que parezca, es muy efectiva. De hecho, no son pocos los ejemplos de una aplicación más que satisfactoria de la misma. Así, en 2011, \cite{accentureGami} Volkswagen decidió inventar en China, su mercado más importante, una nueva versión de su \textit{“people’s car“} y para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado de este proyecto fue la obtención de más de 50.000 propuestas diferentes. Otro caso que merece la pena reseñar es el de Correos \cite{confidencialcorreosgami}, que en 2012 rediseñó su web y se planteó o bien contratar a una empresa por miles de euros, bien, plantear un sistema de ludificación en el que los empleados propusieran nuevos diseños a cambio de pequeños regalos. Esta segunda opción fue la elegida (se presentaron más de 50.000 ideas en un tiempo récord), y esto supuso un ahorro de un 70\% frente a la primera alternativa. 
+Hoy en día, miles de compañías utilizan la ludificación en sus procesos empresariales desde sus relaciones con los empleados hasta con los clientes, pasando por sus comerciales. La ludificación realmente funciona y, por increíble que parezca, es muy efectiva. De hecho, no son pocos los ejemplos de una aplicación más que satisfactoria de la misma. Así, en 2011, \cite{accentureGami} Volkswagen decidió inventar en China, su mercado más importante, una nueva versión de su \textit{“people’s car“} y para ello contó con la ayuda de sus clientes, a quienes ofreció una herramienta de diseño y un sistema de puntuaciones. El resultado de este proyecto fue la obtención de más de 50.000 propuestas diferentes. Otro caso que merece la pena reseñar es el de Correos \cite{confidencialcorreosgami}, que en 2012 rediseñó su \textit{web} y se planteó o bien contratar a una empresa por miles de euros, bien, plantear un sistema de ludificación en el que los empleados propusieran nuevos diseños a cambio de pequeños regalos. Esta segunda opción fue la elegida (se presentaron más de 50.000 ideas en un tiempo récord), y esto supuso un ahorro de un 70\% frente a la primera alternativa. 
 
-El caso más destacable en nuestro país es el de \cite{bbvag} BBVA Game, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos como consultar movimientos, domiciliar la nómina, realizar transferencias, etcétera. Igualmente, también se pueden conseguir incentivos por compartir un mensaje en redes sociales,  invitar a amigos o contratar productos, que es posible canjear por premios directos o por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses y aumentaron el uso de la plataforma por parte de sus clientes ya existentes.
+El caso más destacable en nuestro país es el de \cite{bbvag} \textit{BBVA Game}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos como consultar movimientos, domiciliar la nómina, realizar transferencias, etcétera. Igualmente, también se pueden conseguir incentivos por compartir un mensaje en redes sociales,  invitar a amigos o contratar productos, que es posible canjear por premios directos o por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses y aumentaron el uso de la plataforma por parte de sus clientes ya existentes.
 
-\subsection{Objetivos.}
+\subsection{Objetivos}
 
-El propósito de este Trabajo Fin de Grado es el de realizar una aplicación Android basada en un sistema de ludificación para un restaurante de comida rápida, partiendo de la idea desarrollada en el \cite{cristinatfg} Trabajo de Fin de Grado de Dña. Cristina Martínez Martínez. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
+El propósito de este Trabajo Fin de Grado es el de realizar una aplicación \textit{Android} basada en un sistema de ludificación para un restaurante de comida rápida, partiendo de la idea desarrollada en el \cite{cristinatfg} Trabajo de Fin de Grado de Dña. Cristina Martínez Martínez. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
 
 Este Trabajo Fin de Grado detallará el desarrollo, análisis, diseño e implementación de la parte cliente del sistema informático en cuestión y se ha diseñado para que esta cambie las diferentes misiones y desafíos de acuerdo con los parámetros que el administrador del sistema establezca en el \textit{backend} (parte de gestión).
 
-\subsection{Motivación.}
+\subsection{Motivación}
 
 La motivación es doble, por un lado, analizar, diseñar e implementar un sistema de ludificación, diseñado por una antigua alumna de esta Universidad para completar así una de las líneas futuras propuestas por la misma en su Trabajo de Fin de Grado, y por otro, se busca desarrollar un sistema de ludificación que permita a los alumnos del Grado en Ingeniería de Organización Industrial de nuestra Universidad poner en marcha y probar un sistema de este tipo, que no tiene alternativas de licencia de prueba para estudiantes en el mercado.
 
@@ -216,7 +216,7 @@ La motivación es doble, por un lado, analizar, diseñar e implementar un sistem
 Se han analizado diversas aplicaciones de restaurantes de comida rápida presentes en España, con el fin de conocer cómo son y si han implementado técnicas de ludificación a las mismas. Como se verá más adelante, los sistemas de ludificación aplicados en estos ejemplos son bastante básicos y no permiten extraer todo el potencial que podrían tener.
 
 \subsection{Análisis aplicaciones de restaurantes de comida rápida.}
-\subsubsection{McDonald's}
+\subsubsection{\textit{McDonald's}}
 
 \begin{figure}[H]
 \begin{center}
@@ -230,9 +230,9 @@ Se han analizado diversas aplicaciones de restaurantes de comida rápida present
 \begin{itemize}
 \item \textbf{Aplicación estudiada:} \cite{mcdo} \textit{McDonald's España - Ofertas.}
 \item \textbf{Análisis:} 
-La aplicación móvil McDonalds ofrece un gran número de funcionalidades entre las que se encuentran un servicio de ofertas, canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
+La aplicación móvil \textit{McDonalds} ofrece un gran número de funcionalidades entre las que se encuentran un servicio de ofertas, canjeo de cupones, listado de la carta de productos o envío de pedidos a domicilio. 
 
-El sistema de ludificación implementado es bastante básico ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto mayor sea el nivel del usuario, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los tickets de compra y llegar a un mínimo de gasto. Durante el tiempo que la he tenido instalada, me ha pedido dar la opinión de la app por correo electrónico a cambio de obtener un obsequio.
+El sistema de ludificación implementado es bastante básico ya que su estrategia se basa en utilizar un sistema por niveles (oro, plata y bronce), en el que cuanto mayor sea el nivel del usuario, mejores ofertas se pueden encontrar. Para poder subir de nivel, será necesario escanear los \textit{tickets} de compra y llegar a un mínimo de gasto. Durante el tiempo que la he tenido instalada, me ha pedido dar la opinión de la \textit{app} por correo electrónico a cambio de obtener un obsequio.
 
 \item \textbf{Puntos fuertes:}
 	\begin{itemize}
@@ -261,9 +261,9 @@ El sistema de ludificación implementado es bastante básico ya que su estrategi
 \begin{itemize}
 \item \textbf{Aplicación estudiada:} \cite{burgerk} \textit{BURGER KING® España.}
 \item \textbf{Análisis:} 
-Al igual que McDonalds, ofrece un sistema de fidelización llamado \textit{“Mis Coronas“}, consistente en que cada tres pedidos realizados por medio de la app móvil o el sitio web de Burger King, se acumulan coronas y cada cuatro se consigue una hamburguesa gratis. Además, invitan a registrarse en la app y con el historial de pedidos efectúan ofertas personalizadas al cliente.
+Al igual que McDonalds, ofrece un sistema de fidelización llamado \textit{“Mis Coronas“}, consistente en que cada tres pedidos realizados por medio de la \textit{app} móvil o el sitio \textit{web} de \textit{Burger King}, se acumulan coronas y cada cuatro se consigue una hamburguesa gratis. Además, invitan a registrarse en la \textit{app} y con el historial de pedidos efectúan ofertas personalizadas al cliente.
 
-Las opciones de esta app están bastante limitadas: conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
+Las opciones de esta \textit{app} están bastante limitadas: conseguir un listado de restaurantes, realizar pedidos a domicilio, ver la carta de productos o visualizar un listado de cupones o promociones.
 
 \item \textbf{Puntos fuertes:}
 	\begin{itemize}
@@ -322,9 +322,9 @@ Es una de las aplicaciones más simples de las estudiadas pues se limita a poner
 \begin{itemize}
 \item \textbf{Aplicación estudiada:} \cite{vipsapp} \textit{Club VIPS: Promociones y pedidos Take Away.}
 \item \textbf{Análisis:} 
-La aplicación de la cadena VIPS es, sin lugar a dudas, la más completa de las analizadas.
+La aplicación de la cadena \textit{VIPS} es, sin lugar a dudas, la más completa de las analizadas.
 
-Para fidelizar clientes utiliza el servicio ClubEuroVIPS, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones como aumentar el consumo o hacerlo en determinadas franjas horarias. Además ofrece un sistema de clasificación de usuarios por niveles de gasto (niveles clásico, oro y platino) a partir de los cuales podremos obtener \textit{WiFi} Premium, bebidas extras o puntos extras.
+Para fidelizar clientes utiliza el servicio \textit{ClubEuroVIPS}, en el que ofrece un \textit{cashback} de un 3\%, pudiendo duplicarse bajo ciertas condiciones como aumentar el consumo o hacerlo en determinadas franjas horarias. Además ofrece un sistema de clasificación de usuarios por niveles de gasto (niveles clásico, oro y platino) a partir de los cuales podremos obtener \textit{WiFi Premium}, bebidas extras o puntos extras.
 
 Paralelamente, la aplicación invita al usuario a sus lanzamientos o estrenos de nuevos productos. Por ejemplo “\textit{te invitamos a nuestras hamburguesas del Chef o a nuestras nuevas pizzas Chicago Style}” o “\textit{te invitamos a probar nuestras pizzas}” y se pueden encontrar funcionalidades propias de un restaurante que apuesta por el crecimiento de su app móvil, como son la posibilidad de pagar desde la app, la funcionalidad \textit{Shake-It}, que consiste en realizar su pedido favorito con solo agitar su teléfono móvil, o la opción de guardar promociones en la aplicación. Además de permitir realizar pedidos online del tipo \textit{take-away}.
 \item \textbf{Puntos fuertes:}
@@ -346,7 +346,7 @@ Paralelamente, la aplicación invita al usuario a sus lanzamientos o estrenos de
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{Pans \& Company}
+\subsubsection{\textit{Pans \& Company}}
 
 \begin{figure}[H]
 \begin{center}
@@ -360,7 +360,7 @@ Paralelamente, la aplicación invita al usuario a sus lanzamientos o estrenos de
 \begin{itemize}
 \item \textbf{Aplicación estudiada:} \cite{pansapp} \textit{Pans \& Company.}
 \item \textbf{Análisis:} 
-Pans \& Company ofrece únicamente una tarjeta de fidelidad integrada en la misma app. Esta tarjeta básicamente consiste en un código QR que el usuario puede mostrar en caja para acumular puntos que, posteriormente, se podrán convertir en dinero. Además, se realizarán ofertas personalizadas.
+\textit{Pans \& Company} ofrece únicamente una tarjeta de fidelidad integrada en la misma \textit{app}. Esta tarjeta básicamente consiste en un código \textit{QR} que el usuario puede mostrar en caja para acumular puntos que, posteriormente, se podrán convertir en dinero. Además, se realizarán ofertas personalizadas.
 
 Sus funcionalidades son las típicas de una aplicación de esta categoría: listado de restaurantes, ofertas y listado de la carta.
 \item \textbf{Puntos fuertes:}
@@ -374,7 +374,7 @@ Sus funcionalidades son las típicas de una aplicación de esta categoría: list
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{Foster's Hollywood}
+\subsubsection{\textit{Foster's Hollywood}}
 
 \begin{figure}[H]
 \begin{center}
@@ -388,9 +388,9 @@ Sus funcionalidades son las típicas de una aplicación de esta categoría: list
 \begin{itemize}
 \item \textbf{Aplicación estudiada:} \cite{fostersh} \textit{Foster's Hollywood.}
 \item \textbf{Análisis:} 
-El sistema de fidelización de clientes de Foster's Hollywood se basa en un sistema de niveles (\textit{blue}, \textit{silver} y \textit{gold}), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario: postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
+El sistema de fidelización de clientes de \textit{Foster's Hollywood} se basa en un sistema de niveles (\textit{blue}, \textit{silver} y \textit{gold}), en el que cuanto mejor sea el nivel, mayores ventajas tendrá el usuario: postre de regalo, descuentos de ocio (en empresas asociadas), o incluso, promoción por el cumpleaños. Para poder aumentar de nivel será necesario ir un número de veces a los establecimientos de la cadena. 
 
-Se nos identificará como clientes mediante la tarjeta Foster's Hollywood, un código QR localizado en la aplicación y que el cliente simplemente debe enseñar al realizar el pago, con el fin de que la compra quede asociada a su usuario. Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido online.
+Se nos identificará como clientes mediante la tarjeta \textit{Foster's Hollywood}, un código \textit{QR} localizado en la aplicación y que el cliente simplemente debe enseñar al realizar el pago, con el fin de que la compra quede asociada a su usuario. Por otra parte, también es posible visualizar la carta del restaurante o ver el listado de restaurantes, así como realizar el pedido \textit{online}.
 \item \textbf{Puntos fuertes:}
 	\begin{itemize}
 	\item Notificaciones \textit{PUSH} para informar al cliente de nuevas ofertas y promociones.
@@ -433,7 +433,7 @@ Este trabajo está divido en cuatro partes y, a su vez, en secciones y subseccio
 
 \item Webgrafía y bibliografía.
 
-\item Anexos
+\item Anexos.
 
 \end{enumerate}
 
@@ -463,6 +463,7 @@ Se medirá el cumplimiento de los objetivos anteriores mediante el cálculo de u
 \textbf{Público objetivo}\\
 
 El público objetivo estará formado por hombres y mujeres con edades comprendidas entre los doce y los cincuenta y cinco años. 
+
 Los conocimientos tecnológicos esperados en este grupo de edad no tienen por qué ser altos, considerándose suficientes, conocimientos básicos en uso de \textit{smartphones} y de aplicaciones móviles. En el caso en el que nos encontramos, la aplicación que se va a desarrollar estará enfocada a ser ejecutada sobre terminales de tipo Android.
 
 Los potenciales usuarios de la aplicación la utilizarán para conseguir recompensas y descuentos derivados del uso de la misma.
@@ -557,100 +558,100 @@ Los jugadores podrán crear el número de equipos que deseen y participarán con
 \chapter{Herramientas utilizadas}
 \section{Herramientas utilizadas}
 
-Para la elaboración de esta memoria he utilizado las siguientes herramientas:
+Para la elaboración de este Trabajo Fin de Grado se han utilizado las siguientes herramientas:
 \begin{itemize}
-\item Como editor \LaTeX , Texmaker v. 4.4.1. \footnote{\url{http://www.xm1math.net/texmaker/}}
-\item Como sistema de control de versiones, GitHub \footnote{\url{https://www.github.com}}
-\item Para la realización de backups, Dropbox \footnote{\url{https://www.dropbox.com/}}
-\item Para tomar notas e ideas, Microsoft OneNote \footnote{\url{https://www.onenote.com/}}
-\item Para realizar los diagramas \textit{UML}, Astah Professional 7.1.0  \footnote{\url{http://astah.net/}}
-\item Para la elaboración de los prototipos iniciales, se ha utilizado Ionic 3 \footnote{\url{https://ionicframework.com/}}.
-\item Para la elaboración de la aplicación Android nativa, se ha utilizando Android Studio 3.1.
-\item Para la gestión de historias de usuario, se ha utilizado Trello \footnote{\url{https://trello.com/#}}.
-\item Para el control y seguimiento del proyecto se ha utilizado la herramienta Asana \footnote{\url{https://app.asana.com}}.
-\item Para la realización de los diagramas de Gantt se ha empleado Wrike en una versión de prueba gratuita \footnote{\url{https://www.wrike.com/main/}}.
+\item Como editor \LaTeX , \textit{Texmaker} v. 4.4.1. \footnote{\url{http://www.xm1math.net/texmaker/}}.
+\item Como sistema de control de versiones, \textit{GitHub} \footnote{\url{https://www.github.com}}.
+\item Para la realización de copias de seguridad, \textit{Dropbox} \footnote{\url{https://www.dropbox.com/}}.
+\item Para tomar notas e ideas, \textit{Microsoft OneNote} \footnote{\url{https://www.onenote.com/}}.
+\item Para realizar los diagramas \textit{UML}, \textit{Astah Professional} 7.1.0  \footnote{\url{http://astah.net/}}.
+\item Para la elaboración de los prototipos iniciales, se ha utilizado \textit{Ionic} 3 \footnote{\url{https://ionicframework.com/}}.
+\item Para la elaboración de la aplicación \textit{Android} nativa, se ha utilizando \textit{Android Studio} 3.1.
+\item Para la gestión de historias de usuario, se ha utilizado \textit{Trello}. \footnote{\url{https://trello.com/#}}.
+\item Para el control y seguimiento del proyecto se ha utilizado la herramienta \textit{Asana} \footnote{\url{https://app.asana.com}}.
+\item Para la realización de los diagramas de \textit{Gantt} se ha empleado \textit{Wrike} en una versión de prueba gratuita \footnote{\url{https://www.wrike.com/main/}}.
 \end{itemize}
 
 \section{Motivación de las tecnologías utilizadas}
-En esta sección se indican las diferentes tecnologías señaladas por la tutora para elaborar este trabajo: Firebase y Kotlin.
+En esta sección se indican las diferentes tecnologías señaladas por la tutora para elaborar este trabajo: \textit{Firebase} y \textit{Kotlin}.
 
-\subsection{Kotlin}
+\subsection{\textit{Kotlin}}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{images/kotlin}\\
-\caption{Logotipo de Kotlin} \cite{kotlin}
+\caption{Logotipo de \textit{Kotlin}.} \cite{kotlin}
 \end{figure}
 
-Kotlin\cite{smovkotlin} es un lenguaje de programación diseñado por la empresa \textit{Jetbrains} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de Java (JVM). Fue señalado por Google en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas Web).
+Kotlin\cite{smovkotlin} es un lenguaje de programación diseñado por la empresa \textit{Jetbrains} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de Java (JVM). Fue señalado por Google en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas \textit{Web}).
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{images/kotlinexample}\\
-\caption{\textit{Snippet} ejemplo de un \textit{POJO} Punto} A la izquierda, la versión en Java, a la derecha, la de Kotlin. Elaboración propia.
+\caption{\textit{Snippet} ejemplo de un \textit{POJO} Punto} A la izquierda, la versión en \textit{Java}, a la derecha, la de \textit{Kotlin}. Elaboración propia.
 \end{figure}
 
 Kotlin tiene una serie de ventajas que merecen la pena señalar\cite{kotlin}:
 \begin{enumerate}
 
-\item Permite una interoperabilidad completa con Java: al utilizar ambos la misma máquina virtual (y compilar en \textit{bytecode}), es posible la ejecución de métodos de Java en Kotlin y viceversa. De esta forma, permite integrar componentes desarrollados en un lenguaje desde el otro.
+\item Permite una interoperabilidad completa con Java: al utilizar ambos la misma máquina virtual (y compilar en \textit{bytecode}), es posible la ejecución de métodos de \textit{Java} en \textit{Kotlin} y viceversa. De esta forma, permite integrar componentes desarrollados en un lenguaje desde el otro.
 
 \item Es conciso: Kotlin elimina gran cantidad de \textit{“boilerplate“} en el código fuente. Por ejemplo, en el caso de una clase \textit{POJO}, los setters y los getters son generados en tiempo de compilación en el caso de que empleemos una clase de datos (\textit{data class)}.
 
-\item Es \textit{“null-safe“}: Según el blog de programación \textit{Tapiki} \cite{tapikinull}, en un estudio realizado sobre 1.000 sistemas informáticos, un 70\% de ellos contenían errores de puntero nulo, que fue el motivo de excepción más frecuente. Kotlin intenta solucionar este problema forzando al programador a utilizar objetos que no pueden ser nulos, o bien, haciendo que tenga que indicar expresamente que un puntero puede ser nulo.
+\item Es \textit{“null-safe“}: Según el blog de programación \textit{Tapiki} \cite{tapikinull}, en un estudio realizado sobre 1.000 sistemas informáticos, un 70\% de ellos contenían errores de puntero nulo, que fue el motivo de excepción más frecuente. \textit{Kotlin} intenta solucionar este problema forzando al programador a utilizar objetos que no pueden ser nulos, o bien, haciendo que tenga que indicar expresamente que un puntero puede ser nulo.
 
-\item Es actualmente un estándar en programación de aplicaciones \textit{Android}: El apoyo que Google está dando al lenguaje de programación es tal que resulta más que recomendable empezar a utilizarlo y acostumbrarse al mismo.
+\item Es actualmente un estándar en programación de aplicaciones \textit{Android}: El apoyo que \textit{Google} está dando al lenguaje de programación es tal que resulta más que recomendable empezar a utilizarlo y acostumbrarse al mismo.
 \end{enumerate}
 
 Por otro lado, también resulta de interés considerar los inconvenientes que suponen utilizar esta tecnología \cite{disadvKotlin}:
 \begin{enumerate}
 
-\item Curva de aprendizaje: Kotlin tiene características que no tiene Java y, por tanto, existe una cierta curva de aprendizaje que es necesario solventar.
+\item Curva de aprendizaje: \textit{Kotlin} tiene características que no tiene Java y, por tanto, existe una cierta curva de aprendizaje que es necesario solventar.
 
-\item Menor cantidad de documentación frente a Java: al ser un lenguaje tan nuevo, apenas se cuenta con una comunidad de desarrolladores, por lo que encontrar documentación concreta puede llegar a ser un problema.
+\item Menor cantidad de documentación frente a \textit{Java}: al ser un lenguaje tan nuevo, apenas se cuenta con una comunidad de desarrolladores, por lo que encontrar documentación concreta puede llegar a ser un problema.
 \end{enumerate}
 
-\subsection{Firebase}
+\subsection{\textit{Firebase}}
 \label{firebase}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{images/firebase}\\
-\caption{Logotipo de Firebase} \cite{firebase}
+\caption{Logotipo de Firebase.} \cite{firebase}
 \end{figure}
 
 
-Firebase es un producto de Google enmarcado dentro de su división \textit{Google Cloud}, plataforma del Gigante de Internet que ofrece recursos informáticos bajo demanda. Es utilizada para facilitar el desarrollo de aplicaciones Web y móviles, que posibilita la reducción del tiempo que se dedica a desarrollar áreas no específicas de la aplicación haciendo que el desarrollador pueda centrarse en aquello que la hará distinta. Fue creada en el año 2011 aunque en 2014 fue adquirida por Google.
+\textit{Firebase} es un producto de \textit{Google} enmarcado dentro de su división \textit{Google Cloud}, plataforma del Gigante de Internet que ofrece recursos informáticos bajo demanda. Es utilizada para facilitar el desarrollo de aplicaciones \textit{Web} y móviles, que posibilita la reducción del tiempo que se dedica a desarrollar áreas no específicas de la aplicación haciendo que el desarrollador pueda centrarse en aquello que la hará distinta. Fue creada en el año 2011 aunque en 2014 fue adquirida por \textit{Google}.
 
-Firebase ofrece un gran número de componentes ya desarrollados y listos para integrar, como las sesiones, las bases de datos, el alojamiento de archivos, las funciones, las estadísticas, etcétera.\\
+\textit{Firebase} ofrece un gran número de componentes ya desarrollados y listos para integrar, como las sesiones, las bases de datos, el alojamiento de archivos, las funciones, las estadísticas, etcétera.\\
 
-Los motivos por los que se ha escogido Firebase son los siguientes \cite{firebaseadvdis}:
+Los motivos por los que se ha escogido \textit{Firebase} son los siguientes \cite{firebaseadvdis}:
 
 \begin{enumerate}
 
-\item Facilita el desarrollo: los componentes que conforman el ecosistema Firebase ya se encuentran desarrollados y están listos para ser integrados en la aplicación. Estos son probados y utilizados por millones de usuarios todos los días y aplica los últimos estándares de seguridad informática.
+\item Facilita el desarrollo: los componentes que conforman el ecosistema \textit{Firebase} ya se encuentran desarrollados y están listos para ser integrados en la aplicación. Estos son probados y utilizados por millones de usuarios todos los días y aplica los últimos estándares de seguridad informática.
 
-\item \textit{Serverless} : en caso de no utilizar Firebase, el equipo de desarrollo tendría que preocuparse por los servidores y conexiones de red, intentando tener el máximo tiempo de \textit{uptime}, instalar actualizaciones, escalar  los recursos informáticos, asegurar la redundancia, etcétera.
+\item \textit{Serverless} : en caso de no utilizar \textit{Firebase}, el equipo de desarrollo tendría que preocuparse por los servidores y conexiones de red, intentando tener el máximo tiempo de \textit{uptime}, instalar actualizaciones, escalar los recursos informáticos, asegurar la redundancia, etcétera.
 
-\item Facilita la sincronización de los datos: Firebase está construido para que el usuario pueda trabajar sin conexión sobre la aplicación y actualizar los datos en cuanto tenga acceso a la red.
+\item Facilita la sincronización de los datos: \textit{Firebase} está construido para que el usuario pueda trabajar sin conexión sobre la aplicación y actualizar los datos en cuanto tenga acceso a la red.
 \end{enumerate}
 
 Firebase también tiene una serie de desventajas:
 
 \begin{enumerate}
-\item Dependencia de una plataforma específica: Una vez se lanza una aplicación elaborada con Firebase es muy complicado cambiar de tecnología, puesto que deberemos añadir los costes de desarrollo de todos aquellos componentes que utilicen la plataforma.
+\item Dependencia de una plataforma específica: Una vez se lanza una aplicación elaborada con \textit{Firebase} es muy complicado cambiar de tecnología, puesto que deberemos añadir los costes de desarrollo de todos aquellos componentes que utilicen la plataforma.
 
-\item Interfaces: Las interfaces de acceso a datos de Firebase no son muy flexibles y en algunos casos no podremos consultar directamente la información a la base de datos, sino que será necesario descargarla por completo para realizar las consultas en otra plataforma.
+\item Interfaces: Las interfaces de acceso a datos de \textit{Firebase} no son muy flexibles y en algunos casos no podremos consultar directamente la información a la base de datos, sino que será necesario descargarla por completo para realizar las consultas en otra plataforma.
 
 \end{enumerate}
 
-En cuanto a las bases de datos de Firebase, se ha de destacar que ofrece en su paquete dos de tipo no relacional, \textit{Firebase Firestore} (basada en documentos) y \textit{Firebase Realtime} (basada en pares clave-valor). Para este trabajo se ha elegido la primera por varios motivos:
+En cuanto a las bases de datos de \textit{Firebase}, se ha de destacar que ofrece en su paquete dos de tipo no relacional, \textit{Firebase Firestore} (basada en documentos) y \textit{Firebase Realtime} (basada en pares clave-valor). Para este trabajo se ha elegido la primera por varios motivos:
 
 \begin{enumerate}
 \item Mayor complejidad en las consultas: Firestore ofrece operaciones básicas de tipo \textit{WHERE}. Igualmente, ofrece los operadores \textit{ORDER BY} y \textit{LIMIT}.
-\item Mayor escalabilidad: En Realtime cuando se accede a una parte del árbol (clave-valor), el usuario debe descargarse todos los hijos. En Firestore únicamente aquellos documentos que se deseen.
-\item Mayor seguridad: Firestore ofrece mayores medidas de seguridad al tener reglas de lectura y escritura más complejas y flexibles.
+\item Mayor escalabilidad: En \textit{Realtime} cuando se accede a una parte del árbol (clave-valor), el usuario debe descargarse todos los hijos. En \textit{Firestore} únicamente aquellos documentos que se deseen.
+\item Mayor seguridad: \textit{Firestore} ofrece mayores medidas de seguridad al tener reglas de lectura y escritura más complejas y flexibles.
 \end{enumerate}
 
 \section{Comunicación con el servidor}
@@ -665,21 +666,21 @@ La comunicación con el servidor es fundamental para el buen funcionamiento de l
 
 \item Manteninimiento de un ranking global.
 
-\item Conexión multidispositivo: se busca que el usuario pueda acceder a la aplicación desde distintos dispositivos, utilizando en todos ellos el sistema operativo Android.
+\item Conexión multidispositivo: se busca que el usuario pueda acceder a la aplicación desde distintos dispositivos, utilizando en todos ellos el sistema operativo \textit{Android}.
 \end{itemize}
 
 Encontraremos dos tipos de conexiones:
 
 \begin{itemize}
-\item Conexiones realizadas a Firebase: datos estadísticos, de sesiones, invitaciones, base de datos, etcétera.
+\item Conexiones realizadas a \textit{Firebase}: datos estadísticos, de sesiones, invitaciones, base de datos, etcétera.
 
-\item Conexiones realizadas para lanzar funciones de Firebase utilizando la autenticación de usuarios.
+\item Conexiones realizadas para lanzar funciones de \textit{Firebase} utilizando la autenticación de usuarios.
 
 \end{itemize}
 
 
 \chapter{Route66App}
-\section{Plan de Desarrollo del Software}
+\section{Plan de Desarrollo del \textit{Software}}
 \subsection{Descripción del proyecto}
 
 La ludificación comenzó a popularizarse en 2010 \cite{anatfg}, y desde entonces, tal y como he explicado en puntos anteriores de esta memoria, se ha aplicado en variados ámbitos (educación, ventas, proveedores, etcétera). En el caso que nos ocupa, un restaurante de comida americana, no podemos encontrar en España ningún ejemplo  con una aplicación similar.
@@ -694,7 +695,7 @@ El objetivo fundamental de  este trabajo es el de la implementación de un siste
 
 La aplicación deberá contar con las siguientes funciones:
 \begin{itemize}
-\item Acciones propias del usuario
+\item Acciones propias del usuario.
 	\begin{itemize}
 	\item Realizar misiones y juegos, con el fin de conseguir puntos y aumentar el nivel o posición en un ranking.
 	\item Modificación del perfil del usuario, permitiendo actualizar el avatar del usuario.
@@ -723,7 +724,7 @@ El proyecto aplicará el Proceso Unificado (\textit{Unified Process}), en concre
 \begin{itemize}
 \item Dirigido por los casos de uso.
 \item Centrado en la arquitectura.
-\item Iterativo e incremental
+\item Iterativo e incremental.
 \end{itemize}
 La iteratividad supone ciertas ventajas, como la de poder mitigar los riesgos más críticos en las fases más tempranas o permitir obtener \textit{feedback} mucho antes, además de reaprovechar el aprendizaje obtenido en etapas posteriores.
 
@@ -757,7 +758,7 @@ La estructura organizativa del proyecto estará formada por una única persona, 
                                                                          &                                                                               &  & 
 \end{tabular}
 \centering
-\caption{Roles}
+\caption{Roles.}
 \end{table}
 \vspace{0.5cm}
 
@@ -787,7 +788,7 @@ En este proyecto se utilizará la metodología UPedu \cite{upedu}, compuesta por
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.75]{images/upeduFases}
-\caption{Fases de la metodología UPedu} 
+\caption{Fases de la metodología UPedu.} 
 \label{upeduChart}
 \cite{upedu}
 \end{center}
@@ -829,7 +830,7 @@ Elaboración       & 2                 & 20 horas/semana  & 80 horas    \\ \hlin
 Construcción      & 2                 & 20 horas/semana  & 133 horas       \\ \hline
 Transición        & 1                 & 20 horas/semana   & 42 horas       \\ \hline
 \end{tabular}
-\caption{Fases del proceso UPedu}
+\caption{Fases del proceso UPedu.}
 \end{table}
 
 La duración estimada total es de 316 horas, a las que habría que añadir las necesarias para acudir a las tutorías.
@@ -841,7 +842,7 @@ Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017. C
 \begin{figure}[h]
 \begin{center}
 \includegraphics[height=9cm, width=\textwidth]{images/gantt/ite0}
-\caption{Diagrama de Gantt para la iteración 0 (fase de inicio)}
+\caption{Diagrama de Gantt para la iteración 0 (fase de inicio).}
 \end{center}
 \end{figure}
 
@@ -887,7 +888,7 @@ Esta fase comienza el día 20 de Enero de 2017 y finaliza el 1 de Marzo de 2018.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite1}
-\caption{Diagrama de Gantt para la iteración 1 (fase de elaboración)}
+\caption{Diagrama de Gantt para la iteración 1 (fase de elaboración).}
 \end{center}
 \end{figure}
 
@@ -917,7 +918,7 @@ Reuniones realizadas con la tutora del T.F.G.:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite2}
-\caption{Diagrama de Gantt para la iteración 2 (fase de elaboración)}
+\caption{Diagrama de Gantt para la iteración 2 (fase de elaboración).}
 \end{center}
 \end{figure}
 
@@ -946,7 +947,7 @@ Comienza el día 1 de Marzo de 2018 y finaliza el 10 de Abril de 2018.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[height=3cm,width=\textwidth]{images/gantt/ite3}
-\caption{Diagrama de Gantt para la iteración 3 (fase de construcción)}
+\caption{Diagrama de Gantt para la iteración 3 (fase de construcción).}
 \end{center}
 \end{figure}
 
@@ -975,7 +976,7 @@ Reuniones realizadas con la tutora del T.F.G.:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite4}
-\caption{Diagrama de Gantt para la iteración 4 (fase de construcción)}
+\caption{Diagrama de Gantt para la iteración 4 (fase de construcción).}
 \end{center}
 \end{figure}
 
@@ -1004,7 +1005,7 @@ Comienza el día 10 de Abril de 2018 y finaliza el 30 de Abril de 2018.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite5}
-\caption{Diagrama de Gantt para la iteración 5 (fase de transición)}
+\caption{Diagrama de Gantt para la iteración 5 (fase de transición).}
 \end{center}
 \end{figure}
 
@@ -1059,7 +1060,7 @@ Se hará un control y seguimiento del proyecto en todo momento, utilizando la he
 
 El control y seguimiento del proyecto resulta ser una tarea fundamental para asegurar el buen progreso del proyecto y asegurar el cumplimiento de los objetivos marcados, en especial en cuanto a la realización de los hitos establecidos, ya que el gestor del proyecto podrá observar las distintas variaciones de tiempo programadas versus reales, para así poder reaccionar y tomar las medidas que sean precisas para ajustarse al cronograma del proyecto.
 
-\subsection{Gestión de riesgos.}
+\subsection{Gestión de riesgos}
 
 Se identifican los siguientes riesgos:
 
@@ -1069,7 +1070,7 @@ Se identifican los siguientes riesgos:
   \addrow{Consecuencia}{Ralentización del trabajo.}
   \addrow{Probabilidad}{Media.}
   \addrow{Impacto}{Bajo.}
-  \addrow{Estrategia}{Reservar el riesgo}
+  \addrow{Estrategia}{Reservar el riesgo.}
   \addrow{Plan de acción}{Buscar información y ayuda, ya sea preguntando a la tutora del trabajo o utilizando otros medios.}
   \addrow{Plan de contingencia}{Revisión de conocimientos existentes.}
 \end{risk}
@@ -1080,9 +1081,9 @@ Se identifican los siguientes riesgos:
   \addheading{R1}{Retraso en la planificación}
   \addrow{Descripción}{Debido a errores en la estimación, la planificación no se ajusta a la realidad y se producen demoras en las fechas de entrega.}
   \addrow{Consecuencia}{Retraso en la entrega de los entregables.}
-  \addrow{Probabilidad}{Alta }
-  \addrow{Impacto}{Crítico}
-  \addrow{Estrategia}{Reservar el riesgo}
+  \addrow{Probabilidad}{Alta.}
+  \addrow{Impacto}{Crítico.}
+  \addrow{Estrategia}{Reservar el riesgo.}
   \addrow{Plan de acción}{Realizar una nueva planificación más realista. }
   \addrow{Plan de contingencia}{Realizar revisiones periódicas del calendario de planificación.}
 \end{risk}
@@ -1093,9 +1094,9 @@ Se identifican los siguientes riesgos:
   \addheading{R2}{Adelantos en la planificación}
   \addrow{Descripción}{Debido a errores en la estimación, la planificación no se ajusta a la realidad y se producen adelantos en las fechas de entrega.}
   \addrow{Consecuencia}{Modificación de toda la planificación.}
-  \addrow{Probabilidad}{Alta }
-  \addrow{Impacto}{Crítico}
-  \addrow{Estrategia}{Reservar el riesgo}
+  \addrow{Probabilidad}{Alta.}
+  \addrow{Impacto}{Crítico.}
+  \addrow{Estrategia}{Reservar el riesgo.}
   \addrow{Plan de acción}{Realizar una nueva planificación más realista. }
   \addrow{Plan de contingencia}{Realizar revisiones periódicas del calendario de planificación.}
 \end{risk}
@@ -1103,7 +1104,7 @@ Se identifican los siguientes riesgos:
 \vspace{0.5cm}
 
 \begin{risk}
-  \addheading{R3}{Falta de experiencia en grandes proyectos.}
+  \addheading{R3}{Falta de experiencia en grandes proyectos}
   \addrow{Descripción}{El equipo no cuenta con experiencia propia de proyectos de gran extensión que le permita calcular mejor las estimaciones, así como realizar el proyecto con mayor celeridad.}
   \addrow{Consecuencia}{Peor organización y estimaciones. Grandes picos de trabajo.}
   \addrow{Probabilidad}{Alta }
@@ -1135,8 +1136,8 @@ Se identifican los siguientes riesgos:
   \addrow{Probabilidad}{Bajo.}
   \addrow{Impacto}{Crítico. }
   \addrow{Estrategia}{Evitación del riesgo.}
-  \addrow{Plan de acción}{No se aplica}
-  \addrow{Plan de contingencia}{Realización de copias de seguridad y uso de un sistema de control de versiones (ver apartado gestión de configuraciones)}
+  \addrow{Plan de acción}{No se aplica.}
+  \addrow{Plan de contingencia}{Realización de copias de seguridad y uso de un sistema de control de versiones (ver apartado gestión de configuraciones).}
 \end{risk}
 
 \vspace{0.5cm}
@@ -1148,7 +1149,7 @@ Se identifican los siguientes riesgos:
   \addrow{Probabilidad}{Bajo.}
   \addrow{Impacto}{Crítico. }
   \addrow{Estrategia}{Evitación del riesgo.}
-  \addrow{Plan de acción}{No se aplica}
+  \addrow{Plan de acción}{No se aplica.}
   \addrow{Plan de contingencia}{Utilización de herramientas profesionales, aplicación de las últimas actualizaciones.}
 \end{risk}
 
@@ -1161,14 +1162,14 @@ Se identifican los siguientes riesgos:
   \addrow{Probabilidad}{Bajo.}
   \addrow{Impacto}{Alto. }
   \addrow{Estrategia}{Evitación del riesgo.}
-  \addrow{Plan de acción}{No se aplica}
+  \addrow{Plan de acción}{No se aplica.}
   \addrow{Plan de contingencia}{Realización de copias de seguridad de los entregables, para evitar su pérdida en caso de ocurrir este riesgo.}
 \end{risk}
 
 \vspace{0.5cm}
 
 \begin{risk}
-  \addheading{R8}{Diseño pobre o incorrecto.} 
+  \addheading{R8}{Diseño pobre o incorrecto} 
   \addrow{Descripción}{El diseño realizado del sistema es pobre o incorrecto.}
   \addrow{Consecuencia}{Ralentización del trabajo.}
   \addrow{Probabilidad}{Medio.}
@@ -1178,7 +1179,7 @@ Se identifican los siguientes riesgos:
   \addrow{Plan de contingencia}{Realizar revisiones con el cliente y realizar pruebas sobre el modelo diseñado.}
 \end{risk}
 
-\subsection{Gestión de configuraciones.}
+\subsection{Gestión de configuraciones}
 
 Hoy en día la mayoría de los servicios públicos que ofrecen alojamiento de repositorios \textit{Git}, permiten realizar una buena gestión de configuraciones. Esto es debido a que cada cambio que se hace sobre el código fuente (\textit{commit}) viene asociado a informaciones sobre qué se ha cambiado, quién lo ha cambiado, cuándo lo ha cambiado, etcétera. Además, las ramas o \textit{branches}, aquellos lugares donde van dirigidos los cambios, permiten imponer bloqueos sobre escritura a ciertos usuarios, con el fin de proteger los entregables que estuvieran en la misma.
 
@@ -1186,7 +1187,7 @@ Por otro lado, estos servicios también pueden ser utilizados para la gestión d
 
 En el caso de este proyecto se han utilizado dos repositorios privados en \textit{GitHub}\footnote{\url{https://github.com/}}, en uno de ellos se tratará el desarrollo de esta memoria y en otro, el del código del sistema informático que se desea construir.
 
-\subsection{Estimación de los costes.}
+\subsection{Estimación de los costes}
 
 Para una correcta estimación de los costes, se debe procurar partir de los datos proporcionados por proyectos reales, que nos permitan realizarla partiendo de una experiencia. Desafortunadamente, como estos no se hacen públicos (pues son parte de la estrategia de la empresa), no es posible contar con ellos. Por este motivo, los cálculos se han realizado basándose en lo estudiado en la asignatura Planificación y Gestión de Proyectos \cite{pgptema2} y en información encontrada por Internet.
 
@@ -1202,7 +1203,7 @@ Dispositivo        & Coste de compra   & Horas dispositivo & Horas utilizadas & 
 Teléfono Android   & 120 \euro      & 17.520 horas (2 años, 24 horas diarias)  & 133  & 0,92  \euro \\ \hline
 Portátil      & 399 \euro   &  11.680 horas (4 años, 8 horas diarias) & 300 horas  & 10,25 \euro \\ \hline
 \end{tabular}
-\caption{Costes de los recursos \textit{hardware}}
+\caption{Costes de los recursos \textit{hardware}.}
 \end{table}
 
 Coste total del \textit{hardware} es: \textbf{11,16 \euro}.
@@ -1218,7 +1219,7 @@ GitHub Developer & 5,90 \euro        & 47,20 \euro          \\ \hline
 Firebase         & 21 \euro      & 168\euro           \\ \hline
 Astah Professional & 7,50 \euro & 60 \euro \\ \hline
 \end{tabular}
-\caption{Costes de los recursos \textit{software}}
+\caption{Costes de los recursos \textit{software}.}
 \end{table}
 
 Coste total de software: \textbf{240,80 \euro}.
@@ -1260,7 +1261,7 @@ Diseñador          & 42.987 \euro      & 22 \euro & & \\ \cline{1-3}
 Director de proyecto & 42.987 \euro    & 22 \euro & & \\ \cline{1-3}
 \hline
 \end{tabular}
-\caption{Costes de los recursos humanos}
+\caption{Costes de los recursos humanos.}
 \end{table}
 
 Los datos de la tabla anterior han sido calculados basándose en los datos del Informe Anual \textit{Infojobs} 2016 España \cite{infojobs2016} (salario promedio bruto anual de un arquitecto de proyectos informático). Se ha dividido la cantidad anterior en doce pagas y veinte días de trabajo por mes.
@@ -1291,14 +1292,14 @@ Los costes indirectos son aquellos derivados del uso de calefacción, electricid
 		\item \textbf{Coste total:} 1.932\euro.
 	\end{itemize}
 	
-\item Conexión a Internet y llamadas \textit{(Movistar Fibra óptica 300 MB)}:
+\item Conexión a Internet y llamadas \textit{(Movistar Fibra óptica 300 MB)}.
 	\begin{itemize}
 		\item \textbf{Coste estimado (mensual):} 45 \euro \hspace{0.1cm}al mes + 19.99 \euro \hspace{0.1cm} al mes por la cuota de línea. Total: 65 \euro \hspace{0.1cm} al mes.
 		\item \textbf{Número de meses:} 7.
 		\item \textbf{Coste total:} 455 \euro.
 	\end{itemize}
 		
-\item Telefonía móvil \textit{(Simyo 4GB + llamadas ilimitadas)}:
+\item Telefonía móvil \textit{(Simyo 4GB + llamadas ilimitadas)}.
 	\begin{itemize}
 		\item \textbf{Coste estimado (mensual):} 18 \euro \hspace{0.1cm} al mes.
 		\item \textbf{Número de meses:} 7.
@@ -1327,7 +1328,7 @@ Iteración & Etapa        & Fecha de inicio real & Fecha inicio estimada & Fecha
 5         & Transición   & 13/04/2018           & 11/04/2018            & 24/04/2018        & 25/04/2018         & 1 día                   \\ \hline
 \end{tabular}%
 }
-\caption{Desviaciones sobre el calendario planificado}
+\caption{Desviaciones sobre el calendario planificado.}
 \end{table}
 
 Tras un análisis de los retrasos sobre la planificación establecida se extraen las siguientes conclusiones:
@@ -1355,20 +1356,20 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Inicio de sesión}
-	\addrow{Descripción}{El sistema permitirá iniciar sesión}
+	\addrow{Descripción}{El sistema permitirá iniciar sesión.}
 \end{req} \\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Cierre de sesión}
-	\addrow{Descripción}{El sistema permitirá cerrar sesión}
+	\addrow{Descripción}{El sistema permitirá cerrar sesión.}
 \end{req} \\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
  
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro e inicio de sesión rápido.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro e inicio de sesión rápido}
 	\addrow{Descripción}{El sistema permitirá iniciar sesión y registrarse mediante el uso de proveedores de acceso.}
 \end{req} \\\stepcounter{functionalRequirements}
 
@@ -1376,84 +1377,84 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Registro de usuarios}
-	\addrow{Descripción}{El sistema permitirá registrar usuarios}
+	\addrow{Descripción}{El sistema permitirá registrar usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Configuración del usuario}
-	\addrow{Descripción}{El sistema permitirá editar la configuración del usuario}
+	\addrow{Descripción}{El sistema permitirá editar la configuración del usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Visualización de la configuración del usuario}
-	\addrow{Descripción}{El sistema permitirá visualizar la configuración actual del usuario}
+	\addrow{Descripción}{El sistema permitirá visualizar la configuración actual del usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Cambio de contraseña}
-	\addrow{Descripción}{El sistema permitirá cambiar la contraseña actual del usuario}
+	\addrow{Descripción}{El sistema permitirá cambiar la contraseña actual del usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ranking de usuarios}
-	\addrow{Descripción}{El sistema permitirá ver el ranking global de usuarios}
+	\addrow{Descripción}{El sistema permitirá ver el ranking global de usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a la aplicación.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a la aplicación}
 	\addrow{Descripción}{El sistema permitirá invitar a usuarios a la aplicación.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares.}
-	\addrow{Descripción}{El sistema permitirá añadir una fotografía de perfil (avatar) al usuario}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares}
+	\addrow{Descripción}{El sistema permitirá añadir una fotografía de perfil (avatar) al usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares II.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares II}
 	\addrow{Descripción}{El sistema permitirá visualizar la fotografía de perfil de otros usuarios de la plataforma.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Logros.}
-	\addrow{Descripción}{El sistema permitirá consultar los logros de un usuario}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Logros}
+	\addrow{Descripción}{El sistema permitirá consultar los logros de un usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Insignias.}
-	\addrow{Descripción}{El sistema permitirá consultar las insignias que tiene un usuario}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Insignias}
+	\addrow{Descripción}{El sistema permitirá consultar las insignias que tiene un usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios.}
-	\addrow{Descripción}{El sistema permitirá consultar los premios que tiene un usuario}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios}
+	\addrow{Descripción}{El sistema permitirá consultar los premios que tiene un usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Código QR.}
-	\addrow{Descripción}{El sistema permitirá mostrar el código QR asociado a una misión de tipo consumo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Código \textit{QR}}
+	\addrow{Descripción}{El sistema permitirá mostrar el código \textit{QR} asociado a una misión de tipo consumo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
@@ -1473,14 +1474,14 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Concesión de premios.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Concesión de premios}
 	\addrow{Descripción}{El sistema permitirá conceder premios a los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Concesión de insignias.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Concesión de insignias}
 	\addrow{Descripción}{El sistema permitirá conceder insignias a los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
@@ -1491,79 +1492,79 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Creación de un grupo}
-	\addrow{Descripción}{El sistema permitirá crear un grupo}
+	\addrow{Descripción}{El sistema permitirá crear un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Eliminación de un grupo}
-	\addrow{Descripción}{El sistema permitirá eliminar un grupo}
+	\addrow{Descripción}{El sistema permitirá eliminar un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Unirse a un grupo}
-	\addrow{Descripción}{El sistema permitirá unirse a un grupo}
+	\addrow{Descripción}{El sistema permitirá unirse a un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Salirse de un grupo}
-	\addrow{Descripción}{El sistema permitirá salirse de un grupo}
+	\addrow{Descripción}{El sistema permitirá salirse de un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Expulsión de un grupo}
-	\addrow{Descripción}{El sistema permitirá expulsar a un usuario de un grupo}
+	\addrow{Descripción}{El sistema permitirá expulsar a un usuario de un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a un grupo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Invitación de usuarios a un grupo}
 	\addrow{Descripción}{El sistema permitirá invitar a un usuario a un grupo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Detalles de los grupos.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Detalles de los grupos}
 	\addrow{Descripción}{El sistema permitirá ver los detalles de los grupos a los que pertenece el usuario.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares en los grupos.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Avatares en los grupos}
 	\addrow{Descripción}{El sistema permitirá añadir una fotografía de perfil (avatar) al grupo}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Listado de los miembros del equipo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Listado de los miembros del equipo}
 	\addrow{Descripción}{El sistema permitirá mostrar el listado de usuarios miembros del grupo. }
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ascenso en un grupo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Ascenso en un grupo}
 	\addrow{Descripción}{El sistema permitirá ascender a un usuario al rol administrador. }
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Logros de equipo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Logros de equipo}
 	\addrow{Descripción}{El sistema permitirá asignar logros a un equipo. }
 \end{req}\\\stepcounter{functionalRequirements}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios de equipo.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Premios de equipo}
 	\addrow{Descripción}{El sistema permitirá conceder premios a un equipo.}
 \end{req}\\\stepcounter{functionalRequirements}
 
@@ -1573,7 +1574,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Puntuación del usuario a nivel global}
-	\addrow{Descripción}{El sistema mostrará la puntuación del usuario en el juego}
+	\addrow{Descripción}{El sistema mostrará la puntuación del usuario en el juego.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
@@ -1596,7 +1597,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo juego}
-	\addrow{Descripción}{El sistema permitirá mostrar un juego para que el usuario pueda completar una misión de tipo juego (competitiva)}
+	\addrow{Descripción}{El sistema permitirá mostrar un juego para que el usuario pueda completar una misión de tipo juego (competitiva).}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
@@ -1610,7 +1611,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones de tipo consumo}
-	\addrow{Descripción}{El sistema comprobará el gasto que haga el usuario en los restaurantes de la cadena, con el fin de comprobar si una misión de tipo gasto ha sido completada}
+	\addrow{Descripción}{El sistema comprobará el gasto que haga el usuario en los restaurantes de la cadena, con el fin de comprobar si una misión de tipo gasto ha sido completada.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
@@ -1633,20 +1634,20 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Misiones}
-	\addrow{Descripción}{El sistema permitirá cumplir o realizar misiones}
+	\addrow{Descripción}{El sistema permitirá cumplir o realizar misiones.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Tratamiento de los errores de la aplicación.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Tratamiento de los errores de la aplicación}
 	\addrow{Descripción}{El sistema monitorizará los errores de aplicación de los usuarios.}
 \end{req}\\\stepcounter{functionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Estadísticas.}
+	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Estadísticas}
 	\addrow{Descripción}{El sistema registrará estadísticas de uso de la aplicación.}
 \end{req}\\\stepcounter{functionalRequirements}
 
@@ -1657,7 +1658,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \begin{req}
 	\addheading{\textbf{RF\arabic{functionalRequirements}}}{Usuario}
 	\addrow{Descripción}{
-	El sistema almacenará, para cada jugador, la siguiente información.
+	El sistema almacenará, para cada jugador, la siguiente información:
 	\begin{multicols}{2}
 	\begin{itemize}
 		\item Nombre público.
@@ -1768,7 +1769,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Proveedores de acceso.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Proveedores de acceso}
 	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
@@ -1784,35 +1785,35 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \textbf{Relacionados con los grupos/equipos}\\
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del administrador del grupo.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Unicidad del administrador del grupo}
 	\addrow{Descripción}{Únicamente se permitirá que haya un único administrador por grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Edición de parámetros del grupo.}
-	\addrow{Descripción}{El avatar del grupo, así como el resto de parámetros del equipo solo podrá ser modificado por el administrador del grupo}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Edición de parámetros del grupo}
+	\addrow{Descripción}{El avatar del grupo, así como el resto de parámetros del equipo solo podrá ser modificado por el administrador del grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Expulsión de usuarios del grupo.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Expulsión de usuarios del grupo}
 	\addrow{Descripción}{El administrador del grupo será el único miembro que podrá expulsar a un usuario del mismo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Nombramiento del administrador del grupo.}
-	\addrow{Descripción}{El administrador del grupo será aquel que creó el grupo, o bien, aquel que fue designado por un anterior administrador del grupo}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Nombramiento del administrador del grupo}
+	\addrow{Descripción}{El administrador del grupo será aquel que creó el grupo, o bien, aquel que fue designado por un anterior administrador del grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Número mínimo y máximo de usuarios en un grupo.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Número mínimo y máximo de usuarios en un grupo}
 	\addrow{Descripción}{Un equipo podrá estar formado, como mínimo por un usuario.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
@@ -1821,63 +1822,63 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \textbf{Software a utilizar para el despliegue de la aplicación.}\\
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación.}
-	\addrow{Descripción}{El sistema utilizará \textit{Firebase Analytics} para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones, etcétera.)}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Datos estadísticos de la aplicación}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Analytics} para la gestión de ciertas estadísiticas (número de usuarios de la aplicación, usuarios activos, datos de bloqueos, efectividad de las notificaciones, etcétera.).}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Almacenamiento de avatares.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Almacenamiento de avatares}
 	\addrow{Descripción}{El sistema utilizará \textit{Firebase Storage} para el almacenamiento de los avatares de perfil tanto de los usuarios como de los grupos.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de gestión de solicitudes \textit{HTTP}.}
-	\addrow{Descripción}{El sistema utilizará \textit{OkHTTP} como biblioteca de gestión de solicitudes \textit{HTTP}}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de gestión de solicitudes \textit{HTTP}}
+	\addrow{Descripción}{El sistema utilizará \textit{OkHTTP} como biblioteca de gestión de solicitudes \textit{HTTP}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de sesiones.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Gestión de sesiones}
 	\addrow{Descripción}{El sistema utilizará \textit{Firebase Authentication} para la gestión de sesiones.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 	
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a un grupo.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a un grupo}
 	\addrow{Descripción}{El sistema utilizará el nombre visible de los usuarios para la búsqueda a la hora de invitar a un usuario a un grupo.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a la aplicación.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Invitación de usuarios a la aplicación}
 	\addrow{Descripción}{El sistema utilizará \textit{Firebase Invites} para invitar a un usuario a la aplicación.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Notificaciones a los usuarios.}
-	\addrow{Descripción}{El sistema utilizará \textit{Firebase Notifications} para el envío y recepción de notificaciones}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Notificaciones a los usuarios}
+	\addrow{Descripción}{El sistema utilizará \textit{Firebase Notifications} para el envío y recepción de notificaciones.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de generación de códigos \textit{QR}}
-	\addrow{Descripción}{El sistema utilizará la biblioteca \textit{ZXing} para la generación de códigos \textit{QR}}
+	\addrow{Descripción}{El sistema utilizará la biblioteca \textit{ZXing} para la generación de códigos \textit{QR}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Grupos de notificaciones.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Grupos de notificaciones}
 	\addrow{Descripción}{Se utilizará la estrategia de envío de notificaciones por tema.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
@@ -1887,14 +1888,14 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{\textit{SDK} mínimo}
-	\addrow{Descripción}{La aplicación se compilará con un \textit{SDK} que soporte, como mínimo, la \textit{API} 19 de \textit{Android} (\textit{Android} 4.4, \textit{KitKat})\cite{androidversiondist}}
+	\addrow{Descripción}{La aplicación se compilará con un \textit{SDK} que soporte, como mínimo, la \textit{API} 19 de \textit{Android} (\textit{Android} 4.4, \textit{KitKat})\cite{androidversiondist}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{“Room“}}
-	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{Room} \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{Room} \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -1918,7 +1919,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Juegos}
-	\addrow{Descripción}{Los juegos (misiones de tipo juego) estarán programados con tecnología Web}
+	\addrow{Descripción}{Los juegos (misiones de tipo juego) estarán programados con tecnología Web.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
@@ -1940,7 +1941,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \textbf{Logros}\\
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de logros.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de logros}
 	\addrow{Descripción}{Existirán los siguientes tipos de logros:
 	\begin{itemize}
 	\item Logros asociados a una invitación (invitación del usuario a la aplicación).
@@ -1951,7 +1952,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 \vspace{0.25cm}
 
 \begin{req}
-	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de premios.}
+	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Tipos de premios}
 	\addrow{Descripción}{Existirán los siguientes tipos de premios:
 	\begin{itemize}
 	\item Premios de tipo descuento.
@@ -1995,7 +1996,7 @@ Se identifica un único actor:
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar equipo} 
   \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El equipo ha sido actualizado con la nueva configuración.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario selecciona “Gestionar un equipo“. %1
@@ -2019,9 +2020,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Invitar usuario al equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El usuario ha sido añadido al equipo.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Invitar usuario al equipo“. %1
@@ -2044,10 +2045,10 @@ Se identifica un único actor:
 \vspace{0.5cm}
 
 \begin{usecase}
-  \addheading{\textbf{CU\arabic{usecase}}}{Nombrar administrador de un equipo.} 
-  \addrow{Actor}{App user}
+  \addheading{\textbf{CU\arabic{usecase}}}{Nombrar administrador de un equipo} 
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El usuario seleccionado ha sido ascendido a administrador.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Nombrar administrador“. %1
@@ -2070,9 +2071,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Eliminar miembro de un equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El usuario seleccionado ha sido expulsado del equipo.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Eliminar miembro del equipo“. %1
@@ -2095,9 +2096,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Eliminar equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El equipo ha sido eliminado del sistema.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Eliminar equipo“. %1
@@ -2118,7 +2119,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar misiones} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2141,9 +2142,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{Se ha creado un logro asociado a la misión.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Realizar misión“. %1
@@ -2176,7 +2177,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar misión de consumo mínimo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2197,7 +2198,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar minijuego.} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2222,7 +2223,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Realizar juego social.} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2245,9 +2246,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Modificar perfil} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El perfil ha sido actualizado.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Modificar perfil“. %1
@@ -2268,7 +2269,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar perfil} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2277,14 +2278,14 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario su perfil, incluidos aquellos detalles como sus  “porcentajes de compromiso“ con la aplicación.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar logros} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2293,14 +2294,14 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario los logros realizados, ordenados por puntuación obtenida.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar insignias} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2309,14 +2310,14 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario las insignias obtenidas, ordenadas por fecha.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar ranking} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2325,14 +2326,14 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario el ranking global de usuarios, ordenados por la puntuación global obtenida.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2355,9 +2356,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Crear equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{Se ha creado un nuevo equipo. El usuario es asociado como administrador del mismo.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Crear equipo“. %1
@@ -2377,9 +2378,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Registrarse} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{Ninguna.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{Se ha creado un nuevo usuario en el sistema.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Registrarse“. %1
@@ -2400,7 +2401,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Aceptar invitación.} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{Existe una conexión estable a Internet.}
   \addrow{Postcondiciones}{
   		\begin{itemize}
@@ -2427,7 +2428,7 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Enviar invitación} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2450,9 +2451,9 @@ Se identifica un único actor:
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Iniciar sesión} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{Se ha generado una nueva sesión en el sistema.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Iniciar sesión“. %1
@@ -2484,14 +2485,14 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario las distintas posiciones de los miembros que se encuentren en ese nivel.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Consultar premios} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
   \addrow{Postcondiciones}{Ninguna.}
   \addrow{Flujo principal}{
@@ -2500,16 +2501,16 @@ Se identifica un único actor:
   		\item El sistema muestra al usuario los premios obtenidos que sigan estando vigentes, ordenados por fecha de caducidad.
   		\end{enumerate}
   }
-  \addrow{Flujos alternativos}{Ninguno}
+  \addrow{Flujos alternativos}{Ninguno.}
 \end{usecase}\\\stepcounter{usecase}
 
 \vspace{0.5cm}
 
 \begin{usecase}
   \addheading{\textbf{CU\arabic{usecase}}}{Salir de un equipo} 
-  \addrow{Actor}{App user}
+  \addrow{Actor}{App user.}
   \addrow{Precondiciones}{El usuario ha iniciado sesión en el sistema.}
-  \addrow{Postcondiciones}{Ninguna.}
+  \addrow{Postcondiciones}{El usuario ha salido del equipo.}
   \addrow{Flujo principal}{
   		\begin{enumerate}
   		\item El usuario elige “Salir de un equipo“. %1
@@ -2552,7 +2553,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU1}
-\caption{Diagrama de secuencia 1 “Modificar equipo“}
+\caption{Diagrama de secuencia 1 “Modificar equipo“.}
 \end{center}
 \end{figure}
 
@@ -2560,7 +2561,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.45]{images/sequence/CU2}
-\caption{Diagrama de secuencia del caso de uso 2 “Invitar usuario al equipo“}
+\caption{Diagrama de secuencia del caso de uso 2 “Invitar usuario al equipo“.}
 \end{center}
 \end{figure}
 
@@ -2568,7 +2569,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.55]{images/sequence/CU3}
-\caption{Diagrama de secuencia del caso de uso 3  “Nombrar un administrador“}
+\caption{Diagrama de secuencia del caso de uso 3  “Nombrar un administrador“.}
 \end{center}
 \end{figure}
 
@@ -2576,7 +2577,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.55]{images/sequence/CU4}
-\caption{Diagrama de secuencia del caso de uso 4 “Eliminar a un miembro de un equipo“}
+\caption{Diagrama de secuencia del caso de uso 4 “Eliminar a un miembro de un equipo“.}
 \end{center}
 \end{figure}
 
@@ -2584,7 +2585,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.55]{images/sequence/CU5}
-\caption{Diagrama de secuencia del caso de uso 5 “Eliminar un equipo“}
+\caption{Diagrama de secuencia del caso de uso 5 “Eliminar un equipo“.}
 \end{center}
 \end{figure}
 
@@ -2592,7 +2593,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU6}
-\caption{Diagrama de secuencia del caso de uso 6 “Consultar misiones“}
+\caption{Diagrama de secuencia del caso de uso 6 “Consultar misiones“.}
 \end{center}
 \end{figure}
 
@@ -2600,7 +2601,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU7}
-\caption{Diagrama de secuencia del caso de uso 7 “Realizar misión“}
+\caption{Diagrama de secuencia del caso de uso 7 “Realizar misión“.}
 \end{center}
 \end{figure}
 
@@ -2608,7 +2609,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.65]{images/sequence/CU8}
-\caption{Diagrama de secuencia del caso de uso 8  “Realizar misión de consumo mínimo“}
+\caption{Diagrama de secuencia del caso de uso 8  “Realizar misión de consumo mínimo“.}
 \end{center}
 \end{figure}
 
@@ -2616,7 +2617,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{images/sequence/CU9}
-\caption{Diagrama de secuencia del caso de uso 9 “Realizar misión competitiva“}
+\caption{Diagrama de secuencia del caso de uso 9 “Realizar misión competitiva“.}
 \end{center}
 \end{figure}
 
@@ -2624,7 +2625,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{images/sequence/CU10}
-\caption{Diagrama de secuencia del caso de uso 10 “Realizar juego social“}
+\caption{Diagrama de secuencia del caso de uso 10 “Realizar juego social“.}
 \end{center}
 \end{figure}
 
@@ -2632,7 +2633,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU11}
-\caption{Diagrama de secuencia del caso de uso 11 “Modificar perfil“}
+\caption{Diagrama de secuencia del caso de uso 11 “Modificar perfil“.}
 \end{center}
 \end{figure}
 
@@ -2640,7 +2641,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.75]{images/sequence/CU12}
-\caption{Diagrama de secuencia del caso de uso 12 “Consultar perfil“}
+\caption{Diagrama de secuencia del caso de uso 12 “Consultar perfil“.}
 \end{center}
 \end{figure}
 
@@ -2648,7 +2649,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU13}
-\caption{Diagrama de secuencia del caso de uso 13 “Consultar logros“}
+\caption{Diagrama de secuencia del caso de uso 13 “Consultar logros“.}
 \end{center}
 \end{figure}
 
@@ -2656,7 +2657,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU14}
-\caption{Diagrama de secuencia del caso de uso 14 “Consultar insignias“}
+\caption{Diagrama de secuencia del caso de uso 14 “Consultar insignias“.}
 \end{center}
 \end{figure}
 
@@ -2664,7 +2665,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{images/sequence/CU15}
-\caption{Diagrama de secuencia del caso de uso 15 “Consultar ranking“}
+\caption{Diagrama de secuencia del caso de uso 15 “Consultar ranking“.}
 \end{center}
 \end{figure}
 
@@ -2672,7 +2673,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU16}
-\caption{Diagrama de secuencia del caso de uso 16 “Consultar equipo“}
+\caption{Diagrama de secuencia del caso de uso 16 “Consultar equipo“.}
 \end{center}
 \end{figure}
 
@@ -2680,7 +2681,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU17}
-\caption{Diagrama de secuencia del caso de uso 17 “Crear equipo“}
+\caption{Diagrama de secuencia del caso de uso 17 “Crear equipo“.}
 \end{center}
 \end{figure}
 
@@ -2689,7 +2690,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{images/sequence/CU18}
-\caption{Diagrama de secuencia del caso de uso 18 “Registrarse“}
+\caption{Diagrama de secuencia del caso de uso 18 “Registrarse“.}
 \end{center}
 \end{figure}
 
@@ -2697,7 +2698,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.65]{images/sequence/CU19}
-\caption{Diagrama de secuencia del caso de uso 19 “Aceptar invitación“}
+\caption{Diagrama de secuencia del caso de uso 19 “Aceptar invitación“.}
 \end{center}
 \end{figure}
 
@@ -2705,7 +2706,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.65]{images/sequence/CU20}
-\caption{Diagrama de secuencia del caso de uso  20 “Enviar invitación“}
+\caption{Diagrama de secuencia del caso de uso  20 “Enviar invitación“.}
 \end{center}
 \end{figure}
 
@@ -2713,7 +2714,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{images/sequence/CU21}
-\caption{Diagrama de secuencia del caso de uso  21 “Iniciar sesión“}
+\caption{Diagrama de secuencia del caso de uso  21 “Iniciar sesión“.}
 \end{center}
 \end{figure}
 
@@ -2721,7 +2722,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU22}
-\caption{Diagrama de secuencia del caso de uso 22 “Ver posiciones de otros jugadores“}
+\caption{Diagrama de secuencia del caso de uso 22 “Ver posiciones de otros jugadores“.}
 \end{center}
 \end{figure}
 
@@ -2729,7 +2730,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU23}
-\caption{Diagrama de secuencia del caso de uso 23 “Consultar premios“}
+\caption{Diagrama de secuencia del caso de uso 23 “Consultar premios“.}
 \end{center}
 \end{figure}
 
@@ -2737,7 +2738,7 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/sequence/CU24}
-\caption{Diagrama de secuencia del caso de uso 24 “Salir de un equipo“}
+\caption{Diagrama de secuencia del caso de uso 24 “Salir de un equipo“.}
 \end{center}
 \end{figure}
 
@@ -2768,7 +2769,7 @@ La aplicación se estructura, a alto nivel en los siguientes paquetes:
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/structureHighLevel}
-\caption{Diagrama de paquetes de alto nivel de la aplicación}
+\caption{Diagrama de paquetes de alto nivel de la aplicación.}
 \end{figure}
 
 \clearpage
@@ -2778,32 +2779,32 @@ La estructura interna de los paquetes es:
 \begin{figure}[H]
 \centering
 \includegraphics[height=7cm,width=\textwidth]{images/structureModel.PNG}
-\caption{Diagrama de clases \textit{Model}}
+\caption{Diagrama de clases \textit{Model}.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=4cm,width=0.8\textwidth]{images/structureloginGameModel.PNG}
-\caption{Diagrama de clases de los paquetes \textit{LoginActivity} y \textit{GameActivity}}
+\caption{Diagrama de clases de los paquetes \textit{LoginActivity} y \textit{GameActivity}.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=10cm,width=\textwidth]{images/structureMainActivity.PNG}
-\caption{Diagrama de clases del paquete \textit{MainActivity}}
+\caption{Diagrama de clases del paquete \textit{MainActivity}.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=10cm,width=\textwidth]{images/structureMissions.PNG}
-\caption{Diagrama de clases de los paquetes \textit{MissionsActivity} y \textit{NormalActivity}}
+\caption{Diagrama de clases de los paquetes \textit{MissionsActivity} y \textit{NormalActivity}.}
 \end{figure}
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=10cm,width=0.9\textwidth]{images/structureTeam.PNG}
-\caption{Diagrama de clases del paquete \textit{TeamActivity}}
+\caption{Diagrama de clases del paquete \textit{TeamActivity}.}
 \end{figure}
 
 \subsection{Patrones utilizados}
@@ -2834,14 +2835,14 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseNRteams}
-\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con equipos}
+\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con equipos.}
 \label{nrteams}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseNRusers}
-\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con usuarios}
+\caption{Esquema no relacional basado en documentos y colecciones para las entidades relacionadas con usuarios.}
 \label{nrusers}
 \end{figure}
 
@@ -2853,7 +2854,7 @@ Con el fin de cumplir con los requisitos de persistencia y permitir una actualiz
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/databaseRoom}
-\caption{Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit{Room} \cite{roompersistence}}
+\caption{Esquema de la base de datos relacional gestionada por la biblioteca de persistencia \textit{Room} \cite{roompersistence}.}
 \end{figure}
 
 \subsection{Diagrama de despliegue}
@@ -2861,7 +2862,7 @@ Con el fin de cumplir con los requisitos de persistencia y permitir una actualiz
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/deploymentModel}
-\caption{Diagrama de despliegue de la aplicación Android}
+\caption{Diagrama de despliegue de la aplicación Android.}
 \end{figure}
 
 \section{Implementación}
@@ -3180,7 +3181,7 @@ Todas las imágenes subidas al servicio serán previamente redimensionadas para 
 \begin{itemize}
 \item Se decremente la cantidad de datos que se deben transmitir por la red.
 \item Se evite tener que tener una función (con el gasto que eso conlleva de tiempo) que realice esta modificación.
-\item Se ahorre espacio en \textit{Firebase} Storage
+\item Se ahorre espacio en \textit{Firebase} Storage.
 \end{itemize}
 
 Con el fin de reducir el uso de datos y el número de descargas, se realizará una caché de los datos gracias a \textit{Glide}, un plugin de visualización de imágenes en Android.
@@ -3239,14 +3240,14 @@ Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy
 		\item Avisar de que un logro de tipo social ha sido comprobado.
 	\end{enumerate}
 
-\item Las llamadas HTTP contra el endpoint (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
+\item Las llamadas HTTP contra el endpoint. (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
 \end{enumerate}
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{images/restAPI}
-\caption{Diagrama en el que se muestra la operación \textit{GET}}
+\caption{Diagrama en el que se muestra la operación \textit{GET}.}
 \end{figure}
 
 \section{Pruebas}
@@ -3270,7 +3271,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{1cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra mediante correo electrónico} 
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra mediante correo electrónico.} 
   \addrow{Resultado esperado}{El usuario se registra. Se le muestra la pantalla principal de la aplicación, con los distintos niveles.}
   \addrow{Resultado obtenido}{Se ha obtenido el resultado esperado.}
 \end{test}\\\stepcounter{test}
@@ -3279,15 +3280,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
-  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
   \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
-  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra/inicia sesión utilizando Google.}
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
    \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3312,7 +3313,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario sube una fotografía de perfil (avatar).}} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor. Se hace el cambio.}
+  \addrow{Resultado obtenido}{Se sube al servidor, pero esta no se descarga de nuevo (no aparece actualizada en el \textit{Drawer} y en el resto de opciones que utilizan el avatar). Finalmente se decide que para obligar a \textit{Glide} a refrescar de nuevo la fotografía es necesario dar un identificador único a cada imagen que se sube al servidor.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3320,7 +3321,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario sube una fotografía de perfil (avatar).} 
   \addrow{Resultado esperado}{Se sube la fotografía de perfil al servidor y se actualiza en todos aquellos lugares en los que debiera aparecer.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3337,8 +3338,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario realiza un consumo en una misión de tal tipo.}} 
   \addrow{Resultado esperado}{El consumo es reflejado en la pantalla. Si al introducir el consumo el importe es igual o superior al exigido por la misión, esta es marcada como completada.}
-  \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante. Se corrige.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+  \addrow{Resultado obtenido}{Se produce un error fatal de la aplicación. Se revisan las trazas y es porque se ha registrado el consumo como \textit{String} en vez de como número en coma flotante.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3363,16 +3363,14 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
   \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario visualiza los logros recibidos.}}
   \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
   \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas modificando el \textit{adapter} asociado.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario visualiza los logros recibidos.}}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros recibidos.}
   \addrow{Resultado esperado}{Se visualizan los logros del usuario.}
-  \addrow{Resultado obtenido}{Efectivamente se visualizan los logros del usuario, pero se muestran también aquellos con una puntuación nula (correspondiente a misiones aún no completadas o validadas). Se decide ocultar las mismas modificando el \textit{adapter} asociado.}
-   \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3427,7 +3425,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 
 \begin{test}
   \addheading{\textbf{TEST\arabic{test}}}{El usuario visualiza los logros de un equipo.} 
-  \addrow{Resultado esperado}{Se visualizan los logros del equipo}
+  \addrow{Resultado esperado}{Se visualizan los logros del equipo.}
   \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3444,17 +3442,15 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \begin{test}
  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}}
  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
- \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
-  \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+ \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
- \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario, con rol administrador, añade un usuario al equipo.}}
+ \addheading{\textbf{TEST\arabic{test}}}{El usuario, con rol administrador, añade un usuario al equipo.}
  \addrow{Resultado esperado}{El usuario es buscado en una lista y añadido al equipo.}
- \addrow{Resultado obtenido}{No se muestra el usuario que se ha buscado. Debido a la implementación de \textit{Firebase Firestore}, es preciso utilizar operadores comparadores ($\leqslant$ y $\geqslant$) para poder encontrar un \textit{String} que comience por una determinada cadena. Se procede a la modificación del algoritmo utilizado para la búsqueda. }
-  \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+  \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
@@ -3479,16 +3475,14 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}}
  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
  \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad 			\textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
- \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
- \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{Cierre de sesión}}
+ \addheading{\textbf{TEST\arabic{test}}}{Cierre de sesión}
  \addrow{Resultado esperado}{Se cierra sesión en la cuenta Route66App.}
- \addrow{Resultado obtenido}{Se cierra sesión, pero se produce una excepción sobre la actividad 			\textit{MainActivity}. El motivo de este error es que no se está eliminando el escuchador sobre el estado del documento de \textit{Firestore} asociado al usuario. Se corrige el \textit{bug}.}
- \addrow{Resultado obtenido 2}{Se obtiene el resultado esperado.}
+ \addrow{Resultado obtenido }{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
 
@@ -3534,11 +3528,11 @@ Una vez se haya iniciado sesión (registrarse implica iniciar sesión automátic
 	\end{subfigure}\hspace{3mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/2.png}
-		\caption{Menú principal sin puntuaciones asociadas}
+		\caption{Menú principal sin puntuaciones asociadas.}
 	\end{subfigure}\hspace{3mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/3.png}
-		\caption{Menú principal con puntuaciones asociadas}
+		\caption{Menú principal con puntuaciones asociadas.}
 	\end{subfigure}
 \caption{Capturas de pantalla de la vista principal de la aplicación.}
 \end{center}
@@ -3569,13 +3563,13 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/5.png}
-		\caption{“Mis logros“ sin logros obtenidos}
+		\caption{“Mis logros“ sin logros obtenidos.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth} 
 		\includegraphics[scale=0.2]{images/userguide/6.png}
-		\caption{“Mis logros“ con logros obtenidos}
+		\caption{“Mis logros“ con logros obtenidos.}
 	\end{subfigure}
-\caption{Capturas de pantalla de “Mis logros“}
+\caption{Capturas de pantalla de “Mis logros“.}
 \end{center}
 \end{figure}
 
@@ -3583,13 +3577,13 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/7.png}
-		\caption{“Mis insignias“ sin insignias conseguidas}
+		\caption{“Mis insignias“ sin insignias conseguidas.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/8.png}
-		\caption{“Mis insignias“ con insignias conseguidas}
+		\caption{“Mis insignias“ con insignias conseguidas.}
 	\end{subfigure}
-\caption{Capturas de pantalla de “Mis insignias“}
+\caption{Capturas de pantalla de “Mis insignias“.}
 \end{center}
 \end{figure}
 
@@ -3597,13 +3591,13 @@ A continuación se muestran las vistas de las opciones indicadas con anteriorida
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/9.png}
-		\caption{“Mis premios“ sin premios conseguidos}
+		\caption{“Mis premios“ sin premios conseguidos.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/10.png}
-		\caption{“Mis premios“ con premios}
+		\caption{“Mis premios“ con premios.}
 	\end{subfigure}
-\caption{Capturas de pantalla de “Mis premios“}
+\caption{Capturas de pantalla de “Mis premios“.}
 \end{center}
 \end{figure}
 
@@ -3613,17 +3607,17 @@ La vista invitar permite incluir un mensaje personalizado que será adjuntado al
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/11.png}
-		\caption{Vista “Invitar“}
+		\caption{Vista “Invitar“.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/12.png}
-		\caption{Vista “Ranking global“}
+		\caption{Vista “Ranking global“.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/13.png}
-		\caption{Vista “Equipos“}
+		\caption{Vista “Equipos“.}
 	\end{subfigure}\hspace{2mm}%
-\caption{Capturas de pantalla de “Invitar“, “Ranking global“ y “Equipos“}
+\caption{Capturas de pantalla de “Invitar“, “Ranking global“ y “Equipos“.}
 \end{center}
 \end{figure}
 
@@ -3634,15 +3628,15 @@ En cuanto a los equipos, la vista principal de uno concreto es la siguiente:
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/14.png}
-		\caption{Vista principal de un equipo (rol administrador)}
+		\caption{Vista principal de un equipo (rol administrador).}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/15.png}
-		\caption{Vista principal de un equipo con  el menú de opciones deplegado (rol administrador)}
+		\caption{Vista principal de un equipo con  el menú de opciones deplegado (rol administrador).}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/16.png}
-		\caption{Vista principal de un equipo (rol usuario normal)}
+		\caption{Vista principal de un equipo (rol usuario normal).}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de la vista que muestra los detalles de un equipo.}
 \end{center}
@@ -3669,15 +3663,15 @@ A continuación se muestran las capturas de pantalla de cada una de estas opcion
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/15a.png}
-		\caption{Vista “Gestionar usuario“}
+		\caption{Vista “Gestionar usuario“.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/17.png}
-		\caption{Vista “Configuración del equipo“}
+		\caption{Vista “Configuración del equipo“.}
 	\end{subfigure}\hspace{2mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/18.png}
-		\caption{Vista “Configuración del equipo“}
+		\caption{Vista “Configuración del equipo“.}
 	\end{subfigure}\hspace{2mm}%
 \caption{Capturas de pantalla de “Gestionar usuario“ y “Configuración del equipo“}
 \end{center}
@@ -3687,13 +3681,13 @@ A continuación se muestran las capturas de pantalla de cada una de estas opcion
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/19.png}
-		\caption{Vista “Código QR del equipo“}
+		\caption{Vista “Código \textit{QR} del equipo“.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/20.png}
-		\caption{Vista “Añadir miembro al equipo“}
+		\caption{Vista “Añadir miembro al equipo“.}
 	\end{subfigure}\hspace{5mm}%
-\caption{Capturas de pantalla de “Código QR del equipo“ y “Añadir miembro al equipo“.}
+\caption{Capturas de pantalla de “Código \textit{QR} del equipo“ y “Añadir miembro al equipo“.}
 \end{center}
 \end{figure}
 
@@ -3702,13 +3696,13 @@ Por último, como rol de usuario normal, además de permitir mostrar el código 
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/21.png}
-		\caption{Vista “Salir del equipo“}
+		\caption{Vista “Salir del equipo“.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/22.png}
-		\caption{Vista “Salir del equipo“}
+		\caption{Vista “Salir del equipo“.}
 	\end{subfigure}\hspace{5mm}%
-\caption{Capturas de pantalla de “Salir del equipo“}
+\caption{Capturas de pantalla de “Salir del equipo“.}
 \end{center}
 \end{figure}
 
@@ -3718,11 +3712,11 @@ Cuando entramos en un nivel desde la vista principal de usuarios veremos las sig
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/23.png}
-		\caption{Vista “Miembros de un nivel“}
+		\caption{Vista “Miembros de un nivel“.}
 	\end{subfigure}\hspace{5mm}%
 	\begin{subfigure}[t]{.3\linewidth}
 		\includegraphics[scale=0.2]{images/userguide/24.png}
-		\caption{Vista “Misiones de un nivel“}
+		\caption{Vista “Misiones de un nivel“.}
 	\end{subfigure}\hspace{5mm}%
 \caption{Capturas de pantalla de “Miembros de un nivel“ y “Misiones de un nivel“.}
 \end{center}
@@ -3773,7 +3767,7 @@ Finalmente, el apartado de misiones distingue entre su tipo: social, competitivo
 
 
 
-\chapter{Conclusiones y trabajo futuro.}
+\chapter{Conclusiones y trabajo futuro}
 \section{Conclusiones}
 
 Conclusiones de este Trabajo Fin de Grado:
@@ -3813,126 +3807,126 @@ Se proponen las siguientes ideas para extender las funcionalidades de la aplicac
 
 \bibitem{accentureGami} \textsc{Accenture} \textit{Why gamification is serious business}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.accenture.com/us-en/insight-outlook-why-gamification-is-serious-business}.  
 
-\bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 02 de Diciembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}
+\bibitem{androidversiondist} \textsc{Android Developers Official Website},\textit{Dashboards. Platform Versions.} Fecha de última visita: 02 de Diciembre de 2017 \url{https://developer.android.com/about/dashboards/index.html}.
 
-\bibitem{roompersistence} \textsc{Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}
+\bibitem{roompersistence} \textsc{Android Developers Official Website}. Room Persistence Library. Fecha de última visita: 23/01/2018 \url{https://developer.android.com/topic/libraries/architecture/room.html}.
 
-\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}
+\bibitem{androidfund} \textsc{Android Reference Guide} Aspectos fundamentales de la aplicación. Fecha de última visita 24/02/2018. \url{https://developer.android.com/guide/components/fundamentals.html}.
 
-\bibitem{burgerk} \textsc{Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}
+\bibitem{burgerk} \textsc{Burger King},\textit{Aplicación móvil Burger King para Android} \url{https://play.google.com/store/apps/details?id=es.burgerking.android}.
 
 \bibitem{2048game} \textsc{Cirulli, Gabriel} 
-Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}
+Repositiroio en GitHub del juego en \textit{JavaScript} 2048. Fecha de última visita 05/03/2018. \url{https://github.com/gabrielecirulli/2048}.
 
 \bibitem{icompressordependencies} \textsc{Compressor} 
-Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}
+Repositorio en GitHub de Compressor. Fecha de última visita 01/03/2018. \url{https://github.com/zetbaitsu/Compressor}.
 
 \bibitem{circleimagevdependencies} \textsc{Dodenhof, Henning} 
-Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/hdodenhof/CircleImageView}.
 
 \bibitem{iebsctj} \textsc{Ferran Altarriba Bertran. IEBS School} \textit{Tipos de jugadores en Gamification: teoría Bartle}. Fecha de última visita: 6 de Noviembre de 2017, \url{http://www.iebschool.com/blog/tipos-jugadores-gamification-2-innovacion/}.  
 
 \bibitem{fcanalyticsdependencies} \textsc{Firebase Analytics} 
-Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}
+Documentación de Firebase Analytics. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/analytics/?hl=es-419}.
 
 \bibitem{firebaseauthdependencies} \textsc{Firebase Authentication} 
-Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}
+Documentación de Firebase Authentication. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/auth/?hl=es-419}.
 
 \bibitem{fcmessagingdependencies} \textsc{Firebase Cloud Messaging} 
-Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}
+Documentación de Firebase Cloud Messaging. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/cloud-messaging/?hl=es-419}.
 
 \bibitem{crashanalyticsfb} \textsc{Firebase CrashAnalytics} 
-Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}
+Firebase Crashlytics. Introduction . Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/crashlytics/?hl=es-419}.
 
 \bibitem{ffirestoredependencies} \textsc{Firebase Firestore} 
-Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}
+Documentación de Firebase Firestore. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/firestore/?hl=es-419}.
 
-\bibitem{firebaseuifirestore} \textsc{Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}
+\bibitem{firebaseuifirestore} \textsc{Firebase Firestore} FirebaseUI for Cloud Firestore. Fecha de última visita 01/02/2018. \url{https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md}.
 
 \bibitem{finvitesdependencies} \textsc{Firebase Invites} 
-Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}
+Documentación de Firebase Invites. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/invites/?hl=es-419}.
 
 \bibitem{fremoteconfigdependencies} \textsc{Firebase Remote Config} 
-Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}
+Documentación de Firebase Remote Config. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/remote-config/?hl=es-419}.
 
 \bibitem{fstoragedependencies} \textsc{Firebase Storage} 
-Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}
+Documentación de Firebase Storage. Fecha de última visita 01/03/2018. \url{https://firebase.google.com/docs/storage/?hl=es-419}.
 
-\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}
+\bibitem{fireference} \textsc{Firebase} Trabajar con arreglos, listas y conjuntos. Fecha de última visita 24/02/2018.  \url{https://firebase.google.com/docs/firestore/solutions/arrays?hl=es-419}.
 
-\bibitem{firebase} \textsc{Firebase}. Página Web de Firebase. Fecha de última visita: 08/02/2018 \url{https://firebase.google.com/}
+\bibitem{firebase} \textsc{Firebase}. Página Web de Firebase. Fecha de última visita: 08/02/2018.
 
-\bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}
+\bibitem{fostersh} \textsc{Foster's Hollywood},\textit{Aplicación móvil Foster's Hollywood para Android} \url{https://play.google.com/store/apps/details?id=com.zena.Fosters}.
 
 \bibitem{glidedependencies} \textsc{Glide} 
-Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}
+Repositorio de Glide en GitHub. Fecha de última visita 01/03/2018. \url{https://github.com/bumptech/glide}.
 
 \bibitem{googleservicesauthdependencies} \textsc{Google Play Services: Authentication} 
-Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}
+Documentación de Google Play Services Authentication. Fecha de última visita 01/03/2018. \url{https://developers.google.com/identity/sign-in/android/start-integrating}.
 
-\bibitem{segsocialautonomos} \textsc{Infoautónomos. El Economista}. Tarifa plana de 50 \euro \hspace{0.1cm} para autónomos, jóvenes y mayores de 30. Fecha de última visita: 22/01/2018 \url{https://infoautonomos.eleconomista.es/seguridad-social/tarifa-plana-autonomos-50-euros-mayores-30-jovenes/}
+\bibitem{segsocialautonomos} \textsc{Infoautónomos. El Economista}. Tarifa plana de 50 \euro \hspace{0.1cm} para autónomos, jóvenes y mayores de 30. Fecha de última visita: 22/01/2018 \url{https://infoautonomos.eleconomista.es/seguridad-social/tarifa-plana-autonomos-50-euros-mayores-30-jovenes/}.
 
-\bibitem{infojobs2016} \textsc{Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf} 
+\bibitem{infojobs2016} \textsc{Infojobs}. Estado del mercado laboral en España. Año 2016. pág 31. Fecha de última visita: 20/01/2018 \url{http://tueligesinfojobs.net/informe-anual-infojobs-2016.pdf}.
 
-\bibitem{kfcapp} \textsc{KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}
+\bibitem{kfcapp} \textsc{KFC},\textit{Aplicación móvil KFC para Android} \url{https://play.google.com/store/apps/details?id=es.kfc.spain}.
 
 \bibitem{distancegame} \textsc{KiwiJS} 
-\textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}
+\textit{Blueprints} del motor de juegos JavaScript KiwiJS. Fecha de última visita 05/03/2018. \url{http://www.kiwijs.org/blueprints/}.
 
-\bibitem{kotlin} \textsc{Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}
+\bibitem{kotlin} \textsc{Kotlin Programming Language. IntelliJ}. Página Web del lenguaje de programación Kotlin. Fecha de última visita: 08/02/2018 \url{https://kotlinlang.org/}.
 
 \bibitem{iebschoolGami} \textsc{Marc Rodríguez. IEBS Comunidad} \textit{La ludificación como fenómeno social y herramienta global}, Fecha de última visita: 6 de Noviembre de 2017 \url{http://comunidad.iebschool.com/pedrolopezugarte/2015/11/20/la-gamificacion-como-fenomeno-social-y-herramienta-global/}.  
 
 \bibitem{confidencialcorreosgami} \textsc{María Benito} \textit{“Gamificación o cómo lograr que los empleados hagan un trabajo extra gratis“}, Fecha de última visita: 6 de Noviembre de 2017 \url{https://www.elconfidencial.com/empresas/2014-04-27/gamificacion-o-como-lograr-que-los-empleados-hagan-un-trabajo-extra-gratis_121168/}. 
 
 \bibitem{materialil} \textsc{Material Design} 
-Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://material.io/}
+Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://material.io/}.
 
 \bibitem{materialdocs} \textsc{MaterialDoc} 
-Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://materialdoc.com/}
+Sitio web informativo de \textit{Material Design}. Fecha de última visita 1/02/2018. \url{https://materialdoc.com/}.
 
 \bibitem{materialspinnerdependencies} \textsc{MaterialSpinner} 
-Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}
+Repositorio en GitHub de CircleImageView. Fecha de última visita 01/03/2018. \url{https://github.com/ganfra/MaterialSpinner}.
 
-\bibitem{mcdo} \textsc{McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}
+\bibitem{mcdo} \textsc{McDonalds},\textit{Aplicación móvil McDonalds para Android} \url{https://play.google.com/store/apps/details?id=com.mcdonalds.android}.
 
-\bibitem{monopolymcdo} \textsc{McDonalds}. Monopoly Ganador de McDonalds Fecha de última visita: 20/01/2018 \url{https://www.mcdonalds.es/sites/default/files/mcdonalds_lanza_su_nuevo_monopoly_ganador.pdf}
+\bibitem{monopolymcdo} \textsc{McDonalds}. Monopoly Ganador de McDonalds Fecha de última visita: 20/01/2018 \url{https://www.mcdonalds.es/sites/default/files/mcdonalds_lanza_su_nuevo_monopoly_ganador.pdf}.
 
-\bibitem{firebaseadvdis} \textsc{Nathan, Lee. FreeCodeCamp} Firebase Pros and Cons and How to Deal With the Cons. Fecha de última visita 08/02/2018 \url{https://medium.com/@leetheguy/firebase-pros-and-cons-ce37c766190a}
+\bibitem{firebaseadvdis} \textsc{Nathan, Lee. FreeCodeCamp} Firebase Pros and Cons and How to Deal With the Cons. Fecha de última visita 08/02/2018 \url{https://medium.com/@leetheguy/firebase-pros-and-cons-ce37c766190a}.
 
 \bibitem{okhttpdependencies} \textsc{OkHTTP} 
-Documentación de OkHTTP. Fecha de última visita 01/03/2018. \url{http://square.github.io/okhttp/}
+Documentación de OkHTTP. Fecha de última visita 01/03/2018. \url{http://square.github.io/okhttp/}.
 
 \bibitem{bbvag} \textsc{Omnium Games.} \textit{BBVA Game: El mayor caso de éxito de la ludificación en España.}, Fecha de última visita: 21 de Noviembre de 2017 \url{http://omniumgames.com/bbva-game-el-mayor-caso-de-exito-de-la-gamificacion-en-espana/}. 
 
-\bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}
+\bibitem{pansapp} \textsc{Pans \& Company},\textit{Aplicación móvil Pans \& Company para Android} \url{https://play.google.com/store/apps/details?id=es.eatout.panscompany}.
 
-\bibitem{mikepenzmaterialdrawer} \textsc{Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}
+\bibitem{mikepenzmaterialdrawer} \textsc{Penz, Mike} MaterialDrawer. Fecha de última visita 01/02/2018. \url{https://github.com/mikepenz/MaterialDrawer}.
 
 \bibitem{roomdependencies} \textsc{Room} 
-Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}
+Documentación de Room. Introducción. Fecha de última visita 01/03/2018. \url{https://developer.android.com/topic/libraries/architecture/room.html}.
 
 \bibitem{fabdependencies} \textsc{Tarianyk, Dmytro} 
-Repositorio en GitHub de Floating Action Button. Fecha de última visita 01/03/2018. \url{https://github.com/Clans/FloatingActionButton}
+Repositorio en GitHub de Floating Action Button. Fecha de última visita 01/03/2018. \url{https://github.com/Clans/FloatingActionButton}.
 
-\bibitem{disadvKotlin} \textsc{Timokhina, Valeria. DZone}. The Pros and Cons of Kotlin for Android Development. Fecha de última visita 08/02/2018. \url{https://dzone.com/articles/the-pros-and-cons-of-kotlin-for-android-developmen}
+\bibitem{disadvKotlin} \textsc{Timokhina, Valeria. DZone}. The Pros and Cons of Kotlin for Android Development. Fecha de última visita 08/02/2018. \url{https://dzone.com/articles/the-pros-and-cons-of-kotlin-for-android-developmen}.
 
-\bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017 \url{http://www.upedu.org/process/workers/wk_implm.htm}
+\bibitem{upedu} \textsc{Unified Process for Education. Universidad Politécnica de Montreal}. Fecha de última visita: 25/11/2017 \url{http://www.upedu.org/process/workers/wk_implm.htm}.
 
-\bibitem{pcuva} \textsc{Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}
+\bibitem{pcuva} \textsc{Universidad de Valladolid. Parque Científico}. Oficinas del Parque Científico de la Universidad de Valladolid. Fecha de última visita: 22/01/2018 \url{http://www.parquecientificouva.es/Upload/ESPACIOS/CTTA/CTTA_FichaOficinas_Jun2013.pdf}.
 
-\bibitem{vipsapp} \textsc{VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}
+\bibitem{vipsapp} \textsc{VIPS},\textit{Aplicación móvil VIPS para Android} \url{https://play.google.com/store/apps/details?id=com.clubvips.app}.
 
-\bibitem{tapikinull} \textsc{Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}
+\bibitem{tapikinull} \textsc{Zhitnitsky, Alex}. The Top 10 Exception Types in Production Java Applications - Based on 1B Events. Fecha de última visita: 08/02/2018 \url{https://blog.takipi.com/the-top-10-exceptions-types-in-production-java-applications-based-on-1b-events}.
 
 \bibitem{zxingdependencies} \textsc{ZXing Core: Android} 
-Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}
+Repositorio GitHub de ZXing Core. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}.
 
 \section{Bibliografía}
 
 \bibitem{smovkotlin} \textsc{Adiego Rodríguez, Joaquín}. Departamento de Informática de la UVa. Apuntes de la asignatura Sistemas Móviles. Curso 2017-2018. Kotlin.
 
-\bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub
+\bibitem{androidpacktpub} \textsc{Boyer, Rick \& Mew, Kyle}. Android Application Development Cookbook - Second Edition. Over 100 recipes to help you solve the most common problems faced by Android Developers today. PacktPub.
 
 \bibitem{mvcua} \textsc{Crespo Carvajal, Yania; Gonzalo Tasis, Margarita; Hernández Díaz, Carmen; Martínez Monés, Alejandra} Modelo vista controlador (MVC). Prácticas. Apuntes de la asignatura Interacción Persona-Computador. Curso 2015-2016. Departamento de Informática de la UVa. Universidad de Valladolid. 
 
