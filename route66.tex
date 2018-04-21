@@ -2820,11 +2820,28 @@ El M.V.C. es un patrón de arquitectura software utilizado para la implementaci�
 \end{itemize}
 En el caso de la aplicación Route66App, tanto las vistas como los controladores se encuentran en sus respectivos paquetes, dentro de \textit{Activities}. Sin embargo, parte del modelo es gestionada directamente por Firebase, por lo que en el paquete \textit{model} habrá simplemente clases (\textit{POJO}) que representan a los objetos del modelo.
 
+La siguiente imagen corresponde a un diagrama de clases de una parte de la arquitectura de la aplicación, en la que se aprecia este patrón:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/mvcPattern}
+\caption{Patrón M.V.C.}
+\end{figure}
+
 \subsubsection{D.A.O. (\textit{Data Access Object})}
 
 D.A.O. realiza una capa de abstracción entre los servicios y llamadas de bajo nivel para acceder a los datos del resto de código, evitando así mezclar código de diferentes capas.
 
-Este patrón de acceso a datos solo se ha podido emplear en las operaciones CRUD realizadas contra la base de datos que es administrada por \textit{Room} \cite{roompersistence} y no con la que gestiona Firebase Firestore.
+Este patrón de acceso a datos solo se ha podido emplear en las operaciones \textit{CRUD} (\textit{Create, Read, Update, Delete}) realizadas contra la base de datos que es administrada por \textit{Room} \cite{roompersistence} y no con la que gestiona \textit{Firebase Firestore}.
+
+El siguiente diagrama de clases muestra el patrón D.A.O. aplicado en la base de datos gestionada por \textit{Room}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/roomDao}
+\caption{Patrón D.A.O.}
+\end{figure}
+
 
 
 \subsection{Esquema de la base de datos}
