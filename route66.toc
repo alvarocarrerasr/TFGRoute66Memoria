@@ -2,110 +2,110 @@
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n y contexto}{1}
 \contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n y objetivos}{1}
 \contentsline {subsection}{\numberline {1.1.1}Introducci\IeC {\'o}n}{1}
-\contentsline {subsection}{\numberline {1.1.2}Objetivos}{1}
+\contentsline {subsection}{\numberline {1.1.2}Objetivos}{2}
 \contentsline {subsection}{\numberline {1.1.3}Motivaci\IeC {\'o}n}{2}
-\contentsline {section}{\numberline {1.2}An\IeC {\'a}lisis de aplicaciones similares}{2}
-\contentsline {subsection}{\numberline {1.2.1}An\IeC {\'a}lisis aplicaciones de restaurantes de comida r\IeC {\'a}pida.}{2}
-\contentsline {subsubsection}{\numberline {1.2.1.1}\textit {McDonald's}}{2}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Burger King}{3}
-\contentsline {subsubsection}{\numberline {1.2.1.3}KFC}{4}
-\contentsline {subsubsection}{\numberline {1.2.1.4}VIPS}{5}
-\contentsline {subsubsection}{\numberline {1.2.1.5}\textit {Pans \& Company}}{6}
-\contentsline {subsubsection}{\numberline {1.2.1.6}\textit {Foster's Hollywood}}{7}
+\contentsline {section}{\numberline {1.2}An\IeC {\'a}lisis de aplicaciones similares}{3}
+\contentsline {subsection}{\numberline {1.2.1}An\IeC {\'a}lisis aplicaciones de restaurantes de comida r\IeC {\'a}pida.}{3}
+\contentsline {subsubsection}{\numberline {1.2.1.1}\textit {McDonald's}}{3}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Burger King}{4}
+\contentsline {subsubsection}{\numberline {1.2.1.3}KFC}{5}
+\contentsline {subsubsection}{\numberline {1.2.1.4}VIPS}{6}
+\contentsline {subsubsection}{\numberline {1.2.1.5}\textit {Pans \& Company}}{7}
+\contentsline {subsubsection}{\numberline {1.2.1.6}\textit {Foster's Hollywood}}{8}
 \contentsline {subsection}{\numberline {1.2.2}Conclusiones extra\IeC {\'\i }das}{8}
-\contentsline {section}{\numberline {1.3}Estructura de la memoria}{8}
-\contentsline {section}{\numberline {1.4}Propuesta}{8}
-\contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{9}
-\contentsline {chapter}{\numberline {2}Herramientas utilizadas}{12}
-\contentsline {section}{\numberline {2.1}Herramientas utilizadas}{12}
-\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n de las tecnolog\IeC {\'\i }as utilizadas}{12}
-\contentsline {subsection}{\numberline {2.2.1}\textit {Kotlin}}{13}
-\contentsline {subsection}{\numberline {2.2.2}\textit {Firebase}}{14}
-\contentsline {section}{\numberline {2.3}Comunicaci\IeC {\'o}n con el servidor}{15}
-\contentsline {chapter}{\numberline {3}Route66App}{16}
-\contentsline {section}{\numberline {3.1}Plan de Desarrollo del \textit {Software}}{16}
-\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n del proyecto}{16}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{16}
-\contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{17}
-\contentsline {subsection}{\numberline {3.1.3}Restricciones}{17}
-\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{18}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{18}
-\contentsline {paragraph}{Desarrollador}{18}
-\contentsline {paragraph}{Analista}{18}
-\contentsline {paragraph}{Gestor de Proyecto}{18}
-\contentsline {paragraph}{Dise\IeC {\~n}ador}{18}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{18}
-\contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{18}
-\contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{18}
-\contentsline {paragraph}{Fase de inicio}{19}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{19}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{19}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{19}
-\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{20}
+\contentsline {section}{\numberline {1.3}Estructura de la memoria}{9}
+\contentsline {section}{\numberline {1.4}Propuesta}{9}
+\contentsline {subsection}{\numberline {1.4.1}Resumen de \IeC {\textquotedblleft }Estudio de ludificaci\IeC {\'o}n en una empresa para mejorar la fidelizaci\IeC {\'o}n de los clientes\IeC {\textquotedblright }}{10}
+\contentsline {chapter}{\numberline {2}Herramientas utilizadas}{13}
+\contentsline {section}{\numberline {2.1}Herramientas utilizadas}{13}
+\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n de las tecnolog\IeC {\'\i }as utilizadas}{14}
+\contentsline {subsection}{\numberline {2.2.1}\textit {Kotlin}}{14}
+\contentsline {subsection}{\numberline {2.2.2}\textit {Firebase}}{15}
+\contentsline {section}{\numberline {2.3}Comunicaci\IeC {\'o}n con el servidor}{16}
+\contentsline {chapter}{\numberline {3}Route66App}{17}
+\contentsline {section}{\numberline {3.1}Plan de Desarrollo del \textit {Software}}{17}
+\contentsline {subsection}{\numberline {3.1.1}Descripci\IeC {\'o}n del proyecto}{17}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Prop\IeC {\'o}sito, objetivos y alcance}{17}
+\contentsline {subsection}{\numberline {3.1.2}Metodolog\IeC {\'\i }a de Desarrollo del proyecto}{18}
+\contentsline {subsection}{\numberline {3.1.3}Restricciones}{18}
+\contentsline {subsection}{\numberline {3.1.4}Estructura organizativa}{19}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Estructura organizativa interna}{19}
+\contentsline {paragraph}{Desarrollador}{19}
+\contentsline {paragraph}{Analista}{19}
+\contentsline {paragraph}{Gestor de Proyecto}{19}
+\contentsline {paragraph}{Dise\IeC {\~n}ador}{19}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Estructura organizativa externa}{20}
+\contentsline {subsection}{\numberline {3.1.5}Gesti\IeC {\'o}n del proyecto}{20}
+\contentsline {subsubsection}{\numberline {3.1.5.1}Planificaci\IeC {\'o}n del proyecto}{20}
 \contentsline {paragraph}{Fase de inicio}{20}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{21}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{22}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{23}
-\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{24}
-\contentsline {paragraph}{Fase de inicio\\}{24}
-\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{24}
-\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{24}
-\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{25}
-\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto}{25}
-\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos}{25}
-\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones}{27}
-\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes}{28}
-\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{28}
-\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{28}
-\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{29}
-\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{29}
-\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{30}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{31}
-\contentsline {subsection}{\numberline {3.2.1}Requisitos}{31}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{31}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{35}
-\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{38}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{39}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{39}
-\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{52}
-\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{54}
-\contentsline {subsection}{\numberline {3.2.5}Usabilidad}{65}
-\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{66}
-\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{66}
-\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{70}
-\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{70}
-\contentsline {subsubsection}{\numberline {3.3.2.2}D.A.O. (\textit {Data Access Object})}{71}
-\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{72}
-\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{74}
-\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{75}
-\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{75}
-\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{75}
-\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{76}
-\contentsline {subsection}{\numberline {3.4.2}Dependencias}{76}
-\contentsline {subsection}{\numberline {3.4.3}Juegos}{77}
-\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{78}
-\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{79}
-\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{80}
-\contentsline {subsubsection}{\numberline {3.4.6.1}Firebase Firestore}{80}
-\contentsline {subsubsection}{\numberline {3.4.6.2}\textit {Authentication}}{80}
-\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{81}
-\contentsline {subsubsection}{\numberline {3.4.6.4}\textit {Cloud Messaging}}{81}
-\contentsline {subsubsection}{\numberline {3.4.6.5}\textit {Storage}}{81}
-\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local \textit {SQLite}}{82}
-\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{82}
-\contentsline {subsubsection}{\numberline {3.4.6.8}\textit {Shared preferences}}{82}
-\contentsline {subsubsection}{\numberline {3.4.6.9}Firebase Remote Config}{83}
-\contentsline {subsection}{\numberline {3.4.7}Funciones}{83}
-\contentsline {section}{\numberline {3.5}Pruebas}{83}
-\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{87}
-\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{87}
-\contentsline {subsection}{\numberline {3.7.1}Usuarios}{87}
-\contentsline {subsection}{\numberline {3.7.2}Equipos}{91}
-\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{94}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro}{97}
-\contentsline {section}{\numberline {4.1}Conclusiones}{97}
-\contentsline {section}{\numberline {4.2}Trabajo futuro}{97}
-\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{98}
-\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{99}
-\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{101}
-\contentsline {part}{I\hspace {1em}Anexos}{103}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{20}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{21}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{21}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Calendario del proyecto}{21}
+\contentsline {paragraph}{Fase de inicio}{21}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n}{23}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n}{24}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n}{25}
+\contentsline {subsection}{\numberline {3.1.6}Relaci\IeC {\'o}n de entregables no software}{26}
+\contentsline {paragraph}{Fase de inicio\\}{26}
+\contentsline {paragraph}{Fase de elaboraci\IeC {\'o}n\\}{26}
+\contentsline {paragraph}{Fase de construcci\IeC {\'o}n\\}{26}
+\contentsline {paragraph}{Fase de transici\IeC {\'o}n\\}{26}
+\contentsline {subsection}{\numberline {3.1.7}Control y seguimiento del proyecto}{26}
+\contentsline {subsection}{\numberline {3.1.8}Gesti\IeC {\'o}n de riesgos}{27}
+\contentsline {subsection}{\numberline {3.1.9}Gesti\IeC {\'o}n de configuraciones}{29}
+\contentsline {subsection}{\numberline {3.1.10}Estimaci\IeC {\'o}n de los costes}{29}
+\contentsline {subsubsection}{\numberline {3.1.10.1}Costes \textit {hardware} y \textit {software}}{29}
+\contentsline {subsubsection}{\numberline {3.1.10.2}Costes de dietas, viajes y aprendizajes}{30}
+\contentsline {subsubsection}{\numberline {3.1.10.3}Coste del esfuerzo (recursos humanos y seguros sociales)}{30}
+\contentsline {subsubsection}{\numberline {3.1.10.4}Costes indirectos aplicados al personal del proyecto}{31}
+\contentsline {subsection}{\numberline {3.1.11}Desviaciones sobre el calendario planificado}{32}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis}{32}
+\contentsline {subsection}{\numberline {3.2.1}Requisitos}{32}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Requisitos funcionales}{32}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Requisitos no funcionales}{37}
+\contentsline {subsection}{\numberline {3.2.2}Casos de uso}{40}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Actores}{41}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Casos de uso}{41}
+\contentsline {subsection}{\numberline {3.2.3}Modelo de dominio}{54}
+\contentsline {subsection}{\numberline {3.2.4}Diagramas de secuencia}{56}
+\contentsline {subsection}{\numberline {3.2.5}Usabilidad}{68}
+\contentsline {section}{\numberline {3.3}Dise\IeC {\~n}o}{69}
+\contentsline {subsection}{\numberline {3.3.1}Arquitectura}{69}
+\contentsline {subsection}{\numberline {3.3.2}Patrones utilizados}{72}
+\contentsline {subsubsection}{\numberline {3.3.2.1}M.V.C. (Modelo Vista Controlador)}{72}
+\contentsline {subsubsection}{\numberline {3.3.2.2}D.A.O. (\textit {Data Access Object})}{73}
+\contentsline {subsection}{\numberline {3.3.3}Esquema de la base de datos}{74}
+\contentsline {subsection}{\numberline {3.3.4}Diagrama de despliegue}{76}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n}{77}
+\contentsline {subsection}{\numberline {3.4.1}Niveles, insignias y premios}{77}
+\contentsline {subsubsection}{\numberline {3.4.1.1}De usuarios}{77}
+\contentsline {subsubsection}{\numberline {3.4.1.2}De grupos/equipos}{78}
+\contentsline {subsection}{\numberline {3.4.2}Dependencias}{78}
+\contentsline {subsection}{\numberline {3.4.3}Juegos}{79}
+\contentsline {subsection}{\numberline {3.4.4}Explicaci\IeC {\'o}n de la arquitectura escogida}{80}
+\contentsline {subsection}{\numberline {3.4.5}Almacenamiento de datos}{82}
+\contentsline {subsection}{\numberline {3.4.6}Implementaci\IeC {\'o}n del modelo}{82}
+\contentsline {subsubsection}{\numberline {3.4.6.1}\textit {Firebase Firestore}}{82}
+\contentsline {subsubsection}{\numberline {3.4.6.2}\textit {Authentication}}{83}
+\contentsline {subsubsection}{\numberline {3.4.6.3}Analytics}{83}
+\contentsline {subsubsection}{\numberline {3.4.6.4}\textit {Cloud Messaging}}{83}
+\contentsline {subsubsection}{\numberline {3.4.6.5}\textit {Storage}}{83}
+\contentsline {subsubsection}{\numberline {3.4.6.6}Base de datos local \textit {SQLite}}{84}
+\contentsline {subsubsection}{\numberline {3.4.6.7}Ficheros}{84}
+\contentsline {subsubsection}{\numberline {3.4.6.8}\textit {Shared preferences}}{85}
+\contentsline {subsubsection}{\numberline {3.4.6.9}\textit {Firebase Remote Config}}{85}
+\contentsline {subsection}{\numberline {3.4.7}Funciones}{85}
+\contentsline {section}{\numberline {3.5}Pruebas}{86}
+\contentsline {section}{\numberline {3.6}Manual de instalaci\IeC {\'o}n}{90}
+\contentsline {section}{\numberline {3.7}Gu\IeC {\'\i }a de usuario}{90}
+\contentsline {subsection}{\numberline {3.7.1}Usuarios}{90}
+\contentsline {subsection}{\numberline {3.7.2}Equipos}{94}
+\contentsline {subsection}{\numberline {3.7.3}Niveles y misiones}{97}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajo futuro}{99}
+\contentsline {section}{\numberline {4.1}Conclusiones}{99}
+\contentsline {section}{\numberline {4.2}Trabajo futuro}{99}
+\contentsline {chapter}{\numberline {5}Webgraf\IeC {\'\i }a y Bibliograf\IeC {\'\i }a}{100}
+\contentsline {section}{\numberline {5.1}Webgraf\IeC {\'\i }a}{101}
+\contentsline {section}{\numberline {5.2}Bibliograf\IeC {\'\i }a}{104}
+\contentsline {part}{I\hspace {1em}Anexos}{105}
