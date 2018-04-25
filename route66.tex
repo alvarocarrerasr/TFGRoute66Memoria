@@ -596,7 +596,7 @@ En esta sección se indican las diferentes tecnologías señaladas por la tutora
 \caption{Logotipo de \textit{Kotlin}.} \cite{kotlin}
 \end{figure}
 
-Kotlin\cite{smovkotlin} es un lenguaje de programación diseñado por la empresa \textit{Jetbrains} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de Java (JVM). Fue señalado por Google en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas \textit{Web}).
+Kotlin\cite{smovkotlin} es un lenguaje de programación diseñado por la empresa \textit{Jetbrains} (creadora de \textit{Android Studio} e \textit{IntelliJ IDEA}), orientado a objetos y de tipado estático, que se ejecuta, en el caso de Android, sobre la máquina virtual de \textit{Java (JVM)}. Fue señalado por \textit{Google} en el \textit{Google IO} de 2017 \footnote{\url{https://events.google.com/io2017/recap/}} como uno de los dos lenguajes de programación oficiales de Android y se espera que en un futuro sustituya a Java en esta tarea. Actualmente es muy conocido en el mundo del desarrollo de aplicaciones móviles, pero se espera que próximamente se empiece a utilizar tanto en el back-end de sistemas informáticos como en el front-end (páginas \textit{Web}).
 
 
 \begin{figure}[H]
@@ -631,7 +631,7 @@ Por otro lado, también resulta de interés considerar los inconvenientes que su
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{images/firebase}\\
-\caption{Logotipo de Firebase.} \cite{firebase}
+\caption{Logotipo de \textit{Firebase}.} \cite{firebase}
 \end{figure}
 
 
@@ -650,7 +650,7 @@ Los motivos por los que se ha escogido \textit{Firebase} son los siguientes \cit
 \item Facilita la sincronización de los datos: \textit{Firebase} está construido para que el usuario pueda trabajar sin conexión sobre la aplicación y actualizar los datos en cuanto tenga acceso a la red.
 \end{enumerate}
 
-Firebase también tiene una serie de desventajas:
+\textit{Firebase} también tiene una serie de desventajas:
 
 \begin{enumerate}
 \item Dependencia de una plataforma específica: Una vez se lanza una aplicación elaborada con \textit{Firebase} es muy complicado cambiar de tecnología, puesto que deberemos añadir los costes de desarrollo de todos aquellos componentes que utilicen la plataforma.
@@ -662,7 +662,7 @@ Firebase también tiene una serie de desventajas:
 En cuanto a las bases de datos de \textit{Firebase}, se ha de destacar que ofrece en su paquete dos de tipo no relacional, \textit{Firebase Firestore} (basada en documentos) y \textit{Firebase Realtime} (basada en pares clave-valor). Para este trabajo se ha elegido la primera por varios motivos:
 
 \begin{enumerate}
-\item Mayor complejidad en las consultas: Firestore ofrece operaciones básicas de tipo \textit{WHERE}. Igualmente, ofrece los operadores \textit{ORDER BY} y \textit{LIMIT}.
+\item Mayor complejidad en las consultas: \textit{Firestore} ofrece operaciones básicas de tipo \textit{WHERE}. Igualmente, ofrece los operadores \textit{ORDER BY} y \textit{LIMIT}.
 \item Mayor escalabilidad: En \textit{Realtime} cuando se accede a una parte del árbol (clave-valor), el usuario debe descargarse todos los hijos. En \textit{Firestore} únicamente aquellos documentos que se deseen.
 \item Mayor seguridad: \textit{Firestore} ofrece mayores medidas de seguridad al tener reglas de lectura y escritura más complejas y flexibles.
 \end{enumerate}
@@ -756,7 +756,7 @@ Se imponen las siguientes restricciones, extraídas tras una serie de entrevista
 
 \item \textbf{Requisitos de software}: Se impone que la aplicación se deba desarrollar en el lenguaje de programación \textit{Kotlin}. Así mismo, se ha recomendado el uso de \textit{Firebase} como plataforma para alojar la base de datos y gestionar las sesiones.
 
-\item \textbf{Datos en el dispositivo}: la aplicación deberá contar con una caché de los datos en el dispositivo del cliente con el fin de reducir el número de peticiones que se hagan contra Firebase, así como para acelerar el funcionamiento de la aplicación en lugares con una baja conectividad.
+\item \textbf{Datos en el dispositivo}: la aplicación deberá contar con una caché de los datos en el dispositivo del cliente con el fin de reducir el número de peticiones que se hagan contra \textit{Firebase}, así como para acelerar el funcionamiento de la aplicación en lugares con una baja conectividad.
 \end{enumerate}
 
 \subsection{Estructura organizativa}
@@ -1237,9 +1237,9 @@ Los costes de software son, en realidad, 0 \euro, ya que se ha priorizado utiliz
 \begin{tabular}{|l|l|l|}
 \hline
 Servicio         & Coste mensual & Coste total \\ \hline
-GitHub Developer & 5,90 \euro        & 47,20 \euro          \\ \hline
-Firebase         & 21 \euro      & 168\euro           \\ \hline
-Astah Professional & 7,50 \euro & 60 \euro \\ \hline
+\textit{GitHub Developer} & 5,90 \euro        & 47,20 \euro          \\ \hline
+\textit{Firebase}         & 21 \euro      & 168\euro           \\ \hline
+\textit{Astah Professional} & 7,50 \euro & 60 \euro \\ \hline
 \end{tabular}
 \caption{Costes de los recursos \textit{software}.}
 \end{table}
@@ -1798,14 +1798,14 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Proveedores de acceso}
-	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante Google.}
+	\addrow{Descripción}{Se ofrecerá un login/registro rápido mediante \textit{Google}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{0.25cm}
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Identificación de usuarios}
-	\addrow{Descripción}{Se identificará a los usuarios internamente por el identificador único de usuario generado por Firebase.}
+	\addrow{Descripción}{Se identificará a los usuarios internamente por el identificador único de usuario generado por \textit{Firebase}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \vspace{1cm}
@@ -2879,7 +2879,7 @@ El siguiente diagrama de clases muestra el patrón D.A.O. aplicado en la base de
 \subsection{Esquema de la base de datos}
 Como se ha indicado en secciones anteriores, se ha decidido utilizar \textit{Firebase} como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: \textit{Firebase Realtime Database} y \textit{Firebase Firestore}, se ha elegido la segunda por ser mucho más compleja y permitir una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
 
-Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de \textit{UML}. La documentación que Google proporciona \cite{fireference} también ha servido de mucha ayuda.
+Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de \textit{UML}. La documentación que \textit{Google} proporciona \cite{fireference} también ha servido de mucha ayuda.
 
 \begin{figure}[H]
 \centering
@@ -3076,7 +3076,7 @@ Route66 cuenta con las siguientes actividades:
 			
 			\item \textit{Insignias}: es el fragmento encargado de mostrar las insignias que haya obtenido el usuario.
 			
-			\item \textit{Invite}: su finalidad es servir de interfaz entre la aplicación y el sistema de Firebase Invitations, con el fin de enviar invitaciones.
+			\item \textit{Invite}: su finalidad es servir de interfaz entre la aplicación y el sistema de \textit{Firebase Invitations}, con el fin de enviar invitaciones.
 			
 			\item \textit{MainGrid}: muestra el conjunto de niveles con los que cuenta la aplicación y servirá como puerta de enlace a realizar misiones y consultar los usuarios que se encuentran en un determinado nivel.
 			
@@ -3168,9 +3168,9 @@ La aplicación utiliza varios tipos de almacenamiento:
 
 Tal y como se ha visto en el punto anterior se utilizan varias clases de almacenamiento dependiendo del tipo de datos que queremos tratar. Se indicarán a continuación los detalles de cada soporte de almacenamiento.
 
-\subsubsection{Firebase Firestore}
+\subsubsection{\textit{Firebase Firestore}}
 
-Firebase Firestore es la base de datos principal del servicio y en donde se almacena información crucial para el correcto funcionamiento del sistema informático como:
+\textit{Firebase Firestore} es la base de datos principal del servicio y en donde se almacena información crucial para el correcto funcionamiento del sistema informático como:
 \begin{itemize}
 \item Datos sobre las misiones completadas por los usuarios y equipos.
 \item Parámetros del perfil del usuario.
@@ -3178,7 +3178,7 @@ item Premios obtenidos.
 \item Insignias recibidas.
 \end{itemize} 
 
-De igual manera, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que Firestore internamente realiza cuantas comprobaciones de permisos sean precisas para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una buena capa de seguridad  y evitamos tener que recurrir a un \textit{backend} que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
+De igual manera, el mismo componente ofrece una capa de seguridad por medio de una serie de reglas de seguridad, ya que \textit{Firestore} internamente realiza cuantas comprobaciones de permisos sean precisas para asegurar tanto el acceso de lectura, como el de escritura. De esta forma, añadimos al servicio una buena capa de seguridad  y evitamos tener que recurrir a un \textit{backend} que no deja de ser otro punto en el que puede haber vulnerabilidades. Estas reglas de permisos aplicadas se adjuntan en el anexo.
 
 \subsubsection{\textit{Authentication}}
 
@@ -3237,7 +3237,7 @@ Todas las imágenes subidas al servicio serán previamente redimensionadas para 
 \begin{itemize}
 \item Se decremente la cantidad de datos que se deben transmitir por la red.
 \item Se evite tener que tener una función (con el gasto que eso conlleva de tiempo) que realice esta modificación.
-\item Se ahorre espacio en \textit{Firebase} Storage.
+\item Se ahorre espacio en \textit{Firebase Storage}.
 \end{itemize}
 
 Con el fin de reducir el uso de datos y el número de descargas, se realizará una caché de los datos gracias a \textit{Glide}, un plugin de visualización de imágenes en \textit{Android}.
@@ -3278,9 +3278,9 @@ Las preferencias compartidas son un método de persistencia utilizado en \textit
 
 En Route66App se han utilizado para guardar únicamente el tono de notificación del usuario, que será el que suene cuando le llegue una notificación entrante proveniente de una confirmación de misión realizada o consumo realizado.
 
-\subsubsection{Firebase Remote Config}
+\subsubsection{\textit{Firebase Remote Config}}
 
-Este producto de Firebase resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación, cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de \textit{Android} instalada). De esta forma, es posible aplicar un determinado ajuste a una franja de usuarios para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese parámetro. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
+Este producto de \textit{Firebase} resulta de especial utilidad en aplicaciones en las que se desea que un mismo parámetro de configuración de la aplicación, cambie a la vez en todas las instalaciones, o bien, en ciertas específicas que cumplan una determinada condición (por ejemplo, idioma del dispositivo, región o versión de \textit{Android} instalada). De esta forma, es posible aplicar un determinado ajuste a una franja de usuarios para comprobar así el efecto que tiene y, en caso de resultar satisfactorio, ir ampliando gradualmente el número de instalaciones con ese parámetro. Cabe destacar que en ningún momento se exige que el usuario se vuelva a instalar o actualizar la aplicación.
 
 En Route66App se ha utilizado este producto para ajustar la URL de los archivos de misiones, premios e insignias, así como la hora y fecha de última actualización de esos archivos.
 
