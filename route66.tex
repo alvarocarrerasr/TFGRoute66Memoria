@@ -12,6 +12,7 @@
 \usepackage{color}
 \usepackage{listings}
 \usepackage{url}
+\usepackage{needspace}
 \usepackage{rotating}
 \usepackage{verbatim}
 \usepackage{eurosym}
@@ -204,6 +205,7 @@ Hoy en día, miles de compañías utilizan la ludificación en sus procesos empr
 
 El caso más destacable en nuestro país es el de \cite{bbvag} \textit{BBVA Game}, una plataforma de ludificación asociada a la banca virtual. En ella, los usuarios consiguen puntos al superar distintos retos como consultar movimientos, domiciliar la nómina, realizar transferencias, etcétera. Igualmente, también se pueden conseguir incentivos por compartir un mensaje en redes sociales,  invitar a amigos o contratar productos, que es posible canjear por premios directos o por participaciones en los sorteos que realizan. El resultado de este proyecto fue un éxito rotundo, ya que consiguieron 100.000 nuevos clientes en los nueve primeros meses y aumentaron el uso de la plataforma por parte de sus clientes ya existentes.
 
+\needspace{5\baselineskip}
 \subsection{Objetivos}
 
 El propósito de este Trabajo Fin de Grado es el de realizar una aplicación \textit{Android} basada en un sistema de ludificación para un restaurante de comida rápida, partiendo de la idea desarrollada en el \cite{cristinatfg} Trabajo de Fin de Grado de Dña. Cristina Martínez Martínez. Los objetivos concretos de la aplicación vendrán detallados en el documento de análisis.
@@ -213,6 +215,8 @@ Este Trabajo Fin de Grado detallará el desarrollo, análisis, diseño e impleme
 \subsection{Motivación}
 
 La motivación es doble, por un lado, analizar, diseñar e implementar un sistema de ludificación, diseñado por una antigua alumna de esta Universidad para completar así una de las líneas futuras propuestas por la misma en su Trabajo de Fin de Grado, y por otro, se busca desarrollar un sistema de ludificación que permita a los alumnos del Grado en Ingeniería de Organización Industrial de nuestra Universidad poner en marcha y probar un sistema de este tipo, que no tiene alternativas de licencia de prueba para estudiantes en el mercado.
+
+\clearpage
 
 \section{Análisis de aplicaciones similares}
 
@@ -275,6 +279,7 @@ Las opciones de esta \textit{app} están bastante limitadas: conseguir un listad
 	\item Tiene un sistema de fidelización para sus pedidos \textit{online}.
 	\item Permite visualizar el historial de pedidos por Internet.
 	\end{itemize}
+\needspace{6\baselineskip}
 \item \textbf{Puntos débiles:}
 	\begin{itemize}
 		\item La parte de fidelización está solo dedicada a la realización de pedidos por Internet.
@@ -371,6 +376,7 @@ Sus funcionalidades son las típicas de una aplicación de esta categoría: list
 	\item Notificaciones \textit{PUSH} para alertar al cliente de nuevas ofertas y promociones.
 	\item La aplicación integra una tarjeta de fidelización en el que se acumulan puntos a la hora de realizar compras. Los puntos se podrán canjear posteriormente por descuentos en compras en los restaurantes.
 	\end{itemize}
+	\needspace{3\baselineskip}
 \item \textbf{Puntos débiles:}
 	\begin{itemize}
 	\item No cuenta con interacción entre usuarios ni redes sociales, se limita a la tarjeta de fidelización.
@@ -447,6 +453,8 @@ El trabajo de esta alumna, centrado en el diseño de un sistema de ludificación
 
 Como la ludificación es un área en investigacion que en experiencias anteriores ha obtenido muy buenos resultados, la tutora del T.F.G., Dña. Margarita Gonzalo Tasis, propuso la realización de este proyecto. Por otro lado, el resultado del mismo puede servir a alumnos de otras facultades de nuestra Universidad para poder utilizar una herramienta de ludificación real.
 
+\needspace{6\baselineskip}
+
 \subsection{Resumen de “Estudio de ludificación en una empresa para mejorar la fidelización de los clientes”}
 
 Se propone la realización de un sistema de ludificación para una cadena de restaurantes de comida americana, que cuenta con un conjunto de franquicias repartidas por todo el territorio español. Es una empresa con muy buenos resultados económicos y que está respaldada por una amplia y sólida base de clientes para quienes decide elaborar una aplicación que mejore la opinión de los mismos sobre la marca, ya que han llegado críticas sobre el sistema vigente de cupones y descuentos.
@@ -479,6 +487,7 @@ Se proponen dos tipos de roles: Administrador y Cliente.
 
 Este trabajo se centrará en el rol cliente. El administrador tendrá su protagonismo en la parte de gestión, que no está incluida en este proyecto.\\
 
+\needspace{12\baselineskip}
 \textbf{Descripción del juego}\\
 
 El juego se escenifica en la Ruta 66 americana que alude así la temática del restaurante. Se dividirá el camino en once etapas o niveles correspondientes a las principales ciudades por las que pasa esta vía y, para avanzar, el cliente deberá completar una serie de actividades, que además, otorgarán insignias, logros y premios. Cabe destacar que la dificultad de los niveles irá aumentando gradualmente, con el objetivo de no perder la motivación.
@@ -575,6 +584,7 @@ Para la elaboración de este Trabajo Fin de Grado se han utilizado las siguiente
 \item Para la realización de los diagramas de \textit{Gantt} se ha empleado \textit{Wrike} en una versión de prueba gratuita \footnote{\url{https://www.wrike.com/main/}}.
 \end{itemize}
 
+\needspace{12\baselineskip}
 \section{Motivación de las tecnologías utilizadas}
 En esta sección se indican las diferentes tecnologías señaladas por la tutora para elaborar este trabajo: \textit{Firebase} y \textit{Kotlin}.
 
@@ -707,6 +717,9 @@ La aplicación deberá contar con las siguientes funciones:
 	\item Consulta del código \textit{QR} que identifica al usuario de forma única.
 	\item Consulta de la posición global del usuario (ranking).
 	\end{itemize}
+	\end{itemize}
+\begin{itemize}
+\needspace{12\baselineskip}
 \item Acciones a realizar en grupo.
 	\begin{itemize}
 	\item Cosulta de los equipos a los que pertenece el usuario.
@@ -781,6 +794,7 @@ Realiza el control y mando del proyecto, asigna recursos, gestiona los riesgos, 
 
 Como indica su nombre, está encargado de diseñar el sistema, definiendo las responsabilidades, operaciones y relaciones de cada uno de los componentes del sistema.
 
+\needspace{10\baselineskip}
 \subsubsection{Estructura organizativa externa}
 Solo se identifica un rol en la estructura organizativa externa: el del usuario de la aplicación. 
 
@@ -788,7 +802,7 @@ Solo se identifica un rol en la estructura organizativa externa: el del usuario 
 \subsubsection{Planificación del proyecto}
 En este proyecto se utilizará la metodología UPedu \cite{upedu}, compuesta por fases y estas por iteraciones.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.75]{images/upeduFases}
 \caption{Fases de la metodología UPedu.} 
@@ -808,6 +822,8 @@ En esta fase no se realiza ningún entregable de tipo \textit{software}, pues es
 El objetivo fundamental de esta fase \cite{pgpup} es el de la elaboración del diseño y arquitectura del sistema informático. Al mismo tiempo, se realizará un análisis del dominio del sistema y se eliminarán los elementos de mayor riesgo para el desarrollo del proyecto.
 
 Después de esta fase, se obtendrán una arquitectura, requisitos y planes de desarrollo estables y se habrán reducido los riesgos más destacables.
+
+\needspace{12\baselineskip}
 
 \paragraph{Fase de construcción}\mbox{}\\
 
@@ -842,7 +858,7 @@ La duración estimada total es de 316 horas, a las que habría que añadir las n
 
 Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017. Consta de una única iteración. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[height=9cm, width=\textwidth]{images/gantt/ite0}
 \caption{Diagrama de Gantt para la iteración 0 (fase de inicio).}
@@ -868,6 +884,7 @@ Comienza el día 6 de Noviembre de 2017 y finaliza el 10 de Diciembre de 2017. C
     \caption{Iteración 0. Fase de Inicio.}
 \end{table}
 
+
 Reuniones realizadas con la tutora del T.F.G.:
 
 \begin{itemize}
@@ -876,6 +893,8 @@ Reuniones realizadas con la tutora del T.F.G.:
 \item 20 de Noviembre de 2017.
 \item 4 de Diciembre de 2017.
 \end{itemize}
+
+\needspace{6\baselineskip}
 
 \paragraph{Fase de elaboración}\mbox{}\\
 
@@ -888,7 +907,7 @@ Esta fase comienza el día 20 de Enero de 2017 y finaliza el 1 de Marzo de 2018.
 \item Iteración 2: Con una duración de 1 semana y media.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite1}
 \caption{Diagrama de Gantt para la iteración 1 (fase de elaboración).}
@@ -918,7 +937,7 @@ Reuniones realizadas con la tutora del T.F.G.:
 \end{itemize}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite2}
 \caption{Diagrama de Gantt para la iteración 2 (fase de elaboración).}
@@ -947,7 +966,7 @@ El día 20 de Febrero se hace entrega a la tutora de todos los entregables reali
 
 Comienza el día 1 de Marzo de 2018 y finaliza el 10 de Abril de 2018.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[height=3cm,width=\textwidth]{images/gantt/ite3}
 \caption{Diagrama de Gantt para la iteración 3 (fase de construcción).}
@@ -976,7 +995,7 @@ Reuniones realizadas con la tutora del T.F.G.:
 \end{itemize}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite4}
 \caption{Diagrama de Gantt para la iteración 4 (fase de construcción).}
@@ -1005,7 +1024,7 @@ Reuniones realizadas con la tutora del T.F.G.:
 
 Comienza el día 10 de Abril de 2018 y finaliza el 30 de Abril de 2018.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\textwidth]{images/gantt/ite5}
 \caption{Diagrama de Gantt para la iteración 5 (fase de transición).}
@@ -1313,6 +1332,8 @@ Los costes indirectos son aquellos derivados del uso de calefacción, electricid
 
 El coste total de este apartado es de \textbf{2.513 \euro}.
 
+
+\needspace{5\baselineskip}
 \subsection{Desviaciones sobre el calendario planificado}
 
 Se adjunta a continuación la tabla de estimaciones de planificación, así como los retrasos que ha habido en realidad.
@@ -1490,6 +1511,8 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \vspace{1cm}
 
+\needspace{3\baselineskip}
+
 \textbf{Relacionados con los grupos}\\
 
 
@@ -1589,6 +1612,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \vspace{1cm}
 
+\needspace{5\baselineskip}
 \textbf{Relacionados con las misiones}\\
 
 \begin{req}
@@ -1656,6 +1680,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \vspace{1cm}
 
+\needspace{12\baselineskip}
 \textbf{Requisitos funcionales de información}\\
 
 \begin{req}
@@ -1898,7 +1923,7 @@ Tras un análisis de los retrasos sobre la planificación establecida se extraen
 
 \begin{req}
 	\addheading{\textbf{RNF\arabic{nonFunctionalRequirements}}}{Biblioteca de persistencia \textit{“Room“}}
-	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{Room} \cite{roompersistence} como gestor de la base de datos local no gestionada por Firebase.}
+	\addrow{Descripción}{La aplicación utilizará la biblioteca de persistencia \textit{Room} \cite{roompersistence} como gestor de la base de datos local no gestionada por \textit{Firebase}.}
 \end{req}\\\stepcounter{nonFunctionalRequirements}
 
 \begin{req}
@@ -2745,6 +2770,8 @@ El modelo de dominio se ha decidido dividirlo en dos partes: aquella que interac
 \end{center}
 \end{figure}
 
+\needspace{12\baselineskip}
+
 \subsection{Usabilidad}
 \label{usabilitymatters}
 
@@ -2765,6 +2792,7 @@ Por otro lado, también se ha basado el diseño en determinados \textbf{patrones
 	\item \textbf{Secciones de navegación}: etiquetas muy concretas que indican en qué sección se encuentra el usuario y la información que puede encontrar en la misma.
 \end{enumerate}
 
+\clearpage
 
 \section{Diseño}
 \subsection{Arquitectura}
@@ -2821,13 +2849,14 @@ El M.V.C. es un patrón de arquitectura software utilizado para la implementaci�
 
 \item \textbf{Controlador:} controla la lógica de negocio necesaria para leer la información introducida por el usuario en la vista y actualizar el controlador. Además, transformará la información proveniente del modelo para que pueda ser mostrada al usuario por la vista.
 \end{itemize}
-En el caso de la aplicación Route66App, tanto las vistas como los controladores se encuentran en sus respectivos paquetes, dentro de \textit{Activities}. Sin embargo, parte del modelo es gestionada directamente por Firebase, por lo que en el paquete \textit{model} habrá simplemente clases (\textit{POJO}) que representan a los objetos del modelo.
+
+\needspace{12\baselineskip}
 
 La siguiente imagen corresponde a un diagrama de clases de una parte de la arquitectura de la aplicación, en la que se aprecia este patrón:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{images/mvcPattern}
+\includegraphics[scale=0.45]{images/mvcPattern}
 \caption{Patrón M.V.C.}
 \end{figure}
 
@@ -2841,14 +2870,14 @@ El siguiente diagrama de clases muestra el patrón D.A.O. aplicado en la base de
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{images/roomDao}
+\includegraphics[scale=0.45]{images/roomDao}
 \caption{Patrón D.A.O.}
 \end{figure}
 
 
 
 \subsection{Esquema de la base de datos}
-Como se ha indicado en secciones anteriores, se ha decidido utilizar Firebase como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: Firebase Realtime Database y Firebase Firestore, se ha elegido la segunda por ser mucho más compleja y permitir una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
+Como se ha indicado en secciones anteriores, se ha decidido utilizar \textit{Firebase} como motor de bases de datos. En concreto, de las dos que ofrece la plataforma: \textit{Firebase Realtime Database} y \textit{Firebase Firestore}, se ha elegido la segunda por ser mucho más compleja y permitir una mayor personalización. Esta base de datos seleccionada es de tipo no relacional, basada en documentos. \\
 
 Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impartida por D. Manuel Barrio Solorzano. Sin embargo, esta asignatura se limitaba a enseñar el diseño de bases de datos de tipo relacional y no de tipo no relacional y, al no contar con formación específica en la materia y tras consultar \cite{databasedesign}, se han realizado los siguientes diseños basándose en el libro citado y en diagramas de \textit{UML}. La documentación que Google proporciona \cite{fireference} también ha servido de mucha ayuda.
 
@@ -2866,7 +2895,7 @@ Durante el Grado, se ha estudiado la asignatura Diseño de Bases de Datos, impar
 \label{nrusers}
 \end{figure}
 
-De las figuras \ref{nrteams} y \ref{nrusers} es preciso aclarar que los elementos etiquetados con los estereotipos \textit{FirebaseAuthentication} y \textit{FirebaseStorage} no pertenecen a la base de datos \textit{Firebase Firestore}, sino que se ubican en sus respectivos servicios. Se han querido señalar en este esquema por su gran relación con el resto de colecciones y documentos de la base de datos.
+De las figuras \ref{nrteams} y \ref{nrusers} es preciso aclarar que los elementos etiquetados con los estereotipos \textit{Firebase Authentication} y \textit{Firebase Storage} no pertenecen a la base de datos \textit{Firebase Firestore}, sino que se ubican en sus respectivos servicios. Se han querido señalar en este esquema por su gran relación con el resto de colecciones y documentos de la base de datos.
 
 
 Con el fin de cumplir con los requisitos de persistencia y permitir una actualización de los niveles, también se ha utilizado una base de datos de tipo relacional, gestionada por la biblioteca de persistencia  \textit{Room} \cite{roompersistence}. Esta base de datos tendrá como objetivo mantener un listado de niveles, misiones y las sincronizaciones que se hayan hecho para descargarse las nuevas misiones, logros y premios.
@@ -2884,6 +2913,8 @@ Con el fin de cumplir con los requisitos de persistencia y permitir una actualiz
 \includegraphics[scale=0.5]{images/deploymentModel}
 \caption{Diagrama de despliegue de la aplicación \textit{Android}.}
 \end{figure}
+
+\needspace{12\baselineskip}
 
 \section{Implementación}
 
@@ -2967,43 +2998,43 @@ En los equipos solo contaremos con logros y premios:
 
 La aplicación Route66App cuenta con las siguientes dependencias externas:
 \begin{enumerate}
-\item \textbf{FirebaseUI Firestore} \cite{firebaseuifirestore}: ofrece un conjunto de clases utilizadas para mostrar consultas de la base de datos de Firestore en un RecyclerView.
+\item \textbf{\textit{FirebaseUI Firestore}} \cite{firebaseuifirestore}: ofrece un conjunto de clases utilizadas para mostrar consultas de la base de datos de \textit{Firestore} en un \textit{RecyclerView}.
 
-\item  \textbf{Mikepenz MaterialDrawer} \cite{mikepenzmaterialdrawer}: sirve para generar un DrawerLayout siguiendo las guías del lenguaje visual Material Design.
+\item  \textbf{\textit{Mikepenz MaterialDrawer}} \cite{mikepenzmaterialdrawer}: sirve para generar un \textit{DrawerLayout} siguiendo las guías del lenguaje visual \textit{Material Design}.
 
-\item \textbf{Firebase Crashanalytics} \cite{crashanalyticsfb}: utilizado para generar informes de excepciones y de errores en tiempo de ejecución.
+\item \textbf{\textit{Firebase Crashanalytics}} \cite{crashanalyticsfb}: utilizado para generar informes de excepciones y de errores en tiempo de ejecución.
 
-\item \textbf{Room} \cite{roomdependencies}: biblioteca de gestión de bases de datos SQLite en \textit{Android}.
+\item \textbf{\textit{Room}} \cite{roomdependencies}: biblioteca de gestión de bases de datos \textit{SQLite} en \textit{Android}.
 
-\item \textbf{Glide} \cite{glidedependencies}: biblioteca de visualización de imágenes. Ofrece la posibilidad de realizar una caché de las imágenes, con el fin de reducir el número de descargas.
+\item \textbf{\textit{Glide}} \cite{glidedependencies}: biblioteca de visualización de imágenes. Ofrece la posibilidad de realizar una caché de las imágenes, con el fin de reducir el número de descargas.
 
-\item \textbf{Firebase Auth} \cite{firebaseauthdependencies}: servicio de Firebase para ofrecer autenticación y mantener un sistema de sesiones.
+\item \textbf{\textit{Firebase Auth}} \cite{firebaseauthdependencies}: servicio de \textit{Firebase} para ofrecer autenticación y mantener un sistema de sesiones.
 
-\item \textbf{Google Play Services: Authentication} \cite{googleservicesauthdependencies}: biblioteca para gestionar la autenticación de los usuarios por medio de Google Accounts.
+\item \textbf{\textit{Google Play Services: Authentication}} \cite{googleservicesauthdependencies}: biblioteca para gestionar la autenticación de los usuarios por medio de \textit{Google Accounts}.
 
-\item \textbf{Zxing Core} \cite{zxingdependencies}: biblioteca para generar códigos QR.
+\item \textbf{\textit{Zxing Core}} \cite{zxingdependencies}: biblioteca para generar códigos \textit{QR}.
 
-\item \textbf{Firebase Invites} \cite{finvitesdependencies}: servicio de Firebase para enviar y recibir invitaciones de usuarios.
+\item \textbf{\textit{Firebase Invites}} \cite{finvitesdependencies}: servicio de \textit{Firebase} para enviar y recibir invitaciones de usuarios.
 
-\item \textbf{Firebase Firestore} \cite{ffirestoredependencies}: base de datos no relacional basada en documentos de la suite Firebase.
+\item \textbf{\textit{Firebase Firestore}} \cite{ffirestoredependencies}: base de datos no relacional basada en documentos de la suite \textit{Firebase}.
 
-\item \textbf{Firebase Storage} \cite{fstoragedependencies}: almacenamiento de datos de tipo fichero.
+\item \textbf{\textit{Firebase Storage}} \cite{fstoragedependencies}: almacenamiento de datos de tipo fichero.
 
-\item \textbf{Firebase Remote Config} \cite{fremoteconfigdependencies}: servicio de Firebase para almacenar y actualizar una serie de parámetros de configuración cambiables sin tener que realizar una modificación del APK.
+\item \textbf{\textit{Firebase Remote Config}} \cite{fremoteconfigdependencies}: servicio de \textit{Firebase} para almacenar y actualizar una serie de parámetros de configuración cambiables sin tener que realizar una modificación del \textit{APK}.
 
-\item \textbf{Firebase Cloud Messaging} \cite{fcmessagingdependencies}: servicio de Firebase utilizado para enviar y recibir mensajes que pueden ser posteriormente mostrados como una notificación en el dispositivo.
+\item \textbf{\textit{Firebase Cloud Messaging}} \cite{fcmessagingdependencies}: servicio de \textit{Firebase} utilizado para enviar y recibir mensajes que pueden ser posteriormente mostrados como una notificación en el dispositivo.
 
-\item \textbf{Firebase Core} \cite{fcanalyticsdependencies}: bibliotecas centrales de Firebase. Ofrecen soporte a Firebase CrashAnalytics y Firebase Analytics.
+\item \textbf{\textit{Firebase Core}} \cite{fcanalyticsdependencies}: bibliotecas centrales de \textit{Firebase}. Ofrecen soporte a \textit{Firebase CrashAnalytics} y \textit{Firebase Analytics}.
 
-\item \textbf{OKHttp} \cite{okhttpdependencies}: Biblioteca de gestión de solicitudes HTTP.
+\item \textbf{\textit{OKHttp}} \cite{okhttpdependencies}: Biblioteca de gestión de solicitudes HTTP.
 
-\item \textbf{CircleImageView} \cite{circleimagevdependencies}: Widget que muestra imágenes (avatares) en una vista redondeada.
+\item \textbf{\textit{CircleImageView}} \cite{circleimagevdependencies}: \textit{Widget} que muestra imágenes (avatares) en una vista redondeada.
 
-\item \textbf{Material Spinner} \cite{materialspinnerdependencies}: Widget que muestra un Spinner con un texto anexado en la parte superior, siguiendo así la guía de Material Design.
+\item \textbf{\textit{Material Spinner}} \cite{materialspinnerdependencies}: \textit{Widget} que muestra un \textit{Spinner} con un texto anexado en la parte superior, siguiendo así la guía de \textit{Material Design}.
 
-\item \textbf{FAB (Floating Action Button)} \cite{fabdependencies}: Widget que permite personalizar un Floating Action Button, así como añadir opciones adicionales.
+\item \textbf{\textit{FAB (Floating Action Button)}} \cite{fabdependencies}: \textit{Widget} que permite personalizar un \textit{Floating Action Button}, así como añadir opciones adicionales.
 
-\item \textbf{Image Compressor} \cite{icompressordependencies}: Biblioteca de compresión de imágenes.
+\item \textbf{\textit{Image Compressor}} \cite{icompressordependencies}: Biblioteca de compresión de imágenes.
 
 \end{enumerate}
 
@@ -3071,9 +3102,10 @@ Route66 cuenta con las siguientes actividades:
 	\begin{enumerate}
 		\item \textit{GameMission}: es el fragmento encargado de mostrar al usuario los detalles de una misión de tipo juego y, si fuera el caso, marcarla como completada.
 		\end{enumerate}
-		
-	\item \textbf{\textit{NormalActivity}}: el objetivo de esta actividad es el de servir como auxiliar a la actividad principal (MainActivity). Es decir, será aquella actividad que será llamada por MainActivity.
 	
+	\needspace{10\baselineskip}
+	
+	\item \textbf{\textit{NormalActivity}}: el objetivo de esta actividad es el de servir como auxiliar a la actividad principal (MainActivity). Es decir, será aquella actividad que será llamada por MainActivity.
 	\begin{enumerate}
 		\item \textit{CreateGroup}: es el fragmento encargado de mostrar el formulario para crear un nuevo grupo.
 		\item \textit{LevelDetail}: es el fragmento encargado de mostrar los detalles de un nivel. Su vista está basada en un \textit{TabLayout} mostrando las siguientes vistas:
@@ -3106,6 +3138,8 @@ Route66App no cuenta con ningún proveedor de contenidos.
 \item \textbf{\underline{Receptores de mensajes}} (\textit{“Broadcast receivers“}): este tipo de componente es utilizado para responder ante eventos que ocurran en el sistema (por ejemplo, una falta de disponibilidad de conexión a la red, el arranque del sistema \textit{Android}, etcétera). El objetivo fundamental de un receptor de mensajes es el de alertar y no el de realizar tareas complejas. \\
 Route66App no cuenta con receptores de mensajes.
 \end{enumerate}
+
+\needspace{6\baselineskip}
 
 \subsection{Almacenamiento de datos}
 
@@ -3190,6 +3224,8 @@ Se ha utilizado la siguiente estructura de archivos:
 
 \end{itemize}
 
+\needspace{3\baselineskip}
+
 Por motivos de escalabilidad y de eficiencia se han establecido los siguientes requisitos:
 \begin{itemize}
 \item Formatos de imagen: \textit{JPG}, \textit{PNG} o \textit{GIF}.
@@ -3250,7 +3286,7 @@ En Route66App se ha utilizado este producto para ajustar la URL de los archivos 
 
 \subsection{Funciones}
 
-Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código que se ejecutan en el caso de que ocurra una determinada condición. En Route66App, se ha decidido utilizar Firebase Cloud Functions escuchando a los siguientes eventos:
+Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy conocidas en el mundo del \textit{Cloud Computing}. Son pequeños fragmentos de código que se ejecutan en el caso de que ocurra una determinada condición. En Route66App, se ha decidido utilizar \textit{Firebase Cloud Functions} escuchando a los siguientes eventos:
 
 \begin{enumerate}
 \item Las escrituras de \textit{Firebase Firestore}: Es preciso escuchar todos aquellos eventos de escritura y actualización sobre los objetos almacenados en las colecciones de \textit{Achivements} (logros). Esto es necesario para:
@@ -3260,7 +3296,7 @@ Otro de los aspectos fundamentales de Route66App es el uso de las funciones, muy
 		\item Avisar de que un logro de tipo social ha sido comprobado.
 	\end{enumerate}
 
-\item Las llamadas HTTP contra el endpoint. (/invitations/{userId}): Este método será ejecutado cuando llegue una llamada GET entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
+\item Las llamadas \textit{HTTP} contra el \textit{endpoint}. (\textit{/invitations/{userId}}): Este método será ejecutado cuando llegue una llamada \textit{GET} entrante y anotará en la cuenta del usuario que ha invitado a un usuario.
 \end{enumerate}
 
 
@@ -3299,16 +3335,16 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando Google.}} 
-  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
-  \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash SHA1 del certificado que firma el APK instalado no se corresponde con aquel registrado en Firebase.}
+  \addheading{\textbf{TEST\arabic{test}}}{\textcolor{red}{El usuario se registra/inicia sesión utilizando \textit{Google}.}} 
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de \textit{Google} asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
+  \addrow{Resultado obtenido}{Error a la hora de iniciar sesión (mensaje en un Toast). Se revisa las trazas de Logcat y se llega a la conclusión de que es porque el hash \textit{SHA1} del certificado que firma el \textit{APK} instalado no se corresponde con aquel registrado en \textit{Firebase}.}
 \end{test}\\\stepcounter{test}
 
 \vspace{0.5cm}
 
 \begin{test}
-  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra/inicia sesión utilizando Google.}
-  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de Google asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
+  \addheading{\textbf{TEST\arabic{test}}}{El usuario se registra/inicia sesión utilizando \textit{Google}.}
+  \addrow{Resultado esperado}{Se le muestra al usuario un listado con las cuentas de \textit{Google} asociadas con el dispositivo y se le permite escoger una con la que iniciar sesión.}
    \addrow{Resultado obtenido}{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
@@ -3505,7 +3541,7 @@ Sin embargo, en esta aplicación no se realizarán pruebas automatizadas, sino q
  \addrow{Resultado obtenido }{Se obtiene el resultado esperado.}
 \end{test}\\\stepcounter{test}
 
-
+\needspace{5\baselineskip}
 \section{Manual de instalación}
 
 Los pasos que hay que seguir para la instalación de Route66App son los mismos de cualquier aplicación \textit{Android} nativa que no se encuentra alojada en una tienda oficial de aplicaciones (como \textit{Google Play Store}), aunque habrá que prestar atención que el dispositivo sobre el que se ejecuta la aplicación cumple los siguientes requisitos mínimos:
@@ -3520,6 +3556,8 @@ Los pasos que hay que seguir para la instalación de Route66App son los mismos d
 \section{Guía de usuario}
 
 \subsection{Usuarios}
+
+
 La aplicación sigue totalmente los estándares de \textit{Material Design}, con el fin de conseguir que el usuario medio de \textit{Android} le resulte una interfaz gráfica familiar. En el apartado “Usabilidad“ (página \pageref{usabilitymatters}) se han explicado los diferentes principios de Interacción Persona-Computadora aplicados en la interfaz gráfica de la aplicación.\\
 
 Una vez instalada la aplicación nos encontramos con la siguiente vista que permite iniciar sesión o registrarse.
@@ -3570,6 +3608,7 @@ En el menú podemos observar las diversas opciones con las que contamos:
 	\item \textbf{Equipo}: acceso a las opciones correspondientes de los equipos. Se detallarán más adelante.
 \end{enumerate}
 
+\needspace{2\baselineskip}
 A continuación se muestran las vistas de las opciones indicadas con anterioridad:
 
 \begin{figure}[H]
@@ -3661,18 +3700,18 @@ En cuanto a los equipos, la vista principal de uno concreto es la siguiente:
 \caption{Capturas de pantalla de la vista que muestra los detalles de un equipo.}
 \end{center}
 \end{figure}
-
+\needspace{5\baselineskip}
 En el menú desplegado tenemos las siguientes opciones:
 \begin{enumerate}
 	\item En caso de ser administrador:
 	\begin{enumerate}
 		\item Configuración del equipo: permite editar la imagen de perfil (avatar) del equipo, así como cambiar el nombre del mismo e incluso, eliminarlo.
-		\item Código QR: muestra el código QR del equipo.
+		\item Código \textit{QR}: muestra el código \textit{QR} del equipo.
 		\item Añadir miembro: permite buscar a un miembro de la plataforma y añadirlo al equipo.
 	\end{enumerate}
 	\item En caso de ser usuario normal:
 	\begin{enumerate}
-		\item Código QR: muestra el código QR del equipo.
+		\item Código \textit{QR}: muestra el código \textit{QR} del equipo.
 		\item Salir del equipo.
 	\end{enumerate}
 \end{enumerate}
@@ -3711,7 +3750,7 @@ A continuación se muestran las capturas de pantalla de cada una de estas opcion
 \end{center}
 \end{figure}
 
-Por último, como rol de usuario normal, además de permitir mostrar el código QR (la vista es igual que en el caso de administrador), se permite salir de un grupo.
+Por último, como rol de usuario normal, además de permitir mostrar el código \textit{QR} (la vista es igual que en el caso de administrador), se permite salir de un grupo.
 \begin{figure}[H]
 \begin{center}
 	\begin{subfigure}[t]{.3\linewidth}
@@ -3726,6 +3765,7 @@ Por último, como rol de usuario normal, además de permitir mostrar el código 
 \end{center}
 \end{figure}
 
+\needspace{5\baselineskip}
 \subsection{Niveles y misiones}
 Cuando entramos en un nivel desde la vista principal de usuarios veremos las siguientes vistas:
 \begin{figure}[H]
@@ -3941,6 +3981,8 @@ Repositorio en \textit{GitHub} de \textit{Floating Action Button}. Fecha de últ
 
 \bibitem{zxingdependencies} \textsc{ZXing Core: Android} 
 Repositorio \textit{GitHub} de \textit{ZXing Core}. Fecha de última visita 01/03/2018. \url{https://github.com/zxing/zxing}.
+
+\clearpage
 
 \section{Bibliografía}
 
